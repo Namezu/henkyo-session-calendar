@@ -184,7 +184,7 @@ document.querySelectorAll("#optChips .chip input").forEach(c=>c.addEventListener
 document.querySelectorAll("#senkouBtns .mini").forEach(b=>b.addEventListener("click",()=>{$("senkou").value=($("senkou").value+b.dataset.t).replace(/^ ?⇒ ?/,"")}));
 
 // ---- 複数日程（時刻は30分刻みセレクト・9:00〜28:30＝深夜25時表記対応） ----
-let TIMES=[];for(let h=9;h<=28;h++)for(const m of["00","30"])TIMES.push(`${h}:${m}`);
+let TIMES=[];for(let h=6;h<=28;h++)for(const m of["00","30"])TIMES.push(`${h}:${m}`);  // 6:00〜28:30（早起き勢〜深夜勢）
 const timeOpts=v=>`<option value=""${!v?" selected":""}>--:--</option>`+TIMES.map(t=>`<option${t===v?" selected":""}>${t}</option>`).join("");
 function addDayRow(d,s,e){
  if(s===undefined)s="21:00";
