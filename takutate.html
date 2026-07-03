@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>卓立てジェネレータ — 辺境TRPG村</title>
+<style>
+:root{--bg:#fbf7f0;--card:#fff;--tx:#3b3a36;--mut:#8a857c;--grn:#33603f;--grn2:#4f8160;--ter:#c86c3e;--cln:#e6ded2;--focus:#4f8160}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:'Zen Kaku Gothic New','Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif;line-height:1.7}
+.wrap{max-width:680px;margin:0 auto;padding:16px 14px 80px}
+h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.45em;color:var(--grn);margin:.4em 0 .1em}
+.sub{color:var(--mut);font-size:.85em;margin-bottom:1.0em}
+fieldset{border:1px solid var(--cln);border-radius:14px;background:var(--card);margin:0 0 14px;padding:14px 14px 10px}
+legend{font-weight:700;color:var(--grn);padding:0 6px;font-size:.95em}
+label{display:block;font-size:.82em;font-weight:700;color:var(--mut);margin:10px 0 3px}
+input[type=text],input[type=date],input[type=time],input[type=url],select,textarea{
+ width:100%;font-size:16px;padding:11px 12px;border:1.5px solid var(--cln);border-radius:10px;background:#fffdf9;color:var(--tx);font-family:inherit}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--focus)}
+textarea{min-height:74px;resize:vertical}
+.row{display:flex;gap:8px}.row>*{flex:1;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 8px}
+.chip{display:flex;align-items:center;gap:6px;background:#f4efe6;border:1.5px solid var(--cln);border-radius:20px;padding:7px 12px;font-size:.85em;cursor:pointer;user-select:none}
+.chip input{accent-color:var(--grn)}
+.chip.on{background:#e4eee6;border-color:var(--grn2)}
+.seg{display:flex;border:1.5px solid var(--cln);border-radius:10px;overflow:hidden;margin:2px 0 6px}
+.seg button{flex:1;padding:10px 6px;border:none;background:#fffdf9;color:var(--mut);font-size:.9em;font-family:inherit;cursor:pointer}
+.seg button.on{background:var(--grn);color:#fff;font-weight:700}
+.mini{border:1.5px solid var(--cln);border-radius:9px;background:#f4efe6;color:var(--grn);padding:8px 12px;font-size:.85em;font-family:inherit;cursor:pointer}
+.mini:active{transform:translateY(1px)}
+.mini.warn{color:#a04628}
+.dayrow{display:flex;gap:6px;align-items:center;margin:6px 0}
+.dayrow input[type=date]{flex:1.5}.dayrow select{flex:1;padding:11px 6px}
+.dayrow .del{border:none;background:none;color:#a04628;font-size:1.2em;cursor:pointer;padding:4px 6px}
+.gen{position:sticky;bottom:12px;width:100%;padding:15px;border:none;border-radius:14px;background:var(--ter);color:#fff;font-size:1.1em;font-weight:700;font-family:inherit;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.22)}
+.gen:active{transform:translateY(1px)}
+.out{border:1px solid var(--cln);border-radius:14px;background:var(--card);margin:14px 0;overflow:hidden}
+.out h3{margin:0;padding:10px 14px;background:#f4efe6;font-size:.92em;color:var(--grn);display:flex;justify-content:space-between;align-items:center}
+.out pre{margin:0;padding:12px 14px;white-space:pre-wrap;word-break:break-word;font-family:inherit;font-size:.92em;max-height:300px;overflow:auto}
+.copy{border:none;border-radius:8px;background:var(--grn);color:#fff;padding:7px 14px;font-size:.85em;font-family:inherit;cursor:pointer}
+.copy.done{background:var(--ter)}
+.note{font-size:.78em;color:var(--mut);margin:4px 2px}
+.hidden{display:none}
+.myset{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.myset select{flex:1;min-width:150px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>卓立てジェネレータ</h1>
+<div class="sub">穴埋め→「タイトル・募集要項・予定リスト行・卓ピタメモ」が完成。設定はこの端末が覚えます。</div>
+
+<fieldset>
+<legend>💾 マイセット（定型の保存・呼び出し）</legend>
+<div class="myset">
+ <select id="setSelect"><option value="">（マイセットを選ぶ）</option></select>
+ <button class="mini" id="setLoad">呼び出す</button>
+ <button class="mini" id="setSave">現在の内容を保存</button>
+ <button class="mini warn" id="setDel">削除</button>
+ <button class="mini warn" id="clearAll">🧹 白紙にする</button>
+</div>
+<div class="note">例：「ランダムダンジョン」「依頼板の向こう側」「ダークファンタジー」…卓のシリーズごとに全項目を丸ごと保存できます。前回生成した内容も自動で復元されます。</div>
+</fieldset>
+
+<fieldset>
+<legend>いつやる？</legend>
+<div class="seg" id="dateMode">
+ <button type="button" data-v="fixed" class="on">日時が決まってる</button>
+ <button type="button" data-v="chousei">すり合わせ（未定）</button>
+</div>
+<div id="fixedBox">
+ <label>開催日（複数日OK・日ごとに時間を変えられます／時刻は30分刻み・深夜は25時表記）</label>
+ <div id="days"></div>
+ <button class="mini" id="addDay" type="button">＋ 日程を追加</button>
+ <div class="note">所要時間は開始〜終了から自動計算して募集要項に載せます</div>
+</div>
+<div id="durBox" class="hidden">
+ <label>所要時間の見込み（時刻未定なので手入力・空欄可）</label>
+ <input type="text" id="duration" placeholder="例: 4時間程度">
+</div>
+</fieldset>
+
+<fieldset>
+<legend>なにをやる？</legend>
+<label>シナリオ名</label>
+<input type="text" id="scenario" placeholder="例: フェイス：ゴールド">
+<label>レギュレーション（選ぶとリンクも自動で付きます）</label>
+<select id="regSelect"></select>
+<div id="regFreeBox" class="hidden">
+ <label>レギュ／システム名（自由入力）</label>
+ <input type="text" id="regFree" placeholder="例: アリアンロッド2E（レギュ非採用）">
+ <label>リンク（任意）</label>
+ <input type="url" id="regFreeUrl" placeholder="https://...">
+</div>
+<div class="row">
+ <div><label>PC指定レベル</label><input type="text" id="cl" placeholder="例: CL7前後"></div>
+ <div><label>戦闘予定回数</label><input type="text" id="battles" placeholder="例: 2回"></div>
+</div>
+<label>シナリオ指定ギルド（任意）</label>
+<input type="text" id="guild" placeholder="例: なし">
+</fieldset>
+
+<fieldset>
+<legend>だれを集める？</legend>
+<div class="row">
+ <div><label>募集人数（下限〜上限）</label><input type="text" id="players" placeholder="例: 3～5名"></div>
+ <div><label>うち招待枠（任意）</label><input type="text" id="invite" placeholder="例: 招待1名"></div>
+</div>
+<label>募集方式（自由に書けます・ボタンで足し込みも）</label>
+<input type="text" id="senkou" placeholder="例: 選考 ⇒ 頃合いを見て抽選 ⇒ 先着へ移行">
+<div class="chips" id="senkouBtns">
+ <button class="mini" type="button" data-t="先着">先着</button>
+ <button class="mini" type="button" data-t="選考">選考</button>
+ <button class="mini" type="button" data-t="抽選">抽選</button>
+ <button class="mini" type="button" data-t=" ⇒ 先着へ移行">⇒先着へ移行</button>
+ <button class="mini" type="button" data-t=" ⇒ 抽選">⇒抽選</button>
+</div>
+<label>PL募集期限</label>
+<input type="text" id="deadline" placeholder="例: 7/8 21:00 まで">
+</fieldset>
+
+<fieldset>
+<legend>どう遊ぶ？</legend>
+<label>セッション形式</label>
+<input type="text" id="format" value="半テキ（実質テキセ＋補助的にVC利用）">
+<label>選択ルール（公式）</label>
+<div class="chips" id="optChips">
+ <label class="chip"><input type="checkbox" value="スクウェア戦闘">スクウェア戦闘</label>
+ <label class="chip"><input type="checkbox" value="マウント制限">マウント制限</label>
+ <label class="chip"><input type="checkbox" value="明度3">明度3</label>
+</div>
+<label>ハウスルール（任意・複数行OK）</label>
+<textarea id="houseFree" placeholder="独自ルールがあれば（複数行で書けます）"></textarea>
+<label>注意事項・地雷警告（任意）</label>
+<textarea id="warning" placeholder="例: 残虐描写・死体描写があります。地雷がある方は事前にDMにて申告してください。"></textarea>
+<label>GM名（署名・シート用）</label>
+<input type="text" id="gmName" placeholder="例: カテナドルグ">
+</fieldset>
+
+<fieldset>
+<legend>卓ピタ（使う人だけ）</legend>
+<label>卓ピタ招待URL（貼れば募集要項に卓ピタ案内＋入力メモが付く・空欄なら何も出ない）</label>
+<input type="url" id="pitaUrl" placeholder="https://takupita.com/join/...">
+</fieldset>
+
+<fieldset>
+<legend>今回予告（任意・別投稿になる）</legend>
+<textarea id="trailer" placeholder="空欄なら予告投稿は生成しません"></textarea>
+</fieldset>
+
+<button class="gen" id="genBtn">✨ 生成する</button>
+<div id="results"></div>
+</div>
+
+<script>
+(function(){
+const $=id=>document.getElementById(id);
+const GUILD="1001833522723561593";
+// レギュ→トピックID（チャルタヴォラ採集データ由来・リンク自動生成）
+const REGS={
+ "ミスリルクレスト":"1495261975821946970",
+ "氷原開拓団":"1243833848547115099",
+ "フツウノアリアン":"1218679176165458083",
+ "イジョウナアリアン":"1221118607723860120",
+ "ピースメイカー":"1279098493641818193",
+ "アンコールを流星に":"1235190325312749608",
+ "さちあれ":"1378387419069550592",
+ "賽は投げられた":"1221117663582093333",
+ "ダンジョン・トラベラーズ":"1218612791632723968",
+ "ネームドエネミー討伐RTA!!":"1300481807145238608",
+ "勇者の首を晒せ":"1218611603600310453",
+};
+const sel=$("regSelect");
+sel.innerHTML=Object.keys(REGS).map(r=>`<option value="${r}">${r}</option>`).join("")+`<option value="__free__">✏️ 自由入力（その他システム等）</option>`;
+sel.addEventListener("change",()=>$("regFreeBox").classList.toggle("hidden",sel.value!=="__free__"));
+
+// セグメント
+function seg(id,onChange){const el=$(id);el.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{el.querySelectorAll("button").forEach(x=>x.classList.remove("on"));b.classList.add("on");if(onChange)onChange(b.dataset.v)}));return{get:()=>el.querySelector(".on").dataset.v,set:v=>{el.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x.dataset.v===v));if(onChange)onChange(v)}}}
+const dateMode=seg("dateMode",v=>{$("fixedBox").classList.toggle("hidden",v!=="fixed");$("durBox").classList.toggle("hidden",v==="fixed")});
+document.querySelectorAll("#optChips .chip input").forEach(c=>c.addEventListener("change",()=>c.closest(".chip").classList.toggle("on",c.checked)));
+document.querySelectorAll("#senkouBtns .mini").forEach(b=>b.addEventListener("click",()=>{$("senkou").value=($("senkou").value+b.dataset.t).replace(/^ ?⇒ ?/,"")}));
+
+// ---- 複数日程（時刻は30分刻みセレクト・9:00〜28:30＝深夜25時表記対応） ----
+let TIMES=[];for(let h=9;h<=28;h++)for(const m of["00","30"])TIMES.push(`${h}:${m}`);
+const timeOpts=v=>`<option value=""${!v?" selected":""}>--:--</option>`+TIMES.map(t=>`<option${t===v?" selected":""}>${t}</option>`).join("");
+function addDayRow(d,s,e){
+ if(s===undefined)s="21:00";
+ const div=document.createElement("div");div.className="dayrow";
+ div.innerHTML=`<input type="date" value="${d||""}"><select class="st">${timeOpts(s)}</select><span style="color:var(--mut)">〜</span><select class="en">${timeOpts(e||"")}</select><button class="del" type="button" title="この日を削除">✕</button>`;
+ div.querySelector(".del").addEventListener("click",()=>{if(document.querySelectorAll(".dayrow").length>1)div.remove()});
+ $("days").appendChild(div);
+}
+$("addDay").addEventListener("click",()=>{
+ const rows=[...document.querySelectorAll(".dayrow")];
+ const last=rows[rows.length-1];
+ let nd="";
+ if(last&&last.querySelector("input[type=date]").value){const t=new Date(last.querySelector("input[type=date]").value+"T00:00");t.setDate(t.getDate()+1);nd=t.toISOString().slice(0,10)}
+ addDayRow(nd,last?last.querySelector(".st").value:"21:00",last?last.querySelector(".en").value:"");
+});
+addDayRow();
+// 所要時間の自動計算（"21:00","25:00"→4時間／30分は「◯時間半」）
+function durOf(s,e){if(!s||!e)return"";const[a,b]=s.split(":").map(Number),[c,d]=e.split(":").map(Number);let m=(c*60+d)-(a*60+b);if(m<=0)return"";const h=Math.floor(m/60);return m%60===0?`${h}時間`:m%60===30?`${h}時間半`:`${h}時間${m%60}分`}
+
+// ---- フォーム状態の収集/復元（マイセット＆自動保存の共通機構） ----
+const FIELDS=["duration","scenario","regFree","regFreeUrl","cl","battles","guild","players","invite","senkou","deadline","format","houseFree","warning","gmName","pitaUrl","trailer"];
+function collect(){
+ return{f:Object.fromEntries(FIELDS.map(k=>[k,$(k).value])),
+  reg:sel.value, dateMode:dateMode.get(),
+  opts:[...document.querySelectorAll("#optChips input:checked")].map(c=>c.value),
+  days:[...document.querySelectorAll(".dayrow")].map(r=>({d:r.querySelector("input[type=date]").value,s:r.querySelector(".st").value,e:r.querySelector(".en").value}))};
+}
+function restore(o){if(!o)return;
+ FIELDS.forEach(k=>{if(o.f&&o.f[k]!==undefined)$(k).value=o.f[k]});
+ if(o.reg){sel.value=o.reg;sel.dispatchEvent(new Event("change"))}
+ if(o.dateMode)dateMode.set(o.dateMode);
+ document.querySelectorAll("#optChips input").forEach(c=>{c.checked=(o.opts||[]).includes(c.value);c.closest(".chip").classList.toggle("on",c.checked)});
+ $("days").innerHTML="";(o.days&&o.days.length?o.days:[{}]).forEach(x=>addDayRow(x.d,x.s,x.e));
+}
+// 前回の内容を自動復元
+try{restore(JSON.parse(localStorage.getItem("takutate_last")||"null"))}catch(e){}
+
+// ---- マイセット ----
+function loadSets(){try{return JSON.parse(localStorage.getItem("takutate_sets")||"{}")}catch(e){return{}}}
+function renderSets(){const sets=loadSets();const cur=$("setSelect").value;
+ $("setSelect").innerHTML=`<option value="">（マイセットを選ぶ）</option>`+Object.keys(sets).map(n=>`<option>${n}</option>`).join("");
+ if(sets[cur])$("setSelect").value=cur}
+renderSets();
+$("setSave").addEventListener("click",()=>{
+ const name=prompt("マイセット名（例：ランダムダンジョン）",$("setSelect").value||"");
+ if(!name)return;const sets=loadSets();sets[name]=collect();
+ localStorage.setItem("takutate_sets",JSON.stringify(sets));renderSets();$("setSelect").value=name;alert(`「${name}」に保存しました`)});
+$("setLoad").addEventListener("click",()=>{const sets=loadSets();const n=$("setSelect").value;if(!n||!sets[n])return alert("マイセットを選んでください");restore(sets[n])});
+$("setDel").addEventListener("click",()=>{const n=$("setSelect").value;if(!n)return;if(!confirm(`「${n}」を削除する？`))return;const sets=loadSets();delete sets[n];localStorage.setItem("takutate_sets",JSON.stringify(sets));renderSets()});
+// 白紙化（マイセットは消さない・自動復元もリセット）
+$("clearAll").addEventListener("click",()=>{
+ if(!confirm("入力内容を白紙にする？（保存済みマイセットは消えません）"))return;
+ restore({f:Object.fromEntries(FIELDS.map(k=>[k,k==="format"?"半テキ（実質テキセ＋補助的にVC利用）":""])),
+  reg:Object.keys(REGS)[0],dateMode:"fixed",opts:[],days:[{d:"",s:"21:00",e:""}]});
+ try{localStorage.removeItem("takutate_last")}catch(e){}
+ $("results").innerHTML="";window.scrollTo({top:0,behavior:"smooth"});
+});
+
+// ---- 生成 ----
+const WD=["日","月","火","水","木","金","土"];
+const md=x=>{const d=new Date(x+"T00:00");return`${d.getMonth()+1}/${d.getDate()}`};
+const mdw=x=>{const d=new Date(x+"T00:00");return`${d.getMonth()+1}/${d.getDate()}(${WD[d.getDay()]})`};
+
+$("genBtn").addEventListener("click",()=>{
+ const state=collect();try{localStorage.setItem("takutate_last",JSON.stringify(state))}catch(e){}
+ const scen=$("scenario").value.trim()||"（シナリオ名）";
+ const isFree=sel.value==="__free__";
+ const reg=isFree?($("regFree").value.trim()||"（レギュ名）"):sel.value;
+ const regUrl=isFree?$("regFreeUrl").value.trim():`https://discord.com/channels/${GUILD}/${REGS[sel.value]}`;
+ const days=state.days.filter(x=>x.d);
+ const sameTime=days.length>0&&days.every(x=>x.s===days[0].s&&x.e===days[0].e);
+ // タイトル
+ let title;
+ if(state.dateMode==="fixed"&&days.length){
+  const dstr=days.map(x=>md(x.d)).join(",");
+  const tstr=sameTime?` ${days[0].s}${days[0].e?"-"+days[0].e:"～"}`:"";
+  title=`${dstr}${tstr}【${reg}】${scen}`;
+ }else{title=`日程すり合わせ【${reg}】${scen}`}
+ // 日程行（所要時間は開始〜終了から自動計算）
+ let dateLines;
+ if(state.dateMode==="fixed"&&days.length){
+  const du=x=>{const t=durOf(x.s,x.e);return t?`（${t}）`:""};
+  if(days.length===1){dateLines=[`> セッション日程：${mdw(days[0].d)} ${days[0].s}${days[0].e?`〜${days[0].e}`:"開始"}${du(days[0])}`]}
+  else if(sameTime){dateLines=[`> セッション日程：${days.map(x=>mdw(x.d)).join("・")} 各日${days[0].s}${days[0].e?`〜${days[0].e}`:"開始"}${du(days[0])?`（各日${durOf(days[0].s,days[0].e)}）`:""}`]}
+  else{dateLines=[`> セッション日程：全${days.length}日`,...days.map((x,i)=>`> 　第${i+1}日：${mdw(x.d)} ${x.s}${x.e?`〜${x.e}`:"開始"}${du(x)}`)]}
+ }else{dateLines=[`> セッション日程：参加者と日程すり合わせ${$("duration").value?`（所要 ${$("duration").value}）`:""}`]}
+ // 募集要項
+ const opts=state.opts.slice();
+ const lines=[`# シナリオ：『${scen}』`,...dateLines,
+  `> セッション形式：${$("format").value.trim()||"半テキ"}`,
+  `> レギュレーション：${reg}${regUrl?`（ ${regUrl} ）`:""}`,
+  `> 募集人数：${$("players").value.trim()||"（人数）"}${$("invite").value.trim()?`（${$("invite").value.trim()}含む）`:""}${$("senkou").value.trim()?`／${$("senkou").value.trim()}`:""}`,
+  `> PL募集期限：${$("deadline").value.trim()||"（期限）"}`,
+  `> PC指定レベル：${$("cl").value.trim()||"（CL）"}`,
+  `> シナリオ指定ギルド：${$("guild").value.trim()||"なし"}`,
+  `> 戦闘予定回数：${$("battles").value.trim()||"（回数）"}`];
+ if(opts.length)lines.push(`> 選択ルール：${opts.join("・")}`);
+ if($("houseFree").value.trim()){
+  const hl=$("houseFree").value.trim().split("\n");
+  if(hl.length===1)lines.push(`> ハウスルール：${hl[0]}`);
+  else{lines.push(`> ハウスルール：`);hl.forEach(x=>lines.push(`> ${x}`))}
+ }
+ if($("warning").value.trim())lines.push(`> 注意事項：`,`> **${$("warning").value.trim()}**`);
+ const pitaUrl=$("pitaUrl").value.trim();
+ if(pitaUrl){lines.push("",`**当卓では日程・出欠管理に卓ピタを利用します。下記URLからご参加ください。**`,`# ${pitaUrl}`,`使い方が分からない場合はDMか当トピック内でお気軽にどうぞ。`)}
+ const post1=lines.join("\n");
+ // 予告
+ const trailer=$("trailer").value.trim()?`# 今回予告\n${$("trailer").value.trim()}\n\nアリアンロッドRPG2E改訂版\nレギュレーション：${reg}\n『${scen}』\n\n冒険の舞台がキミを待つ`:null;
+ // シート行
+ const firstTime=state.dateMode==="fixed"&&days.length?days[0].s:"すり合わせ";
+ const sheetRow=[reg,`「${scen}」${$("gmName").value.trim()||"（GM名）"}`,"（トピックを立てたらリンクをここに）","募集中",firstTime].join("\t");
+ // 卓ピタメモ
+ const pitaMemo=pitaUrl?[`卓ピタに入力する内容：`,`・卓名：${scen}`,
+  state.dateMode==="fixed"&&days.length?`・日時：${days.map(x=>`${mdw(x.d)} ${x.s}${x.e?"〜"+x.e:""}`).join(" / ")}`:`・日時：未定（すり合わせ機能で調整）`,
+  `・締切：${$("deadline").value.trim()||"未設定"}`,`・発行した招待URLを募集要項の〔卓ピタURL〕欄に貼る`,`・村内共有卓ピタカレンダーへの反映を確認`].join("\n"):null;
+
+ const R=$("results");R.innerHTML="";
+ function out(t,body,noteTxt){
+  const div=document.createElement("div");div.className="out";
+  div.innerHTML=`<h3>${t}<button class="copy">コピー</button></h3><pre></pre>${noteTxt?`<div class="note" style="padding:0 14px 10px">${noteTxt}</div>`:""}`;
+  div.querySelector("pre").textContent=body;
+  div.querySelector(".copy").addEventListener("click",function(){
+   (navigator.clipboard?navigator.clipboard.writeText(body):Promise.reject()).then(()=>{this.textContent="コピーした！";this.classList.add("done");setTimeout(()=>{this.textContent="コピー";this.classList.remove("done")},1600)}).catch(()=>{const r=document.createRange();r.selectNodeContents(div.querySelector("pre"));const s=getSelection();s.removeAllRanges();s.addRange(r);this.textContent="選択したよ→手動コピーして"});
+  });
+  R.appendChild(div);
+ }
+ out("① トピックタイトル",title,"フォーラム「新しい投稿」のタイトル欄へ");
+ out("② 募集要項（1投稿目）",post1,"タグ「募集中」を忘れずに");
+ if(trailer)out("③ 今回予告（別投稿）",trailer);
+ out("④ 卓予定リスト行（シートに貼る用）",sheetRow,"タブ区切り＝行に貼ると各セルへ分かれます。リンク列はトピックを立てた後に");
+ if(pitaMemo)out("⑤ 卓ピタ入力メモ",pitaMemo);
+ R.scrollIntoView({behavior:"smooth",block:"start"});
+});
+})();
+</script>
+</body>
+</html>
