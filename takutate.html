@@ -33,7 +33,9 @@ textarea{min-height:74px;resize:vertical}
 .dayrow{display:flex;gap:6px;align-items:center;margin:6px 0}
 .dayrow input[type=date]{flex:1.5}.dayrow select{flex:1;padding:11px 6px}
 .dayrow .del{border:none;background:none;color:#a04628;font-size:1.2em;cursor:pointer;padding:4px 6px}
-.gen{position:sticky;bottom:12px;width:100%;padding:15px;border:none;border-radius:14px;background:var(--ter);color:#fff;font-size:1.1em;font-weight:700;font-family:inherit;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.22)}
+.genbar{position:sticky;bottom:12px;display:flex;gap:10px}
+.gen{flex:2.2;padding:15px;border:none;border-radius:14px;background:var(--ter);color:#fff;font-size:1.1em;font-weight:700;font-family:inherit;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.22)}
+.gen.save{flex:1;background:var(--grn);font-size:.95em}
 .gen:active{transform:translateY(1px)}
 .out{border:1px solid var(--cln);border-radius:14px;background:var(--card);margin:14px 0;overflow:hidden}
 .out h3{margin:0;padding:10px 14px;background:#f4efe6;font-size:.92em;color:var(--grn);display:flex;justify-content:space-between;align-items:center}
@@ -151,7 +153,10 @@ textarea{min-height:74px;resize:vertical}
 <textarea id="trailer" placeholder="空欄なら予告投稿は生成しません"></textarea>
 </fieldset>
 
-<button class="gen" id="genBtn">✨ 生成する</button>
+<div class="genbar">
+ <button class="gen" id="genBtn">✨ 生成する</button>
+ <button class="gen save" id="setSave2">💾 マイセット保存</button>
+</div>
 <div id="results"></div>
 </div>
 
@@ -228,10 +233,12 @@ function renderSets(){const sets=loadSets();const cur=$("setSelect").value;
  $("setSelect").innerHTML=`<option value="">（マイセットを選ぶ）</option>`+Object.keys(sets).map(n=>`<option>${n}</option>`).join("");
  if(sets[cur])$("setSelect").value=cur}
 renderSets();
-$("setSave").addEventListener("click",()=>{
+function saveSet(){
  const name=prompt("マイセット名（例：ランダムダンジョン）",$("setSelect").value||"");
  if(!name)return;const sets=loadSets();sets[name]=collect();
- localStorage.setItem("takutate_sets",JSON.stringify(sets));renderSets();$("setSelect").value=name;alert(`「${name}」に保存しました`)});
+ localStorage.setItem("takutate_sets",JSON.stringify(sets));renderSets();$("setSelect").value=name;alert(`「${name}」に保存しました`)}
+$("setSave").addEventListener("click",saveSet);
+$("setSave2").addEventListener("click",saveSet);
 $("setLoad").addEventListener("click",()=>{const sets=loadSets();const n=$("setSelect").value;if(!n||!sets[n])return alert("マイセットを選んでください");restore(sets[n])});
 $("setDel").addEventListener("click",()=>{const n=$("setSelect").value;if(!n)return;if(!confirm(`「${n}」を削除する？`))return;const sets=loadSets();delete sets[n];localStorage.setItem("takutate_sets",JSON.stringify(sets));renderSets()});
 // 白紙化（マイセットは消さない・自動復元もリセット）

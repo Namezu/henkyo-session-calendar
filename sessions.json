@@ -1,0 +1,12 @@
+{
+ "updated": "2026/07/04 12:00",
+ "note": "プロトタイプ用サンプルデータ（架空の卓＋LODGEテスト卓）。自動収集が繋がるとここが実データに置き換わる。",
+ "sessions": [
+  {"scenario":"フェイス：ゴールド","reg":"ミスリルクレスト","dates":[{"date":"2026-07-10","start":"21:00","end":"25:00"}],"open":true,"suriawase":false,"gm":"カテナドルグ","url":"https://discord.com/channels/1023884809774305301/1522576853796393030","created":"2026-07-03T12:16:00","source":"forum"},
+  {"scenario":"（サンプル）霧の峠の護衛行","reg":"フツウノアリアン","dates":[{"date":"2026-07-12","start":"14:00","end":"18:00"}],"open":true,"suriawase":false,"gm":"サンプルGM","url":"","created":"2026-07-04T09:00:00","source":"forum"},
+  {"scenario":"（サンプル）星降る夜のワルツ","reg":"アンコールを流星に","dates":[],"open":true,"suriawase":true,"gm":"サンプルGM2","url":"","created":"2026-07-01T20:00:00","source":"forum"},
+  {"scenario":"（サンプル）遺跡RTA大会","reg":"ネームドエネミー討伐RTA!!","dates":[{"date":"2026-07-19","start":"21:00","end":"24:00"},{"date":"2026-07-21","start":"22:00","end":"25:00"}],"open":false,"suriawase":false,"gm":"サンプルGM3","url":"","created":"2026-06-28T10:00:00","source":"forum"},
+  {"scenario":"（サンプル・手動掲載）氷原の第0話体験卓","reg":"氷原開拓団","dates":[{"date":"2026-08-02","start":"21:00","end":"25:00"}],"open":true,"suriawase":false,"gm":"サンプルGM4","url":"","created":"2026-07-04T11:00:00","source":"manual"},
+  {"scenario":"（サンプル）終わった卓の見え方確認","reg":"ミスリルクレスト","dates":[{"date":"2026-07-01","start":"21:00","end":"25:00"}],"open":false,"suriawase":false,"gm":"サンプルGM5","url":"","created":"2026-06-20T10:00:00","source":"forum"}
+ ]
+}
