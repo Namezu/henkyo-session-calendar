@@ -510,7 +510,10 @@ document.querySelectorAll(".bf").forEach(b=>{
   b.classList.toggle("on",BANDS.has(k));renderAll()});
 });
 document.querySelectorAll(".toolrow .f[data-f]").forEach(b=>b.addEventListener("click",()=>{
- document.querySelectorAll(".toolrow .f[data-f]").forEach(x=>x.classList.remove("on"));b.classList.add("on");FILTER=b.dataset.f;renderAll()}));
+ // 点灯中のボタンをもう一度押したら「すべて」へ戻る（トグルの直感に合わせる）
+ const next=(b.classList.contains("on")&&b.dataset.f!=="all")?"all":b.dataset.f;
+ document.querySelectorAll(".toolrow .f[data-f]").forEach(x=>x.classList.toggle("on",x.dataset.f===next));
+ FILTER=next;renderAll()}));
 fetch("sessions.json?t="+Date.now()).then(r=>r.json()).then(d=>{
  DATA=d;$("fresh").innerHTML=`最終更新: ${d.updated||"?"}　<span style="opacity:.7">（15分ごとに自動更新）</span>`;fillFilterSelects();renderAll();
 }).catch(()=>{$("cal").innerHTML="";$("calSum").textContent="データの読込に失敗しました"});
