@@ -87,8 +87,9 @@ window.addEventListener("DOMContentLoaded",()=>{const dark=document.documentElem
  <button class="mini" id="setLoad">呼び出す</button>
  <button class="mini" id="setSave">現在の内容を保存</button>
  <button class="mini warn" id="setDel">削除</button>
+ <button class="mini" id="setShare">🔗 共有リンク化</button>
 </div>
-<div class="note">例：「ランダムダンジョン」「依頼板の向こう側」「ダークファンタジー」…卓のシリーズごとに全項目を丸ごと保存できます。前回生成した内容も自動で復元されます。</div>
+<div class="note">例：「ランダムダンジョン」「依頼板の向こう側」…卓のシリーズごとに全項目を丸ごと保存（この端末内）。前回生成した内容も自動復元。<b>🔗共有リンク化</b>＝今の入力内容をURLにしてコピー→Discordに貼ってスマホで開けば端末間で共有、他のGMに配るのもOK。</div>
 </fieldset>
 
 <fieldset>
@@ -274,6 +275,25 @@ $("clearAll").addEventListener("click",()=>{
  $("results").innerHTML="";window.scrollTo({top:0,behavior:"smooth"});
 });
 
+// ---- 共有リンク（マイセットをURLに畳む＝サーバー不要の端末間共有） ----
+function b64e(str){return btoa(unescape(encodeURIComponent(str))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"")}
+function b64d(str){str=str.replace(/-/g,"+").replace(/_/g,"/");while(str.length%4)str+="=";return decodeURIComponent(escape(atob(str)))}
+$("setShare").addEventListener("click",function(){
+ const url=location.origin+location.pathname+"#set="+b64e(JSON.stringify(collect()));
+ (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(()=>{this.textContent="コピーした！";setTimeout(()=>this.textContent="🔗 共有リンク化",1600)}).catch(()=>prompt("このURLをコピーしてね",url));
+});
+// URLで受け取った側：読み込み確認→復元→（任意で）マイセット保存
+if(location.hash.startsWith("#set=")){
+ try{
+  const o=JSON.parse(b64d(location.hash.slice(5)));
+  if(confirm("共有されたマイセット（卓の設定）を読み込みますか？")){
+   restore(o);
+   const name=prompt("マイセットとして保存する場合は名前を入力（空欄なら読み込みだけ）","");
+   if(name){const sets=loadSets();sets[name]=o;localStorage.setItem("takutate_sets",JSON.stringify(sets));renderSets();$("setSelect").value=name}
+  }
+ }catch(e){alert("共有リンクの読み込みに失敗しました")}
+ history.replaceState(null,"",location.pathname);
+}
 // ---- 生成 ----
 const WD=["日","月","火","水","木","金","土"];
 const md=x=>{const d=new Date(x+"T00:00");return`${d.getMonth()+1}/${d.getDate()}`};
