@@ -400,8 +400,8 @@ $("prev").addEventListener("click",()=>{if(VIEW==="year"){curY--}else{curM--;if(
 $("next").addEventListener("click",()=>{if(VIEW==="year"){curY++}else{curM++;if(curM>11){curM=0;curY++}}selDate=null;renderAll()});
 $("todayBtn").addEventListener("click",()=>{curY=now.getFullYear();curM=now.getMonth();selDate=null;VIEW="month";renderAll()});
 $("viewBtn").addEventListener("click",()=>{VIEW=(VIEW==="month"?"year":"month");selDate=null;renderAll()});
-document.querySelectorAll(".toolrow .f").forEach(b=>b.addEventListener("click",()=>{
- document.querySelectorAll(".toolrow .f").forEach(x=>x.classList.remove("on"));b.classList.add("on");FILTER=b.dataset.f;renderAll()}));
+document.querySelectorAll(".toolrow .f[data-f]").forEach(b=>b.addEventListener("click",()=>{
+ document.querySelectorAll(".toolrow .f[data-f]").forEach(x=>x.classList.remove("on"));b.classList.add("on");FILTER=b.dataset.f;renderAll()}));
 fetch("sessions.json?t="+Date.now()).then(r=>r.json()).then(d=>{
  DATA=d;$("fresh").innerHTML=`最終更新: ${d.updated||"?"}　<span style="opacity:.7">（15分ごとに自動更新）</span>`;renderAll();
 }).catch(()=>{$("cal").innerHTML="";$("calSum").textContent="データの読込に失敗しました"});
