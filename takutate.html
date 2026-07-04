@@ -10,78 +10,88 @@
 <meta property="og:url" content="https://namezu.github.io/henkyo-session-board/takutate.html">
 <meta property="og:image" content="https://namezu.github.io/henkyo-session-board/ogp_takutate.png">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <title>AR2EGM用セッション作成マイセット — 辺境TRPG村</title>
 <style>
-:root{--bg:#fbf7f0;--card:#fff;--tx:#3b3a36;--mut:#8a857c;--grn:#33603f;--grn2:#4f8160;--ter:#c86c3e;--cln:#e6ded2;--focus:#4f8160}
+:root{--bg:#181b1e;--card:#22262b;--tx:#e9e6df;--mut:#a09a8e;--grn:#a8cbb2;--grn2:#6a9c78;--ter:#e09a6e;--cln:rgba(255,255,255,.14);--gold:#d8b56a;--focus:#6a9c78;
+ --shadow:0 8px 24px rgba(0,0,0,.38);--grain:.06;
+ --glass:rgba(22,24,28,.55);--glass-hi:rgba(255,255,255,.16);--glass-brd:rgba(255,255,255,.16);
+ --glass-in:inset 0 1px 0 var(--glass-hi),inset 0 -1px 0 rgba(255,255,255,.05);
+ color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--tx);font-family:'Zen Kaku Gothic New','Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif;line-height:1.7}
-.wrap{max-width:680px;margin:0 auto;padding:16px 14px 80px}
-h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.45em;color:var(--grn);margin:.4em 0 .1em}
+body{margin:0;color:var(--tx);font-family:'Zen Kaku Gothic New','Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif;line-height:1.7;
+ background:radial-gradient(1000px 560px at 12% -6%,rgba(79,129,96,.16),transparent 60%),
+            radial-gradient(820px 520px at 102% 4%,rgba(200,108,62,.12),transparent 55%),
+            radial-gradient(1100px 680px at 30% 110%,rgba(185,138,47,.11),transparent 60%),var(--bg);
+ background-attachment:fixed}
+/* 風景画レイヤー（ボードと同じプールをランダム巡回）＋夕闇スクリム */
+#seasonBg{position:fixed;inset:0;z-index:-1;pointer-events:none}
+#seasonBg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease;filter:saturate(.92)}
+#seasonBg img.show{opacity:.5}
+#seasonBg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,20,24,.62),rgba(18,20,24,.3) 34%,rgba(18,20,24,.34) 62%,rgba(18,20,24,.66))}
+/* 紙の粒子と天の飾り帯（村の共通装丁） */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:5;opacity:var(--grain);
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+body::before{content:"";position:fixed;top:0;left:0;right:0;height:4px;z-index:6;
+ background:linear-gradient(90deg,var(--grn) 0%,#4f8160 42%,var(--gold) 50%,#4f8160 58%,var(--grn) 100%)}
+.wrap{max-width:680px;margin:0 auto;padding:22px 14px 80px}
+.brand{font-size:.72em;letter-spacing:.35em;color:var(--ter);font-weight:700;margin-bottom:2px}
+h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.5em;letter-spacing:.04em;color:var(--grn);margin:.2em 0 .1em;line-height:1.3}
 .sub{color:var(--mut);font-size:.85em;margin-bottom:1.0em}
-fieldset{border:1px solid var(--cln);border-radius:14px;background:var(--card);margin:0 0 14px;padding:14px 14px 10px}
-legend{font-weight:700;color:var(--grn);padding:0 6px;font-size:.95em}
+fieldset{border:1px solid var(--glass-brd);border-radius:16px;margin:0 0 14px;padding:14px 14px 10px;
+ background:var(--glass);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:var(--glass-in),0 1px 4px rgba(0,0,0,.25)}
+legend{font-family:'Shippori Mincho',serif;font-weight:700;color:var(--grn);padding:0 8px;font-size:.98em;letter-spacing:.04em}
 label{display:block;font-size:.82em;font-weight:700;color:var(--mut);margin:10px 0 3px}
 input[type=text],input[type=date],input[type=time],input[type=url],select,textarea{
- width:100%;font-size:16px;padding:11px 12px;border:1.5px solid var(--cln);border-radius:10px;background:#fffdf9;color:var(--tx);font-family:inherit}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--focus)}
+ width:100%;font-size:16px;padding:11px 12px;border:1px solid var(--glass-brd);border-radius:12px;background:rgba(255,255,255,.07);color:var(--tx);font-family:inherit;
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.08);transition:border-color .18s,box-shadow .18s}
+input::placeholder,textarea::placeholder{color:rgba(233,230,223,.35)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--focus);box-shadow:0 0 0 3px rgba(106,156,120,.22)}
 textarea{min-height:74px;resize:vertical}
 .row{display:flex;gap:8px}.row>*{flex:1;min-width:0}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 8px}
-.chip{display:flex;align-items:center;gap:6px;background:#f4efe6;border:1.5px solid var(--cln);border-radius:20px;padding:7px 12px;font-size:.85em;cursor:pointer;user-select:none}
-.chip input{accent-color:var(--grn)}
-.chip.on{background:#e4eee6;border-color:var(--grn2)}
-.seg{display:flex;border:1.5px solid var(--cln);border-radius:10px;overflow:hidden;margin:2px 0 6px}
-.seg button{flex:1;padding:10px 6px;border:none;background:#fffdf9;color:var(--mut);font-size:.9em;font-family:inherit;cursor:pointer}
-.seg button.on{background:var(--grn);color:#fff;font-weight:700}
-.mini{border:1.5px solid var(--cln);border-radius:9px;background:#f4efe6;color:var(--grn);padding:8px 12px;font-size:.85em;font-family:inherit;cursor:pointer}
+.chip{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.07);border:1px solid var(--glass-brd);border-radius:20px;padding:7px 12px;font-size:.85em;cursor:pointer;user-select:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.1);transition:border-color .18s,background .18s}
+.chip:hover{border-color:var(--grn2)}
+.chip input{accent-color:#4f8160}
+.chip.on{background:rgba(143,188,155,.16);border-color:var(--grn2)}
+.seg{display:flex;border:1px solid var(--glass-brd);border-radius:12px;overflow:hidden;margin:2px 0 6px;box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
+.seg button{flex:1;padding:10px 6px;border:none;background:rgba(255,255,255,.04);color:var(--mut);font-size:.9em;font-family:inherit;cursor:pointer;transition:background .18s,color .18s}
+.seg button.on{background:#3f6c4c;color:#fff;font-weight:700}
+.mini{border:1px solid var(--glass-brd);border-radius:10px;background:rgba(255,255,255,.07);color:var(--grn);padding:8px 12px;font-size:.85em;font-family:inherit;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.1);transition:border-color .18s,transform .18s,box-shadow .18s}
+.mini:hover{border-color:var(--grn2);transform:translateY(-1px);box-shadow:var(--shadow)}
 .mini:active{transform:translateY(1px)}
-.mini.warn{color:#a04628}
+.mini.warn{color:#e08f83}
 .dayrow{display:flex;gap:6px;align-items:center;margin:6px 0}
 .dayrow input[type=date]{flex:1.5}.dayrow select{flex:1;padding:11px 6px}
-.dayrow .del{border:none;background:none;color:#a04628;font-size:1.2em;cursor:pointer;padding:4px 6px}
-.genbar{position:sticky;bottom:12px;display:flex;gap:10px;align-items:stretch}
-.gen{flex:2.2;display:flex;align-items:center;justify-content:center;padding:14px 8px;border:none;border-radius:14px;background:var(--ter);color:#fff;font-size:1.1em;font-weight:700;font-family:inherit;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.22)}
-.gen.save{flex:1.2;background:var(--grn);font-size:.92em;white-space:nowrap}
+.dayrow .del{border:none;background:none;color:#e08f83;font-size:1.2em;cursor:pointer;padding:4px 6px}
+.genbar{position:sticky;bottom:12px;display:flex;gap:10px;align-items:stretch;z-index:20}
+.gen{flex:2.2;display:flex;align-items:center;justify-content:center;padding:14px 8px;border:1px solid rgba(255,255,255,.18);border-radius:16px;background:rgba(176,106,63,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff;font-size:1.1em;font-weight:700;font-family:inherit;cursor:pointer;box-shadow:var(--glass-in),0 10px 28px rgba(0,0,0,.45)}
+.gen.save{flex:1.2;background:rgba(63,108,76,.82);font-size:.92em;white-space:nowrap}
+.gen:hover{filter:brightness(1.08)}
 .gen:active{transform:translateY(1px)}
 .lbl-short{display:none}
 @media(max-width:560px){.lbl-full{display:none}.lbl-short{display:inline}.gen{font-size:1em}.gen.save{font-size:.88em}}
-.out{border:1px solid var(--cln);border-radius:14px;background:var(--card);margin:14px 0;overflow:hidden}
-.out h3{margin:0;padding:10px 14px;background:#f4efe6;font-size:.92em;color:var(--grn);display:flex;justify-content:space-between;align-items:center}
+.out{border:1px solid var(--glass-brd);border-radius:16px;background:var(--glass);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:var(--glass-in),0 1px 4px rgba(0,0,0,.25);margin:14px 0;overflow:hidden}
+.out h3{margin:0;padding:10px 14px;background:rgba(255,255,255,.06);font-size:.92em;color:var(--grn);display:flex;justify-content:space-between;align-items:center;font-family:'Shippori Mincho',serif;letter-spacing:.03em}
 .out pre{margin:0;padding:12px 14px;white-space:pre-wrap;word-break:break-word;font-family:inherit;font-size:.92em;max-height:300px;overflow:auto}
-.copy{border:none;border-radius:8px;background:var(--grn);color:#fff;padding:7px 14px;font-size:.85em;font-family:inherit;cursor:pointer}
-.copy.done{background:var(--ter)}
+.copy{border:none;border-radius:9px;background:#3f6c4c;color:#fff;padding:7px 14px;font-size:.85em;font-family:inherit;cursor:pointer;transition:filter .18s}
+.copy:hover{filter:brightness(1.1)}
+.copy.done{background:#b06a3f}
 .note{font-size:.78em;color:var(--mut);margin:4px 2px}
 .hidden{display:none}
 .myset{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .myset select{flex:1;min-width:150px}
-
-/* ---- ダークモード ---- */
-[data-theme=dark]{--bg:#17181b;--card:#232529;--tx:#d8dade;--mut:#8f8a81;--grn:#8fbc9b;--grn2:#6a9c78;--ter:#d98a5f;--cln:#3a3d42;--focus:#6a9c78}
-[data-theme=dark] input[type=text],[data-theme=dark] input[type=date],[data-theme=dark] input[type=url],[data-theme=dark] select,[data-theme=dark] textarea{background:#2a2c30;color:var(--tx)}
-[data-theme=dark] .chip,[data-theme=dark] .mini{background:#33353a;color:#b9c9bd}
-[data-theme=dark] .chip.on{background:#2e3b32;border-color:#6a9c78}
-[data-theme=dark] .seg button{background:#2a2c30;color:#8f8a81}
-[data-theme=dark] .seg button.on{background:#3f6c4c;color:#fff}
-[data-theme=dark] .gen{background:#b06a3f}
-[data-theme=dark] .gen.save{background:#3f6c4c}
-[data-theme=dark] .copy{background:#3f6c4c}
-[data-theme=dark] .out h3{background:#2e3034}
-[data-theme=dark] .note{color:#8f8a81}
+.toplink{font-size:.85em;color:var(--ter);text-decoration:none;font-weight:700;border-bottom:1px dashed transparent;transition:border-color .18s}
+.toplink:hover{border-bottom-color:var(--ter)}
 </style>
 </head>
 <body>
-<script>
-(function(){try{if(localStorage.getItem("sb_theme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}
-window.sbToggleTheme=function(){const d=document.documentElement;const dark=d.getAttribute("data-theme")==="dark";
- if(dark)d.removeAttribute("data-theme");else d.setAttribute("data-theme","dark");
- try{localStorage.setItem("sb_theme",dark?"light":"dark")}catch(e){}
- document.querySelectorAll(".themeBtn").forEach(b=>b.textContent=dark?"\u{1F319} ダーク":"\u2600\uFE0F ライト");};
-window.addEventListener("DOMContentLoaded",()=>{const dark=document.documentElement.getAttribute("data-theme")==="dark";
- document.querySelectorAll(".themeBtn").forEach(b=>{b.textContent=dark?"\u2600\uFE0F ライト":"\u{1F319} ダーク";b.addEventListener("click",window.sbToggleTheme)})});
-})();
-</script>
+<div id="seasonBg"><img id="sbA" alt=""><img id="sbB" alt=""></div>
 <div class="wrap">
-<div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px"><a href="./" style="font-size:.85em;color:var(--ter);text-decoration:none;font-weight:700">← セッションボード（カレンダー）に戻る</a><button class="mini themeBtn" type="button">🌙 ダーク</button></div>
+<div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px"><a href="./" class="toplink">← セッションボード（カレンダー）に戻る</a></div>
+<div class="brand">辺境TRPG村</div>
 <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
  <h1>AR2EGM用セッション作成マイセット</h1>
  <button class="mini warn" id="clearAll" title="入力内容をぜんぶ消して最初から">🧹 白紙にする</button>
@@ -380,6 +390,20 @@ $("genBtn").addEventListener("click",()=>{
  if(pitaMemo)out("⑤ 卓ピタ入力メモ",pitaMemo);
  R.scrollIntoView({behavior:"smooth",block:"start"});
 });
+})();
+</script>
+
+<script>
+(function(){// ボードと同じ風景プールをランダム巡回（90秒）
+const POOL=["bg/spring.jpg","bg/summer.jpg","bg/autumn.jpg","bg/winter.jpg",
+ "bg/scene1.jpg","bg/scene2.jpg","bg/scene3.jpg","bg/scene4.jpg","bg/scene5.jpg",
+ "bg/scene6.jpg","bg/scene7.jpg","bg/scene8.jpg","bg/scene9.jpg","bg/hero_bg.jpg","bg/hero_bg_night.jpg"];
+let cur=null,useA=true;
+function setBg(u){if(cur===u)return;const a=document.getElementById("sbA"),b=document.getElementById("sbB");if(!a)return;
+ const n=useA?a:b,p=useA?b:a;useA=!useA;
+ const im=new Image();im.onload=()=>{cur=u;n.src=u;n.classList.add("show");p.classList.remove("show")};im.src=u}
+function roll(){const c=POOL.filter(u=>u!==cur);setBg(c[Math.floor(Math.random()*c.length)])}
+roll();setInterval(roll,90000);
 })();
 </script>
 </body>
