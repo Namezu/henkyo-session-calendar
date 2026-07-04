@@ -47,6 +47,10 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.4em;color:var(--g
 .cal.two .cell{height:128px}
 /* 朝昼夜ミニアイコン（自前SVG） */
 .sch .tb{width:11px;height:11px;vertical-align:-1px;margin-right:3px}
+/* 朝昼夜トグル（アイコン色を活かすためON時は薄緑地） */
+.f.bf .tb{width:12px;height:12px;vertical-align:-2px;margin-right:2px}
+.f.bf.on{background:#e4eee6;border-color:var(--grn);color:var(--grn);font-weight:700}
+[data-theme=dark] .f.bf.on{background:#2e3b32;border-color:var(--grn);color:var(--grn)}
 /* レギュ/GM絞り込みプルダウン */
 .fsel{border:1.5px solid var(--cln);background:#fffdf9;border-radius:20px;padding:7px 10px;font-size:.85em;font-family:inherit;color:var(--mut);max-width:44vw;cursor:pointer}
 .fsel.on{border-color:var(--grn);color:var(--grn);font-weight:700}
@@ -184,6 +188,9 @@ window.addEventListener("DOMContentLoaded",()=>{const dark=document.documentElem
  <button class="f" id="rowBtn" type="button">レギュ名も表示</button>
  <select class="fsel" id="regSel"><option value="">レギュ: 全て</option></select>
  <select class="fsel" id="gmSel"><option value="">GM: 全て</option></select>
+ <button class="f bf" data-band="asa" type="button">朝</button>
+ <button class="f bf" data-band="hiru" type="button">昼</button>
+ <button class="f bf" data-band="yoru" type="button">夜</button>
  <button class="f themeBtn" type="button">🌙 ダーク</button>
  <a class="tolink" href="takutate.html">🛠 セッション作成マイセット →</a>
 </div>
@@ -222,6 +229,7 @@ const WD=["日","月","火","水","木","金","土"];
 let DATA=null,FILTER="all",selDate=null,SYSF=null;   // SYSF=システム絞り込み
 let TWO=localStorage.getItem("board_two")!=="0";     // 2行表示（シナリオ名＋レギュ名）＝既定ON
 let REGF=null,GMF=null;                              // レギュ/GM絞り込み（非該当はdim＝グレーアウトで残す）
+const BANDS=new Set();                               // 朝昼夜絞り込み（複数選択可・空=全て）
 // 色分け＝システム単位（アリアンロッド2E＝村の主流＝緑／その他システム＝青）
 const AR2E_REGS=new Set(["ミスリルクレスト","ミスリルクエスト","氷原開拓団","フツウノアリアン","イジョウナアリアン","ピースメイカー","アンコールを流星に","さちあれ","賽は投げられた","ダンジョン・トラベラーズ","ネームドエネミー討伐RTA!!","勇者の首を晒せ","グルメ卓"]);
 // システム分類＝村のリアクションロール対応システム＋CoC（それぞれ固有色）
@@ -284,12 +292,20 @@ function dimOf(s,st){
  if(GMF&&(s.gm||"")!==GMF)return true;
  return false;
 }
+// 朝昼夜絞り込み：日程単位（チップ用）と卓単位（一覧カード用＝どれかの日程が該当すればOK）
+function bandDimDate(d){return BANDS.size>0&&!BANDS.has(timeBand(d.start))}
+function bandDim(s){
+ if(!BANDS.size)return false;
+ const ds=s.dates||[];
+ if(!ds.length)return false;  // すり合わせ卓＝時間未定は薄くしない
+ return !ds.some(d=>BANDS.has(timeBand(d.start)));
+}
 // 日付→その日のセッション一覧（該当が先・非該当dimは後ろ）
 function dayMap(){
  const m={};
  (DATA.sessions||[]).forEach(s=>{const st=stOf(s);
   const dim=dimOf(s,st);
-  (s.dates||[]).forEach(d=>{(m[d.date]=m[d.date]||[]).push({s,st,d,dim})})});
+  (s.dates||[]).forEach(d=>{(m[d.date]=m[d.date]||[]).push({s,st,d,dim:dim||bandDimDate(d)})})});
  for(const k in m)m[k].sort((a,b)=>(a.dim-b.dim)||String(a.d.start||"").localeCompare(String(b.d.start||"")));
  return m;
 }
@@ -420,7 +436,7 @@ function renderSuri(){
 function renderMonth(){
  const items=(DATA.sessions||[]).map(s=>({s,st:stOf(s)}))
   .filter(x=>x.s.dates&&x.s.dates.length&&x.s.dates.some(d=>{const t=jd(d.date);return t.getFullYear()===curY&&t.getMonth()===curM}))
-  .map(x=>({...x,dim:dimOf(x.s,x.st)}));
+  .map(x=>({...x,dim:dimOf(x.s,x.st)||bandDim(x.s)}));
  items.sort((a,b)=>a.s.dates[0].date<b.s.dates[0].date?-1:1);
  $("monthSec").innerHTML=items.length?`<div class="section">🗒 ${curM+1}月の卓一覧</div>`+items.map(card).join(""):"";
 }
@@ -485,6 +501,14 @@ function fillFilterSelects(){
 }
 $("regSel").addEventListener("change",e=>{REGF=e.target.value||null;e.target.classList.toggle("on",!!REGF);renderAll()});
 $("gmSel").addEventListener("change",e=>{GMF=e.target.value||null;e.target.classList.toggle("on",!!GMF);renderAll()});
+// 朝昼夜トグル（複数選択可・全部OFF=全て表示）
+document.querySelectorAll(".bf").forEach(b=>{
+ b.innerHTML=TB_ICONS[b.dataset.band]+" "+b.textContent;
+ b.addEventListener("click",()=>{
+  const k=b.dataset.band;
+  BANDS.has(k)?BANDS.delete(k):BANDS.add(k);
+  b.classList.toggle("on",BANDS.has(k));renderAll()});
+});
 document.querySelectorAll(".toolrow .f[data-f]").forEach(b=>b.addEventListener("click",()=>{
  document.querySelectorAll(".toolrow .f[data-f]").forEach(x=>x.classList.remove("on"));b.classList.add("on");FILTER=b.dataset.f;renderAll()}));
 fetch("sessions.json?t="+Date.now()).then(r=>r.json()).then(d=>{
