@@ -521,7 +521,7 @@ function buildOutputs(state){
   if(hl.length===1)lines.push(`> ハウスルール：${hl[0]}`);
   else{lines.push(`> ハウスルール：`);hl.forEach(x=>lines.push(`> ${x}`))}
  }
- if($("aiUse").checked)lines.push(`> **この卓では生成AIを使用しています。**`);
+ if($("aiUse").checked)lines.push(`> 🤖 **この卓では生成AIを使用しています。**`);
  if($("warning").value.trim()){
   // 独立セクション（後輩くん最終決定 2026-07-04＝一度引用内に戻したが再検討でこちらに確定）
   lines.push("",`### ⚠️ 注意事項`);
