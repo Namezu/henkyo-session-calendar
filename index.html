@@ -113,6 +113,11 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.4em;color:var(--g
 .manual{margin-top:26px;border:1px dashed var(--cln);border-radius:12px;padding:12px 14px;background:#fffdf9;font-size:.84em;color:var(--mut)}
 .manual b{color:var(--grn)}
 .manual code{background:#f4efe6;border-radius:6px;padding:2px 8px;color:var(--tx);display:inline-block;margin:4px 0}
+.unp{border:1.5px dashed #c9a24a;background:#fdf8ec;border-radius:12px;padding:10px 14px;margin-top:18px;font-size:.85em}
+.unp b{color:#8a6a1f}
+.unp a{color:var(--ter);text-decoration:none;font-weight:700}
+.unp li{margin:3px 0}
+[data-theme=dark] .unp{background:#2e2a1e;border-color:#8a6a1f}
 footer{margin-top:24px;font-size:.72em;color:var(--mut);text-align:center}
 
 /* ---- ダークモード ---- */
@@ -171,17 +176,15 @@ window.addEventListener("DOMContentLoaded",()=>{const dark=document.documentElem
 <div id="suriSec"></div>
 <div id="daySec"></div>
 <div id="monthSec"></div>
+<div id="unparsedSec"></div>
 
 <div class="manual">
-<b>📌 このボードは自動更新です</b>：卓部屋フォーラムにトピックを立てれば（過去実績で<b>97%</b>のタイトルを自動認識）勝手に載ります。GMの記入作業は不要。変更もDiscord側でトピックを直せば追従します。<br><br>
-<b>✍ 手動で載せたい時</b>：専用スレッドに1行。<b>正しく拾える書式</b>はこちら（この順番で書くのがコツ）：<br>
-<code>日付 開始-終了【レギュ名】シナリオ名 GM:名前</code><br>
-実例：<br>
-<code>7/20 21:00-25:00【ミスリルクレスト】黄金の誓い GM:カテナドルグ</code>（基本形）<br>
-<code>7/11,12 21:00-24:00【賽は投げられた】連夜の宴 GM:名前</code>（複数日はカンマ）<br>
-<code>日程すり合わせ【ピースメイカー】悪意の人形劇 GM:名前</code>（日付未定）<br>
-<code>7/25 21:00-【SW2.5】剣の迷宮 GM:名前</code>（終了時刻は省略OK・深夜は25:00表記OK）<br>
-※GM:は省略可。読めなかった行は掲載されないので、上の型に寄せてね。<br><br>
+<b>📌 このボードは全自動です</b>：卓部屋フォーラムにトピックを立てるだけで載ります（過去1,186卓の実タイトルで<b>99%</b>を自動認識）。専用の記入作業はありません。日時や内容の変更もトピックを直せば追従します。<br><br>
+<b>タイトルの書き方（この型なら確実に載ります）</b>：<br>
+<code>月/日 開始-終了【レギュ名】シナリオ名</code>　例：<code>7/20 21:00-25:00【ミスリルクレスト】黄金の誓い</code><br>
+<code>日程すり合わせ【レギュ名】シナリオ名</code>（日付未定・卓ピタ調整もOK）<br>
+複数日はカンマ（<code>7/11,12</code>）・深夜は25:00表記・「2月4日 21時」等の和風表記も読めます。<br><br>
+タイトルが読めなかった卓は下の⚠枠に表示されます。<b>トピックのタイトルを上の型に直せば、次の更新（15分毎）から自動で載ります。</b><br>
 載せたくない卓はトピック本文に「<b>掲載不要</b>」と書けば外れます。
 </div>
 <footer>辺境TRPG村 セッションボード（プロトタイプ）／時刻はすべて日本時間</footer>
@@ -392,15 +395,22 @@ function renderYear(){
  }
  $("calSum").textContent=`${curY}年の卓：${total}件（濃いマス＝卓が多い日）`;
 }
+function renderUnparsed(){
+ const list=DATA.unparsed||[];
+ const el=$("unparsedSec");
+ if(!list.length){el.innerHTML="";return}
+ el.innerHTML=`<div class="unp"><b>⚠ タイトルが読めなかった卓（${list.length}件）</b>——トピックのタイトルを定型（例：<code>7/20 21:00-25:00【レギュ名】シナリオ名</code>）に直せば、次の更新から自動で載ります。<ul>`+
+  list.map(u=>`<li>${u.url?`<a href="${u.url}" target="_blank" rel="noopener">${esc(u.title)}</a>`:esc(u.title)}</li>`).join("")+`</ul></div>`;
+}
 function renderAll(){
  const isThisMonth=(curY===now.getFullYear()&&curM===now.getMonth());
  $("todayBtn").style.display=(VIEW==="month"&&isThisMonth)?"none":"";
  $("viewBtn").textContent=VIEW==="month"?"年表示":"月表示";
  const y=$("ycal");
- if(VIEW==="year"){renderYear();renderLegend();$("suriSec").innerHTML="";$("daySec").innerHTML="";$("monthSec").innerHTML="";return}
+ if(VIEW==="year"){renderYear();renderLegend();$("suriSec").innerHTML="";$("daySec").innerHTML="";$("monthSec").innerHTML="";renderUnparsed();return}
  if(y)y.style.display="none";
  $("cal").style.display="";
- renderCal();renderLegend();renderSuri();renderDay();renderMonth();
+ renderCal();renderLegend();renderSuri();renderDay();renderMonth();renderUnparsed();
 }
 $("prev").addEventListener("click",()=>{if(VIEW==="year"){curY--}else{curM--;if(curM<0){curM=11;curY--}}selDate=null;renderAll()});
 $("next").addEventListener("click",()=>{if(VIEW==="year"){curY++}else{curM++;if(curM>11){curM=0;curY++}}selDate=null;renderAll()});
