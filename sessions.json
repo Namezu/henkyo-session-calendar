@@ -1,10 +1,11 @@
 {
- "updated": "2026/07/04 12:00",
- "note": "プロトタイプ用サンプルデータ（架空の卓＋LODGEテスト卓）。自動収集が繋がるとここが実データに置き換わる。",
+ "updated": "2026/07/04 11:11",
+ "guild": "LODGE",
  "sessions": [
   {
-   "scenario": "フェイス：ゴールド",
+   "scenario": "神智に狂いし者",
    "reg": "ミスリルクレスト",
+   "reg_is_name": false,
    "dates": [
     {
      "date": "2026-07-10",
@@ -14,81 +15,170 @@
    ],
    "open": true,
    "suriawase": false,
-   "gm": "カテナドルグ",
-   "url": "https://discord.com/channels/1023884809774305301/1522576853796393030",
-   "created": "2026-07-03T12:16:00",
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522786344101871820",
+   "created": "2026-07-04T02:09:16.436000+00:00",
    "source": "forum"
   },
   {
-   "scenario": "（サンプル）霧の峠の護衛行",
+   "scenario": "天を裂く翼",
    "reg": "フツウノアリアン",
+   "reg_is_name": false,
    "dates": [
     {
      "date": "2026-07-12",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522786350880002168",
+   "created": "2026-07-04T02:09:18.052000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "散華(初心者歓迎卓)",
+   "reg": "フツウノアリアン",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-13",
      "start": "14:00",
      "end": "18:00"
     }
    ],
    "open": true,
    "suriawase": false,
-   "gm": "サンプルGM",
-   "url": "",
-   "created": "2026-07-04T09:00:00",
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522786357293092925",
+   "created": "2026-07-04T02:09:19.581000+00:00",
    "source": "forum"
   },
   {
-   "scenario": "（サンプル）星降る夜のワルツ",
-   "reg": "アンコールを流星に",
-   "dates": [],
-   "open": true,
-   "suriawase": true,
-   "gm": "サンプルGM2",
-   "url": "",
-   "created": "2026-07-01T20:00:00",
-   "source": "forum"
-  },
-  {
-   "scenario": "（サンプル）遺跡RTA大会",
-   "reg": "ネームドエネミー討伐RTA!!",
+   "scenario": "連続卓テスト",
+   "reg": "賽は投げられた",
+   "reg_is_name": false,
    "dates": [
     {
-     "date": "2026-07-19",
+     "date": "2026-07-16",
      "start": "21:00",
      "end": "24:00"
     },
     {
-     "date": "2026-07-21",
-     "start": "22:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "gm": "サンプルGM3",
-   "url": "",
-   "created": "2026-06-28T10:00:00",
-   "source": "forum"
-  },
-  {
-   "scenario": "（サンプル・手動掲載）氷原の第0話体験卓",
-   "reg": "氷原開拓団",
-   "dates": [
-    {
-     "date": "2026-08-02",
+     "date": "2026-07-17",
      "start": "21:00",
-     "end": "25:00"
+     "end": "24:00"
     }
    ],
    "open": true,
    "suriawase": false,
-   "gm": "サンプルGM4",
-   "url": "",
-   "created": "2026-07-04T11:00:00",
-   "source": "manual"
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522786364113031218",
+   "created": "2026-07-04T02:09:21.207000+00:00",
+   "source": "forum"
   },
   {
-   "scenario": "（サンプル）終わった卓の見え方確認",
+   "scenario": "悪意の人形劇",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522786370588905634",
+   "created": "2026-07-04T02:09:22.751000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "陽だまりへ連れ出して",
+   "reg": "アンコールを流星に",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522786377735999608",
+   "created": "2026-07-04T02:09:24.455000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "煌日の姫と冴月の王子",
+   "reg": "SW2.5",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-20",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522786384530768023",
+   "created": "2026-07-04T02:09:26.075000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "グルメ卓",
+   "reg": null,
+   "reg_is_name": true,
+   "dates": [
+    {
+     "date": "2026-07-08",
+     "start": "22:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522786392025858078",
+   "created": "2026-07-04T02:09:27.862000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "朝のダンジョンは健康にいい",
+   "reg": "フツウノアリアン",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-22",
+     "start": "9:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522786399466815619",
+   "created": "2026-07-04T02:09:29.636000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "全角数字テスト",
+   "reg": "フツウノアリアン",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-24",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522786405854613614",
+   "created": "2026-07-04T02:09:31.159000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "終わった卓（開催済表示の検証）",
    "reg": "ミスリルクレスト",
+   "reg_is_name": false,
    "dates": [
     {
      "date": "2026-07-01",
@@ -98,188 +188,34 @@
    ],
    "open": false,
    "suriawase": false,
-   "gm": "サンプルGM5",
-   "url": "",
-   "created": "2026-06-20T10:00:00",
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522786412242534541",
+   "created": "2026-07-04T02:09:32.682000+00:00",
    "source": "forum"
   },
   {
-   "scenario": "（サンプル）月光の帰還兵",
-   "reg": "ピースメイカー",
-   "dates": [
-    {
-     "date": "2026-07-06",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "gm": "サンプルGM6",
-   "url": "",
-   "created": "2026-06-25T10:00:00",
-   "source": "forum"
-  },
-  {
-   "scenario": "（サンプル）朝のダンジョンは健康にいい",
-   "reg": "フツウノアリアン",
-   "dates": [
-    {
-     "date": "2026-07-11",
-     "start": "9:00",
-     "end": "12:00"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "gm": "サンプルGM7",
-   "url": "",
-   "created": "2026-07-03T08:00:00",
-   "source": "forum"
-  },
-  {
-   "scenario": "（サンプル）賽は投げられた 第12夜",
-   "reg": "賽は投げられた",
-   "dates": [
-    {
-     "date": "2026-07-11",
-     "start": "21:30"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "gm": "サンプルGM8",
-   "url": "",
-   "created": "2026-06-29T10:00:00",
-   "source": "forum"
-  },
-  {
-   "scenario": "（サンプル）夏空のスクランブル",
-   "reg": "アンコールを流星に",
-   "dates": [
-    {
-     "date": "2026-07-18",
-     "start": "14:00",
-     "end": "18:00"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "gm": "サンプルGM9",
-   "url": "",
-   "created": "2026-07-02T10:00:00",
-   "source": "forum"
-  },
-  {
-   "scenario": "（サンプル）宵闇の茶会",
-   "reg": "ミスリルクレスト",
-   "dates": [
-    {
-     "date": "2026-07-18",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "gm": "サンプルGM10",
-   "url": "",
-   "created": "2026-07-04T09:30:00",
-   "source": "forum"
-  },
-  {
-   "scenario": "（サンプル）廃都の犬たち",
-   "reg": "フツウノアリアン",
-   "dates": [
-    {
-     "date": "2026-07-18",
-     "start": "22:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "gm": "サンプルGM11",
-   "url": "",
-   "created": "2026-06-30T10:00:00",
-   "source": "forum"
-  },
-  {
-   "scenario": "（サンプル）はじまりの酒場",
-   "reg": "フツウノアリアン",
+   "scenario": "ランダムダンジョン",
+   "reg": null,
+   "reg_is_name": true,
    "dates": [
     {
      "date": "2026-07-26",
-     "start": "13:00",
-     "end": "17:00"
+     "start": "19:00",
+     "end": "23:00"
     }
    ],
    "open": true,
    "suriawase": false,
-   "gm": "サンプルGM12",
-   "url": "",
-   "created": "2026-07-04T11:30:00",
-   "source": "manual"
-  },
-  {
-   "scenario": "（サンプル）SW2.5 剣の迷宮",
-   "reg": "SW2.5",
-   "system": "SW2.5",
-   "dates": [
-    {
-     "date": "2026-07-13",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "gm": "サンプルGM13",
-   "url": "",
-   "created": "2026-07-04T12:00:00",
-   "source": "forum"
-  },
-  {
-   "scenario": "（サンプル）CoC 忌まわしき館",
-   "reg": "CoC7th",
-   "system": "CoC",
-   "dates": [
-    {
-     "date": "2026-07-25",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "gm": "サンプルGM14",
-   "url": "",
-   "created": "2026-07-04T12:00:00",
-   "source": "forum"
-  },
-  {
-   "scenario": "（サンプル）シノビガミ 影の宴",
-   "reg": "シノビガミ",
-   "system": "シノビガミ",
-   "dates": [
-    {
-     "date": "2026-07-20",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "gm": "サンプルGM15",
-   "url": "",
-   "created": "2026-07-01T12:00:00",
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522786418840174685",
+   "created": "2026-07-04T02:09:34.255000+00:00",
    "source": "forum"
   }
  ],
  "unparsed": [
   {
-   "title": "7/22 ゴミ溜めの杯 試運転（サンプル＝【】が無くて読めない例）",
-   "url": ""
+   "title": "まだ募集してないよ",
+   "url": "https://discord.com/channels/1023884809774305301/1522786425274236951"
   }
  ]
 }
