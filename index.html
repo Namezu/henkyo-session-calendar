@@ -85,7 +85,7 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .cal{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
 .dow{text-align:center;font-size:.74em;font-weight:700;letter-spacing:.2em;color:var(--mut);padding:3px 0 5px}
 .dow.sun{color:var(--sun)}.dow.sat{color:var(--sat)}
-.cell{background:rgba(30,33,38,.45);border:1px solid var(--glass-brd);border-radius:14px;height:96px;overflow:hidden;padding:5px 5px 4px;cursor:pointer;position:relative;
+.cell{background:rgba(30,33,38,.45);border:1px solid var(--glass-brd);border-radius:14px;height:120px;overflow:hidden;padding:5px 5px 4px;cursor:pointer;position:relative;
  box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 1px 4px rgba(0,0,0,.25);transition:box-shadow .18s,transform .18s,border-color .18s,background .18s}
 .cell:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.16),var(--shadow);transform:translateY(-2px);background:rgba(44,48,55,.6)}
 .cell.out{background:transparent;border-color:transparent;cursor:default;box-shadow:none}
@@ -105,7 +105,7 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .sch.done{filter:saturate(.1);opacity:.45}
 /* 2行表示＝1行目シナリオ名・2行目レギュ名（レギュ無し卓は1行のまま） */
 .sch .rg{display:block;font-size:.9em;font-weight:400;opacity:.72;line-height:1.3;overflow:hidden;text-overflow:ellipsis}
-.cal.two .cell{height:128px}
+.cal.two .cell{height:172px} /* 2行チップ×3枚+「+n」まで収まる高さ */
 /* 朝昼夜ミニアイコン（自前SVG） */
 .sch .tb{width:11px;height:11px;vertical-align:-1px;margin-right:3px}
 /* 朝昼夜トグル（アイコン色を活かすためON時は薄緑地） */
@@ -136,7 +136,8 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .lg:hover{border-color:var(--rc);transform:translateY(-1px);box-shadow:var(--shadow)}
 .lg .sw{width:10px;height:10px;border-radius:3px;background:var(--rc)}
 .lg.on{border-color:var(--rc);background:var(--rc-bg);font-weight:700}
-.more{font-size:.66em;color:var(--ter);font-weight:700;padding-left:4px}
+/* オーバーフロー「+n」＝日付の右肩にまっ赤なバッジ（原色＝後輩くん指定・見落とし防止優先） */
+.more{position:absolute;top:6px;right:6px;background:#f00;color:#fff;font-size:.7em;font-weight:700;border-radius:10px;padding:1px 8px;box-shadow:0 2px 6px rgba(0,0,0,.4)}
 @media(max-width:560px){
  .tooldiv{display:none}
  .toolrow{position:static}  /* スマホは折返しで背が高くなるためstickyにしない */
@@ -336,6 +337,11 @@ function sysGroup(s){
  return"その他システム";
 }
 function sysColor(s){return SYS_COLORS[sysGroup(s)]||"#9a948a"}
+// 詳細表示用のレギュ表記＝アリアン卓は「アリアンロッド【レギュ名】」（後輩くん指定・SW2.5等は素のまま）
+function regLabel(s){
+ if(!s.reg||s.reg_is_name)return"";
+ return(sysGroup(s)==="アリアンロッド2E"?"アリアンロッド":"")+`【${esc(s.reg)}】`;
+}
 function tint(c){return c+"22"}
 // カレンダーのチップは開始時刻をアイコンに短縮（シナリオ名の見える幅を稼ぐ・正確な時刻はホバー/クリックで）
 // 朝=5〜11時開始／昼=12〜17時開始／夜=18〜4時開始（25時=翌1時などの24+表記も夜に落ちる）
@@ -412,7 +418,7 @@ function attachTip(el,x){
   const when=(s.dates||[]).map(dd=>{const t=jd(dd.date);return`${t.getMonth()+1}/${t.getDate()}(${WD[t.getDay()]}) ${dd.start||""}${dd.end?"-"+dd.end:""}`}).join(" ／ ");
   tip.innerHTML=`<div class="t-name">${esc(s.scenario)}</div>
    <div class="t-meta">${when}</div>
-   <div class="t-meta">${s.reg&&!s.reg_is_name?`【${esc(s.reg)}】`:""}${s.gm?`　GM: ${esc(s.gm)}`:""}</div>
+   <div class="t-meta">${regLabel(s)}${s.gm?`　GM: ${esc(s.gm)}`:""}</div>
    <div class="t-st">${ST_LABEL[x.st]||""}</div>`;
   const r=el.getBoundingClientRect();
   tip.style.left=Math.min(r.left,window.innerWidth-296)+"px";
@@ -421,6 +427,17 @@ function attachTip(el,x){
  });
  el.addEventListener("mouseleave",()=>tip.classList.remove("show"));
  el.addEventListener("click",ev=>{ev.stopPropagation();openDetail(x)});   // チップクリック＝その卓の詳細
+}
+// 「日」ホバー＝その日の卓一覧をまとめて見せる（チップ個別ホバーはそれが優先・離れたら日一覧に戻る）
+function showDayTip(cell,label,list){
+ if(!list.length)return;
+ tip.innerHTML=`<div class="t-name">${esc(label)}の卓 ${list.length}件</div>`+
+  list.slice(0,6).map(x=>`<div class="t-meta">${esc(x.d.start||"")}　${esc(x.s.scenario)}${x.st==="open"?"　🟢募集中":x.st==="done"?"　🏁":""}</div>`).join("")+
+  (list.length>6?`<div class="t-meta">…他${list.length-6}卓</div>`:"");
+ const r=cell.getBoundingClientRect();
+ tip.style.left=Math.min(r.left,window.innerWidth-296)+"px";
+ tip.style.top=(r.bottom+6)+"px";
+ tip.classList.add("show");
 }
 // ---- クリック詳細モーダル ----
 const mback=document.createElement("div");mback.id="mback";document.body.appendChild(mback);
@@ -434,7 +451,7 @@ function openDetail(x){
  modal.innerHTML=`<button class="m-close">✕</button>
   <div class="m-name">${esc(s.scenario)}</div>
   <div class="m-meta">${when}</div>
-  <div class="m-meta">${s.reg&&!s.reg_is_name?`【${esc(s.reg)}】`:""}${s.gm?`　GM: ${esc(s.gm)}`:""}${s.source==="manual"?"　✍手動掲載":""}</div>
+  <div class="m-meta">${regLabel(s)}${s.gm?`　GM: ${esc(s.gm)}`:""}${s.source==="manual"?"　✍手動掲載":""}</div>
   <div class="m-st">${ST_LABEL[x.st]||""}</div>
   <div class="m-btns">
    ${s.url?`<a class="mb link" href="${s.url}" target="_blank" rel="noopener">💬 Discordで開く（募集詳細・参加表明）</a>`:""}
@@ -461,7 +478,7 @@ function renderCal(){
   const cell=document.createElement("div");
   cell.className="cell"+(k===todayK?" today":"")+(k===selDate?" sel":"")+(dow===0?" sunday":dow===6?" saturday":"")+(isPast?" past":"");
   cell.innerHTML=`<span class="dn">${d}</span>${act.length?`<span class="cnt">${act.length}卓</span>`:""}`;
-  const lim=TWO?2:3; // 2行表示はチップが背高＝1セルに2枚まで
+  const lim=3; // 3卓までは全部見せる・4卓目から「+n」（後輩くん指定）
   list.slice(0,lim).forEach(x=>{
    const ch=document.createElement("span");ch.className=`sch ${x.st}${x.dim?" dim":""}`;
    const c=sysColor(x.s);
@@ -476,9 +493,12 @@ function renderCal(){
     ch.innerHTML=`${bd?TB_ICONS[bd]:""}${esc(x.s.scenario)}`;
    }
    attachTip(ch,x);
+   ch.addEventListener("mouseleave",()=>showDayTip(cell,`${curM+1}/${d}（${WD[dow]}）`,list)); // チップを離れたら日一覧へ戻す
    cell.appendChild(ch);
   });
   if(list.length>lim){const mo=document.createElement("span");mo.className="more";mo.textContent=`+${list.length-lim}`;cell.appendChild(mo)}
+  cell.addEventListener("mouseenter",()=>showDayTip(cell,`${curM+1}/${d}（${WD[dow]}）`,list));
+  cell.addEventListener("mouseleave",()=>tip.classList.remove("show"));
   cell.addEventListener("click",()=>{selDate=(selDate===k?null:k);renderCal();renderDay()});
   cal.appendChild(cell);
  }
@@ -491,7 +511,7 @@ function card({s,st,dim}){
  return`<a class="card${st==="closed"?" closed":st==="done"?" done":""}${dim?" dim":""}" style="border-left-color:${sysColor(s)}"${s.url?` href="${s.url}" target="_blank" rel="noopener"`:""}>${badge}
   <div class="when">${when}${isNew?'<span class="new">NEW</span>':""}</div>
   <div class="name">${esc(s.scenario)}</div>
-  <div class="meta">${s.reg&&!s.reg_is_name?`<span class="reg">【${esc(s.reg)}】</span>`:""}${s.gm?`<span>GM: ${esc(s.gm)}</span>`:""}${s.source==="manual"?"<span>✍ 手動掲載</span>":""}</div></a>`;
+  <div class="meta">${s.reg&&!s.reg_is_name?`<span class="reg">${regLabel(s)}</span>`:""}${s.gm?`<span>GM: ${esc(s.gm)}</span>`:""}${s.source==="manual"?"<span>✍ 手動掲載</span>":""}</div></a>`;
 }
 function renderDay(){
  const el=$("daySec");
@@ -516,7 +536,7 @@ function renderSuri(){
  list.forEach(x=>{
   const t=document.createElement("div");t.className="ticket"+(x.dim?" dim":"");
   t.innerHTML=`<span class="tk-pin">📍</span><div class="tk-name">${esc(x.s.scenario)}</div>
-   <div class="tk-meta"><span class="tk-dot" style="background:${sysColor(x.s)}"></span>${x.s.reg&&!x.s.reg_is_name?esc(x.s.reg):esc(sysGroup(x.s))}</div>
+   <div class="tk-meta"><span class="tk-dot" style="background:${sysColor(x.s)}"></span>${x.s.reg&&!x.s.reg_is_name?regLabel(x.s):esc(sysGroup(x.s))}</div>
    ${x.s.gm?`<div class="tk-meta">GM: ${esc(x.s.gm)}</div>`:""}`;
   t.addEventListener("click",()=>openDetail(x));
   wrap.appendChild(t);
@@ -655,10 +675,14 @@ function kbLines(){
  const suri=ses.filter(s=>s.suriawase).length;
  if(suri)L.push(`日程すり合わせ中のセッションも${suri}つあるよ。よかったら確認してみてね`);
  if((DATA.unparsed||[]).length)L.push(`タイトルが読めなかった卓が${DATA.unparsed.length}件…直してくれたら次の更新で載るからね`);
+ // いちばん賑わう日を自慢する（2卓以上の日があれば）
+ const perday={};mine.forEach(s=>(s.dates||[]).forEach(dd=>{const t=jd(dd.date);if(t.getFullYear()===curY&&t.getMonth()===curM)perday[t.getDate()]=(perday[t.getDate()]||0)+1}));
+ const busy=Object.entries(perday).sort((a,b)=>b[1]-a[1])[0];
+ if(busy&&busy[1]>=2)L.push(`${curM+1}/${busy[0]}は${busy[1]}卓も立ってるよ！にぎやかな日になりそうだね`);
  // 今月まだ卓がない曜日をひとつ拾う
  const wd=[0,0,0,0,0,0,0];mine.forEach(s=>(s.dates||[]).forEach(d=>{const t=jd(d.date);if(t.getFullYear()===curY&&t.getMonth()===curM)wd[t.getDay()]++}));
  const emptyWd=wd.indexOf(0);
- if(mine.length&&emptyWd>=0)L.push(`今月、${WD[emptyWd]}曜日はまだ空いてるよ。卓を立てるならチャンスかも`);
+ if(mine.length&&emptyWd>=0)L.push(`今月は${WD[emptyWd]}曜日が空き気味だね〜？`);
  const note=kbOutfit().note;if(note)L.push(note);
  return L;
 }
