@@ -33,9 +33,14 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.4em;color:var(--g
 .cell.sel{outline:3px solid var(--grn2);outline-offset:-1px}
 .cell .dn{font-size:.78em;font-weight:700;color:var(--mut)}
 .cell.sunday .dn{color:var(--sun)}.cell.saturday .dn{color:var(--sat)}
-.sch{display:block;border-radius:6px;padding:1px 5px;margin-top:2px;font-size:.68em;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#e4eee6;color:var(--grn);border-left:3px solid var(--grn2)}
-.sch.closed{background:#efe9df;color:#8a857c;border-left-color:#b9b2a6}
-.sch.done{background:#f3efe7;color:#b3ac9f;border-left-color:#d6cfc2}
+.sch{display:block;border-radius:6px;padding:1px 5px;margin-top:2px;font-size:.68em;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:var(--rc-bg,#e4eee6);color:#37352e;border-left:3px solid var(--rc,#4f8160)}
+.sch.closed{filter:saturate(.25);opacity:.75}
+.sch.done{filter:saturate(.1);opacity:.45}
+/* レギュ凡例（タップで絞り込み） */
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 2px}
+.lg{display:flex;align-items:center;gap:5px;border:1.5px solid var(--cln);background:#fffdf9;border-radius:16px;padding:4px 11px;font-size:.76em;cursor:pointer;color:var(--tx)}
+.lg .sw{width:10px;height:10px;border-radius:3px;background:var(--rc)}
+.lg.on{border-color:var(--rc);background:var(--rc-bg);font-weight:700}
 .more{font-size:.66em;color:var(--ter);font-weight:700;padding-left:4px}
 @media(max-width:560px){
  .cell{height:62px;padding:3px 3px 2px}
@@ -108,6 +113,7 @@ footer{margin-top:24px;font-size:.72em;color:var(--mut);text-align:center}
 </div>
 <div class="calsum" id="calSum"></div>
 <div class="cal" id="cal"></div>
+<div class="legend" id="legend"></div>
 
 <div id="suriSec"></div>
 <div id="daySec"></div>
@@ -125,7 +131,22 @@ footer{margin-top:24px;font-size:.72em;color:var(--mut);text-align:center}
 <script>
 (function(){
 const WD=["日","月","火","水","木","金","土"];
-let DATA=null,FILTER="all",selDate=null;
+let DATA=null,FILTER="all",selDate=null,REGF=null;   // REGF=レギュ絞り込み
+// レギュ→色（既知は固定・未知は名前ハッシュで安定色）
+const REG_COLORS={
+ "ミスリルクレスト":"#b98a2f","氷原開拓団":"#3a7ea1","フツウノアリアン":"#4f8160",
+ "イジョウナアリアン":"#7a5ba6","ピースメイカー":"#c86c3e","アンコールを流星に":"#c2527d",
+ "さちあれ":"#5aa05a","賽は投げられた":"#8a6d4f","ダンジョン・トラベラーズ":"#4d8f8b",
+ "ネームドエネミー討伐RTA!!":"#b0483a","勇者の首を晒せ":"#666a8f","SW2.5":"#3a5f8a","CoC":"#6d5aa0",
+};
+function regColor(reg){
+ if(!reg)return"#9a948a";
+ if(REG_COLORS[reg])return REG_COLORS[reg];
+ for(const k in REG_COLORS)if(reg.includes(k))return REG_COLORS[k];
+ let h=0;for(const c of reg)h=(h*31+c.codePointAt(0))>>>0;   // 未知レギュ＝安定ハッシュ色
+ return`hsl(${h%360} 42% 46%)`;
+}
+function tint(c){return c.startsWith("hsl")?c.replace(" 46%)"," 92%)").replace("42%","55%"):c+"22"}
 const now=new Date();let curY=now.getFullYear(),curM=now.getMonth(); // 0-based
 const $=id=>document.getElementById(id);
 const pad=n=>String(n).padStart(2,"0");
@@ -148,8 +169,22 @@ function dayMap(){
  (DATA.sessions||[]).forEach(s=>{const st=stOf(s);
   if(!visible(st)&&st!=="done")return;
   if(FILTER==="open"&&st!=="open")return;
+  if(REGF&&(s.reg||"その他")!==REGF)return;
   (s.dates||[]).forEach(d=>{(m[d.date]=m[d.date]||[]).push({s,st,d})})});
  return m;
+}
+function renderLegend(){
+ // 今月に出てくるレギュの凡例（タップで絞り込みトグル）
+ const regs={};
+ (DATA.sessions||[]).forEach(s=>{
+  if(!(s.dates||[]).some(d=>{const t=jd(d.date);return t.getFullYear()===curY&&t.getMonth()===curM}))return;
+  const r=s.reg||"その他";regs[r]=(regs[r]||0)+1;});
+ const el=$("legend");
+ el.innerHTML=Object.entries(regs).sort((a,b)=>b[1]-a[1]).map(([r,n])=>{
+  const c=regColor(r);
+  return`<span class="lg${REGF===r?" on":""}" data-r="${esc(r)}" style="--rc:${c};--rc-bg:${tint(c)}"><span class="sw"></span>${esc(r)}（${n}）</span>`}).join("");
+ el.querySelectorAll(".lg").forEach(p=>p.addEventListener("click",()=>{
+  REGF=(REGF===p.dataset.r?null:p.dataset.r);renderAll()}));
 }
 // ---- ホバーツールチップ ----
 const tip=document.createElement("div");tip.id="tip";document.body.appendChild(tip);
@@ -207,6 +242,8 @@ function renderCal(){
   cell.innerHTML=`<span class="dn">${d}</span>${list.length?`<span class="cnt">${list.length}卓</span>`:""}`;
   list.slice(0,3).forEach(x=>{
    const ch=document.createElement("span");ch.className=`sch ${x.st}`;
+   const c=regColor(x.s.reg||"その他");
+   ch.style.setProperty("--rc",c);ch.style.setProperty("--rc-bg",tint(c));
    ch.textContent=`${x.d.start||""} ${x.s.scenario}`;
    attachTip(ch,x);
    cell.appendChild(ch);
@@ -221,7 +258,7 @@ function card({s,st}){
  const isNew=s.created&&(Date.now()-new Date(s.created).getTime())<3*86400000;
  const badge=st==="open"?`<span class="badge b-open">募集中</span>`:st==="suri"?`<span class="badge b-suri">調整中</span>`:st==="done"?`<span class="badge b-done">開催済</span>`:`<span class="badge b-closed">〆切</span>`;
  const when=st==="suri"?"日程すり合わせ中":(s.dates||[]).map(d=>{const x=jd(d.date);return`${x.getMonth()+1}/${x.getDate()}<span class="wd">(${WD[x.getDay()]})</span> ${d.start||""}${d.end?"-"+d.end:""}`}).join(" ／ ");
- return`<a class="card${st==="closed"?" closed":st==="done"?" done":""}"${s.url?` href="${s.url}" target="_blank" rel="noopener"`:""}>${badge}
+ return`<a class="card${st==="closed"?" closed":st==="done"?" done":""}" style="border-left-color:${regColor(s.reg||"その他")}"${s.url?` href="${s.url}" target="_blank" rel="noopener"`:""}>${badge}
   <div class="when">${when}${isNew?'<span class="new">NEW</span>':""}</div>
   <div class="name">${esc(s.scenario)}</div>
   <div class="meta">${s.reg&&!s.reg_is_name?`<span class="reg">【${esc(s.reg)}】</span>`:""}${s.gm?`<span>GM: ${esc(s.gm)}</span>`:""}${s.source==="manual"?"<span>✍ 手動掲載</span>":""}</div></a>`;
@@ -236,17 +273,17 @@ function renderDay(){
  el.scrollIntoView({behavior:"smooth",block:"nearest"});
 }
 function renderSuri(){
- const list=(DATA.sessions||[]).map(s=>({s,st:stOf(s)})).filter(x=>x.st==="suri").filter(x=>FILTER==="all"||x.st==="open"||x.st==="suri");
+ const list=(DATA.sessions||[]).map(s=>({s,st:stOf(s)})).filter(x=>x.st==="suri").filter(x=>FILTER==="all"||x.st==="open"||x.st==="suri").filter(x=>!REGF||(x.s.reg||"その他")===REGF);
  $("suriSec").innerHTML=list.length?`<div class="section">📅 日程すり合わせ中の卓</div>`+list.map(card).join(""):"";
 }
 function renderMonth(){
  const items=(DATA.sessions||[]).map(s=>({s,st:stOf(s)}))
   .filter(x=>x.s.dates&&x.s.dates.length&&x.s.dates.some(d=>{const t=jd(d.date);return t.getFullYear()===curY&&t.getMonth()===curM}))
-  .filter(x=>FILTER==="all"||x.st==="open");
+  .filter(x=>FILTER==="all"||x.st==="open").filter(x=>!REGF||(x.s.reg||"その他")===REGF);
  items.sort((a,b)=>a.s.dates[0].date<b.s.dates[0].date?-1:1);
  $("monthSec").innerHTML=items.length?`<div class="section">🗒 ${curM+1}月の卓一覧</div>`+items.map(card).join(""):"";
 }
-function renderAll(){renderCal();renderSuri();renderDay();renderMonth()}
+function renderAll(){renderCal();renderLegend();renderSuri();renderDay();renderMonth()}
 $("prev").addEventListener("click",()=>{curM--;if(curM<0){curM=11;curY--}selDate=null;renderAll()});
 $("next").addEventListener("click",()=>{curM++;if(curM>11){curM=0;curY++}selDate=null;renderAll()});
 $("todayBtn").addEventListener("click",()=>{curY=now.getFullYear();curM=now.getMonth();selDate=null;renderAll()});
