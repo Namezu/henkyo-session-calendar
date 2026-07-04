@@ -54,15 +54,15 @@ async def read_forum(guild, name, sessions, unparsed):
     today = datetime.date.today()
     for th in ths:
         url = f"https://discord.com/channels/{guild.id}/{th.id}"
-        # オプトアウト＝1投稿目に「掲載不要」
+        tags = {t.name for t in th.applied_tags}
+        # オプトアウト＝タグ「掲載不要」（推奨・Message Content権限不要）or 1投稿目本文（旧方式・当面併読）
         try:
             starter = await th.fetch_message(th.id)
         except Exception:
             starter = None
-        if starter and OPTOUT in (starter.content or ""):
+        if OPTOUT in tags or (starter and OPTOUT in (starter.content or "")):
             print(f"  ⏭ 掲載不要: {th.name}"); continue
         r = parse(th.name)
-        tags = {t.name for t in th.applied_tags}
         if not r["ok"]:
             unparsed.append({"title": th.name, "url": url})
             print(f"  ⚠ 読めない→⚠枠: {th.name}"); continue
