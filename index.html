@@ -15,14 +15,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fbf7f0;--card:#fff;--tx:#3b3a36;--mut:#8a857c;--grn:#33603f;--grn2:#4f8160;--ter:#c86c3e;--cln:#e6ded2;--gold:#b98a2f;--sun:#b0483a;--sat:#3a5f8a;
- --shadow:0 6px 18px rgba(94,68,34,.09);--shadow-lg:0 14px 40px rgba(94,68,34,.14);--grain:.05}
+:root{--bg:#f6f3ec;--card:#fff;--tx:#3b3a36;--mut:#8a857c;--grn:#33603f;--grn2:#4f8160;--ter:#c86c3e;--cln:#e6ded2;--gold:#b98a2f;--sun:#b0483a;--sat:#3a5f8a;
+ --shadow:0 6px 18px rgba(94,68,34,.09);--shadow-lg:0 14px 40px rgba(94,68,34,.14);--grain:.05;
+ /* リキッドガラス層 */
+ --glass:rgba(255,253,248,.58);--glass-hi:rgba(255,255,255,.9);--glass-brd:rgba(255,255,255,.65);
+ --glass-in:inset 0 1px 0 var(--glass-hi),inset 0 -1px 0 rgba(255,255,255,.25)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;color:var(--tx);font-family:'Zen Kaku Gothic New','Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif;line-height:1.6;
- background:radial-gradient(1100px 500px at 15% -8%,rgba(79,129,96,.075),transparent 60%),
-            radial-gradient(900px 480px at 100% 0%,rgba(200,108,62,.055),transparent 55%),
-            radial-gradient(1200px 700px at 50% 115%,rgba(185,138,47,.05),transparent 60%),var(--bg)}
+ background:radial-gradient(1000px 560px at 12% -6%,var(--s1),transparent 60%),
+            radial-gradient(820px 520px at 102% 4%,var(--s2),transparent 55%),
+            radial-gradient(700px 460px at 78% 62%,var(--s3),transparent 60%),
+            radial-gradient(1100px 680px at 30% 110%,var(--s4),transparent 60%),var(--bg);
+ background-attachment:fixed;transition:background 1.2s ease}
+/* 季節パレット（表示中の月に連動＝JSがbodyへ season-* を付ける）。ガラス越しに移ろう */
+body{--s1:rgba(79,129,96,.16);--s2:rgba(200,108,62,.12);--s3:rgba(122,162,207,.10);--s4:rgba(185,138,47,.11)}
+body.season-spring{--s1:rgba(226,152,178,.16);--s2:rgba(139,182,120,.14);--s3:rgba(150,190,228,.11);--s4:rgba(240,214,160,.10)}
+body.season-summer{--s1:rgba(64,150,160,.15);--s2:rgba(110,180,222,.13);--s3:rgba(79,129,96,.13);--s4:rgba(240,206,120,.09)}
+body.season-autumn{--s1:rgba(200,108,62,.17);--s2:rgba(185,138,47,.14);--s3:rgba(150,90,60,.10);--s4:rgba(79,110,86,.12)}
+body.season-winter{--s1:rgba(130,150,185,.15);--s2:rgba(170,190,215,.13);--s3:rgba(190,200,220,.10);--s4:rgba(120,140,170,.09)}
 /* 紙の粒子（村の紹介サイトと同じ質感） */
 body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:5;opacity:var(--grain);
  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
@@ -35,9 +46,13 @@ header{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;
 h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spacing:.06em;color:var(--grn);margin:0;line-height:1.25}
 .tagline{font-size:.76em;color:var(--mut);margin-top:3px;letter-spacing:.04em}
 .fresh{font-size:.72em;color:var(--mut);text-align:right}
-.toolrow{display:flex;gap:7px;margin:16px 0 4px;flex-wrap:wrap;align-items:center}
-.tooldiv{width:1px;height:20px;background:var(--cln);margin:0 2px;flex:none}
-.f{border:1.5px solid var(--cln);background:#fffdf9;border-radius:20px;padding:7px 13px;font-size:.85em;font-family:inherit;cursor:pointer;color:var(--mut);
+.toolrow{display:flex;gap:7px;margin:16px 0 6px;flex-wrap:wrap;align-items:center;
+ position:sticky;top:10px;z-index:30;padding:9px 10px;border-radius:20px;
+ background:var(--glass);backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5);
+ border:1px solid var(--glass-brd);box-shadow:var(--glass-in),var(--shadow)}
+.tooldiv{width:1px;height:20px;background:rgba(0,0,0,.08);margin:0 2px;flex:none}
+.f{border:1px solid var(--glass-brd);background:rgba(255,255,255,.45);border-radius:20px;padding:7px 13px;font-size:.85em;font-family:inherit;cursor:pointer;color:var(--mut);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.7);
  transition:border-color .18s,box-shadow .18s,transform .18s,background .18s}
 .f:hover{border-color:var(--grn2);color:var(--grn);transform:translateY(-1px);box-shadow:var(--shadow)}
 .f:focus-visible,.fsel:focus-visible,.nav:focus-visible{outline:2px solid var(--grn2);outline-offset:2px}
@@ -48,7 +63,8 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 /* ---- カレンダー ---- */
 .calhead{display:flex;align-items:center;justify-content:center;gap:14px;margin:18px 0 8px}
 .calhead h2{font-family:'Shippori Mincho',serif;color:var(--grn);font-size:1.55em;letter-spacing:.05em;margin:0;min-width:7.2em;text-align:center}
-.nav{border:1.5px solid var(--cln);background:#fffdf9;border-radius:12px;padding:8px 16px;font-size:1em;font-family:inherit;cursor:pointer;color:var(--grn);
+.nav{border:1px solid var(--glass-brd);background:rgba(255,255,255,.5);border-radius:12px;padding:8px 16px;font-size:1em;font-family:inherit;cursor:pointer;color:var(--grn);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.7);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
  transition:border-color .18s,box-shadow .18s,transform .18s}
 .nav:hover{border-color:var(--grn2);transform:translateY(-1px);box-shadow:var(--shadow)}
 .today-btn{font-size:.78em;padding:8px 12px}
@@ -56,9 +72,9 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .cal{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
 .dow{text-align:center;font-size:.74em;font-weight:700;letter-spacing:.2em;color:var(--mut);padding:3px 0 5px}
 .dow.sun{color:var(--sun)}.dow.sat{color:var(--sat)}
-.cell{background:var(--card);border:1px solid var(--cln);border-radius:12px;height:96px;overflow:hidden;padding:5px 5px 4px;cursor:pointer;position:relative;
- box-shadow:0 1px 3px rgba(94,68,34,.05);transition:box-shadow .18s,transform .18s,border-color .18s}
-.cell:hover{box-shadow:var(--shadow);transform:translateY(-2px);border-color:#d8cdbb}
+.cell{background:rgba(255,255,255,.52);border:1px solid var(--glass-brd);border-radius:14px;height:96px;overflow:hidden;padding:5px 5px 4px;cursor:pointer;position:relative;
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 1px 4px rgba(94,68,34,.06);transition:box-shadow .18s,transform .18s,border-color .18s,background .18s}
+.cell:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.9),var(--shadow);transform:translateY(-2px);background:rgba(255,255,255,.68)}
 .cell.out{background:transparent;border-color:transparent;cursor:default;box-shadow:none}
 .cell.out:hover{transform:none}
 .cell.today{border:2px solid var(--ter);box-shadow:0 2px 10px rgba(200,108,62,.18)}
@@ -80,7 +96,7 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .f.bf .tb{width:12px;height:12px;vertical-align:-2px;margin-right:2px}
 .f.bf.on{background:#e4eee6;border-color:var(--grn);color:var(--grn);font-weight:700}
 /* レギュ/GM絞り込みプルダウン */
-.fsel{border:1.5px solid var(--cln);background:#fffdf9;border-radius:20px;padding:7px 10px;font-size:.85em;font-family:inherit;color:var(--mut);max-width:44vw;cursor:pointer;transition:border-color .18s,box-shadow .18s}
+.fsel{border:1px solid var(--glass-brd);background:rgba(255,255,255,.45);box-shadow:inset 0 1px 0 rgba(255,255,255,.7);border-radius:20px;padding:7px 10px;font-size:.85em;font-family:inherit;color:var(--mut);max-width:44vw;cursor:pointer;transition:border-color .18s,box-shadow .18s}
 .fsel:hover{border-color:var(--grn2);box-shadow:var(--shadow)}
 .fsel.on{border-color:var(--grn);color:var(--grn);font-weight:700}
 /* 絞り込み非該当＝グレーアウト（場所は残す。〆切=彩度薄め/開催済=かなり薄めとは別の「完全モノクロ」） */
@@ -89,7 +105,7 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .ticket.dim{opacity:.32;filter:grayscale(1)}
 /* 年表示 */
 .ycal{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;margin-top:6px}
-.ym{background:var(--card);border:1px solid var(--cln);border-radius:12px;padding:10px 11px;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.ym{background:rgba(255,255,255,.52);border:1px solid var(--glass-brd);box-shadow:inset 0 1px 0 rgba(255,255,255,.8);border-radius:14px;padding:10px 11px;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s}
 .ym:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.08)}
 .ym h4{margin:0 0 4px;font-family:'Shippori Mincho',serif;color:var(--grn);font-size:1em;display:flex;justify-content:space-between;align-items:baseline}
 .ym h4 small{font-weight:400;color:var(--mut);font-size:.75em}
@@ -100,13 +116,14 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .ymd.c1{background:#cfe2d4}.ymd.c2{background:#9cc4a7}.ymd.c3{background:#5f9a70;}
 /* レギュ凡例（タップで絞り込み） */
 .legend{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 2px}
-.lg{display:flex;align-items:center;gap:5px;border:1.5px solid var(--cln);background:#fffdf9;border-radius:16px;padding:4px 11px;font-size:.76em;cursor:pointer;color:var(--tx);transition:border-color .18s,transform .18s,box-shadow .18s}
+.lg{display:flex;align-items:center;gap:5px;border:1px solid var(--glass-brd);background:rgba(255,255,255,.45);box-shadow:inset 0 1px 0 rgba(255,255,255,.7);border-radius:16px;padding:4px 11px;font-size:.76em;cursor:pointer;color:var(--tx);transition:border-color .18s,transform .18s,box-shadow .18s}
 .lg:hover{border-color:var(--rc);transform:translateY(-1px);box-shadow:var(--shadow)}
 .lg .sw{width:10px;height:10px;border-radius:3px;background:var(--rc)}
 .lg.on{border-color:var(--rc);background:var(--rc-bg);font-weight:700}
 .more{font-size:.66em;color:var(--ter);font-weight:700;padding-left:4px}
 @media(max-width:560px){
  .tooldiv{display:none}
+ .toolrow{position:static}  /* スマホは折返しで背が高くなるためstickyにしない */
  h1{font-size:1.45em}
  .cell{height:62px;padding:3px 3px 2px}
  .sch{font-size:0;padding:0;height:7px;margin-top:3px;border-left:none}
@@ -118,7 +135,7 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .cnt{display:none}
 @media(max-width:560px){.cnt{display:block}}
 /* ---- ホバー詳細ツールチップ ---- */
-#tip{position:fixed;z-index:50;max-width:280px;background:var(--card);border:1px solid var(--cln);border-left:5px solid var(--grn2);border-radius:10px;box-shadow:0 10px 28px rgba(0,0,0,.18);padding:9px 12px;font-size:.82em;pointer-events:none;opacity:0;transition:opacity .12s;line-height:1.55}
+#tip{position:fixed;z-index:50;max-width:280px;background:rgba(255,253,248,.78);backdrop-filter:blur(16px) saturate(1.5);-webkit-backdrop-filter:blur(16px) saturate(1.5);border:1px solid var(--glass-brd);border-left:5px solid var(--grn2);border-radius:12px;box-shadow:var(--glass-in),0 10px 28px rgba(0,0,0,.16);padding:9px 12px;font-size:.82em;pointer-events:none;opacity:0;transition:opacity .12s;line-height:1.55}
 #tip.show{opacity:1}
 #tip .t-name{font-family:'Shippori Mincho',serif;font-size:1.08em;color:var(--grn);font-weight:700}
 #tip .t-meta{color:var(--mut)}
@@ -126,7 +143,7 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 /* ---- クリック詳細モーダル ---- */
 #mback{position:fixed;inset:0;background:rgba(30,25,18,.45);backdrop-filter:blur(3px);z-index:60;display:none}
 #mback.show{display:block}
-#modal{position:fixed;z-index:61;left:50%;top:50%;transform:translate(-50%,-50%);width:min(420px,92vw);background:var(--card);border:1px solid var(--cln);border-left:6px solid var(--grn2);border-radius:14px;box-shadow:0 18px 50px rgba(0,0,0,.3);padding:16px 18px;display:none}
+#modal{position:fixed;z-index:61;left:50%;top:50%;transform:translate(-50%,-50%);width:min(420px,92vw);background:rgba(255,253,248,.8);backdrop-filter:blur(26px) saturate(1.5);-webkit-backdrop-filter:blur(26px) saturate(1.5);border:1px solid var(--glass-brd);border-left:6px solid var(--grn2);border-radius:18px;box-shadow:var(--glass-in),0 18px 50px rgba(0,0,0,.28);padding:16px 18px;display:none}
 #modal.show{display:block}
 #modal .m-name{font-family:'Shippori Mincho',serif;font-size:1.25em;color:var(--grn);font-weight:700;margin-right:24px}
 #modal .m-meta{color:var(--mut);font-size:.9em;margin:4px 0}
@@ -152,8 +169,8 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 /* ---- 選択日の詳細・すり合わせ・リスト ---- */
 .section{font-family:'Shippori Mincho',serif;color:var(--grn);font-size:1.1em;letter-spacing:.05em;margin:26px 4px 8px;border-bottom:1px solid var(--cln);padding-bottom:5px;position:relative}
 .section::after{content:"";position:absolute;left:0;bottom:-1px;width:64px;height:2px;background:linear-gradient(90deg,var(--grn),var(--grn2))}
-.card{display:block;background:var(--card);border:1px solid var(--cln);border-left:5px solid var(--grn2);border-radius:14px;padding:12px 14px;margin:8px 0;text-decoration:none;color:var(--tx);position:relative;box-shadow:0 1px 3px rgba(94,68,34,.05);transition:transform .18s,box-shadow .18s}
-.card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.card{display:block;background:rgba(255,255,255,.55);border:1px solid var(--glass-brd);border-left:5px solid var(--grn2);border-radius:16px;padding:12px 14px;margin:8px 0;text-decoration:none;color:var(--tx);position:relative;box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 1px 4px rgba(94,68,34,.06);transition:transform .18s,box-shadow .18s,background .18s}
+.card:hover{transform:translateY(-2px);background:rgba(255,255,255,.72);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),var(--shadow)}
 .card.closed{border-left-color:#b9b2a6;opacity:.78}
 .card.done{border-left-color:#cfc8bb;opacity:.55}
 .card .when{font-weight:700;font-size:.98em}
@@ -168,7 +185,7 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .new{display:inline-block;background:var(--ter);color:#fff;font-size:.66em;font-weight:700;border-radius:8px;padding:1px 7px;margin-left:6px;vertical-align:2px}
 .reg{color:var(--gold);font-weight:700}
 .empty{color:var(--mut);text-align:center;padding:24px 0;font-size:.9em}
-.manual{margin-top:26px;border:1px dashed var(--cln);border-radius:12px;padding:12px 14px;background:#fffdf9;font-size:.84em;color:var(--mut)}
+.manual{margin-top:26px;border:1px solid var(--glass-brd);border-radius:16px;padding:12px 14px;background:rgba(255,253,248,.55);backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);box-shadow:var(--glass-in);font-size:.84em;color:var(--mut)}
 .manual b{color:var(--grn)}
 .manual code{background:#f4efe6;border-radius:6px;padding:2px 8px;color:var(--tx);display:inline-block;margin:4px 0}
 .unp{border:1.5px dashed #c9a24a;background:#fdf8ec;border-radius:12px;padding:10px 14px;margin-top:18px;font-size:.85em}
@@ -178,14 +195,15 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 /* ---- 看板娘（案内人＝ただの村娘） ---- */
 #kanban{position:fixed;right:12px;bottom:8px;z-index:40;display:flex;flex-direction:column;align-items:flex-end;pointer-events:none}
 #kanban[hidden]{display:none}
-.kb-bubble{pointer-events:auto;max-width:240px;background:var(--card);border:1px solid var(--cln);border-radius:14px 14px 3px 14px;box-shadow:var(--shadow);padding:9px 13px;font-size:.8em;line-height:1.55;margin:0 8px 8px 0;cursor:pointer;animation:kbpop .25s ease}
+.kb-bubble{pointer-events:auto;max-width:240px;background:rgba(255,253,248,.75);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border:1px solid var(--glass-brd);border-radius:16px 16px 3px 16px;box-shadow:var(--glass-in),var(--shadow);padding:9px 13px;font-size:.8em;line-height:1.55;margin:0 8px 8px 0;cursor:pointer;animation:kbpop .25s ease}
 .kb-bubble::after{content:"";position:absolute;right:26px;bottom:-7px;border:7px solid transparent;border-top-color:var(--card)}
 .kb-bubble{position:relative}
+.kb-bubble::after{border-top-color:rgba(255,253,248,.9)}
 @keyframes kbpop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 .kb-girl{width:132px;pointer-events:auto;cursor:pointer;filter:drop-shadow(0 6px 14px rgba(94,68,34,.25));transition:transform .2s}
 .kb-girl:hover{transform:translateY(-4px)}
 .kb-close{pointer-events:auto;position:absolute;top:-6px;right:0;width:22px;height:22px;border-radius:50%;border:1px solid var(--cln);background:var(--card);color:var(--mut);font-size:.75em;cursor:pointer;line-height:1;box-shadow:var(--shadow)}
-#kbShow{position:fixed;right:0;bottom:90px;z-index:40;writing-mode:vertical-rl;border:1px solid var(--cln);border-right:none;background:var(--card);color:var(--grn);font-family:'Shippori Mincho',serif;font-size:.74em;letter-spacing:.2em;padding:12px 6px;border-radius:10px 0 0 10px;cursor:pointer;box-shadow:var(--shadow)}
+#kbShow{position:fixed;right:0;bottom:90px;z-index:40;writing-mode:vertical-rl;border:1px solid var(--glass-brd);border-right:none;background:rgba(255,253,248,.7);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--grn);font-family:'Shippori Mincho',serif;font-size:.74em;letter-spacing:.2em;padding:12px 6px;border-radius:12px 0 0 12px;cursor:pointer;box-shadow:var(--glass-in),var(--shadow)}
 #kbShow[hidden]{display:none}
 @media(max-width:560px){.kb-girl{width:96px}.kb-bubble{max-width:190px;font-size:.74em}}
 footer{margin-top:34px;font-size:.72em;color:var(--mut);text-align:center;letter-spacing:.08em;display:flex;align-items:center;justify-content:center;gap:14px}
@@ -482,7 +500,7 @@ function renderYear(){
  $("calTitle").textContent=`${curY}年`;
  const map=dayMap();
  const cal=$("cal");cal.innerHTML="";cal.style.display="none";
- let y=$("ycal");if(!y){y=document.createElement("div");y.id="ycal";y.className="ycal";cal.after(y)}
+ let y=$("ycal");if(!y){y=document.createElement("div");y.id="ycal";y.className="ycal";cal.after(y);if(typeof kbIO!=="undefined"&&kbIO)kbIO.observe(y)}
  y.style.display="";y.innerHTML="";
  const todayK=key(now.getFullYear(),now.getMonth(),now.getDate());
  let total=0;
@@ -511,6 +529,9 @@ function renderUnparsed(){
   list.map(u=>`<li>${u.url?`<a href="${u.url}" target="_blank" rel="noopener">${esc(u.title)}</a>`:esc(u.title)}</li>`).join("")+`</ul></div>`;
 }
 function renderAll(){
+ // 季節連動背景（表示中の月で春夏秋冬のガラス越しパレットが移ろう）
+ const m=curM+1;
+ document.body.className="season-"+(m>=3&&m<=5?"spring":m>=6&&m<=8?"summer":m>=9&&m<=11?"autumn":"winter");
  const isThisMonth=(curY===now.getFullYear()&&curM===now.getMonth());
  $("todayBtn").style.display=(VIEW==="month"&&isThisMonth)?"none":"";
  $("viewBtn").textContent=VIEW==="month"?"年表示":"月表示";
@@ -564,9 +585,9 @@ function kbLines(){
  const mine=ses.filter(s=>(s.dates||[]).some(d=>{const t=jd(d.date);return t.getFullYear()===curY&&t.getMonth()===curM}));
  if(mine.length)L.push(`今月は${mine.length}卓！にぎやかで嬉しいなあ`);
  const open=ses.filter(s=>s.open).length;
- if(open)L.push(`いま募集中の卓が${open}つあるよ。気になるのあった？`);
+ if(open)L.push(`いま${open}件の卓が募集中だよ。気になるのあった？`);
  const suri=ses.filter(s=>s.suriawase).length;
- if(suri)L.push(`日程すり合わせ中の貼り紙が${suri}枚。下の貼り紙コーナーを見てね`);
+ if(suri)L.push(`日程すり合わせ中のセッションも${suri}つあるよ。よかったら確認してみてね`);
  if((DATA.unparsed||[]).length)L.push(`タイトルが読めなかった卓が${DATA.unparsed.length}件…直してくれたら次の更新で載るからね`);
  // 今月まだ卓がない曜日をひとつ拾う
  const wd=[0,0,0,0,0,0,0];mine.forEach(s=>(s.dates||[]).forEach(d=>{const t=jd(d.date);if(t.getFullYear()===curY&&t.getMonth()===curM)wd[t.getDay()]++}));
@@ -583,16 +604,28 @@ function kbSay(text){
  b.style.animation="none";void b.offsetWidth;b.style.animation="";
  b.textContent=text;
 }
+// 表示状態＝「カレンダーが見えている間は出ない」×「ユーザーが✕で消したか」の掛け算
+let kbDismissed=localStorage.getItem(KB_KEY)==="off",kbCalVisible=true,kbBroken=false;
+const kbVis=new Map();
+const kbIO=("IntersectionObserver"in window)?new IntersectionObserver(es=>{
+ es.forEach(e=>kbVis.set(e.target,e.isIntersecting));
+ kbCalVisible=[...kbVis.values()].some(v=>v);kbApply();
+},{threshold:0}):null;
+function kbApply(){
+ if(kbBroken)return;
+ $("kanban").hidden=!(!kbDismissed&&!kbCalVisible);
+ $("kbShow").hidden=!(kbDismissed&&!kbCalVisible);
+}
 function kbInit(){
  const box=$("kanban"),img=$("kbGirl");
- img.addEventListener("error",()=>{box.hidden=true;$("kbShow").hidden=true}); // 画像未配備なら丸ごと非表示
- const off=localStorage.getItem(KB_KEY)==="off";
+ img.addEventListener("error",()=>{kbBroken=true;box.hidden=true;$("kbShow").hidden=true}); // 画像未配備なら丸ごと非表示
  img.src=kbOutfit().src;
- box.hidden=off;$("kbShow").hidden=!off;
+ if(kbIO)kbIO.observe($("cal"));else{kbCalVisible=false}
+ kbApply();
  const next=()=>kbSay();
  img.addEventListener("click",next);$("kbBubble").addEventListener("click",next);
- $("kbClose").addEventListener("click",()=>{box.hidden=true;$("kbShow").hidden=false;localStorage.setItem(KB_KEY,"off")});
- $("kbShow").addEventListener("click",()=>{box.hidden=false;$("kbShow").hidden=true;localStorage.setItem(KB_KEY,"on");kbSay()});
+ $("kbClose").addEventListener("click",()=>{kbDismissed=true;localStorage.setItem(KB_KEY,"off");kbApply()});
+ $("kbShow").addEventListener("click",()=>{kbDismissed=false;localStorage.setItem(KB_KEY,"on");kbApply();kbSay()});
  kbSay();
 }
 fetch("sessions.json?t="+Date.now()).then(r=>r.json()).then(d=>{
