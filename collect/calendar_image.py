@@ -12,10 +12,10 @@ from PIL import Image, ImageDraw, ImageFont
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-# ---- 配色（index.htmlの:rootと同期） ----
-BG = "#fbf7f0"; CARD = "#ffffff"; TX = "#3b3a36"; MUT = "#8a857c"
-GRN = "#33603f"; CLN = "#e6ded2"; SUN = "#b0483a"; SAT = "#3a5f8a"
-TER = "#c86c3e"
+# ---- 配色（index.htmlのスモークガラス:rootと同期・2026-07-04装丁刷新） ----
+BG = "#181b1e"; CARD = "#22262b"; TX = "#e8e5de"; MUT = "#a09a8e"
+GRN = "#a8cbb2"; GRN_DEEP = "#33603f"; GRN2 = "#4f8160"; CLN = "#3a3e45"
+SUN = "#e08f83"; SAT = "#96b7e4"; TER = "#e09a6e"; GOLD = "#d8b56a"
 
 # ---- システム色分け（index.htmlのSYS_DEFSと同期） ----
 AR2E_REGS = {"ミスリルクレスト", "ミスリルクエスト", "氷原開拓団", "フツウノアリアン", "イジョウナアリアン",
@@ -82,10 +82,10 @@ def draw_time_icon(dr, band, x, y, s, bg):
         off = s * 0.30
         dr.ellipse([x + 1 + off, y + 1 - off * 0.6, x + s - 1 + off, y + s - 1 - off * 0.6], fill=bg)
 
-def tint(hexc, alpha=0.13):
-    """カード地に色を薄く敷く（#rrggbb→BGに向けて混色）"""
+def tint(hexc, alpha=0.20):
+    """チップ地に色を薄く敷く（#rrggbb→ダークパネルに向けて混色）"""
     r, g, b = int(hexc[1:3], 16), int(hexc[3:5], 16), int(hexc[5:7], 16)
-    br, bg_, bb = 255, 255, 255
+    br, bg_, bb = 42, 46, 52
     f = lambda a, b_: int(a * alpha + b_ * (1 - alpha))
     return (f(r, br), f(g, bg_), f(b, bb))
 
@@ -144,10 +144,26 @@ def render(data, year, month, out):
 
     img = Image.new("RGB", (W, H), BG)
     dr = ImageDraw.Draw(img)
+    # うっすら色むら（ボードの季節ブロブの気配）
+    ov = Image.new("RGB", (W, H), BG)
+    od = ImageDraw.Draw(ov)
+    od.ellipse([-300, -260, 500, 300], fill="#1d2422")
+    od.ellipse([W - 460, -220, W + 260, 260], fill="#221f1c")
+    img = Image.blend(img, ov, 0.5)
+    dr = ImageDraw.Draw(img)
+    # 天の飾り帯（深緑に金の糸）
+    for x in range(W):
+        t = abs(x / W - .5)
+        dr.line([(x, 0), (x, 4)], fill=(GOLD if t < .04 else (GRN2 if t < .35 else GRN_DEEP)))
+
     f_title = font(34, True); f_sub = font(17); f_dow = font(16, True)
     f_day = font(16, True); f_chip = font(15); f_small = font(15)
 
-    # ヘッダ
+    # ヘッダ（明朝でブランド感）
+    try:
+        f_title = ImageFont.truetype(r"C:\Windows\Fonts\yumindb.ttf", 36)
+    except OSError:
+        pass
     dr.text((PAD, 24), f"{year}年{month}月の卓予定", font=f_title, fill=GRN)
     right = f"{data.get('guild','')}　更新 {data.get('updated','')}"
     dr.text((W - PAD - dr.textlength(right, font=f_sub), 40), right, font=f_sub, fill=MUT)
@@ -169,7 +185,7 @@ def render(data, year, month, out):
         x = PAD + c * (cell_w + 6); y = y0 + r * (cell_h + 6)
         is_today = (today.year, today.month, today.day) == (year, month, day)
         dr.rounded_rectangle([x, y, x + cell_w, y + cell_h], 9,
-                             fill=CARD, outline=GRN if is_today else CLN, width=2 if is_today else 1)
+                             fill=CARD, outline=TER if is_today else CLN, width=2 if is_today else 1)
         dc = SUN if c == 0 else SAT if c == 6 else MUT
         dr.text((x + 7, y + 4), str(day), font=f_day, fill=dc)
         chips = bydate.get(day, [])
@@ -191,8 +207,8 @@ def render(data, year, month, out):
     # すり合わせ卓（日程未定）
     yy = y0 + weeks * (cell_h + 6) + 6
     if suri:
-        dr.rectangle([PAD, yy + 5, PAD + 14, yy + 19], fill="#8a5a28")  # 貼り紙風の色角
-        dr.text((PAD + 22, yy), "日程すり合わせ中", font=font(18, True), fill="#8a5a28")
+        dr.rectangle([PAD, yy + 5, PAD + 14, yy + 19], fill="#d8b47e")  # 琥珀の色角
+        dr.text((PAD + 22, yy), "日程すり合わせ中", font=font(18, True), fill="#d8b47e")
         yy += 32
         for s in suri:
             col = sys_color(s)
