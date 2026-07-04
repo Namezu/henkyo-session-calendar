@@ -415,7 +415,8 @@ $("genBtn").addEventListener("click",()=>{
  if(pitaUrl){lines.push("",`**当卓では日程・出欠管理に卓ピタを利用します。下記URLからご参加ください。**`,pitaUrl,`使い方が分からない場合は[こちらの掲示板の説明](<${PITA_GUIDE_URL}>)か、DM・当トピック内でお気軽にどうぞ。`)}
  const post1=lines.join("\n");
  // 予告
- const trailer=$("trailer").value.trim()?`# 今回予告\n${$("trailer").value.trim()}\n\nアリアンロッドRPG2E改訂版\nレギュレーション：${reg}\n『${scen}』\n\n冒険の舞台がキミを待つ`:null;
+ // 予告は入力文そのまま（自動フッター付与は後輩くん希望で廃止 2026-07-04）
+ const trailer=$("trailer").value.trim()?`# 今回予告\n${$("trailer").value.trim()}`:null;
  // シート行
  const firstTime=state.dateMode==="fixed"&&days.length?days[0].s:"すり合わせ";
  const sheetRow=[reg,`「${scen}」${$("gmName").value.trim()||"（GM名）"}`,"（トピックを立てたらリンクをここに）","募集中",firstTime].join("\t");
