@@ -220,6 +220,42 @@
    "url": "",
    "created": "2026-07-04T11:30:00",
    "source": "manual"
+  },
+  {
+   "scenario": "（サンプル）SW2.5 剣の迷宮",
+   "reg": "SW2.5",
+   "system": "その他システム",
+   "dates": [
+    {
+     "date": "2026-07-13",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "gm": "サンプルGM13",
+   "url": "",
+   "created": "2026-07-04T12:00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "（サンプル）CoC 忌まわしき館",
+   "reg": "CoC7th",
+   "system": "その他システム",
+   "dates": [
+    {
+     "date": "2026-07-25",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "gm": "サンプルGM14",
+   "url": "",
+   "created": "2026-07-04T12:00:00",
+   "source": "forum"
   }
  ]
 }
