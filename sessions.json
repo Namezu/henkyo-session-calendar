@@ -1,5 +1,5 @@
 {
- "updated": "2026/07/04 11:11",
+ "updated": "2026/07/04 15:44",
  "guild": "LODGE",
  "sessions": [
   {
@@ -215,7 +215,9 @@
  "unparsed": [
   {
    "title": "まだ募集してないよ",
-   "url": "https://discord.com/channels/1023884809774305301/1522786425274236951"
+   "url": "https://discord.com/channels/1023884809774305301/1522786425274236951",
+   "gm": "甲殻飛行魔獣ポリステス",
+   "open": false
   }
  ]
 }

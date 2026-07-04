@@ -70,8 +70,11 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .f.on:hover{color:#fff}
 .tolink{margin-left:auto;font-size:.85em;color:var(--ter);text-decoration:none;font-weight:700;padding:7px 2px;border-bottom:1px dashed transparent;transition:border-color .18s}
 .tolink:hover{border-bottom-color:var(--ter)}
-/* ---- カレンダー ---- */
-.calhead{display:flex;align-items:center;justify-content:center;gap:14px;margin:18px 0 8px}
+/* ---- カレンダー（全体を一枚の黒ガラスパネルで包んで背景を鎮める） ---- */
+.calpanel{margin-top:14px;padding:10px 12px 12px;border-radius:24px;
+ background:rgba(17,19,23,.52);backdrop-filter:blur(16px) saturate(1.35);-webkit-backdrop-filter:blur(16px) saturate(1.35);
+ border:1px solid var(--glass-brd);box-shadow:var(--glass-in),var(--shadow)}
+.calhead{display:flex;align-items:center;justify-content:center;gap:14px;margin:8px 0 8px}
 .calhead h2{font-family:'Shippori Mincho',serif;color:var(--grn);font-size:1.55em;letter-spacing:.05em;margin:0;min-width:7.2em;text-align:center}
 .nav{border:1px solid var(--glass-brd);background:rgba(255,255,255,.07);border-radius:12px;padding:8px 16px;font-size:1em;font-family:inherit;cursor:pointer;color:var(--grn);
  box-shadow:inset 0 1px 0 rgba(255,255,255,.12);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
@@ -82,11 +85,14 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .cal{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
 .dow{text-align:center;font-size:.74em;font-weight:700;letter-spacing:.2em;color:var(--mut);padding:3px 0 5px}
 .dow.sun{color:var(--sun)}.dow.sat{color:var(--sat)}
-.cell{background:rgba(255,255,255,.06);border:1px solid var(--glass-brd);border-radius:14px;height:96px;overflow:hidden;padding:5px 5px 4px;cursor:pointer;position:relative;
+.cell{background:rgba(30,33,38,.72);border:1px solid var(--glass-brd);border-radius:14px;height:96px;overflow:hidden;padding:5px 5px 4px;cursor:pointer;position:relative;
  box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 1px 4px rgba(0,0,0,.25);transition:box-shadow .18s,transform .18s,border-color .18s,background .18s}
-.cell:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.16),var(--shadow);transform:translateY(-2px);background:rgba(255,255,255,.1)}
+.cell:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.16),var(--shadow);transform:translateY(-2px);background:rgba(44,48,55,.8)}
 .cell.out{background:transparent;border-color:transparent;cursor:default;box-shadow:none}
 .cell.out:hover{transform:none}
+/* 過ぎた日はパネルごと沈める（開催済チップの個別フェードより先に、面で「過去」が分かる） */
+.cell.past{opacity:.4;filter:saturate(.55)}
+.cell.past:hover{opacity:.75}
 .cell.today{border:2px solid var(--ter);box-shadow:0 2px 10px rgba(200,108,62,.18)}
 .cell.today .dn{background:var(--ter);color:#fff;border-radius:8px;padding:0 6px}
 .cell.sel{outline:3px solid var(--grn2);outline-offset:-1px}
@@ -168,7 +174,7 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .suriband{margin-top:22px;background:linear-gradient(180deg,rgba(64,54,34,.5),rgba(52,44,27,.5));backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(216,181,106,.28);border-radius:14px;padding:12px 14px 14px}
 .suriband .sb-h{font-family:'Shippori Mincho',serif;color:#d8b47e;font-size:1.02em;margin:0 0 2px}
 .suriband .sb-sub{font-size:.74em;color:#b39b74;margin-bottom:10px}
-.suriwrap{display:flex;gap:12px;overflow-x:auto;padding:4px 2px 8px}
+.suriwrap{display:flex;flex-wrap:wrap;gap:12px;padding:4px 2px 8px} /* 増えたら2段3段と貼り足される（横スクロールだと見切れに気づけない） */
 .ticket{flex:0 0 auto;min-width:168px;max-width:220px;background:#fffdf6;border:1.6px dashed var(--ter);border-radius:3px 16px 3px 16px;padding:10px 13px;cursor:pointer;transform:rotate(-1.2deg);box-shadow:2px 3px 8px rgba(120,80,30,.12);transition:transform .15s}
 .ticket:nth-child(even){transform:rotate(1.1deg)}
 .ticket:hover{transform:rotate(0) translateY(-2px)}
@@ -176,6 +182,14 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .ticket .tk-meta{font-size:.74em;color:#8a857c;margin-top:4px;display:flex;align-items:center;gap:5px}
 .ticket .tk-dot{width:9px;height:9px;border-radius:3px;flex:none}
 .ticket .tk-pin{float:right;font-size:.9em}
+/* ⚠読めなかった卓＝琥珀色の貼り紙（すり合わせと同じ掲示板の文法・リンクでDiscordへ） */
+.unpband{background:linear-gradient(180deg,rgba(84,66,28,.42),rgba(66,53,24,.42));border-color:rgba(201,162,74,.35)}
+.unpband .sb-h{color:#d8b56a}
+.unpband .sb-sub{color:#c2a878}
+a.ticket{display:block;text-decoration:none;color:inherit}
+.ticket.unp-ticket{border-color:#c9a24a;background:#fdf6e2}
+.ticket.unp-ticket .tk-name{color:#6a5312}
+.ticket.unp-ticket .tk-meta{color:#8a764a}
 /* ---- 選択日の詳細・すり合わせ・リスト ---- */
 .section{font-family:'Shippori Mincho',serif;color:var(--grn);font-size:1.1em;letter-spacing:.05em;margin:26px 4px 8px;border-bottom:1px solid var(--cln);padding-bottom:5px;position:relative}
 .section::after{content:"";position:absolute;left:0;bottom:-1px;width:64px;height:2px;background:linear-gradient(90deg,var(--grn),var(--grn2))}
@@ -254,6 +268,7 @@ footer::after{background:linear-gradient(90deg,var(--cln),transparent)}
  <a class="tolink" href="takutate.html">🛠 セッション作成マイセット →</a>
 </div>
 
+<div class="calpanel">
 <div class="calhead">
  <button class="nav" id="prev">◀</button>
  <h2 id="calTitle">…</h2>
@@ -264,6 +279,7 @@ footer::after{background:linear-gradient(90deg,var(--cln),transparent)}
 <div class="calsum" id="calSum"></div>
 <div class="cal" id="cal"></div>
 <div class="legend" id="legend"></div>
+</div>
 
 <div id="suriSec"></div>
 <div id="daySec"></div>
@@ -441,8 +457,9 @@ function renderCal(){
   const act=list.filter(x=>!x.dim);   // 絞り込み該当分だけ数える
   monthCount+=act.length;openCount+=act.filter(x=>x.st==="open").length;
   const dow=new Date(curY,curM,d).getDay();
+  const isPast=new Date(curY,curM,d)<new Date(now.getFullYear(),now.getMonth(),now.getDate());
   const cell=document.createElement("div");
-  cell.className="cell"+(k===todayK?" today":"")+(k===selDate?" sel":"")+(dow===0?" sunday":dow===6?" saturday":"");
+  cell.className="cell"+(k===todayK?" today":"")+(k===selDate?" sel":"")+(dow===0?" sunday":dow===6?" saturday":"")+(isPast?" past":"");
   cell.innerHTML=`<span class="dn">${d}</span>${act.length?`<span class="cnt">${act.length}卓</span>`:""}`;
   const lim=TWO?2:3; // 2行表示はチップが背高＝1セルに2枚まで
   list.slice(0,lim).forEach(x=>{
@@ -542,8 +559,18 @@ function renderUnparsed(){
  const list=DATA.unparsed||[];
  const el=$("unparsedSec");
  if(!list.length){el.innerHTML="";return}
- el.innerHTML=`<div class="unp"><b>⚠ タイトルが読めなかった卓（${list.length}件）</b>——トピックのタイトルを定型（例：<code>7/20 21:00-25:00【レギュ名】シナリオ名</code>）に直せば、次の更新から自動で載ります。<ul>`+
-  list.map(u=>`<li>${u.url?`<a href="${u.url}" target="_blank" rel="noopener">${esc(u.title)}</a>`:esc(u.title)}</li>`).join("")+`</ul></div>`;
+ el.innerHTML=`<div class="suriband unpband"><div class="sb-h">⚠ タイトルが読めなかった卓（${list.length}件）</div>
+  <div class="sb-sub">トピックのタイトルを定型（例：7/20 21:00-25:00【レギュ名】シナリオ名）に直せば、次の更新（15分毎）から自動でカレンダーに載ります（貼り紙をタップでDiscordへ）</div>
+  <div class="suriwrap"></div></div>`;
+ const wrap=el.querySelector(".suriwrap");
+ list.forEach(u=>{
+  const t=document.createElement(u.url?"a":"div");t.className="ticket unp-ticket";
+  if(u.url){t.href=u.url;t.target="_blank";t.rel="noopener"}
+  t.innerHTML=`<span class="tk-pin">⚠</span><div class="tk-name">${esc(u.title)}</div>
+   ${u.gm?`<div class="tk-meta">GM: ${esc(u.gm)}</div>`:""}
+   ${u.open?`<div class="tk-meta">🟢 募集中</div>`:""}`;
+  wrap.appendChild(t);
+ });
 }
 // 背景の風景画＝プールからランダム（季節4枚＋紹介サイトの旅シーン）・90秒ごとに静かにクロスフェード
 let sbCur=null,sbUseA=true;

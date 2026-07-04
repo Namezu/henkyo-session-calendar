@@ -62,9 +62,12 @@ async def read_forum(guild, name, sessions, unparsed):
             starter = None
         if OPTOUT in tags or (starter and OPTOUT in (starter.content or "")):
             print(f"  ⏭ 掲載不要: {th.name}"); continue
+        gm0 = starter.author.display_name if (starter and starter.author) else None
         r = parse(th.name)
         if not r["ok"]:
-            unparsed.append({"title": th.name, "url": url})
+            # 読めなくても分かる情報（GM名・募集状態）は⚠貼り紙に添える
+            unparsed.append({"title": th.name, "url": url, "gm": gm0,
+                             "open": "募集中" in tags})
             print(f"  ⚠ 読めない→⚠枠: {th.name}"); continue
         dates = []
         for (m, d) in r["dates"]:
