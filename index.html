@@ -462,7 +462,7 @@ function attachTip(el,x){
 function showDayTip(cell,label,list){
  if(!list.length)return;
  tip.innerHTML=`<div class="t-name">${esc(label)}の卓 ${list.length}件</div>`+
-  list.slice(0,6).map(x=>`<div class="t-meta">${esc(x.d.start||"")}　${esc(x.s.scenario)}${x.st==="open"?"　🟢募集中":x.st==="done"?"　🏁":""}</div>`).join("")+
+  list.slice(0,6).map(x=>`<div class="t-meta">${x.d.start?esc(x.d.start)+"〜":""}　${esc(x.s.scenario)}${x.st==="open"?"　🟢募集中":x.st==="closed"?"　⚪募集締切":x.st==="done"?"　🏁開催済":""}</div>`).join("")+
   (list.length>6?`<div class="t-meta">…他${list.length-6}卓</div>`:"");
  const r=cell.getBoundingClientRect();
  tip.style.left=Math.min(r.left,window.innerWidth-296)+"px";
@@ -654,10 +654,19 @@ function renderAll(){
  $("cal").style.display="";
  renderCal();renderLegend();renderSuri();renderDay();renderMonth();renderUnparsed();
 }
-$("prev").addEventListener("click",()=>{if(VIEW==="year"){curY--}else{curM--;if(curM<0){curM=11;curY--}}selDate=null;renderAll()});
-$("next").addEventListener("click",()=>{if(VIEW==="year"){curY++}else{curM++;if(curM>11){curM=0;curY++}}selDate=null;renderAll()});
-$("todayBtn").addEventListener("click",()=>{curY=now.getFullYear();curM=now.getMonth();selDate=null;VIEW="month";renderAll()});
-$("viewBtn").addEventListener("click",()=>{VIEW=(VIEW==="month"?"year":"month");selDate=null;renderAll()});
+// 月めくり・表示切替に即応するリンデの一言（表示中のみ）
+function kbViewLine(){
+ if(VIEW==="year")return"一年分をながめてるの？　壮観だよねえ";
+ const ry=now.getFullYear(),rm=now.getMonth();
+ if(curY>ry||(curY===ry&&curM>rm))return`${curM+1}月の予定を先取り？　計画的でえらい`;
+ if(curY<ry||(curY===ry&&curM<rm))return`${curM+1}月のページ……思い出、めくってるの？`;
+ return"今月に戻ってきたね。おかえり！";
+}
+function kbReact(){if(typeof kbSay==="function"&&!$("kanban").hidden)kbSay(kbViewLine())}
+$("prev").addEventListener("click",()=>{if(VIEW==="year"){curY--}else{curM--;if(curM<0){curM=11;curY--}}selDate=null;renderAll();kbReact()});
+$("next").addEventListener("click",()=>{if(VIEW==="year"){curY++}else{curM++;if(curM>11){curM=0;curY++}}selDate=null;renderAll();kbReact()});
+$("todayBtn").addEventListener("click",()=>{curY=now.getFullYear();curM=now.getMonth();selDate=null;VIEW="month";renderAll();kbReact()});
+$("viewBtn").addEventListener("click",()=>{VIEW=(VIEW==="month"?"year":"month");selDate=null;renderAll();kbReact()});
 // レギュ/GM絞り込みプルダウン（データ読込後に選択肢を作る・非該当はグレーアウト）
 // レギュ欄＝選択中システムのレギュだけに絞る（アリアン/SW/サタスペ…各システムにレギュがある前提の設計）
 function updateRegOptions(){
