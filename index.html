@@ -114,9 +114,37 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.4em;color:var(--g
 .manual b{color:var(--grn)}
 .manual code{background:#f4efe6;border-radius:6px;padding:2px 8px;color:var(--tx);display:inline-block;margin:4px 0}
 footer{margin-top:24px;font-size:.72em;color:var(--mut);text-align:center}
+
+/* ---- ダークモード ---- */
+[data-theme=dark]{--bg:#17181b;--card:#232529;--tx:#d8dade;--mut:#8f8a81;--cln:#3a3d42;--grn:#8fbc9b;--grn2:#6a9c78;--ter:#d98a5f;--gold:#cfa54a;--sun:#d76c5e;--sat:#7ea2cf}
+[data-theme=dark] .f,[data-theme=dark] .nav,[data-theme=dark] .lg{background:var(--card)}
+[data-theme=dark] .f.on{background:#3f6c4c;border-color:#3f6c4c;color:#fff}
+[data-theme=dark] .sch{color:#e6e3dc}
+[data-theme=dark] .ymd{background:#2c2e33}
+[data-theme=dark] .ymd.c1{background:#3a4c40}[data-theme=dark] .ymd.c2{background:#46664f}[data-theme=dark] .ymd.c3{background:#568563}
+[data-theme=dark] .suriband{background:linear-gradient(180deg,#2c2820,#282318);border-color:#4a4231}
+[data-theme=dark] .suriband .sb-h{color:#d8b47e}
+[data-theme=dark] .ticket{background:#2e2a22;box-shadow:2px 3px 8px rgba(0,0,0,.4)}
+[data-theme=dark] .manual{background:var(--card)}
+[data-theme=dark] .manual code{background:#33353a}
+[data-theme=dark] .b-open{background:#2e3b32;color:#9fc7aa}
+[data-theme=dark] .b-closed,[data-theme=dark] .b-done{background:#33353a;color:#8f8a81}
+[data-theme=dark] .b-suri{background:#3b2f24;color:#d98a5f}
+[data-theme=dark] #modal .mb.link{background:#3f6c4c}
+[data-theme=dark] #modal .mb.fix{background:#33353a;color:#a8c4ae}
 </style>
 </head>
 <body>
+<script>
+(function(){try{if(localStorage.getItem("sb_theme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}
+window.sbToggleTheme=function(){const d=document.documentElement;const dark=d.getAttribute("data-theme")==="dark";
+ if(dark)d.removeAttribute("data-theme");else d.setAttribute("data-theme","dark");
+ try{localStorage.setItem("sb_theme",dark?"light":"dark")}catch(e){}
+ document.querySelectorAll(".themeBtn").forEach(b=>b.textContent=dark?"\u{1F319} ダーク":"\u2600\uFE0F ライト");};
+window.addEventListener("DOMContentLoaded",()=>{const dark=document.documentElement.getAttribute("data-theme")==="dark";
+ document.querySelectorAll(".themeBtn").forEach(b=>{b.textContent=dark?"\u2600\uFE0F ライト":"\u{1F319} ダーク";b.addEventListener("click",window.sbToggleTheme)})});
+})();
+</script>
 <div class="wrap">
 <header>
  <h1>セッションボード</h1>
@@ -125,6 +153,7 @@ footer{margin-top:24px;font-size:.72em;color:var(--mut);text-align:center}
 <div class="toolrow">
  <button class="f on" data-f="all">すべて</button>
  <button class="f" data-f="open">募集中だけ</button>
+ <button class="f themeBtn" type="button">🌙 ダーク</button>
  <a class="tolink" href="takutate.html">🛠 卓を立てる →</a>
 </div>
 
