@@ -11,35 +11,64 @@
 <meta property="og:image" content="https://namezu.github.io/henkyo-session-board/ogp_board.png">
 <meta name="twitter:card" content="summary_large_image">
 <title>セッションボード — 辺境TRPG村</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fbf7f0;--card:#fff;--tx:#3b3a36;--mut:#8a857c;--grn:#33603f;--grn2:#4f8160;--ter:#c86c3e;--cln:#e6ded2;--gold:#b98a2f;--sun:#b0483a;--sat:#3a5f8a}
+:root{--bg:#fbf7f0;--card:#fff;--tx:#3b3a36;--mut:#8a857c;--grn:#33603f;--grn2:#4f8160;--ter:#c86c3e;--cln:#e6ded2;--gold:#b98a2f;--sun:#b0483a;--sat:#3a5f8a;
+ --shadow:0 6px 18px rgba(94,68,34,.09);--shadow-lg:0 14px 40px rgba(94,68,34,.14);--grain:.05}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--tx);font-family:'Zen Kaku Gothic New','Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif;line-height:1.6}
-.wrap{max-width:860px;margin:0 auto;padding:14px 12px 70px}
-header{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}
-h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.4em;color:var(--grn);margin:.3em 0 0}
-.fresh{font-size:.72em;color:var(--mut)}
-.toolrow{display:flex;gap:8px;margin:10px 0 4px;flex-wrap:wrap;align-items:center}
-.f{border:1.5px solid var(--cln);background:#fffdf9;border-radius:20px;padding:7px 13px;font-size:.85em;font-family:inherit;cursor:pointer;color:var(--mut)}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--tx);font-family:'Zen Kaku Gothic New','Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif;line-height:1.6;
+ background:radial-gradient(1100px 500px at 15% -8%,rgba(79,129,96,.075),transparent 60%),
+            radial-gradient(900px 480px at 100% 0%,rgba(200,108,62,.055),transparent 55%),
+            radial-gradient(1200px 700px at 50% 115%,rgba(185,138,47,.05),transparent 60%),var(--bg)}
+/* 紙の粒子（村の紹介サイトと同じ質感） */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:5;opacity:var(--grain);
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+/* 天の飾り帯＝深緑に金の糸 */
+body::before{content:"";position:fixed;top:0;left:0;right:0;height:4px;z-index:6;
+ background:linear-gradient(90deg,var(--grn) 0%,#4f8160 42%,var(--gold) 50%,#4f8160 58%,var(--grn) 100%)}
+.wrap{max-width:880px;margin:0 auto;padding:26px 14px 70px}
+header{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.brand{font-size:.72em;letter-spacing:.35em;color:var(--ter);font-weight:700;margin-bottom:2px}
+h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spacing:.06em;color:var(--grn);margin:0;line-height:1.25}
+.tagline{font-size:.76em;color:var(--mut);margin-top:3px;letter-spacing:.04em}
+.fresh{font-size:.72em;color:var(--mut);text-align:right}
+.toolrow{display:flex;gap:7px;margin:16px 0 4px;flex-wrap:wrap;align-items:center}
+.tooldiv{width:1px;height:20px;background:var(--cln);margin:0 2px;flex:none}
+.f{border:1.5px solid var(--cln);background:#fffdf9;border-radius:20px;padding:7px 13px;font-size:.85em;font-family:inherit;cursor:pointer;color:var(--mut);
+ transition:border-color .18s,box-shadow .18s,transform .18s,background .18s}
+.f:hover{border-color:var(--grn2);color:var(--grn);transform:translateY(-1px);box-shadow:var(--shadow)}
+.f:focus-visible,.fsel:focus-visible,.nav:focus-visible{outline:2px solid var(--grn2);outline-offset:2px}
 .f.on{background:var(--grn);border-color:var(--grn);color:#fff;font-weight:700}
-.tolink{margin-left:auto;font-size:.85em;color:var(--ter);text-decoration:none;font-weight:700;padding:7px 2px}
+.f.on:hover{color:#fff}
+.tolink{margin-left:auto;font-size:.85em;color:var(--ter);text-decoration:none;font-weight:700;padding:7px 2px;border-bottom:1px dashed transparent;transition:border-color .18s}
+.tolink:hover{border-bottom-color:var(--ter)}
 /* ---- カレンダー ---- */
-.calhead{display:flex;align-items:center;justify-content:center;gap:14px;margin:14px 0 8px}
-.calhead h2{font-family:'Shippori Mincho',serif;color:var(--grn);font-size:1.5em;margin:0;min-width:7.2em;text-align:center}
-.nav{border:1.5px solid var(--cln);background:#fffdf9;border-radius:10px;padding:8px 16px;font-size:1em;font-family:inherit;cursor:pointer;color:var(--grn)}
+.calhead{display:flex;align-items:center;justify-content:center;gap:14px;margin:18px 0 8px}
+.calhead h2{font-family:'Shippori Mincho',serif;color:var(--grn);font-size:1.55em;letter-spacing:.05em;margin:0;min-width:7.2em;text-align:center}
+.nav{border:1.5px solid var(--cln);background:#fffdf9;border-radius:12px;padding:8px 16px;font-size:1em;font-family:inherit;cursor:pointer;color:var(--grn);
+ transition:border-color .18s,box-shadow .18s,transform .18s}
+.nav:hover{border-color:var(--grn2);transform:translateY(-1px);box-shadow:var(--shadow)}
 .today-btn{font-size:.78em;padding:8px 12px}
-.calsum{text-align:center;font-size:.82em;color:var(--mut);margin-bottom:8px}
-.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
-.dow{text-align:center;font-size:.75em;font-weight:700;color:var(--mut);padding:2px 0}
+.calsum{text-align:center;font-size:.82em;color:var(--mut);margin-bottom:10px;letter-spacing:.03em}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.dow{text-align:center;font-size:.74em;font-weight:700;letter-spacing:.2em;color:var(--mut);padding:3px 0 5px}
 .dow.sun{color:var(--sun)}.dow.sat{color:var(--sat)}
-.cell{background:var(--card);border:1px solid var(--cln);border-radius:9px;height:96px;overflow:hidden;padding:4px 4px 3px;cursor:pointer;position:relative;transition:box-shadow .15s}
-.cell:hover{box-shadow:0 4px 12px rgba(0,0,0,.08)}
-.cell.out{background:transparent;border-color:transparent;cursor:default}
-.cell.today{border:2px solid var(--ter)}
+.cell{background:var(--card);border:1px solid var(--cln);border-radius:12px;height:96px;overflow:hidden;padding:5px 5px 4px;cursor:pointer;position:relative;
+ box-shadow:0 1px 3px rgba(94,68,34,.05);transition:box-shadow .18s,transform .18s,border-color .18s}
+.cell:hover{box-shadow:var(--shadow);transform:translateY(-2px);border-color:#d8cdbb}
+.cell.out{background:transparent;border-color:transparent;cursor:default;box-shadow:none}
+.cell.out:hover{transform:none}
+.cell.today{border:2px solid var(--ter);box-shadow:0 2px 10px rgba(200,108,62,.18)}
+.cell.today .dn{background:var(--ter);color:#fff;border-radius:8px;padding:0 6px}
 .cell.sel{outline:3px solid var(--grn2);outline-offset:-1px}
-.cell .dn{font-size:.78em;font-weight:700;color:var(--mut)}
+.cell .dn{display:inline-block;font-size:.78em;font-weight:700;color:var(--mut)}
 .cell.sunday .dn{color:var(--sun)}.cell.saturday .dn{color:var(--sat)}
-.sch{display:block;border-radius:6px;padding:1px 5px;margin-top:2px;font-size:.68em;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:var(--rc-bg,#e4eee6);color:#37352e;border-left:3px solid var(--rc,#4f8160)}
+.cell.sunday.today .dn,.cell.saturday.today .dn{color:#fff}
+.sch{display:block;border-radius:7px;padding:2px 6px;margin-top:3px;font-size:.68em;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:var(--rc-bg,#e4eee6);color:#37352e;border-left:3px solid var(--rc,#4f8160);transition:filter .15s}
+.sch:hover{filter:brightness(.97)}
 .sch.closed{filter:saturate(.25);opacity:.75}
 .sch.done{filter:saturate(.1);opacity:.45}
 /* 2行表示＝1行目シナリオ名・2行目レギュ名（レギュ無し卓は1行のまま） */
@@ -52,7 +81,8 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.4em;color:var(--g
 .f.bf.on{background:#e4eee6;border-color:var(--grn);color:var(--grn);font-weight:700}
 [data-theme=dark] .f.bf.on{background:#2e3b32;border-color:var(--grn);color:var(--grn)}
 /* レギュ/GM絞り込みプルダウン */
-.fsel{border:1.5px solid var(--cln);background:#fffdf9;border-radius:20px;padding:7px 10px;font-size:.85em;font-family:inherit;color:var(--mut);max-width:44vw;cursor:pointer}
+.fsel{border:1.5px solid var(--cln);background:#fffdf9;border-radius:20px;padding:7px 10px;font-size:.85em;font-family:inherit;color:var(--mut);max-width:44vw;cursor:pointer;transition:border-color .18s,box-shadow .18s}
+.fsel:hover{border-color:var(--grn2);box-shadow:var(--shadow)}
 .fsel.on{border-color:var(--grn);color:var(--grn);font-weight:700}
 /* 絞り込み非該当＝グレーアウト（場所は残す。〆切=彩度薄め/開催済=かなり薄めとは別の「完全モノクロ」） */
 .sch.dim{opacity:.25;filter:grayscale(1)}
@@ -71,11 +101,14 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.4em;color:var(--g
 .ymd.c1{background:#cfe2d4}.ymd.c2{background:#9cc4a7}.ymd.c3{background:#5f9a70;}
 /* レギュ凡例（タップで絞り込み） */
 .legend{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 2px}
-.lg{display:flex;align-items:center;gap:5px;border:1.5px solid var(--cln);background:#fffdf9;border-radius:16px;padding:4px 11px;font-size:.76em;cursor:pointer;color:var(--tx)}
+.lg{display:flex;align-items:center;gap:5px;border:1.5px solid var(--cln);background:#fffdf9;border-radius:16px;padding:4px 11px;font-size:.76em;cursor:pointer;color:var(--tx);transition:border-color .18s,transform .18s,box-shadow .18s}
+.lg:hover{border-color:var(--rc);transform:translateY(-1px);box-shadow:var(--shadow)}
 .lg .sw{width:10px;height:10px;border-radius:3px;background:var(--rc)}
 .lg.on{border-color:var(--rc);background:var(--rc-bg);font-weight:700}
 .more{font-size:.66em;color:var(--ter);font-weight:700;padding-left:4px}
 @media(max-width:560px){
+ .tooldiv{display:none}
+ h1{font-size:1.45em}
  .cell{height:62px;padding:3px 3px 2px}
  .sch{font-size:0;padding:0;height:7px;margin-top:3px;border-left:none}
  .sch .rg{display:none}
@@ -92,7 +125,7 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.4em;color:var(--g
 #tip .t-meta{color:var(--mut)}
 #tip .t-st{font-weight:700}
 /* ---- クリック詳細モーダル ---- */
-#mback{position:fixed;inset:0;background:rgba(30,25,18,.45);z-index:60;display:none}
+#mback{position:fixed;inset:0;background:rgba(30,25,18,.45);backdrop-filter:blur(3px);z-index:60;display:none}
 #mback.show{display:block}
 #modal{position:fixed;z-index:61;left:50%;top:50%;transform:translate(-50%,-50%);width:min(420px,92vw);background:var(--card);border:1px solid var(--cln);border-left:6px solid var(--grn2);border-radius:14px;box-shadow:0 18px 50px rgba(0,0,0,.3);padding:16px 18px;display:none}
 #modal.show{display:block}
@@ -118,9 +151,10 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.4em;color:var(--g
 .ticket .tk-dot{width:9px;height:9px;border-radius:3px;flex:none}
 .ticket .tk-pin{float:right;font-size:.9em}
 /* ---- 選択日の詳細・すり合わせ・リスト ---- */
-.section{font-family:'Shippori Mincho',serif;color:var(--grn);font-size:1.05em;margin:20px 4px 6px;border-bottom:2px solid var(--cln);padding-bottom:3px}
-.card{display:block;background:var(--card);border:1px solid var(--cln);border-left:5px solid var(--grn2);border-radius:12px;padding:11px 13px;margin:7px 0;text-decoration:none;color:var(--tx);position:relative;transition:transform .15s,box-shadow .15s}
-.card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.section{font-family:'Shippori Mincho',serif;color:var(--grn);font-size:1.1em;letter-spacing:.05em;margin:26px 4px 8px;border-bottom:1px solid var(--cln);padding-bottom:5px;position:relative}
+.section::after{content:"";position:absolute;left:0;bottom:-1px;width:64px;height:2px;background:linear-gradient(90deg,var(--grn),var(--grn2))}
+.card{display:block;background:var(--card);border:1px solid var(--cln);border-left:5px solid var(--grn2);border-radius:14px;padding:12px 14px;margin:8px 0;text-decoration:none;color:var(--tx);position:relative;box-shadow:0 1px 3px rgba(94,68,34,.05);transition:transform .18s,box-shadow .18s}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
 .card.closed{border-left-color:#b9b2a6;opacity:.78}
 .card.done{border-left-color:#cfc8bb;opacity:.55}
 .card .when{font-weight:700;font-size:.98em}
@@ -143,10 +177,20 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.4em;color:var(--g
 .unp a{color:var(--ter);text-decoration:none;font-weight:700}
 .unp li{margin:3px 0}
 [data-theme=dark] .unp{background:#2e2a1e;border-color:#8a6a1f}
-footer{margin-top:24px;font-size:.72em;color:var(--mut);text-align:center}
+footer{margin-top:34px;font-size:.72em;color:var(--mut);text-align:center;letter-spacing:.08em;display:flex;align-items:center;justify-content:center;gap:14px}
+footer::before,footer::after{content:"";height:1px;width:min(90px,18vw);background:linear-gradient(90deg,transparent,var(--cln));display:block}
+footer::after{background:linear-gradient(90deg,var(--cln),transparent)}
 
 /* ---- ダークモード ---- */
-[data-theme=dark]{--bg:#17181b;--card:#232529;--tx:#d8dade;--mut:#8f8a81;--cln:#3a3d42;--grn:#8fbc9b;--grn2:#6a9c78;--ter:#d98a5f;--gold:#cfa54a;--sun:#d76c5e;--sat:#7ea2cf}
+[data-theme=dark]{--bg:#17181b;--card:#232529;--tx:#d8dade;--mut:#8f8a81;--cln:#3a3d42;--grn:#8fbc9b;--grn2:#6a9c78;--ter:#d98a5f;--gold:#cfa54a;--sun:#d76c5e;--sat:#7ea2cf;
+ --shadow:0 6px 18px rgba(0,0,0,.4);--shadow-lg:0 14px 40px rgba(0,0,0,.55);--grain:.07}
+[data-theme=dark] body{background:radial-gradient(1100px 500px at 15% -8%,rgba(106,156,120,.07),transparent 60%),
+ radial-gradient(900px 480px at 100% 0%,rgba(217,138,95,.05),transparent 55%),
+ radial-gradient(1200px 700px at 50% 115%,rgba(207,165,74,.04),transparent 60%),var(--bg)}
+[data-theme=dark] .cell{box-shadow:0 1px 3px rgba(0,0,0,.3)}
+[data-theme=dark] .cell:hover{border-color:#4a4e55}
+[data-theme=dark] .card{box-shadow:0 1px 3px rgba(0,0,0,.3)}
+[data-theme=dark] .f:hover{color:var(--grn)}
 [data-theme=dark] .f,[data-theme=dark] .nav,[data-theme=dark] .lg,[data-theme=dark] .fsel{background:var(--card)}
 [data-theme=dark] .fsel.on{border-color:var(--grn);color:var(--grn)}
 [data-theme=dark] .sch.dim,[data-theme=dark] .card.dim,[data-theme=dark] .ticket.dim{opacity:.3}
@@ -179,18 +223,24 @@ window.addEventListener("DOMContentLoaded",()=>{const dark=document.documentElem
 </script>
 <div class="wrap">
 <header>
- <h1>セッションボード</h1>
+ <div>
+  <div class="brand">辺境TRPG村</div>
+  <h1>セッションボード</h1>
+  <div class="tagline">村の卓が、ひと目でわかる。</div>
+ </div>
  <div class="fresh" id="fresh">読込中…</div>
 </header>
 <div class="toolrow">
  <button class="f on" data-f="all">すべて</button>
  <button class="f" data-f="open">募集中だけ</button>
- <button class="f" id="rowBtn" type="button">レギュ名も表示</button>
+ <span class="tooldiv"></span>
  <select class="fsel" id="regSel"><option value="">レギュ: 全て</option></select>
  <select class="fsel" id="gmSel"><option value="">GM: 全て</option></select>
  <button class="f bf" data-band="asa" type="button">朝</button>
  <button class="f bf" data-band="hiru" type="button">昼</button>
  <button class="f bf" data-band="yoru" type="button">夜</button>
+ <span class="tooldiv"></span>
+ <button class="f" id="rowBtn" type="button">レギュ名も表示</button>
  <button class="f themeBtn" type="button">🌙 ダーク</button>
  <a class="tolink" href="takutate.html">🛠 セッション作成マイセット →</a>
 </div>
@@ -227,7 +277,7 @@ window.addEventListener("DOMContentLoaded",()=>{const dark=document.documentElem
 (function(){
 const WD=["日","月","火","水","木","金","土"];
 let DATA=null,FILTER="all",selDate=null,SYSF=null;   // SYSF=システム絞り込み
-let TWO=localStorage.getItem("board_two")!=="0";     // 2行表示（シナリオ名＋レギュ名）＝既定ON
+let TWO=localStorage.getItem("board_two_v2")!=="0";  // 2行表示（シナリオ名＋レギュ名）＝既定ON（キーv2=旧OFF保存をリセットして全員ONから）
 let REGF=null,GMF=null;                              // レギュ/GM絞り込み（非該当はdim＝グレーアウトで残す）
 const BANDS=new Set();                               // 朝昼夜絞り込み（複数選択可・空=全て）
 // 色分け＝システム単位（アリアンロッド2E＝村の主流＝緑／その他システム＝青）
@@ -385,8 +435,14 @@ function renderCal(){
    const c=sysColor(x.s);
    ch.style.setProperty("--rc",c);ch.style.setProperty("--rc-bg",tint(c));
    const bd=timeBand(x.d.start);
-   ch.innerHTML=`${bd?TB_ICONS[bd]:""}${esc(x.s.scenario)}`;
-   if(TWO&&x.s.reg){const rg=document.createElement("span");rg.className="rg";rg.textContent=x.s.reg;ch.appendChild(rg)}
+   if(TWO&&x.s.reg){
+    // 2行表示＝1行目シナリオ名（幅いっぱい）・2行目に朝昼夜アイコン＋レギュ名を集約
+    ch.innerHTML=esc(x.s.scenario);
+    const rg=document.createElement("span");rg.className="rg";
+    rg.innerHTML=`${bd?TB_ICONS[bd]+" ":""}${esc(x.s.reg)}`;ch.appendChild(rg);
+   }else{
+    ch.innerHTML=`${bd?TB_ICONS[bd]:""}${esc(x.s.scenario)}`;
+   }
    attachTip(ch,x);
    cell.appendChild(ch);
   });
@@ -489,7 +545,7 @@ $("todayBtn").addEventListener("click",()=>{curY=now.getFullYear();curM=now.getM
 $("viewBtn").addEventListener("click",()=>{VIEW=(VIEW==="month"?"year":"month");selDate=null;renderAll()});
 const rowBtn=$("rowBtn");
 function syncRowBtn(){rowBtn.classList.toggle("on",TWO)}
-rowBtn.addEventListener("click",()=>{TWO=!TWO;localStorage.setItem("board_two",TWO?"1":"0");syncRowBtn();renderAll()});
+rowBtn.addEventListener("click",()=>{TWO=!TWO;localStorage.setItem("board_two_v2",TWO?"1":"0");syncRowBtn();renderAll()});
 syncRowBtn();
 // レギュ/GM絞り込みプルダウン（データ読込後に選択肢を作る・非該当はグレーアウト）
 function fillFilterSelects(){
