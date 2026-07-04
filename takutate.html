@@ -387,10 +387,13 @@ $("genBtn").addEventListener("click",()=>{
   else{dateLines=[`> セッション日程：全${days.length}日`,...days.map((x,i)=>`> 　第${i+1}日：${mdw(x.d)} ${x.s}${x.e?`〜${x.e}`:"開始"}${du(x)}`)]}
  }else{dateLines=[`> セッション日程：参加者と日程すり合わせ${$("duration").value?`（所要 ${$("duration").value}）`:""}`]}
  // 募集要項
+ // Discordのマスクリンク=[文字](<URL>)。<>でプレビュー展開を抑制。通常メッセージで有効（2026-07-04仕様確認済み）
+ const REG_WHAT_URL="https://discord.com/channels/1001833522723561593/1221096657442181240"; // レギュ一覧-ar2e「レギュレーションって何？」
+ const PITA_GUIDE_URL="https://discord.com/channels/1001833522723561593/1002025988898701352/1497198070398586990"; // 掲示板の卓ピタ使い方説明
  const opts=state.opts.slice();
  const lines=[`# シナリオ：『${scen}』`,...dateLines,
   `> セッション形式：${$("format").value.trim()||"半テキ"}`,
-  `> レギュレーション：${reg}${regUrl?`（ ${regUrl} ）`:""}`,
+  `> [レギュレーション](<${REG_WHAT_URL}>)：${regUrl?`[${reg}](<${regUrl}>)`:reg}`,
   `> 募集人数：${$("players").value.trim()||"（人数）"}${$("invite").value.trim()?`（${$("invite").value.trim()}含む）`:""}${$("senkou").value.trim()?`／${$("senkou").value.trim()}`:""}`,
   `> PL募集期限：${$("deadline").value.trim()||"（期限）"}`,
   `> PC指定レベル：${$("cl").value.trim()||"（CL）"}`,
@@ -402,9 +405,14 @@ $("genBtn").addEventListener("click",()=>{
   if(hl.length===1)lines.push(`> ハウスルール：${hl[0]}`);
   else{lines.push(`> ハウスルール：`);hl.forEach(x=>lines.push(`> ${x}`))}
  }
- if($("warning").value.trim())lines.push(`> 注意事項：`,`> **${$("warning").value.trim()}**`);
+ if($("warning").value.trim()){
+  // 独立セクション（後輩くん選択 2026-07-04）。太字(**)は行をまたげないので1行ずつ太字にする
+  lines.push("",`### ⚠️ 注意事項`);
+  $("warning").value.trim().split("\n").forEach(x=>lines.push(x.trim()?`**${x.trim()}**`:""));
+ }
  const pitaUrl=$("pitaUrl").value.trim();
- if(pitaUrl){lines.push("",`**当卓では日程・出欠管理に卓ピタを利用します。下記URLからご参加ください。**`,`# ${pitaUrl}`,`使い方が分からない場合はDMか当トピック内でお気軽にどうぞ。`)}
+ // URLは見出しにせず通常行（生URL=招待カードの展開は維持）。使い方は掲示板の説明へマスクリンク誘導
+ if(pitaUrl){lines.push("",`**当卓では日程・出欠管理に卓ピタを利用します。下記URLからご参加ください。**`,pitaUrl,`使い方が分からない場合は[こちらの掲示板の説明](<${PITA_GUIDE_URL}>)か、DM・当トピック内でお気軽にどうぞ。`)}
  const post1=lines.join("\n");
  // 予告
  const trailer=$("trailer").value.trim()?`# 今回予告\n${$("trailer").value.trim()}\n\nアリアンロッドRPG2E改訂版\nレギュレーション：${reg}\n『${scen}』\n\n冒険の舞台がキミを待つ`:null;
