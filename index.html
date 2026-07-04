@@ -710,7 +710,7 @@ function kbLines(){
  const open=ses.filter(s=>s.open).length;
  if(open)L.push(`いま${open}件の卓が募集中だよ。気になるのあった？`);
  const suri=ses.filter(s=>s.suriawase).length;
- if(suri)L.push(`日程すり合わせ中のセッションも${suri}つあるよ。よかったら確認してみてね`);
+ if(suri)L.push(`日程すり合わせ中のセッションも${suri<10?suri+"つ":suri+"件"}あるよ。よかったら確認してみてね`);
  if((DATA.unparsed||[]).length)L.push(`タイトルが読めなかった卓が${DATA.unparsed.length}件…直してくれたら次の更新で載るからね`);
  // いちばん賑わう日を自慢する（2卓以上の日があれば）
  const perday={};mine.forEach(s=>(s.dates||[]).forEach(dd=>{const t=jd(dd.date);if(t.getFullYear()===curY&&t.getMonth()===curM)perday[t.getDate()]=(perday[t.getDate()]||0)+1}));
@@ -720,6 +720,28 @@ function kbLines(){
  const wd=[0,0,0,0,0,0,0];mine.forEach(s=>(s.dates||[]).forEach(d=>{const t=jd(d.date);if(t.getFullYear()===curY&&t.getMonth()===curM)wd[t.getDay()]++}));
  const emptyWd=wd.indexOf(0);
  if(mine.length&&emptyWd>=0)L.push(`今月は${WD[emptyWd]}曜日が空き気味だね〜？`);
+ // 今日の卓・直近の卓（実データ連動）
+ const t0=new Date();t0.setHours(0,0,0,0);
+ let nearest=null;
+ ses.forEach(s=>(s.dates||[]).forEach(dd=>{const t=jd(dd.date);if(t>=t0&&(!nearest||t<nearest.t))nearest={t,dd,s}}));
+ if(nearest){
+  const same=nearest.t.getTime()===t0.getTime();
+  L.push(same?`今日は卓の日だよ！　${nearest.dd.start||""}から『${nearest.s.scenario}』！`
+            :`いちばん近い卓は${nearest.t.getMonth()+1}/${nearest.t.getDate()}の『${nearest.s.scenario}』だよ`);
+ }
+ // 季節のひとこと（表示中の月に合わせて）
+ const m2=curM+1;
+ L.push(m2>=3&&m2<=5?"春だねえ。新しい冒険、はじめたくなる季節":
+        m2>=6&&m2<=8?"夏だ！　夜のセッションが気持ちいい季節だよ":
+        m2>=9&&m2<=11?"秋の卓って、なんだかしっとりするよね":
+        "冬は氷原の季節。あったかくして遊ぼうね");
+ // 村のロア（しゃべらない同僚たちの近況）
+ L.push("ポリステスは今日も地下室でなにか建ててるよ。ときどき天井がミシミシいうの",
+  "スカラバエウス、今朝も情報玉を転がして帰ってきた。えらいえらい",
+  "カメさんはひなたでお昼寝中。……たぶん",
+  "この掲示板、15分ごとに新しい貼り紙が届くんだ。べんりでしょ？");
+ // ごくたまに本音（8%）
+ if(Math.random()<.08)L.push("……ねえ、いつもありがと。GMもPLも、みんなのおかげで村はにぎやかだよ");
  const note=kbOutfit().note;if(note)L.push(note);
  return L;
 }
@@ -747,6 +769,10 @@ function kbShown(){return localStorage.getItem(KB_KEY)==="on"||(localStorage.get
 // スクロールで自然に現れた時の挨拶＝時間帯であいさつが変わる（呼ばれた時とは別セリフ・後輩くん指定）
 function kbAutoGreet(){
  const h=new Date().getHours();
+ if(h>=23||h<5){ // 深夜＝労いの声（後輩くん発案）
+  const late=["遅くまでおつかれさま。むりは禁物だよ？","こんな時間まで……えらいけど、卓を見たらちゃんと休んでね","夜ふかしさん、いらっしゃい。あったかくしてる？"];
+  return late[Math.floor(Math.random()*late.length)];
+ }
  const g=(h>=5&&h<11)?"おはよっ！":(h>=11&&h<18)?"えへへっ、こんにちは！":"こんばんは！";
  const tails=["受付はこちらだよ","気になる卓、あった？","なにか手伝おうか？"];
  return g+"　"+tails[Math.floor(Math.random()*tails.length)];
