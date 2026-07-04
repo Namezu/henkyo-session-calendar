@@ -34,6 +34,10 @@ body.season-spring{--s1:rgba(226,152,178,.16);--s2:rgba(139,182,120,.14);--s3:rg
 body.season-summer{--s1:rgba(64,150,160,.15);--s2:rgba(110,180,222,.13);--s3:rgba(79,129,96,.13);--s4:rgba(240,206,120,.09)}
 body.season-autumn{--s1:rgba(200,108,62,.17);--s2:rgba(185,138,47,.14);--s3:rgba(150,90,60,.10);--s4:rgba(79,110,86,.12)}
 body.season-winter{--s1:rgba(130,150,185,.15);--s2:rgba(170,190,215,.13);--s3:rgba(190,200,220,.10);--s4:rgba(120,140,170,.09)}
+/* 季節の風景画（ガラスの奥にうっすら・クロスフェード。bg/<季節>.jpgが無ければ色だけ） */
+#seasonBg{position:fixed;inset:0;z-index:-1;pointer-events:none}
+#seasonBg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
+#seasonBg img.show{opacity:.16}
 /* 紙の粒子（村の紹介サイトと同じ質感） */
 body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:5;opacity:var(--grain);
  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
@@ -200,9 +204,13 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .kb-bubble{position:relative}
 .kb-bubble::after{border-top-color:rgba(255,253,248,.9)}
 @keyframes kbpop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+/* 呼ぶ/帰すのアニメーション（呼ぶ=右からスッと入って一礼・帰す=手を振りながら右へ） */
+@keyframes kbin{from{opacity:0;transform:translateX(110px)}60%{transform:translateX(-8px)}to{opacity:1;transform:none}}
+@keyframes kbout{from{opacity:1;transform:none}to{opacity:0;transform:translateX(120px)}}
+#kanban.kb-in{animation:kbin .6s ease}
+#kanban.kb-out{animation:kbout .85s ease forwards}
 .kb-girl{width:132px;pointer-events:auto;cursor:pointer;filter:drop-shadow(0 6px 14px rgba(94,68,34,.25));transition:transform .2s}
 .kb-girl:hover{transform:translateY(-4px)}
-.kb-close{pointer-events:auto;position:absolute;top:-6px;right:0;width:22px;height:22px;border-radius:50%;border:1px solid var(--cln);background:var(--card);color:var(--mut);font-size:.75em;cursor:pointer;line-height:1;box-shadow:var(--shadow)}
 #kbShow{position:fixed;right:0;bottom:90px;z-index:40;writing-mode:vertical-rl;border:1px solid var(--glass-brd);border-right:none;background:rgba(255,253,248,.7);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--grn);font-family:'Shippori Mincho',serif;font-size:.74em;letter-spacing:.2em;padding:12px 6px;border-radius:12px 0 0 12px;cursor:pointer;box-shadow:var(--glass-in),var(--shadow)}
 #kbShow[hidden]{display:none}
 @media(max-width:560px){.kb-girl{width:96px}.kb-bubble{max-width:190px;font-size:.74em}}
@@ -213,6 +221,7 @@ footer::after{background:linear-gradient(90deg,var(--cln),transparent)}
 </style>
 </head>
 <body>
+<div id="seasonBg"><img id="sbA" alt=""><img id="sbB" alt=""></div>
 <div class="wrap">
 <header>
  <div>
@@ -267,7 +276,6 @@ footer::after{background:linear-gradient(90deg,var(--cln),transparent)}
 <div id="kanban" hidden>
  <div class="kb-bubble" id="kbBubble">こんにちは！</div>
  <img class="kb-girl" id="kbGirl" src="girl/base.png" alt="案内人の村娘">
- <button class="kb-close" id="kbClose" aria-label="案内人を隠す" title="隠す（右端のタブで呼び戻せます）">✕</button>
 </div>
 <button id="kbShow" hidden>案内人を呼ぶ</button>
 
@@ -528,10 +536,24 @@ function renderUnparsed(){
  el.innerHTML=`<div class="unp"><b>⚠ タイトルが読めなかった卓（${list.length}件）</b>——トピックのタイトルを定型（例：<code>7/20 21:00-25:00【レギュ名】シナリオ名</code>）に直せば、次の更新から自動で載ります。<ul>`+
   list.map(u=>`<li>${u.url?`<a href="${u.url}" target="_blank" rel="noopener">${esc(u.title)}</a>`:esc(u.title)}</li>`).join("")+`</ul></div>`;
 }
+// 季節の風景画をクロスフェードで差し替え（無い季節は色パレットだけ）
+let sbCur=null,sbUseA=true;
+function setSeasonBg(season){
+ if(sbCur===season)return;sbCur=season;
+ const a=$("sbA"),b=$("sbB");if(!a)return;
+ const nxt=sbUseA?a:b,prv=sbUseA?b:a;sbUseA=!sbUseA;
+ const url=`bg/${season}.jpg`;
+ const probe=new Image();
+ probe.onload=()=>{nxt.src=url;nxt.classList.add("show");prv.classList.remove("show")};
+ probe.onerror=()=>{a.classList.remove("show");b.classList.remove("show")};
+ probe.src=url;
+}
 function renderAll(){
- // 季節連動背景（表示中の月で春夏秋冬のガラス越しパレットが移ろう）
+ // 季節連動背景（表示中の月で春夏秋冬のガラス越しパレット＋風景画が移ろう）
  const m=curM+1;
- document.body.className="season-"+(m>=3&&m<=5?"spring":m>=6&&m<=8?"summer":m>=9&&m<=11?"autumn":"winter");
+ const season=(m>=3&&m<=5?"spring":m>=6&&m<=8?"summer":m>=9&&m<=11?"autumn":"winter");
+ document.body.className="season-"+season;
+ setSeasonBg(season);
  const isThisMonth=(curY===now.getFullYear()&&curM===now.getMonth());
  $("todayBtn").style.display=(VIEW==="month"&&isThisMonth)?"none":"";
  $("viewBtn").textContent=VIEW==="month"?"年表示":"月表示";
@@ -604,28 +626,54 @@ function kbSay(text){
  b.style.animation="none";void b.offsetWidth;b.style.animation="";
  b.textContent=text;
 }
-// 表示状態＝「カレンダーが見えている間は出ない」×「ユーザーが✕で消したか」の掛け算
-let kbDismissed=localStorage.getItem(KB_KEY)==="off",kbCalVisible=true,kbBroken=false;
+// 表示状態＝3モード: "on"=呼んだ(常に表示・カレンダー中でも並べて見たい人向け) / "off"=閉じた(タブのみ) / 未設定=おまかせ(スクロール連動)
+let kbCalVisible=true,kbBroken=false;
 const kbVis=new Map();
 const kbIO=("IntersectionObserver"in window)?new IntersectionObserver(es=>{
  es.forEach(e=>kbVis.set(e.target,e.isIntersecting));
  kbCalVisible=[...kbVis.values()].some(v=>v);kbApply();
 },{threshold:0,rootMargin:"-45% 0px 0px 0px"}):null; // 上45%は圏外扱い＝カレンダー下端が画面上半分へ入ったら（見終わり際に）もう登場
+// 挨拶差分（お辞儀=登場/手振り=退場）は読めた時だけ使う（無くても本体は動く）
+let kbGreet=null,kbBye=null,kbAnim=false;
+function kbPreload(src){return new Promise(r=>{const i=new Image();i.onload=()=>r(src);i.onerror=()=>r(null);i.src=src})}
+kbPreload("girl/greet.png").then(s=>kbGreet=s);
+kbPreload("girl/bye.png").then(s=>kbBye=s);
+function kbShown(){return localStorage.getItem(KB_KEY)==="on"||(localStorage.getItem(KB_KEY)!=="off"&&!kbCalVisible)}
 function kbApply(){
  if(kbBroken)return;
- $("kanban").hidden=!(!kbDismissed&&!kbCalVisible);
- $("kbShow").hidden=!(kbDismissed&&!kbCalVisible);
+ if(!kbAnim)$("kanban").hidden=!kbShown();
+ // タブは常設のトグル＝いる時は「帰す」・いない時は「呼ぶ」
+ $("kbShow").hidden=false;
+ $("kbShow").textContent=kbShown()?"案内人を帰す":"案内人を呼ぶ";
+}
+function kbSummon(){
+ localStorage.setItem(KB_KEY,"on");
+ const box=$("kanban"),img=$("kbGirl");
+ kbApply();
+ box.classList.remove("kb-out");box.classList.add("kb-in");
+ if(kbGreet){img.src=kbGreet;setTimeout(()=>{img.src=kbOutfit().src},1100)}
+ kbSay("はい、受付です。呼んでくれてありがと！");
+ setTimeout(()=>box.classList.remove("kb-in"),700);
+}
+function kbFarewell(){
+ localStorage.setItem(KB_KEY,"off");
+ const box=$("kanban"),img=$("kbGirl");
+ if(box.hidden){kbApply();return}
+ kbAnim=true;
+ if(kbBye)img.src=kbBye;
+ kbSay("うん、またね！");
+ box.classList.add("kb-out");
+ setTimeout(()=>{box.classList.remove("kb-out");img.src=kbOutfit().src;kbAnim=false;kbApply()},900);
 }
 function kbInit(){
  const box=$("kanban"),img=$("kbGirl");
- img.addEventListener("error",()=>{kbBroken=true;box.hidden=true;$("kbShow").hidden=true}); // 画像未配備なら丸ごと非表示
+ img.addEventListener("error",()=>{if(img.src.includes("base"))kbBroken=true,box.hidden=true,$("kbShow").hidden=true}); // 基本立ち絵が無い時だけ丸ごと非表示
  img.src=kbOutfit().src;
  if(kbIO)kbIO.observe($("cal"));else{kbCalVisible=false}
  kbApply();
  const next=()=>kbSay();
  img.addEventListener("click",next);$("kbBubble").addEventListener("click",next);
- $("kbClose").addEventListener("click",()=>{kbDismissed=true;localStorage.setItem(KB_KEY,"off");kbApply()});
- $("kbShow").addEventListener("click",()=>{kbDismissed=false;localStorage.setItem(KB_KEY,"on");kbApply();kbSay()});
+ $("kbShow").addEventListener("click",()=>{kbShown()?kbFarewell():kbSummon()});
  kbSay();
 }
 fetch("sessions.json?t="+Date.now()).then(r=>r.json()).then(d=>{
