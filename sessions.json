@@ -1,5 +1,5 @@
 {
- "updated": "2026/07/04 15:44",
+ "updated": "2026/07/04 15:53",
  "guild": "LODGE",
  "sessions": [
   {
@@ -209,6 +209,180 @@
    "gm": "甲殻飛行魔獣ポリステス",
    "url": "https://discord.com/channels/1023884809774305301/1522786418840174685",
    "created": "2026-07-04T02:09:34.255000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "昼下がりの依頼板",
+   "reg": "フツウノアリアン",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-18",
+     "start": "14:00",
+     "end": "18:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522857553858400359",
+   "created": "2026-07-04T06:52:14.165000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "剣と月光の夜行",
+   "reg": "SW2.5",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-18",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522857555733250060",
+   "created": "2026-07-04T06:52:14.612000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "朝霧の館",
+   "reg": "CoC",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-18",
+     "start": "9:00",
+     "end": "12:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522857557448720506",
+   "created": "2026-07-04T06:52:15.021000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "星継ぎの塔",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522857688705400832",
+   "created": "2026-07-04T06:52:46.315000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "小さな麦畑の大事件",
+   "reg": "フツウノアリアン",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522857689984663635",
+   "created": "2026-07-04T06:52:46.620000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "蒼海の残響",
+   "reg": "SW2.5",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522857690890764339",
+   "created": "2026-07-04T06:52:46.836000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "黄昏図書館の忘れ物",
+   "reg": "CoC",
+   "reg_is_name": false,
+   "dates": [],
+   "open": false,
+   "suriawase": true,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522857692476211220",
+   "created": "2026-07-04T06:52:47.214000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "白い地平の測量行",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522857693856010280",
+   "created": "2026-07-04T06:52:47.543000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "亜侠の夜逃げ屋稼業",
+   "reg": "サタスペ",
+   "reg_is_name": false,
+   "dates": [],
+   "open": false,
+   "suriawase": true,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522857695063838810",
+   "created": "2026-07-04T06:52:47.831000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "影走りの文",
+   "reg": "シノビガミ",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522857696829771797",
+   "created": "2026-07-04T06:52:48.252000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "花のブーケと誓い",
+   "reg": "ステラナイツ",
+   "reg_is_name": false,
+   "dates": [],
+   "open": false,
+   "suriawase": true,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522857698066960706",
+   "created": "2026-07-04T06:52:48.547000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "ダイスの神の休日",
+   "reg": "賽は投げられた",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522857699534966797",
+   "created": "2026-07-04T06:52:48.897000+00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "ジャームレポート#7",
+   "reg": "DX3rd",
+   "reg_is_name": false,
+   "dates": [],
+   "open": false,
+   "suriawase": true,
+   "gm": "甲殻飛行魔獣ポリステス",
+   "url": "https://discord.com/channels/1023884809774305301/1522857700701114490",
+   "created": "2026-07-04T06:52:49.175000+00:00",
    "source": "forum"
   }
  ],
