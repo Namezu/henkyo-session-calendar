@@ -88,6 +88,12 @@ textarea{min-height:74px;resize:vertical}
 .myset{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .myset select{flex:1;min-width:150px}
 .toplink{font-size:.85em;color:var(--ter);text-decoration:none;font-weight:700;border-bottom:1px dashed transparent;transition:border-color .18s}
+/* タイトルのライブプレビュー */
+.tprev{border:1px solid var(--glass-brd);border-radius:14px;background:var(--glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:var(--glass-in);padding:9px 13px;margin:6px 0 12px}
+.tp-head{font-size:.72em;color:var(--mut);letter-spacing:.06em;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.tp-ok{color:var(--grn)}
+.tp-body{font-family:'Shippori Mincho',serif;font-size:1.02em;color:var(--tx);margin-top:2px;word-break:break-all}
+.dayrow .wd{min-width:2.4em;text-align:center;font-size:.85em;flex:none}
 .toplink:hover{border-bottom-color:var(--ter)}
 </style>
 </head>
@@ -208,6 +214,10 @@ textarea{min-height:74px;resize:vertical}
 <textarea id="trailer" placeholder="空欄なら予告投稿は生成しません"></textarea>
 </fieldset>
 
+<div class="tprev">
+ <div class="tp-head">タイトルプレビュー <span class="tp-ok">✅ この形式ならセッションボードに自動掲載</span></div>
+ <div class="tp-body" id="tprevText">…</div>
+</div>
 <div class="genbar">
  <button class="gen" id="genBtn">✨ 生成する</button>
  <button class="gen save" id="setSave2">💾 <span class="lbl-full">マイセット保存</span><span class="lbl-short">保存</span></button>
@@ -232,6 +242,8 @@ const REGS={
  "ダンジョン・トラベラーズ":"1218612791632723968",
  "ネームドエネミー討伐RTA!!":"1300481807145238608",
  "勇者の首を晒せ":"1218611603600310453",
+ "この素晴らしいエリンにフェイトを！":"1233099746684436572",
+ "アリアンストラテジー":"1417129195217354752",
 };
 const sel=$("regSelect");
 sel.innerHTML=Object.keys(REGS).map(r=>`<option value="${r}">${r}</option>`).join("")+`<option value="__free__">✏️ 自由入力（その他システム等）</option>`;
@@ -246,10 +258,16 @@ document.querySelectorAll("#senkouBtns .mini").forEach(b=>b.addEventListener("cl
 // ---- 複数日程（時刻は30分刻みセレクト・9:00〜28:30＝深夜25時表記対応） ----
 let TIMES=[];for(let h=6;h<=28;h++)for(const m of["00","30"])TIMES.push(`${h}:${m}`);  // 6:00〜28:30（早起き勢〜深夜勢）
 const timeOpts=v=>`<option value=""${!v?" selected":""}>--:--</option>`+TIMES.map(t=>`<option${t===v?" selected":""}>${t}</option>`).join("");
+const WDJ=["日","月","火","水","木","金","土"];
 function addDayRow(d,s,e){
  if(s===undefined)s="21:00";
  const div=document.createElement("div");div.className="dayrow";
- div.innerHTML=`<input type="date" value="${d||""}"><select class="st">${timeOpts(s)}</select><span style="color:var(--mut)">〜</span><select class="en">${timeOpts(e||"")}</select><button class="del" type="button" title="この日を削除">✕</button>`;
+ div.innerHTML=`<input type="date" value="${d||""}"><span class="wd"></span><select class="st">${timeOpts(s)}</select><span style="color:var(--mut)">〜</span><select class="en">${timeOpts(e||"")}</select><button class="del" type="button" title="この日を削除">✕</button>`;
+ const upd=()=>{const v=div.querySelector("input[type=date]").value;
+  const w=div.querySelector(".wd");
+  if(v){const t=new Date(v+"T00:00");w.textContent=`(${WDJ[t.getDay()]})`;w.style.color=t.getDay()===0?"var(--sun,#e08f83)":t.getDay()===6?"var(--sat,#96b7e4)":"var(--mut)"}
+  else w.textContent="";};
+ div.querySelector("input[type=date]").addEventListener("change",upd);upd();
  div.querySelector(".del").addEventListener("click",()=>{if(document.querySelectorAll(".dayrow").length>1)div.remove()});
  $("days").appendChild(div);
 }
@@ -329,6 +347,26 @@ const WD=["日","月","火","水","木","金","土"];
 const md=x=>{const d=new Date(x+"T00:00");return`${d.getMonth()+1}/${d.getDate()}`};
 const mdw=x=>{const d=new Date(x+"T00:00");return`${d.getMonth()+1}/${d.getDate()}(${WD[d.getDay()]})`};
 
+// タイトル組み立て（生成とライブプレビューで共用＝この形式はボードのパーサーが100%読める）
+function buildTitle(state){
+ const scen=$("scenario").value.trim()||"（シナリオ名）";
+ const isFree=sel.value==="__free__";
+ const reg=isFree?($("regFree").value.trim()||"（レギュ名）"):sel.value;
+ const days=state.days.filter(x=>x.d);
+ const sameTime=days.length>0&&days.every(x=>x.s===days[0].s&&x.e===days[0].e);
+ if(state.dateMode==="fixed"&&days.length){
+  const dstr=days.map(x=>md(x.d)).join(",");
+  const tstr=sameTime?` ${days[0].s}${days[0].e?"-"+days[0].e:"～"}`:"";
+  return`${dstr}${tstr}【${reg}】${scen}`;
+ }
+ return`日程すり合わせ【${reg}】${scen}`;
+}
+// ライブプレビュー（入力のたび、いま生成されるタイトルを表示）
+function updPrev(){try{$("tprevText").textContent=buildTitle(collect())}catch(e){}}
+document.addEventListener("input",updPrev);
+document.addEventListener("change",updPrev);
+updPrev();
+
 $("genBtn").addEventListener("click",()=>{
  const state=collect();try{localStorage.setItem("takutate_last",JSON.stringify(state))}catch(e){}
  const scen=$("scenario").value.trim()||"（シナリオ名）";
@@ -337,13 +375,7 @@ $("genBtn").addEventListener("click",()=>{
  const regUrl=isFree?$("regFreeUrl").value.trim():`https://discord.com/channels/${GUILD}/${REGS[sel.value]}`;
  const days=state.days.filter(x=>x.d);
  const sameTime=days.length>0&&days.every(x=>x.s===days[0].s&&x.e===days[0].e);
- // タイトル
- let title;
- if(state.dateMode==="fixed"&&days.length){
-  const dstr=days.map(x=>md(x.d)).join(",");
-  const tstr=sameTime?` ${days[0].s}${days[0].e?"-"+days[0].e:"～"}`:"";
-  title=`${dstr}${tstr}【${reg}】${scen}`;
- }else{title=`日程すり合わせ【${reg}】${scen}`}
+ const title=buildTitle(state);
  // 日程行（所要時間は開始〜終了から自動計算）
  let dateLines;
  if(state.dateMode==="fixed"&&days.length){
@@ -392,7 +424,19 @@ $("genBtn").addEventListener("click",()=>{
   });
   R.appendChild(div);
  }
- out("① トピックタイトル",title,"フォーラム「新しい投稿」のタイトル欄へ");
+ // まとめてコピー（全部を見出し付きで1回のコピーに）
+ const parts=[["① トピックタイトル",title],["② 募集要項（1投稿目）",post1]];
+ if(trailer)parts.push(["③ 今回予告（別投稿）",trailer]);
+ parts.push(["④ 卓予定リスト行",sheetRow]);
+ if(pitaMemo)parts.push(["⑤ 卓ピタ入力メモ",pitaMemo]);
+ const allText=parts.map(([t,b])=>`◆${t}\n${b}`).join("\n\n");
+ const bar=document.createElement("div");bar.className="out";
+ bar.innerHTML=`<h3>📋 生成結果（${parts.length}点）<button class="copy" id="copyAll">まとめてコピー</button></h3>`;
+ bar.querySelector("#copyAll").addEventListener("click",function(){
+  (navigator.clipboard?navigator.clipboard.writeText(allText):Promise.reject()).then(()=>{this.textContent="全部コピーした！";this.classList.add("done");setTimeout(()=>{this.textContent="まとめてコピー";this.classList.remove("done")},1600)}).catch(()=>alert("コピーに失敗…各枠のコピーボタンを使ってね"));
+ });
+ R.appendChild(bar);
+ out("① トピックタイトル",title,"フォーラム「新しい投稿」のタイトル欄へ（この形式ならセッションボードに自動掲載されます）");
  out("② 募集要項（1投稿目）",post1,"タグ「募集中」を忘れずに");
  if(trailer)out("③ 今回予告（別投稿）",trailer);
  out("④ 卓予定リスト行（シートに貼る用）",sheetRow,"タブ区切り＝行に貼ると各セルへ分かれます。リンク列はトピックを立てた後に");
