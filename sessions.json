@@ -2,11 +2,224 @@
  "updated": "2026/07/04 12:00",
  "note": "プロトタイプ用サンプルデータ（架空の卓＋LODGEテスト卓）。自動収集が繋がるとここが実データに置き換わる。",
  "sessions": [
-  {"scenario":"フェイス：ゴールド","reg":"ミスリルクレスト","dates":[{"date":"2026-07-10","start":"21:00","end":"25:00"}],"open":true,"suriawase":false,"gm":"カテナドルグ","url":"https://discord.com/channels/1023884809774305301/1522576853796393030","created":"2026-07-03T12:16:00","source":"forum"},
-  {"scenario":"（サンプル）霧の峠の護衛行","reg":"フツウノアリアン","dates":[{"date":"2026-07-12","start":"14:00","end":"18:00"}],"open":true,"suriawase":false,"gm":"サンプルGM","url":"","created":"2026-07-04T09:00:00","source":"forum"},
-  {"scenario":"（サンプル）星降る夜のワルツ","reg":"アンコールを流星に","dates":[],"open":true,"suriawase":true,"gm":"サンプルGM2","url":"","created":"2026-07-01T20:00:00","source":"forum"},
-  {"scenario":"（サンプル）遺跡RTA大会","reg":"ネームドエネミー討伐RTA!!","dates":[{"date":"2026-07-19","start":"21:00","end":"24:00"},{"date":"2026-07-21","start":"22:00","end":"25:00"}],"open":false,"suriawase":false,"gm":"サンプルGM3","url":"","created":"2026-06-28T10:00:00","source":"forum"},
-  {"scenario":"（サンプル・手動掲載）氷原の第0話体験卓","reg":"氷原開拓団","dates":[{"date":"2026-08-02","start":"21:00","end":"25:00"}],"open":true,"suriawase":false,"gm":"サンプルGM4","url":"","created":"2026-07-04T11:00:00","source":"manual"},
-  {"scenario":"（サンプル）終わった卓の見え方確認","reg":"ミスリルクレスト","dates":[{"date":"2026-07-01","start":"21:00","end":"25:00"}],"open":false,"suriawase":false,"gm":"サンプルGM5","url":"","created":"2026-06-20T10:00:00","source":"forum"}
+  {
+   "scenario": "フェイス：ゴールド",
+   "reg": "ミスリルクレスト",
+   "dates": [
+    {
+     "date": "2026-07-10",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "gm": "カテナドルグ",
+   "url": "https://discord.com/channels/1023884809774305301/1522576853796393030",
+   "created": "2026-07-03T12:16:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "（サンプル）霧の峠の護衛行",
+   "reg": "フツウノアリアン",
+   "dates": [
+    {
+     "date": "2026-07-12",
+     "start": "14:00",
+     "end": "18:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "gm": "サンプルGM",
+   "url": "",
+   "created": "2026-07-04T09:00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "（サンプル）星降る夜のワルツ",
+   "reg": "アンコールを流星に",
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "gm": "サンプルGM2",
+   "url": "",
+   "created": "2026-07-01T20:00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "（サンプル）遺跡RTA大会",
+   "reg": "ネームドエネミー討伐RTA!!",
+   "dates": [
+    {
+     "date": "2026-07-19",
+     "start": "21:00",
+     "end": "24:00"
+    },
+    {
+     "date": "2026-07-21",
+     "start": "22:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "gm": "サンプルGM3",
+   "url": "",
+   "created": "2026-06-28T10:00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "（サンプル・手動掲載）氷原の第0話体験卓",
+   "reg": "氷原開拓団",
+   "dates": [
+    {
+     "date": "2026-08-02",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "gm": "サンプルGM4",
+   "url": "",
+   "created": "2026-07-04T11:00:00",
+   "source": "manual"
+  },
+  {
+   "scenario": "（サンプル）終わった卓の見え方確認",
+   "reg": "ミスリルクレスト",
+   "dates": [
+    {
+     "date": "2026-07-01",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "gm": "サンプルGM5",
+   "url": "",
+   "created": "2026-06-20T10:00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "（サンプル）月光の帰還兵",
+   "reg": "ピースメイカー",
+   "dates": [
+    {
+     "date": "2026-07-06",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "gm": "サンプルGM6",
+   "url": "",
+   "created": "2026-06-25T10:00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "（サンプル）朝のダンジョンは健康にいい",
+   "reg": "フツウノアリアン",
+   "dates": [
+    {
+     "date": "2026-07-11",
+     "start": "9:00",
+     "end": "12:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "gm": "サンプルGM7",
+   "url": "",
+   "created": "2026-07-03T08:00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "（サンプル）賽は投げられた 第12夜",
+   "reg": "賽は投げられた",
+   "dates": [
+    {
+     "date": "2026-07-11",
+     "start": "21:30"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "gm": "サンプルGM8",
+   "url": "",
+   "created": "2026-06-29T10:00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "（サンプル）夏空のスクランブル",
+   "reg": "アンコールを流星に",
+   "dates": [
+    {
+     "date": "2026-07-18",
+     "start": "14:00",
+     "end": "18:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "gm": "サンプルGM9",
+   "url": "",
+   "created": "2026-07-02T10:00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "（サンプル）宵闇の茶会",
+   "reg": "ミスリルクレスト",
+   "dates": [
+    {
+     "date": "2026-07-18",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "gm": "サンプルGM10",
+   "url": "",
+   "created": "2026-07-04T09:30:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "（サンプル）廃都の犬たち",
+   "reg": "フツウノアリアン",
+   "dates": [
+    {
+     "date": "2026-07-18",
+     "start": "22:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "gm": "サンプルGM11",
+   "url": "",
+   "created": "2026-06-30T10:00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "（サンプル）はじまりの酒場",
+   "reg": "フツウノアリアン",
+   "dates": [
+    {
+     "date": "2026-07-26",
+     "start": "13:00",
+     "end": "17:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "gm": "サンプルGM12",
+   "url": "",
+   "created": "2026-07-04T11:30:00",
+   "source": "manual"
+  }
  ]
 }
