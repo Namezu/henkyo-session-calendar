@@ -224,7 +224,7 @@
   {
    "scenario": "（サンプル）SW2.5 剣の迷宮",
    "reg": "SW2.5",
-   "system": "その他システム",
+   "system": "SW2.5",
    "dates": [
     {
      "date": "2026-07-13",
@@ -242,7 +242,7 @@
   {
    "scenario": "（サンプル）CoC 忌まわしき館",
    "reg": "CoC7th",
-   "system": "その他システム",
+   "system": "CoC",
    "dates": [
     {
      "date": "2026-07-25",
@@ -255,6 +255,24 @@
    "gm": "サンプルGM14",
    "url": "",
    "created": "2026-07-04T12:00:00",
+   "source": "forum"
+  },
+  {
+   "scenario": "（サンプル）シノビガミ 影の宴",
+   "reg": "シノビガミ",
+   "system": "シノビガミ",
+   "dates": [
+    {
+     "date": "2026-07-20",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "gm": "サンプルGM15",
+   "url": "",
+   "created": "2026-07-01T12:00:00",
    "source": "forum"
   }
  ]

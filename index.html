@@ -134,14 +134,29 @@ const WD=["日","月","火","水","木","金","土"];
 let DATA=null,FILTER="all",selDate=null,SYSF=null;   // SYSF=システム絞り込み
 // 色分け＝システム単位（アリアンロッド2E＝村の主流＝緑／その他システム＝青）
 const AR2E_REGS=new Set(["ミスリルクレスト","ミスリルクエスト","氷原開拓団","フツウノアリアン","イジョウナアリアン","ピースメイカー","アンコールを流星に","さちあれ","賽は投げられた","ダンジョン・トラベラーズ","ネームドエネミー討伐RTA!!","勇者の首を晒せ","グルメ卓"]);
-function sysOf(s){
- if(s.system)return s.system;
- const r=s.reg||"";
- if(AR2E_REGS.has(r)||[...AR2E_REGS].some(k=>r.includes(k))||/アリアンロッド|AR2E/i.test(r))return"アリアンロッド2E";
- return r?`その他（${r}）`:"その他システム";
+// システム分類＝村のリアクションロール対応システム＋CoC（それぞれ固有色）
+const SYS_DEFS=[
+ ["アリアンロッド2E", "#4f8160", /アリアンロッド|AR2E/i],
+ ["SW2.5",           "#3a5f8a", /SW2\.?5|ソードワールド/i],
+ ["CoC",             "#6d5aa0", /CoC|クトゥルフ|クトゥルフ神話/i],
+ ["サタスペ",         "#b0483a", /サタスペ/],
+ ["シノビガミ",       "#4a4f68", /シノビガミ/],
+ ["DX3rd",           "#c2527d", /DX3rd|ダブルクロス/i],
+ ["ブルアカ",         "#3aa0c8", /ブルアカ/],
+ ["ステラナイツ",     "#b98a2f", /ステラナイツ/],
+ ["D&D",             "#8f2f2f", /D&D|DnD|ダンジョンズ/i],
+ ["Needle",          "#4d8f8b", /Needle|ニードル/i],
+];
+const SYS_COLORS=Object.fromEntries(SYS_DEFS.map(x=>[x[0],x[1]]));
+SYS_COLORS["その他システム"]="#9a948a";
+function sysGroup(s){
+ if(s.system&&SYS_COLORS[s.system])return s.system;
+ const r=(s.reg||"")+" "+(s.scenario||"");
+ if(AR2E_REGS.has(s.reg)||[...AR2E_REGS].some(k=>(s.reg||"").includes(k)))return"アリアンロッド2E";
+ for(const[name,,re]of SYS_DEFS)if(re.test(r))return name;
+ return"その他システム";
 }
-function sysColor(s){return sysOf(s).startsWith("アリアンロッド")?"#4f8160":"#3a5f8a"}
-function sysGroup(s){return sysOf(s).startsWith("アリアンロッド")?"アリアンロッド2E":"その他システム"}
+function sysColor(s){return SYS_COLORS[sysGroup(s)]||"#9a948a"}
 function tint(c){return c+"22"}
 const now=new Date();let curY=now.getFullYear(),curM=now.getMonth(); // 0-based
 const $=id=>document.getElementById(id);
@@ -177,7 +192,7 @@ function renderLegend(){
   const k=sysGroup(s);g[k]=(g[k]||0)+1;});
  const el=$("legend");
  el.innerHTML=Object.entries(g).sort((a,b)=>b[1]-a[1]).map(([k,n])=>{
-  const c=k==="アリアンロッド2E"?"#4f8160":"#3a5f8a";
+  const c=SYS_COLORS[k]||"#9a948a";
   return`<span class="lg${SYSF===k?" on":""}" data-r="${esc(k)}" style="--rc:${c};--rc-bg:${tint(c)}"><span class="sw"></span>${esc(k)}（${n}）</span>`}).join("");
  el.querySelectorAll(".lg").forEach(p=>p.addEventListener("click",()=>{
   SYSF=(SYSF===p.dataset.r?null:p.dataset.r);renderAll()}));
