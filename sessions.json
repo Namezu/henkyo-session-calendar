@@ -1,5 +1,5 @@
 {
- "updated": "2026/07/04 10:54",
+ "updated": "2026/07/05 04:40",
  "guild": "LODGE",
  "sessions": [
   {
@@ -580,7 +580,7 @@
   {
    "scenario": "ランダムダンジョン",
    "reg": null,
-   "reg_is_name": true,
+   "reg_is_name": false,
    "dates": [
     {
      "date": "2026-07-26",
