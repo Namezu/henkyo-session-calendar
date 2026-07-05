@@ -788,6 +788,8 @@ function kbLines(){
   "カメさんの言葉？ わかんないよ？ ……なんとなく、こう言ってる気がするだけ",
   "村の外に出たらチャルタヴォラがすっごくたくさん居てびっくりした！",
   "来てくれてうれしいな",
+  "むりして夜ふかしはだめだよ？　いい卓は逃げないから",
+  "はじめてさんも、ゆっくりでいいからね。わからないことは、わたしか村のみんなに聞いて",
   "どの卓に参加する？　それとも、卓を立ててくれる！？"];
  if(!DATA)return L;
  const ses=DATA.sessions||[];
@@ -916,17 +918,18 @@ function kbLecture(){ // 2度目＝刺す正論で説教して勝手に帰る（
  setTimeout(kbLeaveBox,7500); // 説教を読ませてから退場
 }
 function kbTouch(){
- if(kbNegoActive)return; // 交渉中に連打してもノーカン（会話に集中して）
  kbTouchCount++;
  const now=Date.now();
  kbTouchHits=kbTouchHits.filter(t=>now-t<10000);kbTouchHits.push(now);
- if(kbTouchHits.length>=5){
+ if(kbTouchHits.length>=5){ // 連打は会話中でも怒る
   kbTouchHits=[];kbOffense++;
   if(kbOffense>=2){kbLecture();return}
-  kbAngry("もう、くすぐったいってば！そんなに連打しないの……次はないからね？");return
+  kbNegoEnd();kbAngry("もう、くすぐったいってば！そんなに連打しないの……次はないからね？");return
  }
- if(kbTouchCount%20===0){kbAngry(`もう${kbTouchCount}回も私のこと触ってるんだけど……`);return} // ゆっくり派の隠し要素（てんさんPRのネタ）
- kbRestoreOutfit();kbSay();
+ if(kbTouchCount%20===0){kbNegoEnd();kbAngry(`もう${kbTouchCount}回も私のこと触ってるんだけど……`);return} // ゆっくり派の隠し要素（てんさんPRのネタ）
+ if(kbNegoActive)return; // 会話中の普通のクリックは会話を続ける
+ if(kbAngryTimer)return; // 怒ってる最中は取り付く島なし（メニューで怒りを上書きしない）
+ kbRestoreOutfit();kbDialog("menu"); // リンデを押しても「どうしたの？」→選択肢（後輩くん設計）
 }
 function kbToggleLinde(){
  if(kbNegoActive)return;
@@ -984,6 +987,62 @@ function kbNegoNode(key){
  },5400);
 }
 function kbNegoEnd(){kbNegoActive=false;const c=$("kbChoices");if(c){c.hidden=true;c.innerHTML=""}}
+// ---- 会話メニュー（吹き出しクリックで開く汎用会話・後輩くん設計 2026-07-05）----
+function kbRecommend(band){ // 時間帯(asa/hiru/yoru/null)に合う募集中の未来卓をランダムに1つ
+ const today=new Date();const t0=new Date(today.getFullYear(),today.getMonth(),today.getDate());
+ const cands=((DATA&&DATA.sessions)||[]).filter(x=>x.open&&(x.dates||[]).some(d=>{
+  const t=jd(d.date);return t>=t0&&(!band||timeBand(d.start)===band)}));
+ return cands.length?cands[Math.floor(Math.random()*cands.length)]:null;
+}
+function kbRecLine(band){
+ const s=kbRecommend(band);
+ if(!s)return band?"うーん、いまその時間帯の募集は無いみたい。……つまり、あなたが立てたら一人勝ちってことだよ？":"いまは募集中の卓が無いみたいだね。……立てるなら、わたし、応援するよ";
+ const dd=(s.dates||[]).map(d=>({d,t:jd(d.date)})).filter(x=>x.t>=new Date()).sort((a,b)=>a.t-b.t)[0]||{d:(s.dates||[])[0],t:jd(s.dates[0].date)};
+ return `${dd.t.getMonth()+1}/${dd.t.getDate()}${dd.d.start?" "+dd.d.start+"〜":""}の『${s.scenario}』、募集中だよ。どうかな？`;
+}
+const KB_MENU={
+ menu:{say:()=>{const R=["どうしたの？","ん、なあに？","はい、受付です。……なにか御用？","呼んだ？　聞きたいこと、ある？"];return R[Math.floor(Math.random()*R.length)]},
+  opts:[["おすすめの卓ってある？","rec"],["セッションってどう参加するの？","howto1"],["村の住人について教えて","lore"],["ううん、おしゃべりしたいだけ","chat"]]},
+ rec:{say:"任せて、受付だからね。……遊べる時間帯はいつ？",
+  opts:[["朝がいい","rec_asa"],["昼かな","rec_hiru"],["夜だね","rec_yoru"],["いつでも！","rec_any"]]},
+ rec_asa:{say:()=>kbRecLine("asa"),opts:[["ありがとう！","bye_warm"],["他の時間帯は？","rec"]]},
+ rec_hiru:{say:()=>kbRecLine("hiru"),opts:[["ありがとう！","bye_warm"],["他の時間帯は？","rec"]]},
+ rec_yoru:{say:()=>kbRecLine("yoru"),opts:[["ありがとう！","bye_warm"],["他の時間帯は？","rec"]]},
+ rec_any:{say:()=>kbRecLine(null),opts:[["ありがとう！","bye_warm"],["時間帯で選び直す","rec"]]},
+ howto1:{say:"基本はかんたん。卓部屋の募集トピックを読んで、気になったらそのトピックの中で参加表明するの。募集人数も期限も注意事項も、ぜんぶそこに書いてあるよ",
+  opts:[["参加表明のコツは？","howto2"],["なるほど、ありがとう","bye_warm"]]},
+ howto2:{say:"卓ごとに先着だったり選考だったりするから、まずは募集要項の指定どおりに、ね。あとこの村は『事前のすり合わせ』をすっごく大事にするの。わからないことは、聞けばみんな教えてくれるよ",
+  opts:[["ありがとう！","bye_warm"],["村の住人についても教えて","lore"]]},
+ lore:{say:"ふふ、うちの子たちのこと？　だれの話がいい？",
+  opts:[["スカラバエウス","lore_s"],["カメさん","lore_k"],["ポリステス","lore_p"],["リンデのこと","lore_l"]]},
+ lore_s:{say:"あの子は甲殻魔獣。卓部屋の張り紙を情報玉にまとめて、15分おきにここまで転がしてくるの。……使役してるのかって？　してないよ。あれはただの習性",
+  opts:[["他の子のことも","lore"],["ありがとう","bye_warm"]]},
+ lore_k:{say:"カメさんは村のいちばん偉い亀。言葉は話さないよ。……わたしが通訳できるわけじゃないってば。なんとなく、こう言ってる気がするだけ",
+  opts:[["他の子のことも","lore"],["ありがとう","bye_warm"]]},
+ lore_p:{say:"ポリステスは工務店の蜂の魔獣。村の外のテスト場で巣を営んでるの。悪い子じゃないけど……危ない魔獣だから、近づかないでね？",
+  opts:[["他の子のことも","lore"],["ありがとう","bye_warm"]]},
+ lore_l:{say:"わたし？　リンデ。ただの村娘だよ。この掲示板の番をしてるの。それ以上でも、それ以下でもないの",
+  opts:[["かわいいと思う","lore_tease"],["ありがとう","bye_warm"]]},
+ lore_tease:{say:"…………仕事中なので。次の方、どうぞ",end:true,wait:3600},
+ chat:{say:()=>{const L=kbLines();return L[Math.floor(Math.random()*L.length)]},opts:[["もっと！","chat"],["ありがとう","bye_warm"]]},
+ bye_warm:{say:"うん。……いい卓と出会えますように、ってね",end:true,wait:3600},
+};
+function kbDialog(key){
+ const n=KB_MENU[key];if(!n)return;
+ kbNegoActive=true;
+ kbSay(typeof n.say==="function"?n.say():n.say);
+ const c=$("kbChoices");c.innerHTML="";
+ if(n.opts){
+  c.hidden=false;
+  n.opts.forEach(([label,next])=>{
+   const bt=document.createElement("button");bt.type="button";bt.className="kb-choice";bt.textContent=label;
+   bt.addEventListener("click",()=>kbDialog(next));c.appendChild(bt);
+  });
+  return;
+ }
+ c.hidden=true;
+ setTimeout(kbNegoEnd,n.wait||3600);
+}
 // 表示状態＝3モード: "on"=呼んだ(常に表示・カレンダー中でも並べて見たい人向け) / "off"=閉じた(タブのみ) / 未設定=おまかせ(スクロール連動)
 let kbCalVisible=true,kbBroken=false;
 const kbVis=new Map();
@@ -1049,8 +1108,8 @@ function kbInit(){
  img.src=kbOutfit().src;
  if(kbIO)kbIO.observe($("cal"));else{kbCalVisible=false}
  kbApply();
- const next=()=>{if(!kbNegoActive)kbSay()};
- img.addEventListener("click",kbTouch);$("kbBubble").addEventListener("click",next);
+ const openMenu=()=>{if(!kbNegoActive)kbDialog("menu")};
+ img.addEventListener("click",kbTouch);$("kbBubble").addEventListener("click",openMenu);
  $("kbShow").addEventListener("click",kbToggleLinde);
  kbSay();
  setInterval(()=>{if(!$("kanban").hidden&&!kbNegoActive&&Date.now()-kbLastAt>8500)kbSay()},10000); // 自動おしゃべり＝直近の発話から8.5秒は待つ（交渉中は黙る）
