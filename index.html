@@ -935,17 +935,20 @@ function kbLecture(){ // 2度目＝刺す正論で説教して勝手に帰る（
  kbSetLeft();
  setTimeout(kbLeaveBox,7500); // 説教を読ませてから退場
 }
-let kbCharmHits=0,kbCharmLastT=0,kbCharmFaceT=null;
+let kbCharmHits=0,kbCharmLastT=0,kbCharmFaceT=null,kbCureLock=false;
 function kbCureCharm(){ // 20連打達成＝覚醒（目覚め→痴態を思い出して赤面謝罪の二段演出）
  KB_HYPNO=false;try{localStorage.removeItem(KB_CHARM_KEY)}catch(e){}
+ kbCureLock=true; // 演出中は連打の残弾を無効化（21連打目でセリフが飛ぶ事故の防止）
  const img=$("kbGirl");kbGrave=true;img.src="girl/angri.png";
  kbSay("——ハッ！？　わ、わたし、いままで……！？　……あ。……ありがと、目が覚めた。……覚めて、しまった……",true);
  setTimeout(()=>{kbGrave=false;img.src="girl/blush.png";
   kbSay("……っ、思い出してきた。わたし、へんな話し方してたでしょ！？　あんな……あんなに甘ったるいの、わたしじゃない……！　ご、ごめんなさい。お願い、ぜんぶ忘れて。一生のお願いだから……！",true);
   setTimeout(()=>{if(!kbGrave)img.src=kbOutfit().src},4200);
  },5200);
+ setTimeout(()=>{kbCureLock=false;kbTouchHits=[];kbCharmHits=0},12000); // 赤面まで読み終わる頃に解除・残弾もリセット
 }
 function kbTouch(){
+ if(kbCureLock)return; // 覚醒演出中はそっとしておいて
  kbTouchCount++;
  if(KB_HYPNO){ // 魅了中＝連打で魅了がひび割れていく（20連打で覚醒・後輩くん設計）
   const now=Date.now();
@@ -978,7 +981,7 @@ function kbTouch(){
  kbRestoreOutfit();kbDialog("menu"); // リンデを押しても「どうしたの？」→選択肢（後輩くん設計）
 }
 function kbToggleLinde(){
- if(kbNegoActive)return;
+ if(kbNegoActive||kbCureLock)return;
  if(kbMoodLeft()&&!kbShown()){kbNegoStart();return} // 怒って帰った後に呼ぶ→駆け引きへ
  const now=Date.now();
  kbToggleHits=kbToggleHits.filter(t=>now-t<KB_TOGGLE_WINDOW);kbToggleHits.push(now);
