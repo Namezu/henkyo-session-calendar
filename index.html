@@ -210,6 +210,11 @@ a.ticket{display:block;text-decoration:none;color:inherit}
 /* ---- 選択日の詳細・すり合わせ・リスト ---- */
 .section{font-family:'Shippori Mincho',serif;color:var(--grn);font-size:1.1em;letter-spacing:.05em;margin:26px 4px 8px;border-bottom:1px solid var(--cln);padding-bottom:5px;position:relative}
 .section::after{content:"";position:absolute;left:0;bottom:-1px;width:64px;height:2px;background:linear-gradient(90deg,var(--grn),var(--grn2))}
+/* 月の卓一覧＝広い画面では2列グリッド（スマホは1列のまま・後輩くん要望 2026-07-05） */
+@media(min-width:860px){
+ #monthSec{display:grid;grid-template-columns:1fr 1fr;gap:0 12px;align-items:start}
+ #monthSec .section{grid-column:1/-1}
+}
 .card{display:block;background:rgba(255,255,255,.06);border:1px solid var(--glass-brd);border-left:5px solid var(--grn2);border-radius:16px;padding:12px 14px;margin:8px 0;text-decoration:none;color:var(--tx);position:relative;box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 1px 4px rgba(0,0,0,.25);transition:transform .18s,box-shadow .18s,background .18s}
 .card:hover{transform:translateY(-2px);background:rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.16),var(--shadow)}
 .card.closed{border-left-color:#b9b2a6;opacity:.78}
