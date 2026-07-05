@@ -890,7 +890,7 @@ let kbLast="";
 const KB_FOLLOWUPS=[
  [/ポリステスが今日も/,"あ、ポリステスっていうのはね……甲殻飛行魔獣ポリステス。すっごく危ない魔獣だから、見つけても近づかないでね！"],
  [/ポメロが日なたで/,"ポメロはね、村にいるぷにぷにの生きもの。とっても穏やかで、なにも言わないの。さわると、ちょっとひんやりしてるんだよ"],
- [/^スカラバエウス/,"スカラバエウスはね、大きなタマオシコガネ。集めたものを紙に包んで運ぶ習性があるの。人の言葉は解さないけど、すっごく働き者なんだよ"],
+ [/^スカラバエウス？/,"スカラバエウスはね、大きなタマオシコガネ。集めたものを紙に包んで運ぶ習性があるの。人の言葉は解さないけど、すっごく働き者なんだよ"],
  [/チャルタヴォラが/,"チャルタヴォラっていうのは“紙喰い”の群れのこと。書き付けをぱくぱく読んじゃう不思議な生きものなの。読まれても字は消えないから安心してね"],
 ];
 let kbLastAt=0; // 直近発話時刻＝読む時間を確保（自動回転が早すぎ問題の対策 2026-07-05）
@@ -905,7 +905,7 @@ function kbSay(text,raw){
  kbLast=text;
  b.style.animation="none";void b.offsetWidth;b.style.animation="";
  b.textContent=text;
- for(const[re,note]of KB_FOLLOWUPS)if(re.test(text))setTimeout(()=>{if(kbLast===text)kbSay(note)},4800);
+ for(const[re,note]of KB_FOLLOWUPS)if(re.test(text)&&note!==text)setTimeout(()=>{if(kbLast===text)kbSay(note)},4800); // note自身がreに一致すると無限自己ループ=回転凍結（2026-07-05実地バグ）
 }
 let kbTouchCount=0,kbAngryTimer=null,kbToggleHits=[];
 const KB_TOGGLE_LIMIT=6,KB_TOGGLE_WINDOW=10000;
