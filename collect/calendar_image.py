@@ -37,7 +37,7 @@ REG2SYS_N = {_norm(k): v for k, v in REG2SYS.items()}
 SYS_DEFS = [
     ("アリアンロッド2E", "#6fae82", re.compile(r"アリアンロッド|AR2E", re.I)),
     ("SW2.5",           "#7ca4d8", re.compile(r"SW2\.?5|ソードワールド", re.I)),
-    ("CoC",             "#a08ac8", re.compile(r"CoC|クトゥルフ", re.I)),
+    ("CoC",             "#a08ac8", re.compile(r"CoC|クトゥルフ|狂気山脈|[67]版", re.I)),
     ("サタスペ",         "#d88a80", re.compile(r"サタスペ")),
     ("シノビガミ",       "#8d93b8", re.compile(r"シノビガミ")),
     ("DX3rd",           "#d883a8", re.compile(r"DX3rd|ダブルクロス", re.I)),

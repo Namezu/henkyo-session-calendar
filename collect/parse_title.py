@@ -24,8 +24,10 @@ def parse(title):
     t = re.sub(r"20[0-9]{2}\s*[/年]\s*", "", t)
     # 【】群からレギュ枠と話数枠を判別（【】が無ければ『』をタイトル括弧として代用）
     braces = [(m.start(), m.end(), m.group(1)) for m in re.finditer(r"【([^】]*)】", t)]
+    quote_style = False  # 『』派＝レギュ枠でなく作品タイトル括弧（狂気山脈カテナ班の実例 2026-07-05）
     if not braces:
         braces = [(m.start(), m.end(), m.group(1)) for m in re.finditer(r"『([^』]*)』", t)]
+        quote_style = bool(braces)
     reg_span = None
     for s_, e_, inner in braces:
         if EP.match(inner.strip()):
@@ -34,7 +36,13 @@ def parse(title):
         reg_span = (s_, e_)
         out["reg"] = inner.strip() or None
     if reg_span:
-        out["scenario"] = t[reg_span[1]:].strip() or None
+        after = t[reg_span[1]:].strip() or None
+        if quote_style:
+            # 『中身』→シナリオ名・後続テキスト(班名等)は添える・レギュ欄は空（逆転表示の修正）
+            inner = out["reg"]; out["reg"] = None
+            out["scenario"] = (inner + (" " + after if after else "")) if inner else after
+        else:
+            out["scenario"] = after
         head = t[:reg_span[0]]
     else:
         out["scenario"] = None
