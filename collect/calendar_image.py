@@ -252,7 +252,7 @@ def render(data, year, month, out):
     n_open = sum(1 for s in sessions if s.get("open"))
     foot = f"掲載 {len(sessions)}卓（募集中 {n_open}）／詳細はボードへ"
     dr.text((PAD, yy + 18), foot, font=f_foot, fill=MUT)
-    url = "namezu.github.io/henkyo-session-board"
+    url = "namezu.github.io/henkyo-session-calendar"
     dr.text((W - PAD - dr.textlength(url, font=f_foot), yy + 18), url, font=f_foot, fill=GRN)
 
     img.save(out)

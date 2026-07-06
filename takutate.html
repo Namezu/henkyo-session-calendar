@@ -7,8 +7,8 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="AR2EGM用セッション作成マイセット — 辺境TRPG村">
 <meta property="og:description" content="卓立ての入力は一度だけ。募集要項・予告・シート行をまとめて出力、いつもの設定はマイセットに保存。">
-<meta property="og:url" content="https://namezu.github.io/henkyo-session-board/takutate.html">
-<meta property="og:image" content="https://namezu.github.io/henkyo-session-board/ogp_takutate2.png">
+<meta property="og:url" content="https://namezu.github.io/henkyo-session-calendar/takutate.html">
+<meta property="og:image" content="https://namezu.github.io/henkyo-session-calendar/ogp_takutate2.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,7 +113,7 @@ textarea{min-height:74px;resize:vertical}
 <body>
 <div id="seasonBg"><img id="sbA" alt=""><img id="sbB" alt=""></div>
 <div class="wrap">
-<div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px"><a href="./" class="toplink">← セッションボード（カレンダー）に戻る</a></div>
+<div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px"><a href="./" class="toplink">← セッションカレンダーに戻る</a></div>
 <div class="hleft">
  <img class="brandmark" src="logo_mark.png" alt="辺境TRPG村の紋章">
  <div>
@@ -237,7 +237,7 @@ textarea{min-height:74px;resize:vertical}
 </fieldset>
 
 <div class="tprev">
- <div class="tp-head">タイトルプレビュー <span class="tp-ok">✅ この形式ならセッションボードに自動掲載</span></div>
+ <div class="tp-head">タイトルプレビュー <span class="tp-ok">✅ この形式ならセッションカレンダーに自動掲載</span></div>
  <div class="tp-body" id="tprevText">…</div>
 </div>
 <div class="tprev">
@@ -572,7 +572,7 @@ $("genBtn").addEventListener("click",()=>{
   (navigator.clipboard?navigator.clipboard.writeText(allText):Promise.reject()).then(()=>{this.textContent="全部コピーした！";this.classList.add("done");setTimeout(()=>{this.textContent="まとめてコピー";this.classList.remove("done")},1600)}).catch(()=>alert("コピーに失敗…各枠のコピーボタンを使ってね"));
  });
  R.appendChild(bar);
- out("① トピックタイトル",title,"フォーラム「新しい投稿」のタイトル欄へ（この形式ならセッションボードに自動掲載されます）");
+ out("① トピックタイトル",title,"フォーラム「新しい投稿」のタイトル欄へ（この形式ならセッションカレンダーに自動掲載されます）");
  out("② 募集要項（1投稿目）",post1,"タグ「募集中」を忘れずに");
  if(trailer)out("③ 今回予告（別投稿）",trailer);
  if(pitaMemo)out("④ 卓ピタ入力メモ",pitaMemo);

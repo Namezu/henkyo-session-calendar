@@ -22,7 +22,7 @@ SESS = os.environ.get("BOARD_SESSIONS", os.path.join(HERE, "sessions.json"))
 STATE = os.environ.get("BOARD_STATE", os.path.join(HERE, ".calendar_msg_state.json"))
 
 def api(url, method="GET", data=None, headers=None):
-    h = {"User-Agent": "polistes-board (https://github.com/Namezu/henkyo-session-board, 1.0)"}
+    h = {"User-Agent": "polistes-board (https://github.com/Namezu/henkyo-session-calendar, 1.0)"}
     h.update(headers or {})
     req = urllib.request.Request(url, method=method, data=data, headers=h)
     try:
@@ -54,11 +54,11 @@ def main():
     boundary = "----linde-board-boundary"
     content = (
         f"📌 **{today.month}月の卓予定**だよ。毎日この貼り紙だけ差し替えてるからね（詳しくはボードへ）\n"
-        f"https://namezu.github.io/henkyo-session-board/"
+        f"https://namezu.github.io/henkyo-session-calendar/"
     )
     payload = {"content": content,
                "username": "リンデ",
-               "avatar_url": "https://namezu.github.io/henkyo-session-board/girl/linde_avatar.png",
+               "avatar_url": "https://namezu.github.io/henkyo-session-calendar/girl/linde_avatar.png",
                "attachments": [{"id": 0, "filename": "calendar.png"},
                                {"id": 1, "filename": "agenda.png"}]}
     body = b""

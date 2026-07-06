@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="セッションボード — 辺境TRPG村">
+<meta property="og:title" content="セッションカレンダー — 辺境TRPG村">
 <meta property="og:description" content="卓部屋から自動で集まる、村の卓予定カレンダー。15分ごとに更新・正本はDiscordのトピック。">
-<meta property="og:url" content="https://namezu.github.io/henkyo-session-board/">
-<meta property="og:image" content="https://namezu.github.io/henkyo-session-board/ogp_board2.png">
+<meta property="og:url" content="https://namezu.github.io/henkyo-session-calendar/">
+<meta property="og:image" content="https://namezu.github.io/henkyo-session-calendar/ogp_calendar.png">
 <meta name="twitter:card" content="summary_large_image">
-<title>セッションボード — 辺境TRPG村</title>
+<title>セッションカレンダー — 辺境TRPG村</title>
 <link rel="icon" type="image/png" href="logo_mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -274,7 +274,7 @@ footer::after{background:linear-gradient(90deg,var(--cln),transparent)}
   <img class="brandmark" src="logo_mark.png" alt="辺境TRPG村の紋章">
   <div>
    <div class="brand">辺境TRPG村</div>
-   <h1>セッションボード</h1>
+   <h1>セッションカレンダー</h1>
   </div>
  </div>
  <div class="fresh" id="fresh">読込中…</div>
@@ -313,7 +313,7 @@ footer::after{background:linear-gradient(90deg,var(--cln),transparent)}
 <div id="monthSec"></div>
 
 <div class="manual">
-<b>📌 このボードは全自動です</b>：卓部屋フォーラムにトピックを立てるだけで載ります（過去1,186卓の実タイトルで<b>99%</b>を自動認識）。専用の記入作業はありません。日時や内容の変更もトピックを直せば追従します。<br><br>
+<b>📌 このカレンダーは全自動です</b>：卓部屋フォーラムにトピックを立てるだけで載ります（過去1,186卓の実タイトルで<b>99%</b>を自動認識）。専用の記入作業はありません。日時や内容の変更もトピックを直せば追従します。<br><br>
 <b>タイトルの書き方（この型なら確実に載ります）</b>：<br>
 <code>月/日 開始-終了【レギュ名】シナリオ名</code>　例：<code>7/20 21:00-25:00【ミスリルクレスト】黄金の誓い</code><br>
 <code>日程すり合わせ【レギュ名】シナリオ名</code>（日付未定・卓ピタ調整もOK）<br>
@@ -328,7 +328,7 @@ footer::after{background:linear-gradient(90deg,var(--cln),transparent)}
 載せたくない卓はトピック本文に「<b>掲載不要</b>」と書けば外れます。
 </div>
 <div id="unparsedSec"></div>
-<footer>辺境TRPG村 セッションボード（プロトタイプ）／時刻はすべて日本時間</footer>
+<footer>辺境TRPG村 セッションカレンダー（プロトタイプ）／時刻はすべて日本時間</footer>
 </div>
 
 <div id="kanban" hidden>
@@ -526,7 +526,7 @@ function openDetail(x){
   <div class="m-btns">
    ${s.url?`<a class="mb link" href="${s.url}" target="_blank" rel="noopener">💬 Discordで開く（募集詳細・参加表明）</a>`:""}
   </div>
-  <div class="m-hint">日時や内容の変更はDiscord側でトピックを直せばOK＝次の自動更新（15分毎）でこのボードも追従します。</div>`;
+  <div class="m-hint">日時や内容の変更はDiscord側でトピックを直せばOK＝次の自動更新（15分毎）でこのカレンダーも追従します。</div>`;
  modal.querySelector(".m-close").addEventListener("click",closeModal);
  mback.classList.add("show");modal.classList.add("show");
 }
