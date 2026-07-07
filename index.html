@@ -565,7 +565,7 @@ function mkDayCell(yy,mm,dd,map,todayK,t0,dnLabel){ // 月表示/これから表
  const isPast=new Date(yy,mm,dd)<t0;
  const cell=document.createElement("div");
  cell.className="cell"+(k===todayK?" today":"")+(k===selDate?" sel":"")+(dow===0?" sunday":dow===6?" saturday":"")+(isPast?" past":"")+(dd===1?" mstart":"");
- const _isMob=matchMedia("(max-width:560px)").matches;   // スマホ簡略表示か
+ const _isMob=(window.innerWidth||999)<=560;   // スマホ簡略表示か（matchMediaはjsdom非対応のためinnerWidthで判定）
  cell.innerHTML=`<span class="dn">${dnLabel||dd}</span>${act.length?`<span class="cnt${act.length>=4?" many":""}">${act.length}卓</span>`:""}`;  // 4卓以上は右下カウントを赤バッジ化(モバイル)
  const lim=_isMob?Math.min(list.length,6):3; // スマホは棒が自然に入る数だけ(最大6・セルがclip)／PCは3卓まで＋4卓目から「+n」
  list.slice(0,lim).forEach(x=>{
