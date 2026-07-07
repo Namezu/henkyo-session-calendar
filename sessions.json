@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/08 07:04",
- "checked": "2026/07/08 07:04",
+ "updated": "2026/07/08 07:13",
+ "checked": "2026/07/08 07:13",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -10,6 +10,11 @@
    "dates": [
     {
      "date": "2026-07-11",
+     "start": "21:00",
+     "end": "25:00"
+    },
+    {
+     "date": "2026-07-12",
      "start": "21:00",
      "end": "25:00"
     }
@@ -17538,7 +17543,7 @@
    "source": "forum"
   },
   {
-   "scenario": "ランダムダンジョンtype2.1.1",
+   "scenario": "ランダムダンジョンtype2",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
    "dates": [
@@ -18026,7 +18031,7 @@
    "source": "forum"
   },
   {
-   "scenario": "ランダムダンジョンtype2.1.1",
+   "scenario": "ランダムダンジョンtype2",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
    "dates": [
@@ -18509,7 +18514,7 @@
    "source": "forum"
   },
   {
-   "scenario": "ランダムダンジョンtype2.1.2",
+   "scenario": "ランダムダンジョンtype2",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
    "dates": [
@@ -23452,6 +23457,11 @@
      "date": "2023-11-08",
      "start": "20:30",
      "end": null
+    },
+    {
+     "date": "2023-11-20",
+     "start": "20:30",
+     "end": null
     }
    ],
    "open": false,
@@ -24221,7 +24231,7 @@
    "source": "forum"
   },
   {
-   "scenario": "ランダムダンジョンtype2.1.1",
+   "scenario": "ランダムダンジョンtype2",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
    "dates": [
@@ -24689,6 +24699,11 @@
    "dates": [
     {
      "date": "2023-05-19",
+     "start": null,
+     "end": null
+    },
+    {
+     "date": "2023-05-26",
      "start": null,
      "end": null
     }
@@ -25307,6 +25322,11 @@
      "date": "2026-04-17",
      "start": "21:00",
      "end": "25:00"
+    },
+    {
+     "date": "2026-04-21",
+     "start": "21:00",
+     "end": "25:00"
     }
    ],
    "open": false,
@@ -25840,7 +25860,7 @@
    "source": "forum"
   },
   {
-   "scenario": "ソードワールド2.5「冒険者ギルドの一幕」",
+   "scenario": "ソードワールド2 「冒険者ギルドの一幕」",
    "reg": null,
    "reg_is_name": false,
    "dates": [
@@ -27491,7 +27511,7 @@
    "source": "forum"
   },
   {
-   "scenario": "SW2.5「冒険者ギルドの一幕」",
+   "scenario": "SW2 「冒険者ギルドの一幕」",
    "reg": null,
    "reg_is_name": false,
    "dates": [
