@@ -118,7 +118,7 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .bandrow{flex-basis:100%;display:flex;gap:7px;align-items:center;margin-top:3px}
 .bandlab{font-size:.78em;color:var(--mut);letter-spacing:.06em}
 /* 朝昼夜トグル（アイコン色を活かすためON時は薄緑地） */
-.f.bf .tb{width:12px;height:12px;vertical-align:-2px;margin-right:2px}
+.f.bf .tb{width:12px;height:12px;vertical-align:-3px;margin-right:3px;background:#fff;border-radius:50%;padding:1.5px;box-sizing:content-box}  /* アイコンに白い丸背景＝夜の三日月等が緑ボタン上でも視認できるように（後輩くん2026-07-08） */
 .f.bf.on{background:#3f6c4c;border-color:#3f6c4c;color:#fff;font-weight:700}  /* 時間帯ON＝すべて/募集中だけと同じくっきり緑（後輩くん2026-07-08） */
 /* レギュ/GM絞り込みプルダウン */
 .fsel{border:1px solid var(--glass-brd);background:rgba(255,255,255,.07);box-shadow:inset 0 1px 0 rgba(255,255,255,.12);border-radius:20px;padding:7px 10px;font-size:.85em;font-family:inherit;color:var(--mut);max-width:44vw;cursor:pointer;transition:border-color .18s,box-shadow .18s}
@@ -474,11 +474,11 @@ function dimOf(s,st){
  return false;
 }
 // 朝昼夜絞り込み：日程単位（チップ用）と卓単位（一覧カード用＝どれかの日程が該当すればOK）
-function bandDimDate(d){const b=timeBand(d.start);return b!==""&&!BANDS.has(b)}  // 選択中(BANDS)に無い時間帯は薄く。時刻未定("")は分類できない＝常に表示（全3つON=何も薄くならない）
+function bandDimDate(d){const b=timeBand(d.start);return b===""?BANDS.size<3:!BANDS.has(b)}  // 時刻未定は「朝昼夜すべてON」時だけ表示（1つでも外したら薄く・後輩くん2026-07-08）／時間帯ありは選択外なら薄く
 function bandDim(s){
  const ds=s.dates||[];
  if(!ds.length)return false;  // すり合わせ卓＝時間未定は薄くしない
- return !ds.some(d=>{const b=timeBand(d.start);return b===""||BANDS.has(b)});  // 時刻未定 or 選択中の時間帯を1つでも持てば表示
+ return !ds.some(d=>{const b=timeBand(d.start);return b===""?BANDS.size===3:BANDS.has(b)});  // 時刻未定は全3つON時のみ表示 / 時間帯ありは選択中を1つでも持てば表示
 }
 // 日付→その日のセッション一覧（該当が先・非該当dimは後ろ）
 function dayMap(){
