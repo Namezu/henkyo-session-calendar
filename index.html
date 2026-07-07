@@ -872,11 +872,19 @@ function kbLines(){
   "むりして夜ふかしはだめだよ？　いい卓は逃げないから",
   "はじめてさんも、ゆっくりでいいからね。わからないことは、わたしか村のみんなに聞いて",
   "さっきポメロが日なたでのびてたよ。……ふふ、きょうも村は平和だなぁ",
+  "ソート機能、使ってみた？　システムやGM、レギュで絞り込めるんだよ。お目当ての卓が探しやすいの",
+  "『AR2EGM用セッション作成マイセット』って知ってる？　卓立ての入力が一度で済んで、募集も予告もまとめて出せるんだ",
+  "領民議会、活用してる？　村のことはみんなで決めていくんだよ",
+  "PLガイドやGMガイド、大事なこといっぱい書いてあるよね！　困ったときは覗いてみて",
+  "時々ね、話題別GM相談フォーラムも読ませてもらってるの。みんなの工夫、勉強になるなぁ",
   "どの卓に参加する？　それとも、卓を立ててくれる！？"];
  if(!DATA)return L;
  const ses=DATA.sessions||[];
  const mine=ses.filter(s=>(s.dates||[]).some(d=>{const t=jd(d.date);return t.getFullYear()===curY&&t.getMonth()===curM}));
- if(mine.length)L.push(`今月は${mine.length}卓！にぎやかで嬉しいなあ`);
+ const isCurMonth=(curY===now.getFullYear()&&curM===now.getMonth());
+ const isPastMonth=(curY<now.getFullYear()||(curY===now.getFullYear()&&curM<now.getMonth()));
+ const monthCur=(VIEW==="month"&&isCurMonth);   // 「今月の〜」系の詳細セリフはここが真の時だけ（過去/未来月・これから/年表示では出さない）
+ if(VIEW==="month"&&mine.length)L.push(isPastMonth?`この月は${mine.length}卓あったんだね。いい思い出だ〜`:isCurMonth?`今月は${mine.length}卓！にぎやかで嬉しいなあ`:`${curM+1}月は今のところ${mine.length}卓の予定だよ。楽しみだね`);
  const open=ses.filter(s=>s.open&&stOf(s)!=="done").length;   // 募集中＝募集タグ付き かつ 未終了（日程すり合わせ中でも募集はしてる卓を含む・過去日のタグ付けっぱなしだけ除外）
  if(open)L.push(`いま${open}件の卓が募集中だよ。気になるのあった？`);
  const suri=ses.filter(s=>stOf(s)==="suri").length;
@@ -885,11 +893,11 @@ function kbLines(){
  // いちばん賑わう日を自慢する（2卓以上の日があれば）
  const perday={};mine.forEach(s=>(s.dates||[]).forEach(dd=>{const t=jd(dd.date);if(t.getFullYear()===curY&&t.getMonth()===curM)perday[t.getDate()]=(perday[t.getDate()]||0)+1}));
  const busy=Object.entries(perday).sort((a,b)=>b[1]-a[1])[0];
- if(busy&&busy[1]>=2)L.push(`${curM+1}/${busy[0]}は${busy[1]}卓も立ってるよ！にぎやかな日になりそうだね`);
+ if(monthCur&&busy&&busy[1]>=2)L.push(`${curM+1}/${busy[0]}は${busy[1]}卓も立ってるよ！にぎやかな日になりそうだね`);
  // 今月まだ卓がない曜日をひとつ拾う
  const wd=[0,0,0,0,0,0,0];mine.forEach(s=>(s.dates||[]).forEach(d=>{const t=jd(d.date);if(t.getFullYear()===curY&&t.getMonth()===curM)wd[t.getDay()]++}));
  const emptyWd=wd.indexOf(0);
- if(mine.length&&emptyWd>=0)L.push(`今月は${WD[emptyWd]}曜日が空き気味だね〜？`);
+ if(monthCur&&mine.length&&emptyWd>=0)L.push(`今月は${WD[emptyWd]}曜日が空き気味だね〜？`);
  // 今日の卓・直近の卓（実データ連動・おすすめは募集中優先＝後輩くん指定）
  const t0=new Date();t0.setHours(0,0,0,0);
  let nearest=null,nearestOpen=null;
@@ -919,11 +927,11 @@ function kbLines(){
  if(wk)L.push(`今週末は${wk}卓あるよ。よい週末になりそうだね`);
  // 夜行性・朝型の観察
  let nb=0,mb=0;mine.forEach(s=>(s.dates||[]).forEach(dd=>{const t=jd(dd.date);if(t.getFullYear()===curY&&t.getMonth()===curM){const b=timeBand(dd.start);if(b==="yoru")nb++;else if(b==="asa")mb++}}));
- if(nb>=3)L.push(`今月の夜卓は${nb}件。村のみんな、けっこう夜行性だよねえ`);
- if(mb)L.push(`朝の卓も${mb}件あるよ。健康的でえらい！`);
+ if(monthCur&&nb>=3)L.push(`今月の夜卓は${nb}件。村のみんな、けっこう夜行性だよねえ`);
+ if(monthCur&&mb)L.push(`朝の卓も${mb}件あるよ。健康的でえらい！`);
  // 今月の残り卓数
  const rest=mine.reduce((a,s)=>a+(s.dates||[]).filter(dd=>{const t=jd(dd.date);return t>=t0&&t.getFullYear()===curY&&t.getMonth()===curM}).length,0);
- if(rest)L.push(`今月はあと${rest}卓残ってるよ。まだまだ遊べるね`);
+ if(monthCur&&rest)L.push(`今月はあと${rest}卓残ってるよ。まだまだ遊べるね`);
  // 明日の卓
  const tm=new Date(t0);tm.setDate(tm.getDate()+1);
  const tmw=ses.find(s=>(s.dates||[]).some(dd=>jd(dd.date).getTime()===tm.getTime()));
@@ -937,7 +945,7 @@ function kbLines(){
  // 今月の最多システム
  const bySys={};mine.forEach(s=>{const g=sysGroup(s);bySys[g]=(bySys[g]||0)+1});
  const top=Object.entries(bySys).sort((a,b)=>b[1]-a[1])[0];
- if(top&&top[1]>=2)L.push(`今月は${top[0]}が${top[1]}卓でいちばん多いみたい`);
+ if(monthCur&&top&&top[1]>=2)L.push(`今月は${top[0]}が${top[1]}卓でいちばん多いみたい`);
  // 季節のひとこと（表示中の月に合わせて）
  const m2=curM+1;
  L.push(m2>=3&&m2<=5?"春だねえ。新しい冒険、はじめたくなる季節":
