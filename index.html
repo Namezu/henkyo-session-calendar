@@ -105,9 +105,10 @@ h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spaci
 .cell.sunday .dn{color:var(--sun)}.cell.saturday .dn{color:var(--sat)}
 .cell.sunday.today .dn,.cell.saturday.today .dn{color:#fff}
 .sch{display:block;border-radius:7px;padding:2px 6px;margin-top:3px;font-size:.68em;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:var(--rc-bg,rgba(255,255,255,.08));color:#e8e5de;border-left:3px solid var(--rc,#4f8160);transition:filter .15s}
-.sch:hover{filter:brightness(1.15)}
-.sch.closed{filter:saturate(.25);opacity:.75}
-.sch.done{filter:saturate(.1);opacity:.45}
+.sch:hover{filter:brightness(1.12)}
+.sch.open{background:rgba(106,156,120,.26);border-left-color:#6a9c78}    /* 募集中＝緑ハイライト */
+.sch.closed{background:rgba(255,255,255,.12);border-left-color:#b9b2a6;opacity:.85}   /* 〆切＝ホワイトアウト（薄れる） */
+.sch.done{background:rgba(255,255,255,.07);border-left-color:#cfc8bb;opacity:.5;color:#d7d2c7}  /* 終了＝さらに薄いホワイトアウト */
 /* 2行表示＝1行目シナリオ名・2行目レギュ名（レギュ無し卓は1行のまま） */
 .sch .rg{display:block;font-size:.9em;font-weight:400;opacity:.72;line-height:1.3;overflow:hidden;text-overflow:ellipsis}
 .cal.two .cell{min-height:108px} /* 高さは自動＝卓が多い週だけ伸びる（3卓の日はギチッと詰まる） */
@@ -146,9 +147,8 @@ select option:checked{background:#3f6c4c;color:#fff}
 /* レギュ凡例（タップで絞り込み） */
 .legend{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 2px}
 .lg{display:flex;align-items:center;gap:5px;border:1px solid var(--glass-brd);background:rgba(255,255,255,.07);box-shadow:inset 0 1px 0 rgba(255,255,255,.12);border-radius:16px;padding:4px 11px;font-size:.76em;cursor:pointer;color:var(--tx);transition:border-color .18s,transform .18s,box-shadow .18s}
-.lg:hover{border-color:var(--rc);transform:translateY(-1px);box-shadow:var(--shadow)}
-.lg .sw{width:10px;height:10px;border-radius:3px;background:var(--rc)}
-.lg.on{border-color:var(--rc);background:var(--rc-bg);font-weight:700}
+.lg:hover{border-color:var(--grn2);transform:translateY(-1px);box-shadow:var(--shadow)}
+.lg.on{border-color:var(--grn);background:rgba(143,188,155,.16);color:var(--grn);font-weight:700}
 /* オーバーフロー「+n」＝日付の右肩にまっ赤なバッジ（原色＝後輩くん指定・見落とし防止優先） */
 .more{position:absolute;top:6px;right:6px;background:#f00;color:#fff;font-size:.7em;font-weight:700;border-radius:10px;padding:1px 8px;box-shadow:0 2px 6px rgba(0,0,0,.4)}
 @media(max-width:560px){
@@ -441,8 +441,8 @@ function esc(t){const d=document.createElement("div");d.textContent=t||"";return
 function stOf(s){
  const t=new Date();t.setHours(0,0,0,0);
  if(s.dates&&s.dates.length){
-  const last=jd(s.dates[s.dates.length-1].date);
-  if((t-last)/86400000>0)return"done";
+  const last=Math.max(...s.dates.map(d=>jd(d.date).getTime()));  // 配列順でなく最も遅い日で判定＝日付を逆順記載しても未来卓を開催済にしない
+  if((t.getTime()-last)/86400000>0)return"done";
  }
  if(s.suriawase)return"suri";
  return s.open?"open":"closed";
@@ -482,9 +482,8 @@ function renderLegend(){
   if(!(s.dates||[]).some(d=>{const t=jd(d.date);return t.getFullYear()===curY&&(yearMode||t.getMonth()===curM)}))return;
   const k=sysGroup(s);g[k]=(g[k]||0)+1;});
  const el=$("legend");
- el.innerHTML=Object.entries(g).sort((a,b)=>b[1]-a[1]).map(([k,n])=>{
-  const c=SYS_COLORS[k]||"#9a948a";
-  return`<span class="lg${SYSF===k?" on":""}" data-r="${esc(k)}" style="--rc:${c};--rc-bg:${tint(c)}"><span class="sw"></span>${esc(k)}（${n}）</span>`}).join("");
+ el.innerHTML=Object.entries(g).sort((a,b)=>b[1]-a[1]).map(([k,n])=>
+  `<span class="lg${SYSF===k?" on":""}" data-r="${esc(k)}">${esc(k)}（${n}）</span>`).join("");
  el.querySelectorAll(".lg").forEach(p=>p.addEventListener("click",()=>{
   SYSF=(SYSF===p.dataset.r?null:p.dataset.r);syncSysSel();renderAll()}));
 }
@@ -523,7 +522,7 @@ const mback=document.createElement("div");mback.id="mback";document.body.appendC
 const modal=document.createElement("div");modal.id="modal";document.body.appendChild(modal);
 const daypop=document.createElement("div");daypop.id="daypop";document.body.appendChild(daypop);
 function closeModal(){modal.classList.remove("show");if(!daypop.classList.contains("show"))mback.classList.remove("show")}
-function closeDayPop(){daypop.classList.remove("show");if(!modal.classList.contains("show"))mback.classList.remove("show");if(selDate){selDate=null;renderCal()}}
+function closeDayPop(){daypop.classList.remove("show");if(!modal.classList.contains("show"))mback.classList.remove("show");if(selDate){selDate=null;renderAll()}}
 mback.addEventListener("click",()=>{closeModal();closeDayPop()});
 function openDetail(x){
  tip.classList.remove("show");
@@ -552,8 +551,7 @@ function mkDayCell(yy,mm,dd,map,todayK,t0,dnLabel){ // 月表示/これから表
  const lim=3; // 3卓までは全部見せる・4卓目から「+n」（後輩くん指定）
  list.slice(0,lim).forEach(x=>{
   const ch=document.createElement("span");ch.className=`sch ${x.st}${x.dim?" dim":""}`;
-  const c=sysColor(x.s);
-  ch.style.setProperty("--rc",c);ch.style.setProperty("--rc-bg",tint(c));
+  // システム別の色分けは廃止（ソート/絞り込みで代替・後輩くん要望2026-07-07）＝配色はステータス（募集中=緑／〆切・終了=ホワイトアウト）のみ
   const bd=timeBand(x.d.start);
   if(TWO&&x.s.reg){
    // 2行表示＝1行目:アイコン＋シナリオ名／2行目:「AR2E/レギュ名」式
@@ -570,7 +568,7 @@ function mkDayCell(yy,mm,dd,map,todayK,t0,dnLabel){ // 月表示/これから表
  if(list.length>lim){const mo=document.createElement("span");mo.className="more";mo.textContent=`+${list.length-lim}`;cell.appendChild(mo)}
  cell.addEventListener("mouseenter",()=>showDayTip(cell,`${mm+1}/${dd}（${WD[dow]}）`,list));
  cell.addEventListener("mouseleave",()=>tip.classList.remove("show"));
- cell.addEventListener("click",()=>{selDate=(selDate===k?null:k);(VIEW==="flow"?renderFlow:renderCal)();renderDay()});
+ cell.addEventListener("click",()=>{selDate=(selDate===k?null:k);renderAll();renderDay()});
  return{cell,act};
 }
 function renderCal(){ // 月表示（従来の紙型＝月を面で見たい人向け）
@@ -615,7 +613,7 @@ function card({s,st,dim}){
  const isNew=s.created&&(Date.now()-new Date(s.created).getTime())<3*86400000;
  const badge=st==="open"?`<span class="badge b-open">募集中</span>`:st==="suri"?`<span class="badge b-suri">調整中</span>`:st==="done"?`<span class="badge b-done">開催済</span>`:`<span class="badge b-closed">〆切</span>`;
  const when=st==="suri"?"日程すり合わせ中":(s.dates||[]).map(d=>{const x=jd(d.date);return`${x.getMonth()+1}/${x.getDate()}<span class="wd">(${WD[x.getDay()]})</span> ${d.start||""}${d.end?"-"+d.end:""}`}).join(" ／ ");
- return`<a class="card${st==="open"?" open":st==="closed"?" closed":st==="done"?" done":""}${dim?" dim":""}" style="border-left-color:${sysColor(s)}"${s.url?` href="${s.url}" target="_blank" rel="noopener"`:""}>${badge}
+ return`<a class="card${st==="open"?" open":st==="closed"?" closed":st==="done"?" done":""}${dim?" dim":""}"${s.url?` href="${s.url}" target="_blank" rel="noopener"`:""}>${badge}
   <div class="when">${when}${isNew?'<span class="new">NEW</span>':""}</div>
   <div class="name">${esc(s.scenario)}</div>
   <div class="meta">${s.reg&&!s.reg_is_name?`<span class="reg${isDeprecatedReg(s.reg)?" deprecated":""}">${regLabel(s)}</span>`:""}${s.gm?`<span>GM: ${esc(s.gm)}</span>`:""}${s.source==="manual"?"<span>✍ 手動掲載</span>":""}</div></a>`;
@@ -644,7 +642,7 @@ function renderSuri(){
  list.forEach(x=>{
   const t=document.createElement("div");t.className="ticket"+(x.dim?" dim":"");
   t.innerHTML=`<span class="tk-pin">📍</span><div class="tk-name">${esc(x.s.scenario)}</div>
-   <div class="tk-meta"><span class="tk-dot" style="background:${sysColor(x.s)}"></span>${x.s.reg&&!x.s.reg_is_name?regLabel(x.s):esc(sysGroup(x.s))}</div>
+   <div class="tk-meta"><span class="tk-dot" style="background:#c2ab6a"></span>${x.s.reg&&!x.s.reg_is_name?regLabel(x.s):esc(sysGroup(x.s))}</div>
    ${x.s.gm?`<div class="tk-meta">GM: ${esc(x.s.gm)}</div>`:""}`;
   t.addEventListener("click",()=>openDetail(x));
   wrap.appendChild(t);

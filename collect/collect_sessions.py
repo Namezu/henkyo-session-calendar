@@ -82,25 +82,25 @@ async def read_forum(guild, key, sessions, unparsed):
     else:
         forum = discord.utils.get(guild.forums, name=key)
     if forum is None:
-        print(f"⚠ フォーラム「{key}」が見つからない/見えない"); return
+        print(f"⚠ フォーラム「{key}」が見つからない/見えない"); return False   # 未検出＝この回の収集は不完全（呼び出し側で空上書きを防ぐ）
     ths = list(forum.threads)
     try:
         async for th in forum.archived_threads(limit=None):
             ths.append(th)
     except Exception as e:
-        print(f"⚠ {name}: アーカイブ取得で一部失敗({e})")
+        print(f"⚠ {key}: アーカイブ取得で一部失敗({e})")   # 引数はkey（nameは未定義でNameErrorになっていた）
     today = datetime.datetime.now(JST).date()
     STALE_DAYS = 180   # 半年以上前に立てたトピックは流卓/終了とみなす
     for th in ths:
         url = f"https://discord.com/channels/{guild.id}/{th.id}"
-        base_dt = th.created_at.date() if th.created_at else today   # 年推定＋古さ判定の基準＝トピック作成日
+        base_dt = th.created_at.astimezone(JST).date() if th.created_at else today   # 年推定＋古さ判定の基準＝トピック作成日（created_atはUTC aware＝JSTに直してから日付化。todayもJST基準に合わせる）
         tags = {t.name for t in th.applied_tags}
         # オプトアウト＝タグ「掲載不要」（推奨・Message Content権限不要）or 1投稿目本文（旧方式・当面併読）
         try:
             starter = await th.fetch_message(th.id)
         except Exception:
             starter = None
-        if OPTOUT in tags or (starter and OPTOUT in (starter.content or "")) or ("流卓" in th.name):
+        if OPTOUT in tags or (starter and OPTOUT in (starter.content or "")) or (re.search(r"(?<!交)流卓|中止", th.name) is not None):  # タイトルに「流卓」(交流卓は除外・負の後読み)か「中止」＝不掲載
             print(f"  ⏭ 掲載不要/流卓: {th.name}"); continue
         gm0 = starter.author.display_name if (starter and starter.author) else None
         r = parse(th.name)
@@ -136,6 +136,7 @@ async def read_forum(guild, key, sessions, unparsed):
             "source": "forum",
         })
         print(f"  ✅ {th.name}")
+    return True   # フォーラムを見つけて走査し切った＝この回は有効
 
 @client.event
 async def on_ready():
@@ -144,19 +145,36 @@ async def on_ready():
         if guild is None:
             print(f"⚠ サーバー {GUILD_ID} が見えない"); return
         sessions, unparsed = [], []
+        all_forums_ok = True
         for name in FORUM_NAMES:
-            await read_forum(guild, name, sessions, unparsed)
+            found = await read_forum(guild, name, sessions, unparsed)
+            if not found:
+                all_forums_ok = False
         data = {
             "updated": datetime.datetime.now(JST).strftime("%Y/%m/%d %H:%M"),
             "guild": guild.name,
             "sessions": sessions,
             "unparsed": unparsed,
         }
-        # 変化なしなら書き換えない（updatedの時刻差だけで毎回コミットしないため）
+        # 既存を先に読む（空上書き防止ガード＋変化なし判定で共用）
+        old = None
         if os.path.exists(OUT):
             try:
                 with open(OUT, encoding="utf-8") as f:
                     old = json.load(f)
+            except Exception:
+                old = None
+        old_had = bool(old and (old.get("sessions") or old.get("unparsed")))
+        # 🛡収集失敗の保険＝フォーラム未検出、または掲載も⚠枠も0件になった回は書き込まない
+        #   （一時的な取得失敗で既存の全卓を空JSONで上書きしボードが真っ白になる事故を防ぐ。
+        #    正本はDiscord＝次回の収集で自動復活する。初回=既存無しの時は通常どおり書く）
+        if old_had and (not all_forums_ok or (not sessions and not unparsed)):
+            reason = "フォーラム未検出" if not all_forums_ok else "掲載卓0件"
+            print(f"🛡 収集が不完全({reason})＝sessions.jsonは据え置き（既存を保護：掲載{len(old.get('sessions',[]))}件）")
+            return
+        # 変化なしなら書き換えない（updatedの時刻差だけで毎回コミットしないため）
+        if old is not None:
+            try:
                 if {k: v for k, v in old.items() if k != "updated"} == \
                    {k: v for k, v in data.items() if k != "updated"}:
                     print(f"📋 変化なし: 掲載{len(sessions)}件／⚠{len(unparsed)}件（sessions.jsonは据え置き）")
