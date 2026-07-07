@@ -223,6 +223,7 @@ a.ticket{display:block;text-decoration:none;color:inherit}
 }
 .card{display:block;background:rgba(255,255,255,.21);border:1px solid var(--glass-brd);border-left:5px solid var(--grn2);border-radius:16px;padding:12px 14px;margin:8px 0;text-decoration:none;color:var(--tx);position:relative;box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 1px 4px rgba(0,0,0,.25);transition:transform .18s,box-shadow .18s,background .18s}
 .card:hover{transform:translateY(-2px);background:rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.16),var(--shadow)}
+.card.open{background:rgba(106,156,120,.18)}   /* 募集中＝背景ガラスをうっすら緑（今参加できる卓を強調） */
 .card.closed{border-left-color:#b9b2a6;opacity:.93}
 .card.done{border-left-color:#cfc8bb;opacity:.70}
 .card .when{font-weight:700;font-size:.98em}
@@ -328,6 +329,7 @@ footer::after{background:linear-gradient(90deg,var(--cln),transparent)}
 ・「タイトルを次回の日付に更新していく」書き方も読めます（例：<code>7月4日21時～『狂気山脈』</code>）。ただし<b>カレンダーに載るのは次回の1日だけ</b>になるので、確定日程を全部載せたい卓にはおすすめしません<br>
 ・レギュレーションの無い卓は<code>『シナリオ名』</code>の二重かぎ括弧でも読めます。<br><br>
 タイトルが読めなかった卓は下の⚠枠に表示されます。<b>トピックのタイトルを上の型に直せば、次の更新（15分毎）から自動で載ります。</b><br>
+卓の<b>募集を締め切る</b>ときは、トピックのタグから「<b>募集中</b>」を外してください（カレンダーの表示が「募集中」→「〆切」に変わります。また付け直せば募集中に戻ります）。<br>
 載せたくない卓はトピック本文に「<b>掲載不要</b>」と書くか、タイトルに「<b>流卓</b>」と入れれば外れます。募集が流れて確定しなかった卓（立ててから半年以上経った未確定・読めない卓）は、自動でも取り下げられます。
 </div>
 <div id="unparsedSec"></div>
@@ -608,7 +610,7 @@ function card({s,st,dim}){
  const isNew=s.created&&(Date.now()-new Date(s.created).getTime())<3*86400000;
  const badge=st==="open"?`<span class="badge b-open">募集中</span>`:st==="suri"?`<span class="badge b-suri">調整中</span>`:st==="done"?`<span class="badge b-done">開催済</span>`:`<span class="badge b-closed">〆切</span>`;
  const when=st==="suri"?"日程すり合わせ中":(s.dates||[]).map(d=>{const x=jd(d.date);return`${x.getMonth()+1}/${x.getDate()}<span class="wd">(${WD[x.getDay()]})</span> ${d.start||""}${d.end?"-"+d.end:""}`}).join(" ／ ");
- return`<a class="card${st==="closed"?" closed":st==="done"?" done":""}${dim?" dim":""}" style="border-left-color:${sysColor(s)}"${s.url?` href="${s.url}" target="_blank" rel="noopener"`:""}>${badge}
+ return`<a class="card${st==="open"?" open":st==="closed"?" closed":st==="done"?" done":""}${dim?" dim":""}" style="border-left-color:${sysColor(s)}"${s.url?` href="${s.url}" target="_blank" rel="noopener"`:""}>${badge}
   <div class="when">${when}${isNew?'<span class="new">NEW</span>':""}</div>
   <div class="name">${esc(s.scenario)}</div>
   <div class="meta">${s.reg&&!s.reg_is_name?`<span class="reg${isDeprecatedReg(s.reg)?" deprecated":""}">${regLabel(s)}</span>`:""}${s.gm?`<span>GM: ${esc(s.gm)}</span>`:""}${s.source==="manual"?"<span>✍ 手動掲載</span>":""}</div></a>`;

@@ -17,6 +17,7 @@ from parse_title import parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 JST = datetime.timezone(datetime.timedelta(hours=9))   # GitHub ActionsはUTCで動く＝時刻/日付は日本時間で記録・判定する
+LIMIN_ROLE_ID = int(os.environ.get("LIMIN_ROLE_ID", "1001840163724464270"))  # 辺境TRPG村「領民」ロール＝卓を立てられる村の正式メンバーの証。退会・ロール剥奪された人はこれを持たない（在籍だけでは足りない＝ぱんさー例で判明 2026-07-07）
 # トークン＝チャルタヴォラ（読み取り専用bot）を流用。ローカルは.env、Actionsは環境変数（.envが無ければ素通り）
 _envfile = os.environ.get("COLLECT_ENV", os.path.join(HERE, "..", "chartavora_bot", ".env"))
 if os.path.exists(_envfile):
@@ -47,8 +48,10 @@ def infer_year(month, day, base):
 _gm_active_cache = {}
 async def gm_is_active(guild, author):
     """GM（トピック起票者）がまだサーバーに在籍しているか。退会・アカウント削除ならFalse。
-    fetch_member（API）で判定＝members intent不要。同一GMはキャッシュで1回だけ問い合わせる。
-    判定不能（一時エラー等）はTrue寄せ＝消しすぎ防止（現役GMを誤って隠さない）。"""
+    ⚠get_member（キャッシュ）は使わない＝discord.pyがトピック投稿を読む時に「退会前のMember情報」を
+      キャッシュしてしまい、退会者を在籍扱いにする穴があるため（2026-07-07 ぱんさー漏れで判明）。
+      必ず fetch_member（サーバーへのAPI直問い合わせ）で"今の在籍"を確認する（members intent不要）。
+    同一GMはキャッシュで1回だけ問い合わせ。一時エラーは在籍扱い＝現役GMの誤除外を防ぐ。"""
     if author is None:
         return True
     aid = getattr(author, "id", None)
@@ -56,16 +59,13 @@ async def gm_is_active(guild, author):
         return True
     if aid in _gm_active_cache:
         return _gm_active_cache[aid]
-    m = guild.get_member(aid)
-    if m is None:
-        try:
-            m = await guild.fetch_member(aid)
-        except discord.NotFound:
-            m = None              # サーバーに居ない＝退会 or アカウント削除
-        except Exception:
-            _gm_active_cache[aid] = True   # 一時エラーはキャッシュせずTrue（次回再判定）
-            return True
-    active = m is not None
+    try:
+        m = await guild.fetch_member(aid)
+        active = any(r.id == LIMIN_ROLE_ID for r in m.roles)   # 領民ロール保持＝村の正式メンバー（卓を立てられる資格）。在籍でもロール剥奪なら除外（ぱんさー例）
+    except discord.NotFound:
+        active = False                     # サーバーから退会/削除
+    except Exception:
+        return True                        # 一時エラーはキャッシュせず在籍扱い（次回再判定）
     _gm_active_cache[aid] = active
     return active
 
