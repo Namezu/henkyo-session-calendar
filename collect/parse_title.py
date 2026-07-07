@@ -83,6 +83,19 @@ def parse(title):
     if not out["scenario"] and out["reg"]:
         out["scenario"] = out["reg"]
         out["reg_is_name"] = True
+    # 独自書式（【】『』なし＝レギュ表記のない卓）でも、日付が取れていれば
+    # 日付/時刻/曜日/継続日を除いた残りをシナリオ名として救済（レギュ欄は空＝その他システムに多い）
+    if not out["scenario"] and out["dates"]:
+        s = t
+        s = DATE.sub(" ", s); s = DATE_KANJI.sub(" ", s); s = TIME.sub(" ", s)
+        s = re.sub(r"[0-9]{1,2}\s*時(?:\s*[0-9]{1,2}\s*分)?(?:半)?", " ", s)
+        s = re.sub(r"[（(][月火水木金土日][）)]", " ", s)
+        s = re.sub(r"[,、・]\s*[0-9]{1,2}(?:/[0-9]{1,2})?", " ", s)
+        s = re.sub(r"^[\s\-~〜～‐:：/／。、．，・0-9]+", "", s)
+        s = re.sub(r"[\s\-~〜～‐]+$", "", s)
+        s = re.sub(r"\s{2,}", " ", s).strip()
+        if s:
+            out["scenario"] = s   # reg は None のまま＝レギュ無し卓として掲載
     # 成立判定：名前が取れて、（日付あり）or（すり合わせ）。開始時刻は無くても掲載可（時刻未定表示）
     out["ok"] = bool(out["scenario"] and (out["dates"] or out["suriawase"]))
     return out
