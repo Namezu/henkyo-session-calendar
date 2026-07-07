@@ -877,7 +877,7 @@ function kbLines(){
  const ses=DATA.sessions||[];
  const mine=ses.filter(s=>(s.dates||[]).some(d=>{const t=jd(d.date);return t.getFullYear()===curY&&t.getMonth()===curM}));
  if(mine.length)L.push(`今月は${mine.length}卓！にぎやかで嬉しいなあ`);
- const open=ses.filter(s=>stOf(s)==="open").length;   // 生タグでなくstOf＝過去日で募集中タグ付けっぱなしの卓を除外（ボードの募集中フィルタと一致）
+ const open=ses.filter(s=>s.open&&stOf(s)!=="done").length;   // 募集中＝募集タグ付き かつ 未終了（日程すり合わせ中でも募集はしてる卓を含む・過去日のタグ付けっぱなしだけ除外）
  if(open)L.push(`いま${open}件の卓が募集中だよ。気になるのあった？`);
  const suri=ses.filter(s=>stOf(s)==="suri").length;
  if(suri)L.push(`日程すり合わせ中のセッションも${suri<10?suri+"つ":suri+"件"}あるよ。よかったら確認してみてね`);
