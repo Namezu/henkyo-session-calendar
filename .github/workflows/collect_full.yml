@@ -1,0 +1,56 @@
+name: 卓予定のフル収集（1日1回・ドリフト修復）
+
+# 通常のcollect.ymlは省エネのため「新しい卓だけ実フェッチ＋古い卓は前回JSON再利用」。
+# こちらは1日1回、全履歴を実フェッチして古い卓の編集/削除/オプトアウト/GM退会のズレを直す。
+on:
+  schedule:
+    - cron: "0 18 * * *"     # 03:00 JST（村が静かな時間）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect              # 通常収集と同じグループ＝同時に走らない（直列化）
+  cancel-in-progress: false
+
+jobs:
+  collect_full:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 依存インストール
+        run: pip install -q "discord.py>=2.3" python-dotenv
+
+      - name: 全履歴をフル収集
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          BOARD_GUILD_ID: ${{ vars.BOARD_GUILD_ID || '1023884809774305301' }}
+          BOARD_FORUMS: ${{ vars.BOARD_FORUMS || '🏡卓部屋一覧-test' }}
+          LIMIN_ROLE_ID: ${{ vars.LIMIN_ROLE_ID || '1001840163724464270' }}
+          COLLECT_FULL: "1"      # ←フルモード（全履歴を実フェッチ）
+          BOARD_OUT: sessions.json
+        run: python collect/collect_sessions.py
+
+      - name: 変化があればコミット
+        run: |
+          if git diff --quiet -- sessions.json; then
+            echo "変化なし＝コミットしない"
+          else
+            git config user.name "polistes-board"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add sessions.json
+            git commit -m "🐝 卓予定をフル更新（ドリフト修復）"
+            for i in 1 2 3 4 5; do
+              if git pull --rebase --autostash && git push; then
+                echo "push成功（試行 $i）"; break
+              fi
+              echo "⚠ push競合→rebaseリトライ $i/5"; sleep 3
+            done
+          fi

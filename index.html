@@ -1283,7 +1283,7 @@ function kbInit(){
  setInterval(()=>{if(!$("kanban").hidden&&!kbNegoActive&&Date.now()-kbLastAt>8500)kbSay()},10000); // 自動おしゃべり＝直近の発話から8.5秒は待つ（交渉中は黙る）
 }
 fetch("sessions.json?t="+Date.now()).then(r=>r.json()).then(d=>{
- DATA=d;$("fresh").innerHTML=`最終更新: ${d.updated||"?"}　<span style="opacity:.7">（15分ごとに自動更新）</span>`;fillFilterSelects();renderAll();kbInit();
+ DATA=d;$("fresh").innerHTML=`最終更新: ${d.updated||"?"}　<span style="opacity:.7">（自動チェック ${d.checked||d.updated||"?"}・15分ごと）</span>`;fillFilterSelects();renderAll();kbInit();
 }).catch(()=>{$("cal").innerHTML="";$("calSum").textContent="データの読込に失敗しました"});
 })();
 </script>

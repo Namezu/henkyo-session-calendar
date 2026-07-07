@@ -1,24 +1,30 @@
 # -*- coding: utf-8 -*-
 """セッションカレンダー収集係（読み取り専用・チャルタヴォラのトークンで動く）
 ==================================================================
-卓部屋フォーラムのトピックを読み、parse_title（実測99.1%）でタイトルを解析して
-sessions.json を生成する。ボードはこのJSONを表示するだけ＝正本はDiscordのトピック。
+卓部屋フォーラムのトピックを読み、parse_title でタイトルを解析して sessions.json を生成する。
+ボードはこのJSONを表示するだけ＝正本はDiscordのトピック。
 
 ・「掲載不要」がトピック本文(1投稿目)にあれば掲載しない（オプトアウト）
 ・タイトルが読めなかった卓は unparsed に載せる（ボードの⚠枠→GMがタイトルを直せば次回から載る）
+  ただし「アーカイブ済み＆非募集中＝終了した卓」は読めなくても不掲載（終了卓の⚠枠居座り解消 2026-07-08）
 ・タグ「募集中」の有無で募集状態を判定
-・卓情報に変化がなければ sessions.json を書き換えない（Actionsの無駄コミット防止＝updatedは「最終変化時刻」）
-GitHub Actions(15分毎)では DISCORD_BOT_TOKEN を Secret から環境変数で渡す（.env不要）。
+
+【省エネ収集（2026-07-08）】
+・通常モード＝アクティブ卓＋作成が新しい卓(CUTOFF_DAYS以内)だけ実フェッチ。古い卓は前回JSONから再利用
+  （＝毎回1300件を fetch_message/fetch_member するのをやめ、変わらない過去卓は据え置く。過去の月/年表示は維持）
+・フルモード（環境変数 COLLECT_FULL=1・日次/手動）＝全履歴を実フェッチしてドリフト（過去卓の編集/退会/オプトアウト）を修復
+・updated=掲載内容の最終変化時刻／checked=最終チェック時刻（数時間おきハートビートで「動いてる感」を出す＝コミット過多回避）
+
+GitHub Actions では DISCORD_BOT_TOKEN を Secret から環境変数で渡す（.env不要）。
 """
-import os, json, asyncio, datetime, re
+import os, json, datetime, re
 import discord
 from dotenv import load_dotenv
 from parse_title import parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-JST = datetime.timezone(datetime.timedelta(hours=9))   # GitHub ActionsはUTCで動く＝時刻/日付は日本時間で記録・判定する
-LIMIN_ROLE_ID = int(os.environ.get("LIMIN_ROLE_ID", "1001840163724464270"))  # 辺境TRPG村「領民」ロール＝卓を立てられる村の正式メンバーの証。退会・ロール剥奪された人はこれを持たない（在籍だけでは足りない＝ぱんさー例で判明 2026-07-07）
-# トークン＝チャルタヴォラ（読み取り専用bot）を流用。ローカルは.env、Actionsは環境変数（.envが無ければ素通り）
+JST = datetime.timezone(datetime.timedelta(hours=9))   # GitHub ActionsはUTC＝時刻/日付は日本時間で記録・判定
+LIMIN_ROLE_ID = int(os.environ.get("LIMIN_ROLE_ID", "1001840163724464270"))  # 辺境TRPG村「領民」ロール＝卓を立てられる正式メンバーの証（退会/剥奪は持たない・ぱんさー例2026-07-07）
 _envfile = os.environ.get("COLLECT_ENV", os.path.join(HERE, "..", "chartavora_bot", ".env"))
 if os.path.exists(_envfile):
     load_dotenv(_envfile)
@@ -27,17 +33,21 @@ GUILD_ID = int(os.environ.get("BOARD_GUILD_ID", "1023884809774305301"))       # 
 FORUM_NAMES = [x.strip() for x in os.environ.get("BOARD_FORUMS", "🏡卓部屋一覧-test").split(",") if x.strip()]
 OUT = os.environ.get("BOARD_OUT", os.path.join(HERE, "sessions.json"))
 OPTOUT = "掲載不要"
+STALE_DAYS = 180                                                              # 半年以上前に立てたトピックは流卓/終了とみなす
+CUTOFF_DAYS = int(os.environ.get("COLLECT_CUTOFF_DAYS", "150"))               # 通常モード＝これより新しい作成日の卓だけ実フェッチ（古い卓は前回JSON再利用）
+FULL_MODE = os.environ.get("COLLECT_FULL", "").strip() == "1"                 # 全履歴を実フェッチ（日次/手動でドリフト修復）
+HEARTBEAT_HOURS = int(os.environ.get("COLLECT_HEARTBEAT_HOURS", "3"))         # 変化なしでもこの間隔でcheckedを更新（動いてる感・コミットは数時間に1回）
+
 
 def infer_year(month, day, base):
     """月/日だけのタイトルに年を割り当てる。基準＝トピック作成日(base)。
-    卓は作成後に開催されるので作成年が基本。卓日が作成日より前なら年をまたいだ翌年開催。
-    （旧実装は「今日」基準だったため、去年の7/xx卓が今年扱いになり混在していた＝2026-07-07修正）"""
+    卓は作成後に開催されるので作成年が基本。卓日が作成日より前なら年をまたいだ翌年開催。"""
     y = base.year
     try:
         d = datetime.date(y, month, day)
     except ValueError:
         return None
-    if d < base:                 # 卓日が作成日より前＝同年にはありえない→翌年開催（年末作成の年始卓など）
+    if d < base:
         y += 1
         try:
             datetime.date(y, month, day)
@@ -45,13 +55,64 @@ def infer_year(month, day, base):
             return None
     return y
 
+
+def parse_iso_date_jst(s):
+    """ISO文字列(created)→JST日付。読めなければNone。（純関数＝テスト可能）"""
+    if not s:
+        return None
+    try:
+        dt = datetime.datetime.fromisoformat(s)
+        if dt.tzinfo is not None:
+            dt = dt.astimezone(JST)
+        return dt.date()
+    except Exception:
+        return None
+
+
+def merge_old_sessions(fresh_sessions, processed_urls, old_sessions, cutoff_date):
+    """今回フェッチしなかった古い卓（作成がcutoffより前）を前回JSONから引き継ぐ。
+    ＝省エネしつつ過去の月/年表示を維持する。processed_urls に居る卓（今回実フェッチ済み）は
+    freshが正なので引き継がない＝削除/オプトアウト/編集が正しく反映される。（純関数＝テスト可能）"""
+    kept = list(fresh_sessions)
+    for s in (old_sessions or []):
+        if s.get("url") in processed_urls:
+            continue                       # 今回処理した＝freshが最新
+        cdate = parse_iso_date_jst(s.get("created"))
+        if cdate is not None and cdate < cutoff_date:
+            kept.append(s)                 # 古い卓＝不変とみなして再利用
+    return kept
+
+
+def heartbeat_should_write(old, data, now_str, hb_hours):
+    """書き込むべきか＋書き出すupdated/checkedを決める純関数。
+    返り値: (write:bool, updated:str, checked:str)
+    ・内容が変わった→書く（updated=now, checked=now）
+    ・内容同じでも最終checkedからhb_hours経過→書く（updated据え置き, checked=now＝ハートビート）
+    ・それ以外→書かない"""
+    def content_key(d):
+        return {k: v for k, v in (d or {}).items() if k not in ("updated", "checked")}
+    changed = (old is None) or (content_key(old) != content_key(data))
+    if changed:
+        return True, now_str, now_str
+    # 内容同じ＝ハートビート判定
+    prev_checked = (old or {}).get("checked") or (old or {}).get("updated")
+    due = True
+    try:
+        last = datetime.datetime.strptime(prev_checked, "%Y/%m/%d %H:%M")
+        now = datetime.datetime.strptime(now_str, "%Y/%m/%d %H:%M")
+        due = (now - last) >= datetime.timedelta(hours=hb_hours)
+    except Exception:
+        due = True
+    if due:
+        return True, (old or {}).get("updated", now_str), now_str   # updateは据え置き・checkedだけ更新
+    return False, (old or {}).get("updated", now_str), prev_checked
+
+
 _gm_active_cache = {}
 async def gm_is_active(guild, author):
-    """GM（トピック起票者）がまだサーバーに在籍しているか。退会・アカウント削除ならFalse。
-    ⚠get_member（キャッシュ）は使わない＝discord.pyがトピック投稿を読む時に「退会前のMember情報」を
-      キャッシュしてしまい、退会者を在籍扱いにする穴があるため（2026-07-07 ぱんさー漏れで判明）。
-      必ず fetch_member（サーバーへのAPI直問い合わせ）で"今の在籍"を確認する（members intent不要）。
-    同一GMはキャッシュで1回だけ問い合わせ。一時エラーは在籍扱い＝現役GMの誤除外を防ぐ。"""
+    """GM（起票者）が在籍かつ領民ロール保持か。退会/剥奪ならFalse。
+    ⚠get_member（キャッシュ）でなく fetch_member（API直問い合わせ）で"今の在籍"を確認。
+    一時エラーは在籍扱い＝現役GMの誤除外を防ぐ。同一GMは1回だけ問い合わせ。"""
     if author is None:
         return True
     aid = getattr(author, "id", None)
@@ -61,20 +122,21 @@ async def gm_is_active(guild, author):
         return _gm_active_cache[aid]
     try:
         m = await guild.fetch_member(aid)
-        active = any(r.id == LIMIN_ROLE_ID for r in m.roles)   # 領民ロール保持＝村の正式メンバー（卓を立てられる資格）。在籍でもロール剥奪なら除外（ぱんさー例）
+        active = any(r.id == LIMIN_ROLE_ID for r in m.roles)
     except discord.NotFound:
-        active = False                     # サーバーから退会/削除
+        active = False
     except Exception:
-        return True                        # 一時エラーはキャッシュせず在籍扱い（次回再判定）
+        return True
     _gm_active_cache[aid] = active
     return active
+
 
 intents = discord.Intents.default()
 intents.message_content = True
 client = discord.Client(intents=intents)
 
-async def read_forum(guild, key, sessions, unparsed):
-    # key＝フォーラム名 or チャンネルID（数字）。IDのほうが絵文字/改名に強く確実
+
+async def read_forum(guild, key, sessions, unparsed, processed_urls, today):
     if key.isdigit():
         forum = guild.get_channel(int(key))
         if not isinstance(forum, discord.ForumChannel):
@@ -82,34 +144,50 @@ async def read_forum(guild, key, sessions, unparsed):
     else:
         forum = discord.utils.get(guild.forums, name=key)
     if forum is None:
-        print(f"⚠ フォーラム「{key}」が見つからない/見えない"); return False   # 未検出＝この回の収集は不完全（呼び出し側で空上書きを防ぐ）
-    ths = list(forum.threads)
+        print(f"⚠ フォーラム「{key}」が見つからない/見えない"); return False
+    cutoff_date = today - datetime.timedelta(days=CUTOFF_DAYS)
+    ths = list(forum.threads)   # アクティブ卓は必ず処理（forum.threadsはプロパティ＝例外なし）
+    archive_ok = True
     try:
         async for th in forum.archived_threads(limit=None):
+            if not FULL_MODE:
+                at = th.archive_timestamp
+                # アーカイブは archive_timestamp 降順。cutoffより古くなったら以降は全部古い→打ち切り（省エネ）。
+                # 作成日 <= アーカイブ日 なので、アーカイブがcutoffより古ければ作成もcutoffより古い＝再利用対象。
+                if at and at.astimezone(JST).date() < cutoff_date:
+                    break   # appendせず打ち切る（cutoff超の1件を後段に流さない）
             ths.append(th)
     except Exception as e:
-        print(f"⚠ {key}: アーカイブ取得で一部失敗({e})")   # 引数はkey（nameは未定義でNameErrorになっていた）
-    today = datetime.datetime.now(JST).date()
-    STALE_DAYS = 180   # 半年以上前に立てたトピックは流卓/終了とみなす
+        archive_ok = False
+        print(f"⚠ {key}: アーカイブ取得が不完全({e})")
+    if not archive_ok:
+        # アーカイブ取得が途中失敗＝収集不完全→Falseを返して呼び出し側で書き込み中止（既存JSONを保護）。
+        # 通常モードはbreakで短く済むので失敗は稀。フルモードは長いので失敗時こそ保護が効く。
+        print(f"  🛡 {key}: 収集不完全のため既存を保護（書き込み見送り）")
+        return False
     for th in ths:
         url = f"https://discord.com/channels/{guild.id}/{th.id}"
-        base_dt = th.created_at.astimezone(JST).date() if th.created_at else today   # 年推定＋古さ判定の基準＝トピック作成日（created_atはUTC aware＝JSTに直してから日付化。todayもJST基準に合わせる）
+        cbase = th.created_at or getattr(th, "archive_timestamp", None)   # created_at欠損時はアーカイブ時刻で代替
+        base_dt = cbase.astimezone(JST).date() if cbase else today
+        if not FULL_MODE and base_dt < cutoff_date:
+            continue   # 古い卓＝実フェッチせず前回JSONから引き継ぐ（processed_urlsに入れない）
+        processed_urls.add(url)
         tags = {t.name for t in th.applied_tags}
-        # オプトアウト＝タグ「掲載不要」（推奨・Message Content権限不要）or 1投稿目本文（旧方式・当面併読）
+        recruiting = "募集中" in tags
+        archived_done = bool(getattr(th, "archived", False)) and not recruiting   # アーカイブ済み＆非募集＝終了とみなす
         try:
             starter = await th.fetch_message(th.id)
         except Exception:
             starter = None
-        if OPTOUT in tags or (starter and OPTOUT in (starter.content or "")) or (re.search(r"(?<!交)流卓|中止", th.name) is not None):  # タイトルに「流卓」(交流卓は除外・負の後読み)か「中止」＝不掲載
+        if OPTOUT in tags or (starter and OPTOUT in (starter.content or "")) or (re.search(r"(?<!交)流卓|中止", th.name) is not None):
             print(f"  ⏭ 掲載不要/流卓: {th.name}"); continue
         gm0 = starter.author.display_name if (starter and starter.author) else None
         r = parse(th.name)
         if not r["ok"]:
-            if (today - base_dt).days > STALE_DAYS:
-                print(f"  🗑 半年以上前の読めない卓＝不掲載(流卓とみなす): {th.name}"); continue
-            # 読めなくても分かる情報（GM名・募集状態）は⚠貼り紙に添える
-            unparsed.append({"title": th.name, "url": url, "gm": gm0,
-                             "open": "募集中" in tags})
+            # 読めない卓＝⚠枠。ただし半年以上前 or 終了(アーカイブ済み＆非募集)は不掲載（居座り解消）
+            if (today - base_dt).days > STALE_DAYS or archived_done:
+                print(f"  🗑 終了/流卓とみなし不掲載(読めない): {th.name}"); continue
+            unparsed.append({"title": th.name, "url": url, "gm": gm0, "open": recruiting})
             print(f"  ⚠ 読めない→⚠枠: {th.name}"); continue
         dates = []
         for (m, d) in r["dates"]:
@@ -117,26 +195,25 @@ async def read_forum(guild, key, sessions, unparsed):
             if y:
                 dates.append({"date": f"{y}-{m:02d}-{d:02d}", "start": r["start"], "end": r["end"]})
         is_suri = bool(r["suriawase"] and not dates)
-        # 半年以上前のすり合わせ卓＝日付が無いまま「調整中」欄に居座り続けるので、流卓とみなして不掲載
-        if is_suri and (today - base_dt).days > STALE_DAYS:
-            print(f"  🗑 半年以上前のすり合わせ卓＝不掲載(流卓とみなす): {th.name}"); continue
-        gm = None
-        if starter and starter.author:
-            gm = starter.author.display_name
+        # 半年以上前 or 終了(アーカイブ済み＆非募集)のすり合わせ卓＝居座るので不掲載
+        if is_suri and ((today - base_dt).days > STALE_DAYS or archived_done):
+            print(f"  🗑 終了/流卓とみなし不掲載(すり合わせ): {th.name}"); continue
+        gm = starter.author.display_name if (starter and starter.author) else None
         gm_active = await gm_is_active(guild, starter.author if starter else None)
         sessions.append({
             "scenario": r["scenario"],
             "reg": None if r.get("reg_is_name") else r["reg"],
             "reg_is_name": bool(r.get("reg_is_name")),
             "dates": dates,
-            "open": "募集中" in tags,
+            "open": recruiting,
             "suriawase": is_suri,
             "gm": gm, "gm_active": gm_active, "url": url,
             "created": th.created_at.isoformat() if th.created_at else None,
             "source": "forum",
         })
         print(f"  ✅ {th.name}")
-    return True   # フォーラムを見つけて走査し切った＝この回は有効
+    return True
+
 
 @client.event
 async def on_ready():
@@ -144,19 +221,14 @@ async def on_ready():
         guild = client.get_guild(GUILD_ID)
         if guild is None:
             print(f"⚠ サーバー {GUILD_ID} が見えない"); return
-        sessions, unparsed = [], []
+        today = datetime.datetime.now(JST).date()
+        sessions, unparsed, processed_urls = [], [], set()
         all_forums_ok = True
         for name in FORUM_NAMES:
-            found = await read_forum(guild, name, sessions, unparsed)
+            found = await read_forum(guild, name, sessions, unparsed, processed_urls, today)
             if not found:
                 all_forums_ok = False
-        data = {
-            "updated": datetime.datetime.now(JST).strftime("%Y/%m/%d %H:%M"),
-            "guild": guild.name,
-            "sessions": sessions,
-            "unparsed": unparsed,
-        }
-        # 既存を先に読む（空上書き防止ガード＋変化なし判定で共用）
+        # 既存を読む（マージ＋空上書き防止＋変化判定＋ハートビートで共用）
         old = None
         if os.path.exists(OUT):
             try:
@@ -164,28 +236,33 @@ async def on_ready():
                     old = json.load(f)
             except Exception:
                 old = None
+        # 省エネ＝今回フェッチしなかった古い卓を前回JSONから引き継ぐ（フルモードは全部フェッチ済みなので実質何も足さない）
+        if old and not FULL_MODE:
+            cutoff_date = today - datetime.timedelta(days=CUTOFF_DAYS)
+            before = len(sessions)
+            sessions = merge_old_sessions(sessions, processed_urls, old.get("sessions"), cutoff_date)
+            print(f"♻ 古い卓を前回JSONから再利用: +{len(sessions) - before}件（実フェッチ{before}件）")
+        now_str = datetime.datetime.now(JST).strftime("%Y/%m/%d %H:%M")
+        data = {"updated": now_str, "checked": now_str, "guild": guild.name,
+                "sessions": sessions, "unparsed": unparsed}
         old_had = bool(old and (old.get("sessions") or old.get("unparsed")))
-        # 🛡収集失敗の保険＝フォーラム未検出、または掲載も⚠枠も0件になった回は書き込まない
-        #   （一時的な取得失敗で既存の全卓を空JSONで上書きしボードが真っ白になる事故を防ぐ。
-        #    正本はDiscord＝次回の収集で自動復活する。初回=既存無しの時は通常どおり書く）
+        # 🛡収集失敗の保険＝フォーラム未検出、または掲載も⚠枠も0件になった回は書き込まない（空上書き防止）
         if old_had and (not all_forums_ok or (not sessions and not unparsed)):
             reason = "フォーラム未検出" if not all_forums_ok else "掲載卓0件"
-            print(f"🛡 収集が不完全({reason})＝sessions.jsonは据え置き（既存を保護：掲載{len(old.get('sessions',[]))}件）")
+            print(f"🛡 収集が不完全({reason})＝sessions.jsonは据え置き（既存を保護：掲載{len(old.get('sessions', []))}件）")
             return
-        # 変化なしなら書き換えない（updatedの時刻差だけで毎回コミットしないため）
-        if old is not None:
-            try:
-                if {k: v for k, v in old.items() if k != "updated"} == \
-                   {k: v for k, v in data.items() if k != "updated"}:
-                    print(f"📋 変化なし: 掲載{len(sessions)}件／⚠{len(unparsed)}件（sessions.jsonは据え置き）")
-                    return
-            except Exception:
-                pass
+        write, upd, chk = heartbeat_should_write(old, data, now_str, HEARTBEAT_HOURS)
+        if not write:
+            print(f"📋 変化なし＆ハートビート未満: 掲載{len(sessions)}件／⚠{len(unparsed)}件（据え置き）")
+            return
+        data["updated"], data["checked"] = upd, chk
         with open(OUT, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=1)
-        print(f"📋 sessions.json 書き出し: 掲載{len(sessions)}件／⚠{len(unparsed)}件 → {OUT}")
+        kind = "内容更新" if upd == now_str else "ハートビート"
+        print(f"📋 sessions.json 書き出し[{kind}]: 掲載{len(sessions)}件／⚠{len(unparsed)}件 → {OUT}")
     finally:
         await client.close()
+
 
 if __name__ == "__main__":
     if not TOKEN:
