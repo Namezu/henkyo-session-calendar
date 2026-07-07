@@ -289,8 +289,8 @@ footer::after{background:linear-gradient(90deg,var(--cln),transparent)}
  <div class="fresh" id="fresh">読込中…</div>
 </header>
 <div class="toolrow">
- <button class="f" data-f="all">すべて</button>
- <button class="f on" data-f="open">募集中だけ</button>
+ <button class="f on" data-f="all">すべて</button>
+ <button class="f" data-f="open">募集中だけ</button>
  <span class="tooldiv"></span>
  <select class="fsel" id="sysSel"><option value="">システム: 全て</option></select>
  <select class="fsel" id="regSel"><option value="">レギュ: 全て</option></select>
@@ -351,7 +351,7 @@ footer::after{background:linear-gradient(90deg,var(--cln),transparent)}
 <script>
 (function(){
 const WD=["日","月","火","水","木","金","土"];
-let DATA=null,FILTER="open",selDate=null,SYSF=null;  // 既定=募集中のみ表示（すべては切替・後輩くん指定）
+let DATA=null,FILTER="all",selDate=null,SYSF=null;  // 既定=すべて表示（募集中だけは切替・後輩くん指定2026-07-07に「募集中のみ」から変更）
 const TWO=true;                                      // 2行表示（シナリオ名＋レギュ名）＝常時ON（トグル廃止）
 let REGF=null,GMF=null;                              // レギュ/GM絞り込み（非該当はdim＝グレーアウトで残す）
 const BANDS=new Set();                               // 朝昼夜絞り込み（複数選択可・空=全て）
