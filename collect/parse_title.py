@@ -124,7 +124,7 @@ def parse(title):
         if 1 <= month <= 12 and 1 <= day <= 31:
             dates.append((month, day))
             rest = outside[m0.end():]
-            for cm in re.finditer(r"[,、・]\s*([0-9]{1,2})(?:/([0-9]{1,2}))?", rest):
+            for cm in re.finditer(r"[,、・.．]\s*([0-9]{1,2})(?:/([0-9]{1,2}))?", rest):  # 連続日の区切り＝「,、・」＋「.．」(7/11.12=11と12・後輩くん2026-07-08)
                 if cm.group(2):
                     mm, dd = int(cm.group(1)), int(cm.group(2))
                 else:
@@ -162,7 +162,7 @@ def parse(title):
     s = DATE.sub(" ", seg); s = DATE_KANJI.sub(" ", s); s = TIME.sub(" ", s)
     s = re.sub(r"[0-9]{1,2}\s*時(?:\s*[0-9]{1,2}\s*分)?(?:半)?", " ", s)
     s = re.sub(r"[（(][月火水木金土日][）)]", " ", s)
-    s = re.sub(r"[,、・]\s*[0-9]{1,2}(?:/[0-9]{1,2})?", " ", s)
+    s = re.sub(r"[,、・.．]\s*[0-9]{1,2}(?:/[0-9]{1,2})?", " ", s)
     s = re.sub(r"^[\s.．\-~〜～‐:：/／。、，・0-9]+", "", s)
     s = re.sub(r"[\s.．\-~〜～‐]+$", "", s)
     s = re.sub(r"\s{2,}", " ", s).strip()
