@@ -69,9 +69,9 @@ def parse_iso_date_jst(s):
         return None
 
 
-# CP名らしさ＝「CP」「キャンペーン」だが直後がひらがな(＝動詞句『キャンペーンやる』等)は除外／第n話は継続もの。
-# 例: 「一期一会CP」「○○キャンペーン」「キャンペーンⅡ」=名前→○ ／「キャンペーンやる」「CPやる」=動詞句→×
-_CP_RE = re.compile(r"(?:CP|キャンペーン)(?![ぁ-ゟ])|第[0-9０-９一二三四五六七八九十]+話")
+# CPらしさ＝CP/キャンペーン/第n話（dabdab例で判明＝casualな『キャンペーンやる』も実CPなので名前で外さない）。
+# 継続か否かは名前でなく「最終投稿の近さ(last_active)＋募集中」で判別する＝is_ongoing_cp側で。
+_CP_RE = re.compile(r"CP|キャンペーン|第[0-9０-９一二三四五六七八九十]+話|継続")
 def is_ongoing_cp(title, scenario, all_dates_past, year_explicit,
                   created_date, last_active_date, today,
                   created_min_age=90, active_within=45):
@@ -243,6 +243,7 @@ async def read_forum(guild, key, sessions, unparsed, processed_urls, today):
             "ongoing": ongoing,
             "gm": gm, "gm_active": gm_active, "url": url,
             "created": th.created_at.isoformat() if th.created_at else None,
+            "last_active": last_active.isoformat() if last_active else None,   # 最終投稿日（継続CP判定・可視化用）
             "source": "forum",
         })
         print(f"  {'🔄 継続CP' if ongoing else '✅'} {th.name}")
