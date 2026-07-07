@@ -1,5 +1,5 @@
 {
- "updated": "2026/07/08 00:14",
+ "updated": "2026/07/08 00:24",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -309,7 +309,7 @@
      "end": "25:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "gm": "taku",
    "gm_active": true,
