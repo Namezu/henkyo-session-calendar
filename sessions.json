@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/08 02:05",
- "checked": "2026/07/08 02:05",
+ "updated": "2026/07/08 02:14",
+ "checked": "2026/07/08 02:14",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -1609,10 +1609,21 @@
    "scenario": "キャンペーンやる",
    "reg": "アンコールを流星に",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-05-25",
+     "start": null,
+     "end": null
+    },
+    {
+     "date": "2026-05-26",
+     "start": null,
+     "end": null
+    }
+   ],
    "open": false,
-   "suriawase": true,
-   "ongoing": true,
+   "suriawase": false,
+   "ongoing": false,
    "gm": "dabdab",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1405512300491968602",
