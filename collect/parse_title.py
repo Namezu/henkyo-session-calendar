@@ -178,6 +178,70 @@ def parse(title):
     out["ok"] = bool(out["scenario"] and (out["dates"] or out["suriawase"]))
     return out
 
+# ── 本文フリーテキストから日別時刻を拾う（複数日で日ごとに時刻が違う卓・ユウカ卓型）──
+# 方針: タイトル由来の日付[(月,日)...]を白リストにし、本文からは「時刻」だけ拾う（日付は新造しない）。
+# 確信できた日だけ返す＝曖昧・非該当はキーを立てず、呼び出し側でタイトル既定にフォールバック。
+# 安全弁: 複数日のみ発動／時刻は「:」か「時」必須／期限・所要・人数等の紛らわしい行は除外／1行に複数日は棄却。
+EXCLUDE_DT = re.compile(r"期限|締切|〆|締め|所要|人数|定員|参加費|経験点|成長点|レベル|ＣＬ|CL[0-9]|Lv[0-9]|指定")
+_K2N = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9, "十": 10}
+
+def _small_int(s):
+    s = (s or "").strip()
+    if s.isdigit():
+        return int(s)
+    return _K2N.get(s)
+
+def parse_daytimes(dates, body):
+    """複数日卓の本文から日別 (start, end) を拾う。返り値 {(月,日): (start, end|None)}。確信できた日だけ。"""
+    if not body or not dates or len(dates) < 2:
+        return {}
+    from collections import Counter
+    dateset = list(dict.fromkeys((int(m), int(d)) for (m, d) in dates))
+    daycount = Counter(d for (_m, d) in dateset)
+    daymap = {d: (m, d) for (m, d) in dateset if daycount[d] == 1}   # 日だけで一意に定まる日付
+    result = {}
+    for raw in z2h(body).splitlines():
+        line = re.sub(r"20[0-9]{2}\s*[/年]\s*", "", raw.strip())   # 年プレフィックス除去（parseと同様）
+        if not line or EXCLUDE_DT.search(line):
+            continue
+        times = TIME.findall(line)                                 # 時刻は「:」必須。無ければ「時」表記
+        if not times:
+            times = [(h, mm or "00") for h, mm in TIME_KANJI.findall(line)]
+        if not times:
+            continue
+        target = None
+        cand = []                                                   # ① 明示 m/d が白リストにある＝最も確実（日目インデックスより優先）
+        for a, b in DATE.findall(line):
+            md = (int(a), int(b))
+            if md in dateset and md not in cand:
+                cand.append(md)
+        if len(cand) == 1:
+            target = cand[0]
+        elif len(cand) > 1:
+            continue                                                # 1行に複数日＝曖昧→棄却
+        if target is None:                                          # ② N日目＝インデックス指定
+            mi = re.search(r"([0-9一二三四五六七八九十]{1,3})\s*日\s*目", line)
+            if mi:
+                idx = _small_int(mi.group(1))
+                if idx and 1 <= idx <= len(dateset):
+                    target = dateset[idx - 1]
+        if target is None:                                          # ③ 「D日」だけ（日目は除去してから）
+            noidx = re.sub(r"[0-9一二三四五六七八九十]{1,3}\s*日\s*目", " ", line)
+            dcand = []
+            for x in re.findall(r"([0-9]{1,2})\s*日", noidx):
+                if int(x) in daymap and daymap[int(x)] not in dcand:
+                    dcand.append(daymap[int(x)])
+            if len(dcand) == 1:
+                target = dcand[0]
+            elif len(dcand) > 1:
+                continue
+        if target is None or target in result:
+            continue
+        start = f"{int(times[0][0])}:{times[0][1]}"
+        end = f"{int(times[1][0])}:{times[1][1]}" if len(times) >= 2 else None
+        result[target] = (start, end)
+    return result
+
 if __name__ == "__main__":
     src = sys.argv[1] if len(sys.argv) > 1 else "../chartavora_bot/_titles_ar2e.json"
     titles = json.load(open(src, encoding="utf-8"))

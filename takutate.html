@@ -286,7 +286,7 @@ const dateMode=seg("dateMode",v=>{$("fixedBox").classList.toggle("hidden",v!=="f
 document.querySelectorAll("#optChips .chip input").forEach(c=>c.addEventListener("change",()=>c.closest(".chip").classList.toggle("on",c.checked)));
 $("aiUse").addEventListener("change",()=>$("aiUse").closest(".chip").classList.toggle("on",$("aiUse").checked));
 $("spectate").addEventListener("change",()=>$("spectate").closest(".chip").classList.toggle("on",$("spectate").checked));
-document.querySelectorAll("#senkouBtns .mini").forEach(b=>b.addEventListener("click",()=>{$("senkou").value=($("senkou").value+b.dataset.t).replace(/^ ?⇒ ?/,"")}));
+document.querySelectorAll("#senkouBtns .mini").forEach(b=>b.addEventListener("click",()=>{$("senkou").value=($("senkou").value+b.dataset.t).replace(/^ ?⇒ ?/,"");saveLast()}));
 
 // ---- Markdown整形ミニツールバー（選択行の見出し化・太字など。もう一度押すと解除＝トグル） ----
 function mdLineOp(ta,prefix){ // 行頭記号系（見出し/引用/リスト）＝選択範囲の行ごとに付け外し
@@ -333,6 +333,10 @@ function addDayRow(d,s,e){
  const div=document.createElement("div");div.className="dayrow";
  div.innerHTML=`<input type="date" value="${d||""}"><span class="wd"></span><select class="st">${timeOpts(s)}</select><span style="color:var(--mut)">〜</span><select class="en">${timeOpts(e||"")}</select><button class="del" type="button" title="この日を削除">✕</button>`;
  const stSel=div.querySelector(".st"),enSel=div.querySelector(".en");
+ // 終了時刻は開始時刻より後だけを選べるようにする（21:00開始なら21:30以降のみ・深夜28:30まで対応）
+ const filterEnd=()=>{const sm=timeMins(stSel.value);
+  [...enSel.options].forEach(o=>{o.disabled=(!!o.value)&&sm!==null&&timeMins(o.value)<=sm});
+  if(enSel.selectedOptions[0]&&enSel.selectedOptions[0].disabled)enSel.value="";};
  const markTime=()=>{const bad=timeMins(stSel.value)!==null&&timeMins(enSel.value)!==null&&timeMins(enSel.value)<=timeMins(stSel.value);
   [stSel,enSel].forEach(x=>{x.classList.toggle("time-conflict",bad);x.title=bad?"終了時刻が開始時刻以前になっています":""})};
  const upd=()=>{const v=div.querySelector("input[type=date]").value;
@@ -340,8 +344,8 @@ function addDayRow(d,s,e){
   if(v){const t=new Date(v+"T00:00");w.textContent=`(${WDJ[t.getDay()]})`;w.style.color=t.getDay()===0?"var(--sun,#e08f83)":t.getDay()===6?"var(--sat,#96b7e4)":"var(--mut)"}
   else w.textContent="";};
  div.querySelector("input[type=date]").addEventListener("change",upd);upd();
- stSel.addEventListener("change",markTime);enSel.addEventListener("change",markTime);markTime();
- div.querySelector(".del").addEventListener("click",()=>{if(document.querySelectorAll(".dayrow").length>1)div.remove()});
+ stSel.addEventListener("change",()=>{filterEnd();markTime()});enSel.addEventListener("change",markTime);filterEnd();markTime();
+ div.querySelector(".del").addEventListener("click",()=>{if(document.querySelectorAll(".dayrow").length>1){div.remove();saveLast()}});
  $("days").appendChild(div);
 }
 $("addDay").addEventListener("click",()=>{
@@ -350,12 +354,14 @@ $("addDay").addEventListener("click",()=>{
  let nd="";
  if(last&&last.querySelector("input[type=date]").value){const t=new Date(last.querySelector("input[type=date]").value+"T00:00");t.setDate(t.getDate()+1);nd=t.toISOString().slice(0,10)}
  addDayRow(nd,last?last.querySelector(".st").value:"21:00",last?last.querySelector(".en").value:"");
+ saveLast();
 });
 addDayRow();
 // 所要時間の自動計算（"21:00","25:00"→4時間／30分は「◯時間半」）
 function durOf(s,e){if(!s||!e)return"";const[a,b]=s.split(":").map(Number),[c,d]=e.split(":").map(Number);let m=(c*60+d)-(a*60+b);if(m<=0)return"";const h=Math.floor(m/60);return m%60===0?`${h}時間`:m%60===30?`${h}時間半`:`${h}時間${m%60}分`}
 
 // ---- フォーム状態の収集/復元（マイセット＆自動保存の共通機構） ----
+let _restoring=false, _saveT=null;
 const FIELDS=["duration","scenario","regFree","regFreeUrl","cl","battles","guild","players","invite","senkou","deadline","format","houseFree","warning","gmName","pitaUrl","footerFree","trailer","adCatch"];
 function collect(){
  return{f:Object.fromEntries(FIELDS.map(k=>[k,$(k).value])),
@@ -364,6 +370,8 @@ function collect(){
   days:[...document.querySelectorAll(".dayrow")].map(r=>({d:r.querySelector("input[type=date]").value,s:r.querySelector(".st").value,e:r.querySelector(".en").value}))};
 }
 function restore(o){if(!o)return;
+ _restoring=true;                       // 復元中は自動保存を止める（復元が発火するchangeで誤保存しないため）
+ try{
  FIELDS.forEach(k=>{if(o.f&&o.f[k]!==undefined)$(k).value=o.f[k]});
  sel.value=o.reg||"";sel.dispatchEvent(new Event("change"));
  if(o.dateMode)dateMode.set(o.dateMode);
@@ -371,7 +379,12 @@ function restore(o){if(!o)return;
  $("spectate").checked=!!o.spectate;$("spectate").closest(".chip").classList.toggle("on",!!o.spectate);
  document.querySelectorAll("#optChips input").forEach(c=>{c.checked=(o.opts||[]).includes(c.value);c.closest(".chip").classList.toggle("on",c.checked)});
  $("days").innerHTML="";(o.days&&o.days.length?o.days:[{}]).forEach(x=>addDayRow(x.d,x.s,x.e));
+ }finally{_restoring=false;}
 }
+// 入力・チェック・日程が変わるたびに現在の状態を自動保存（生成ボタンを押さなくてもリロードで消えない）
+function saveLast(){if(_restoring)return;try{localStorage.setItem("takutate_last",JSON.stringify(collect()))}catch(e){}}
+document.addEventListener("input",()=>{clearTimeout(_saveT);_saveT=setTimeout(saveLast,250)});
+document.addEventListener("change",saveLast);
 // 前回の内容を自動復元
 try{restore(JSON.parse(localStorage.getItem("takutate_last")||"null"))}catch(e){}
 
@@ -389,13 +402,13 @@ function saveSet(){
  localStorage.setItem("takutate_sets",JSON.stringify(sets));renderSets();$("setSelect").value=name;alert(`「${name}」に保存しました`)}
 $("setSave").addEventListener("click",saveSet);
 $("setSave2").addEventListener("click",saveSet);
-$("setLoad").addEventListener("click",()=>{const sets=loadSets();const n=$("setSelect").value;if(!n||!sets[n])return alert("マイセットを選んでください");restore(sets[n])});
+$("setLoad").addEventListener("click",()=>{const sets=loadSets();const n=$("setSelect").value;if(!n||!sets[n])return alert("マイセットを選んでください");restore(sets[n]);saveLast()});
 $("setDel").addEventListener("click",()=>{const n=$("setSelect").value;if(!n)return;if(!confirm(`「${n}」を削除する？`))return;const sets=loadSets();delete sets[n];localStorage.setItem("takutate_sets",JSON.stringify(sets));renderSets()});
 // 白紙化（マイセットは消さない・自動復元もリセット）
 $("clearAll").addEventListener("click",()=>{
  if(!confirm("入力内容を白紙にする？（保存済みマイセットは消えません）"))return;
  restore({f:Object.fromEntries(FIELDS.map(k=>[k,k==="format"?"半テキ（実質テキセ＋補助的にVC利用）":""])),
-  reg:"",dateMode:"fixed",opts:[],ai:false,days:[{d:"",s:"21:00",e:""}]});
+  reg:"",dateMode:"fixed",opts:[],ai:false,spectate:false,days:[{d:"",s:"21:00",e:""}]});
  try{localStorage.removeItem("takutate_last")}catch(e){}
  $("results").innerHTML="";window.scrollTo({top:0,behavior:"smooth"});
 });
@@ -412,7 +425,7 @@ if(location.hash.startsWith("#set=")){
  try{
   const o=JSON.parse(b64d(location.hash.slice(5)));
   if(confirm("共有されたマイセット（卓の設定）を読み込みますか？")){
-   restore(o);
+   restore(o);saveLast();
    const name=prompt("マイセットとして保存する場合は名前を入力（空欄なら読み込みだけ）","");
    if(name){const sets=loadSets();sets[name]=o;localStorage.setItem("takutate_sets",JSON.stringify(sets));renderSets();$("setSelect").value=name}
   }
