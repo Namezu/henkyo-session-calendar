@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/10 21:46",
- "checked": "2026/07/10 21:46",
+ "updated": "2026/07/11 00:01",
+ "checked": "2026/07/11 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3469,27 +3469,6 @@
    "source": "forum"
   },
   {
-   "scenario": "羊を追うもの",
-   "reg": "フツウノアリアン",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-02-10",
-     "start": "22:30",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "peridotite",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1470767425833140430",
-   "created": "2026-02-10T13:04:39.856000+00:00",
-   "last_active": "2026-02-10",
-   "source": "forum"
-  },
-  {
    "scenario": "人を集めてGMを回すキャンペーン",
    "reg": "ライバー＆ラビリンス",
    "reg_is_name": false,
@@ -3870,6 +3849,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1487997004280893601",
    "created": "2026-03-30T02:08:51.468000+00:00",
    "last_active": "2026-04-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "羊を追うもの",
+   "reg": "フツウノアリアン",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-02-10",
+     "start": "22:30",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridotite",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1470767425833140430",
+   "created": "2026-02-10T13:04:39.856000+00:00",
+   "last_active": "2026-02-10",
    "source": "forum"
   },
   {
