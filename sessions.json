@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/11 11:01",
- "checked": "2026/07/11 11:01",
+ "updated": "2026/07/11 11:31",
+ "checked": "2026/07/11 11:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3487,21 +3487,15 @@
    "scenario": "人を集めてGMを回すキャンペーン",
    "reg": "ライバー＆ラビリンス",
    "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-11",
-     "start": null,
-     "end": null
-    }
-   ],
+   "dates": [],
    "open": false,
-   "suriawase": false,
+   "suriawase": true,
    "ongoing": false,
    "gm": "豆の塩ゆで",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1509931191262904360",
    "created": "2026-05-29T14:47:29.162000+00:00",
-   "last_active": "2026-07-10",
+   "last_active": "2026-07-11",
    "source": "forum"
   },
   {
