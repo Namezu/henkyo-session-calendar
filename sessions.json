@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/12 23:15",
- "checked": "2026/07/12 23:15",
+ "updated": "2026/07/12 23:31",
+ "checked": "2026/07/12 23:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -110,27 +110,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1509558940235727021",
    "created": "2026-05-28T14:08:17.601000+00:00",
    "last_active": "2026-07-08",
-   "source": "forum"
-  },
-  {
-   "scenario": "霧の洞窟",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-12",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1513505247773986967",
-   "created": "2026-06-08T11:29:30.637000+00:00",
-   "last_active": "2026-07-12",
    "source": "forum"
   },
   {
@@ -300,7 +279,7 @@
      "end": "24:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "よし/やっぴー",
@@ -357,13 +336,34 @@
      "end": null
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "にゃぎさん",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1525649674223226920",
    "created": "2026-07-11T23:47:07.535000+00:00",
+   "last_active": "2026-07-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "霧の洞窟",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-12",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1513505247773986967",
+   "created": "2026-06-08T11:29:30.637000+00:00",
    "last_active": "2026-07-12",
    "source": "forum"
   },
