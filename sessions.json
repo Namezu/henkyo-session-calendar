@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/13 12:01",
- "checked": "2026/07/13 12:01",
+ "updated": "2026/07/13 13:16",
+ "checked": "2026/07/13 13:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -332,6 +332,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1525649674223226920",
    "created": "2026-07-11T23:47:07.535000+00:00",
+   "last_active": "2026-07-13",
+   "source": "forum"
+  },
+  {
+   "scenario": "影は名を騙る",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-15",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1526076820791759038",
+   "created": "2026-07-13T04:04:27.213000+00:00",
    "last_active": "2026-07-13",
    "source": "forum"
   },
