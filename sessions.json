@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/14 20:31",
- "checked": "2026/07/14 20:31",
+ "updated": "2026/07/14 20:45",
+ "checked": "2026/07/14 20:45",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -310,14 +310,14 @@
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "水樹",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1525181090208157898",
    "created": "2026-07-10T16:45:08.400000+00:00",
-   "last_active": "2026-07-13",
+   "last_active": "2026-07-14",
    "source": "forum"
   },
   {
@@ -359,6 +359,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1526076820791759038",
    "created": "2026-07-13T04:04:27.213000+00:00",
+   "last_active": "2026-07-14",
+   "source": "forum"
+  },
+  {
+   "scenario": "WS2-4 眩暈と葬送",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "Mizshiro",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1526554858289758330",
+   "created": "2026-07-14T11:44:00.234000+00:00",
    "last_active": "2026-07-14",
    "source": "forum"
   },
