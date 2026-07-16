@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/16 22:31",
- "checked": "2026/07/16 22:31",
+ "updated": "2026/07/17 00:01",
+ "checked": "2026/07/17 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3239,27 +3239,6 @@
    "source": "forum"
   },
   {
-   "scenario": "劇場",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-03-22",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1472959367933595751",
-   "created": "2026-02-16T14:14:39.577000+00:00",
-   "last_active": "2026-03-22",
-   "source": "forum"
-  },
-  {
    "scenario": "ギルマンの襲撃",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
@@ -3873,6 +3852,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1487997004280893601",
    "created": "2026-03-30T02:08:51.468000+00:00",
    "last_active": "2026-04-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "劇場",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-03-22",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "一藻通(いつもどおり)",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1472959367933595751",
+   "created": "2026-02-16T14:14:39.577000+00:00",
+   "last_active": "2026-03-22",
    "source": "forum"
   },
   {
