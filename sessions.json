@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/17 20:46",
- "checked": "2026/07/17 23:46",
+ "updated": "2026/07/18 00:01",
+ "checked": "2026/07/18 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3345,53 +3345,6 @@
    "source": "forum"
   },
   {
-   "scenario": "氷の底に眠る大牙",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-03-16",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-03-17",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "reiran",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1473319047633571901",
-   "created": "2026-02-17T14:03:53.900000+00:00",
-   "last_active": "2026-03-17",
-   "source": "forum"
-  },
-  {
-   "scenario": "戦え！雪だるマン！氷原の戦闘訓練！",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-03-11",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "reiran",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1473305724640563323",
-   "created": "2026-02-17T13:10:57.451000+00:00",
-   "last_active": "2026-03-12",
-   "source": "forum"
-  },
-  {
    "scenario": "オスカル王",
    "reg": "氷原開拓団",
    "reg_is_name": false,
@@ -3853,6 +3806,53 @@
    "url": "https://discord.com/channels/1001833522723561593/1487997004280893601",
    "created": "2026-03-30T02:08:51.468000+00:00",
    "last_active": "2026-04-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "氷の底に眠る大牙",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-03-16",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-03-17",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1473319047633571901",
+   "created": "2026-02-17T14:03:53.900000+00:00",
+   "last_active": "2026-03-17",
+   "source": "forum"
+  },
+  {
+   "scenario": "戦え！雪だるマン！氷原の戦闘訓練！",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-03-11",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1473305724640563323",
+   "created": "2026-02-17T13:10:57.451000+00:00",
+   "last_active": "2026-03-12",
    "source": "forum"
   },
   {
