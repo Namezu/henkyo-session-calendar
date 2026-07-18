@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/18 14:31",
- "checked": "2026/07/18 14:31",
+ "updated": "2026/07/18 17:16",
+ "checked": "2026/07/18 17:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -27841,5 +27841,12 @@
    "source": "forum"
   }
  ],
- "unparsed": []
+ "unparsed": [
+  {
+   "title": "諸々相談中",
+   "url": "https://discord.com/channels/1001833522723561593/1527951517301080105",
+   "gm": "dabdab",
+   "open": false
+  }
+ ]
 }
