@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/20 01:31",
- "checked": "2026/07/20 01:31",
+ "updated": "2026/07/20 01:46",
+ "checked": "2026/07/20 01:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -262,15 +262,21 @@
    "scenario": "畑荒らしの害獣を狩れ（初心者歓迎）",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
-   "dates": [],
-   "open": false,
-   "suriawase": true,
+   "dates": [
+    {
+     "date": "2026-07-24",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "dabdab",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1527951517301080105",
    "created": "2026-07-18T08:13:49.691000+00:00",
-   "last_active": "2026-07-19",
+   "last_active": "2026-07-20",
    "source": "forum"
   },
   {
