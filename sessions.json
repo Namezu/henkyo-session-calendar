@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/20 22:16",
- "checked": "2026/07/20 22:16",
+ "updated": "2026/07/21 00:01",
+ "checked": "2026/07/21 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3360,27 +3360,6 @@
    "source": "forum"
   },
   {
-   "scenario": "オスカル王",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-03-10",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1474419210196353138",
-   "created": "2026-02-20T14:55:33.095000+00:00",
-   "last_active": "2026-03-10",
-   "source": "forum"
-  },
-  {
    "scenario": "異次元ランダムダンジョン",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
@@ -3399,27 +3378,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1478717273798869083",
    "created": "2026-03-04T11:34:31.312000+00:00",
    "last_active": "2026-03-04",
-   "source": "forum"
-  },
-  {
-   "scenario": "ハンターチャンス　Cグループ",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-02-20",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "水樹",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1474359453867311127",
-   "created": "2026-02-20T10:58:06.076000+00:00",
-   "last_active": "2026-02-20",
    "source": "forum"
   },
   {
@@ -3821,6 +3779,48 @@
    "url": "https://discord.com/channels/1001833522723561593/1487997004280893601",
    "created": "2026-03-30T02:08:51.468000+00:00",
    "last_active": "2026-04-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "オスカル王",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-03-10",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "一藻通(いつもどおり)",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1474419210196353138",
+   "created": "2026-02-20T14:55:33.095000+00:00",
+   "last_active": "2026-03-10",
+   "source": "forum"
+  },
+  {
+   "scenario": "ハンターチャンス　Cグループ",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-02-20",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "水樹",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1474359453867311127",
+   "created": "2026-02-20T10:58:06.076000+00:00",
+   "last_active": "2026-02-20",
    "source": "forum"
   },
   {
