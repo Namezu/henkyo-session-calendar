@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/21 20:01",
- "checked": "2026/07/21 20:01",
+ "updated": "2026/07/21 20:46",
+ "checked": "2026/07/21 20:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -85,27 +85,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1509558940235727021",
    "created": "2026-05-28T14:08:17.601000+00:00",
    "last_active": "2026-07-08",
-   "source": "forum"
-  },
-  {
-   "scenario": "五等分のトロウル王（高難易度）",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-20",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1514613554110791880",
-   "created": "2026-06-11T12:53:31.459000+00:00",
-   "last_active": "2026-07-20",
    "source": "forum"
   },
   {
@@ -240,7 +219,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1525181090208157898",
    "created": "2026-07-10T16:45:08.400000+00:00",
-   "last_active": "2026-07-18",
+   "last_active": "2026-07-21",
    "source": "forum"
   },
   {
@@ -291,6 +270,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1528444489482506420",
    "created": "2026-07-19T16:52:43.418000+00:00",
+   "last_active": "2026-07-20",
+   "source": "forum"
+  },
+  {
+   "scenario": "五等分のトロウル王（高難易度）",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-20",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1514613554110791880",
+   "created": "2026-06-11T12:53:31.459000+00:00",
    "last_active": "2026-07-20",
    "source": "forum"
   },
@@ -3455,7 +3455,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1512833539090022460",
    "created": "2026-06-06T15:00:22.807000+00:00",
-   "last_active": "2026-07-20",
+   "last_active": "2026-07-21",
    "source": "forum"
   },
   {
