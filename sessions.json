@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/22 08:31",
- "checked": "2026/07/22 08:31",
+ "updated": "2026/07/22 09:00",
+ "checked": "2026/07/22 09:00",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -84,7 +84,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1509558940235727021",
    "created": "2026-05-28T14:08:17.601000+00:00",
-   "last_active": "2026-07-08",
+   "last_active": "2026-07-22",
    "source": "forum"
   },
   {
@@ -1325,7 +1325,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": null,
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1514614975342317668",
    "created": "2026-06-11T12:59:10.307000+00:00",
