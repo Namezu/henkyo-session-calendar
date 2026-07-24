@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/25 00:07",
- "checked": "2026/07/25 00:07",
+ "updated": "2026/07/25 00:16",
+ "checked": "2026/07/25 00:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -142,7 +142,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1522916926219878410",
    "created": "2026-07-04T10:48:09.639000+00:00",
-   "last_active": "2026-07-24",
+   "last_active": "2026-07-25",
    "source": "forum"
   },
   {
@@ -3575,7 +3575,7 @@
      "end": null
     }
    ],
-   "open": false,
+   "open": true,
    "suriawase": false,
    "ongoing": false,
    "gm": "カピだな",
