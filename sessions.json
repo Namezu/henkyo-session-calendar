@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/25 01:02",
- "checked": "2026/07/25 01:02",
+ "updated": "2026/07/25 01:16",
+ "checked": "2026/07/25 01:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -265,6 +265,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1529464481799737424",
    "created": "2026-07-22T12:25:48.537000+00:00",
+   "last_active": "2026-07-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "冥界直通！超弩級爆走轢殺列車現る",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1530245512157069373",
+   "created": "2026-07-24T16:09:20.685000+00:00",
    "last_active": "2026-07-25",
    "source": "forum"
   },
