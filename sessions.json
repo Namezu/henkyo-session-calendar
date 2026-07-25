@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/26 01:16",
- "checked": "2026/07/26 01:16",
+ "updated": "2026/07/26 01:31",
+ "checked": "2026/07/26 01:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -148,7 +148,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1522916926219878410",
    "created": "2026-07-04T10:48:09.639000+00:00",
-   "last_active": "2026-07-25",
+   "last_active": "2026-07-26",
    "source": "forum"
   },
   {
@@ -3517,37 +3517,6 @@
    "source": "forum"
   },
   {
-   "scenario": "星の吸血鬼にさよならを",
-   "reg": "クトゥルフ神話TRPG7版",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-18",
-     "start": null,
-     "end": null
-    },
-    {
-     "date": "2026-07-19",
-     "start": null,
-     "end": null
-    },
-    {
-     "date": "2026-07-25",
-     "start": null,
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "reiran",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1512783660179525672",
-   "created": "2026-06-06T11:42:10.748000+00:00",
-   "last_active": "2026-07-26",
-   "source": "forum"
-  },
-  {
    "scenario": "オトギバラシ",
    "reg": "エモクロアTRPG",
    "reg_is_name": false,
@@ -3624,6 +3593,37 @@
    "url": "https://discord.com/channels/1001833522723561593/1526557321449312257",
    "created": "2026-07-14T11:53:47.497000+00:00",
    "last_active": "2026-07-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "星の吸血鬼にさよならを",
+   "reg": "クトゥルフ神話TRPG7版",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-18",
+     "start": null,
+     "end": null
+    },
+    {
+     "date": "2026-07-19",
+     "start": null,
+     "end": null
+    },
+    {
+     "date": "2026-07-25",
+     "start": null,
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1512783660179525672",
+   "created": "2026-06-06T11:42:10.748000+00:00",
+   "last_active": "2026-07-26",
    "source": "forum"
   },
   {
