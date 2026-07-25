@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/25 23:31",
- "checked": "2026/07/25 23:31",
+ "updated": "2026/07/26 00:01",
+ "checked": "2026/07/26 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -254,27 +254,6 @@
    "source": "forum"
   },
   {
-   "scenario": "ランダムダンジョン･ダブルシャドウズ",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-25",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1529464481799737424",
-   "created": "2026-07-22T12:25:48.537000+00:00",
-   "last_active": "2026-07-25",
-   "source": "forum"
-  },
-  {
    "scenario": "冥界直通！超弩級爆走轢殺列車現る",
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
@@ -322,6 +301,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1530522110974365787",
    "created": "2026-07-25T10:28:26.982000+00:00",
+   "last_active": "2026-07-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "ランダムダンジョン･ダブルシャドウズ",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-25",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1529464481799737424",
+   "created": "2026-07-22T12:25:48.537000+00:00",
    "last_active": "2026-07-25",
    "source": "forum"
   },
