@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/25 21:31",
- "checked": "2026/07/25 21:31",
+ "updated": "2026/07/25 21:46",
+ "checked": "2026/07/25 21:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -14,7 +14,7 @@
      "end": "25:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": true,
    "gm": "taku",
