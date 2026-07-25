@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/25 17:31",
- "checked": "2026/07/25 17:31",
+ "updated": "2026/07/25 19:31",
+ "checked": "2026/07/25 19:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -301,6 +301,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1530257566687301711",
    "created": "2026-07-24T16:57:14.709000+00:00",
+   "last_active": "2026-07-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "魔女の館(高難易度)",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": false,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1530522110974365787",
+   "created": "2026-07-25T10:28:26.982000+00:00",
    "last_active": "2026-07-25",
    "source": "forum"
   },
