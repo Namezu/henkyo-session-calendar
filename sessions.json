@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/26 13:58",
- "checked": "2026/07/26 13:58",
+ "updated": "2026/07/26 14:01",
+ "checked": "2026/07/26 14:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -98,9 +98,25 @@
    "scenario": "陽だまりへ連れ出して",
    "reg": "アンコールを流星に",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-08-19",
+     "start": "21:00",
+     "end": "25:00"
+    },
+    {
+     "date": "2026-08-20",
+     "start": "21:00",
+     "end": "25:00"
+    },
+    {
+     "date": "2026-08-24",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
    "open": true,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "カテナドルグ",
    "gm_active": true,
