@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/27 22:16",
- "checked": "2026/07/27 22:16",
+ "updated": "2026/07/27 23:01",
+ "checked": "2026/07/27 23:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -340,6 +340,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1531286994582245466",
    "created": "2026-07-27T13:07:49.445000+00:00",
+   "last_active": "2026-07-27",
+   "source": "forum"
+  },
+  {
+   "scenario": "ランダムダンジョン･ダブルシャドウズ",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1531299318563340590",
+   "created": "2026-07-27T13:56:47.711000+00:00",
    "last_active": "2026-07-27",
    "source": "forum"
   },
