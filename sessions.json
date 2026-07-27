@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/27 21:31",
- "checked": "2026/07/27 21:31",
+ "updated": "2026/07/27 22:16",
+ "checked": "2026/07/27 22:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -325,6 +325,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1531271795942887546",
    "created": "2026-07-27T12:07:25.807000+00:00",
+   "last_active": "2026-07-27",
+   "source": "forum"
+  },
+  {
+   "scenario": "マスタリング手法公開企画/月に導かれて（初心者歓迎）",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1531286994582245466",
+   "created": "2026-07-27T13:07:49.445000+00:00",
    "last_active": "2026-07-27",
    "source": "forum"
   },
