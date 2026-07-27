@@ -153,6 +153,17 @@ def heartbeat_should_write(old, data, now_str, hb_hours):
 
 
 _gm_active_cache = {}
+
+def real_gm_name(starter):
+    """起票者の表示名。ただしbot起票（リンデ分卓等）は開き投稿の「-# GM: 名前」を優先"""
+    if not (starter and starter.author):
+        return None
+    if getattr(starter.author, "bot", False):
+        m = re.search(r"^-# GM[:：]\s*(.+)$", starter.content or "", re.M)
+        if m:
+            return m.group(1).strip()
+    return starter.author.display_name
+
 async def gm_is_active(guild, author):
     """GM（起票者）が在籍かつ領民ロール保持か。退会/剥奪ならFalse。
     ⚠get_member（キャッシュ）でなく fetch_member（API直問い合わせ）で"今の在籍"を確認。
@@ -226,7 +237,7 @@ async def read_forum(guild, key, sessions, unparsed, processed_urls, today, prev
             starter = None
         if OPTOUT in tags or (starter and OPTOUT in (starter.content or "")) or (re.search(r"(?<!交)流卓|中止", th.name) is not None):
             print(f"  ⏭ 掲載不要/流卓: {th.name}"); continue
-        gm0 = starter.author.display_name if (starter and starter.author) else None
+        gm0 = real_gm_name(starter)
         r = parse(th.name)
         if not r["ok"]:
             # 読めない卓＝⚠枠。ただし半年以上前 or 終了(アーカイブ済み＆非募集)は不掲載（居座り解消）
@@ -276,7 +287,7 @@ async def read_forum(guild, key, sessions, unparsed, processed_urls, today, prev
         # 半年以上前 or 終了(アーカイブ済み＆非募集)のすり合わせ卓＝居座るので不掲載（継続CPは除外＝残す）
         if is_suri and not ongoing and ((today - base_dt).days > STALE_DAYS or archived_done):
             print(f"  🗑 終了/流卓とみなし不掲載(すり合わせ): {th.name}"); continue
-        gm = starter.author.display_name if (starter and starter.author) else None
+        gm = real_gm_name(starter)
         gm_active = await gm_is_active(guild, starter.author if starter else None)
         # 流動卓の開催履歴を保全＝前回JSONにあって今回消えた「過去日」だけheldで残す（is_suri/継続CP判定の後＝最後に足す）
         dates = merge_date_history(dates, (prev_by_url.get(url) or {}).get("dates"), today.isoformat())
