@@ -277,7 +277,7 @@ const REGS={
 };
 const sel=$("regSelect");
 // 初期値は空白（特定レギュに優劣を付けない・後輩くん指定 2026-07-04）
-sel.innerHTML=`<option value="">レギュなし（通常のアリアンロッド2E卓）</option>`+Object.keys(REGS).map(r=>`<option value="${r}">${r}</option>`).join("")+`<option value="__free__">✏️ 自由入力（その他システム等）</option>`;
+sel.innerHTML=`<option value="">レギュレーションなし</option>`+Object.keys(REGS).map(r=>`<option value="${r}">${r}</option>`).join("")+`<option value="__free__">✏️ 自由入力（その他システム等）</option>`;
 sel.addEventListener("change",()=>$("regFreeBox").classList.toggle("hidden",sel.value!=="__free__"));
 
 // セグメント
@@ -531,7 +531,7 @@ function buildOutputs(state){
  const opts=state.opts.slice();
  const lines=[`# シナリオ：『${scen}』`,...dateLines,
   `> セッション形式：${$("format").value.trim()||"半テキ"}`,
-  noReg?`> レギュレーション：なし（通常のアリアンロッド2E卓）`:`> [レギュレーション](<${REG_WHAT_URL}>)：${regUrl?`[${reg}](<${regUrl}>)`:reg}`,
+  noReg?`> レギュレーション：なし`:`> [レギュレーション](<${REG_WHAT_URL}>)：${regUrl?`[${reg}](<${regUrl}>)`:reg}`,
   `> 募集人数：${$("players").value.trim()||"（人数）"}${($("invite").value.trim()||$("senkou").value.trim())?`（${[$("invite").value.trim(),$("senkou").value.trim()].filter(Boolean).join("+")}）`:""}`,
   `> PL募集期限：${$("deadline").value.trim()||"（期限）"}`,
   `> PC指定レベル：${$("cl").value.trim()||"（CL）"}`,
