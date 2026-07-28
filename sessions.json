@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/28 23:16",
- "checked": "2026/07/28 23:16",
+ "updated": "2026/07/28 23:43",
+ "checked": "2026/07/28 23:43",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -68,27 +68,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1509558940235727021",
    "created": "2026-05-28T14:08:17.601000+00:00",
    "last_active": "2026-07-27",
-   "source": "forum"
-  },
-  {
-   "scenario": "エリン至高の極上グルメ十選:ヴェノム\"マスター\"スコーピオン編",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-26",
-     "start": "10:00",
-     "end": "13:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1520698991740846091",
-   "created": "2026-06-28T07:54:52.852000+00:00",
-   "last_active": "2026-07-28",
    "source": "forum"
   },
   {
@@ -403,6 +382,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1531309461963149322",
    "created": "2026-07-27T14:37:06.086000+00:00",
+   "last_active": "2026-07-28",
+   "source": "forum"
+  },
+  {
+   "scenario": "エリン至高の極上グルメ十選:ヴェノム\"マスター\"スコーピオン編",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-26",
+     "start": "10:00",
+     "end": "13:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1520698991740846091",
+   "created": "2026-06-28T07:54:52.852000+00:00",
    "last_active": "2026-07-28",
    "source": "forum"
   },
