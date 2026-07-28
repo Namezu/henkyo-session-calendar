@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/28 21:31",
- "checked": "2026/07/28 21:31",
+ "updated": "2026/07/28 22:16",
+ "checked": "2026/07/28 22:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3680,6 +3680,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1526557321449312257",
    "created": "2026-07-14T11:53:47.497000+00:00",
    "last_active": "2026-07-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "紅翔",
+   "reg": "アリアンストラテジー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": false,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "豆の塩ゆで",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1531650575111028736",
+   "created": "2026-07-28T13:12:33.798000+00:00",
+   "last_active": "2026-07-28",
    "source": "forum"
   },
   {
