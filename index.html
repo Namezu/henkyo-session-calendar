@@ -61,6 +61,13 @@ header{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;
 h1{font-family:'Shippori Mincho','Yu Mincho',serif;font-size:1.75em;letter-spacing:.06em;color:var(--grn);margin:0;line-height:1.25}
 .tagline{font-size:.76em;color:var(--mut);margin-top:3px;letter-spacing:.04em}
 .fresh{font-size:.72em;color:var(--mut);text-align:right}
+/* 🔴収集が止まった時、ボード自身が古さを申告して卓部屋へ誘導する（属人化対策の第一層）
+   ＝人が監視しなくても、見た人がその場で気づける。詳細=docs/再現仕様_セッションカレンダー.md */
+.stale{margin:8px 0 0;padding:10px 14px;border-radius:10px;font-size:.86em;line-height:1.7;
+       background:rgba(255,176,32,.12);border:1px solid rgba(255,176,32,.45);color:#ffcf7a}
+.stale.bad{background:rgba(255,92,92,.12);border-color:rgba(255,92,92,.5);color:#ff9d9d}
+.stale b{color:#fff}
+.stale a{color:inherit;text-decoration:underline}
 .toolrow{display:flex;gap:7px;margin:10px 0 6px;flex-wrap:wrap;align-items:center;
  position:sticky;top:10px;z-index:30;padding:9px 10px;border-radius:20px;
  background:var(--glass);backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5);
@@ -306,6 +313,7 @@ footer::after{background:linear-gradient(90deg,var(--cln),transparent)}
  </div>
  <div class="fresh" id="fresh">読込中…</div>
 </header>
+<div class="stale" id="stale" hidden></div>
 <div class="toolrow">
  <button class="f on" data-f="all">すべて</button>
  <button class="f" data-f="open">募集中だけ</button>
@@ -1304,9 +1312,32 @@ function kbInit(){
  kbSay();
  setInterval(()=>{if(!$("kanban").hidden&&!kbNegoActive&&Date.now()-kbLastAt>8500)kbSay()},10000); // 自動おしゃべり＝直近の発話から8.5秒は待つ（交渉中は黙る）
 }
+// 🔴収集が止まった時に、ボード自身が古さを申告する（属人化対策の第一層）
+//   ＝誰も監視していなくても、見に来た人がその場で気づき、卓部屋へ回れる。
+//   しきい値：12時間で注意／48時間で警告（通常は数時間おきに更新されるため）
+function parseStamp(s){                       // "2026/07/05 17:39" 形式を読む
+  const m=String(s||"").match(/(\d{4})\/(\d{1,2})\/(\d{1,2})\s+(\d{1,2}):(\d{2})/);
+  return m?new Date(+m[1],+m[2]-1,+m[3],+m[4],+m[5]):null;
+}
+function showStale(d){
+  const el=$("stale"); if(!el) return;
+  const t=parseStamp(d.checked||d.updated); if(!t){el.hidden=true;return;}
+  const h=(Date.now()-t.getTime())/3600000;
+  if(h<12){el.hidden=true;return;}            // 通常はここで終わり（何も出さない）
+  const disp=h<48?`約${Math.floor(h)}時間`:`約${Math.floor(h/24)}日`;
+  el.className="stale"+(h>=48?" bad":"");
+  el.innerHTML=`⚠ <b>この一覧は${disp}前の情報です。</b>`
+    +`自動更新が止まっている可能性があります。<br>`
+    +`最新の卓は <b>Discordの「卓部屋一覧」</b> を直接ご覧ください。`
+    +`（このページが古いままでも、卓の募集そのものは通常どおり行われています）`
+    +(h>=48?`<br>お手すきの騎士の方へ：復旧手順は引き継ぎ資料の「セッションボードが更新されない時」にあります。`:``);
+  el.hidden=false;
+}
 fetch("sessions.json?t="+Date.now()).then(r=>r.json()).then(d=>{
- DATA=d;$("fresh").innerHTML=`最終更新: ${d.updated||"?"}　<span style="opacity:.7">（自動チェック ${d.checked||d.updated||"?"}・15分ごと）</span>`;fillFilterSelects();renderAll();kbInit();
-}).catch(()=>{$("cal").innerHTML="";$("calSum").textContent="データの読込に失敗しました"});
+ DATA=d;$("fresh").innerHTML=`最終更新: ${d.updated||"?"}　<span style="opacity:.7">（自動チェック ${d.checked||d.updated||"?"}）</span>`;
+ showStale(d);fillFilterSelects();renderAll();kbInit();
+}).catch(()=>{$("cal").innerHTML="";$("calSum").textContent="データの読込に失敗しました";
+ const el=$("stale");if(el){el.className="stale bad";el.innerHTML=`⚠ <b>データを読み込めませんでした。</b>最新の卓は <b>Discordの「卓部屋一覧」</b> を直接ご覧ください。`;el.hidden=false;}});
 })();
 </script>
 </body>
