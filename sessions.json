@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/29 22:01",
- "checked": "2026/07/29 22:01",
+ "updated": "2026/07/30 00:16",
+ "checked": "2026/07/30 00:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -115,7 +115,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1524034107204698202",
    "created": "2026-07-07T12:47:26.342000+00:00",
-   "last_active": "2026-07-29",
+   "last_active": "2026-07-30",
    "source": "forum"
   },
   {
@@ -416,6 +416,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1531854594483814440",
    "created": "2026-07-29T02:43:15.807000+00:00",
    "last_active": "2026-07-29",
+   "source": "forum"
+  },
+  {
+   "scenario": "幻想ダンジョン1（ランダムダンジョン形式）",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1532042347225944085",
+   "created": "2026-07-29T15:09:19.549000+00:00",
+   "last_active": "2026-07-30",
    "source": "forum"
   },
   {
