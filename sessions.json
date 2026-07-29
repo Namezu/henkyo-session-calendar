@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/30 00:16",
- "checked": "2026/07/30 00:16",
+ "updated": "2026/07/30 01:16",
+ "checked": "2026/07/30 01:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -1937,7 +1937,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹",
+   "gm": "水樹です",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1499073760664354927",
    "created": "2026-04-29T15:43:55.986000+00:00",
@@ -2819,7 +2819,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹",
+   "gm": "水樹です",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1492189650750541884",
    "created": "2026-04-10T15:48:56.282000+00:00",
@@ -3365,7 +3365,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹",
+   "gm": "水樹です",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1483059686243565590",
    "created": "2026-03-16T11:09:43.117000+00:00",
@@ -28147,5 +28147,12 @@
    "source": "forum"
   }
  ],
- "unparsed": []
+ "unparsed": [
+  {
+   "title": "未定【未定】未定",
+   "url": "https://discord.com/channels/1001833522723561593/1532056216828645578",
+   "gm": "peridot",
+   "open": true
+  }
+ ]
 }
