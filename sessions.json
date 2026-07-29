@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/30 08:01",
- "checked": "2026/07/30 08:01",
+ "updated": "2026/07/30 08:31",
+ "checked": "2026/07/30 08:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -430,6 +430,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1532042347225944085",
    "created": "2026-07-29T15:09:19.549000+00:00",
+   "last_active": "2026-07-30",
+   "source": "forum"
+  },
+  {
+   "scenario": "白銀に咲く命の花",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1532167123172987080",
+   "created": "2026-07-29T23:25:08.453000+00:00",
    "last_active": "2026-07-30",
    "source": "forum"
   },
