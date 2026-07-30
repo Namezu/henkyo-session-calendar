@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/30 11:46",
- "checked": "2026/07/30 11:46",
+ "updated": "2026/07/30 12:31",
+ "checked": "2026/07/30 12:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -116,27 +116,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1524034107204698202",
    "created": "2026-07-07T12:47:26.342000+00:00",
    "last_active": "2026-07-30",
-   "source": "forum"
-  },
-  {
-   "scenario": "狂える牧場の咆哮",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-28",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1524055805215637534",
-   "created": "2026-07-07T14:13:39.551000+00:00",
-   "last_active": "2026-07-28",
    "source": "forum"
   },
   {
@@ -446,6 +425,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1532167123172987080",
    "created": "2026-07-29T23:25:08.453000+00:00",
    "last_active": "2026-07-30",
+   "source": "forum"
+  },
+  {
+   "scenario": "狂える牧場の咆哮",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-28",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1524055805215637534",
+   "created": "2026-07-07T14:13:39.551000+00:00",
+   "last_active": "2026-07-28",
    "source": "forum"
   },
   {
