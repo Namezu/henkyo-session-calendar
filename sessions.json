@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/30 21:16",
- "checked": "2026/07/30 21:16",
+ "updated": "2026/07/30 21:46",
+ "checked": "2026/07/30 21:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -372,14 +372,14 @@
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "カテナドルグ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1531309461963149322",
    "created": "2026-07-27T14:37:06.086000+00:00",
-   "last_active": "2026-07-28",
+   "last_active": "2026-07-30",
    "source": "forum"
   },
   {
