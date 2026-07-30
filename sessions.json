@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/30 22:31",
- "checked": "2026/07/30 22:31",
+ "updated": "2026/07/31 00:01",
+ "checked": "2026/07/31 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3478,27 +3478,6 @@
    "source": "forum"
   },
   {
-   "scenario": "泥土の毒竜",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-03-26",
-     "start": "20:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "peridot",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1477982377706782783",
-   "created": "2026-03-02T10:54:18.430000+00:00",
-   "last_active": "2026-03-26",
-   "source": "forum"
-  },
-  {
    "scenario": "瘴気を繰る魔女",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -4096,6 +4075,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1487997004280893601",
    "created": "2026-03-30T02:08:51.468000+00:00",
    "last_active": "2026-04-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "泥土の毒竜",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-03-26",
+     "start": "20:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1477982377706782783",
+   "created": "2026-03-02T10:54:18.430000+00:00",
+   "last_active": "2026-03-26",
    "source": "forum"
   },
   {
