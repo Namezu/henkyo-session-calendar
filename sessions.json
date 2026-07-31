@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/01 00:31",
- "checked": "2026/08/01 00:31",
+ "updated": "2026/08/01 00:46",
+ "checked": "2026/08/01 00:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -216,7 +216,7 @@
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "dabdab",
