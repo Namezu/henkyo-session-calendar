@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/01 00:46",
- "checked": "2026/08/01 00:46",
+ "updated": "2026/08/01 01:32",
+ "checked": "2026/08/01 01:32",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -115,27 +115,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1524034107204698202",
    "created": "2026-07-07T12:47:26.342000+00:00",
-   "last_active": "2026-07-31",
-   "source": "forum"
-  },
-  {
-   "scenario": "名探偵？ノックス・ホップスフィールド",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-31",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "水樹です",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1525181090208157898",
-   "created": "2026-07-10T16:45:08.400000+00:00",
    "last_active": "2026-07-31",
    "source": "forum"
   },
@@ -437,6 +416,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1532167123172987080",
    "created": "2026-07-29T23:25:08.453000+00:00",
    "last_active": "2026-07-30",
+   "source": "forum"
+  },
+  {
+   "scenario": "名探偵？ノックス・ホップスフィールド",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-31",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "水樹です",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1525181090208157898",
+   "created": "2026-07-10T16:45:08.400000+00:00",
+   "last_active": "2026-07-31",
    "source": "forum"
   },
   {
@@ -3748,7 +3748,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1531650575111028736",
    "created": "2026-07-28T13:12:33.798000+00:00",
-   "last_active": "2026-07-31",
+   "last_active": "2026-08-01",
    "source": "forum"
   },
   {
