@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/31 13:16",
- "checked": "2026/07/31 13:16",
+ "updated": "2026/07/31 14:01",
+ "checked": "2026/07/31 14:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -392,9 +392,15 @@
    "scenario": "ランダムダンジョン NIGHTREIGN EDITION＊ベータテスト版",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-08-23",
+     "start": null,
+     "end": null
+    }
+   ],
    "open": true,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "むむこ",
    "gm_active": true,
