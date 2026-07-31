@@ -1,6 +1,6 @@
 {
- "updated": "2026/07/31 22:46",
- "checked": "2026/07/31 22:46",
+ "updated": "2026/08/01 00:01",
+ "checked": "2026/08/01 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3484,27 +3484,6 @@
    "source": "forum"
   },
   {
-   "scenario": "瘴気を繰る魔女",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-03-23",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1478374487647977503",
-   "created": "2026-03-03T12:52:24.725000+00:00",
-   "last_active": "2026-03-23",
-   "source": "forum"
-  },
-  {
    "scenario": "ギルマンの襲撃",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
@@ -4081,6 +4060,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1487997004280893601",
    "created": "2026-03-30T02:08:51.468000+00:00",
    "last_active": "2026-04-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "瘴気を繰る魔女",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-03-23",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1478374487647977503",
+   "created": "2026-03-03T12:52:24.725000+00:00",
+   "last_active": "2026-03-23",
    "source": "forum"
   },
   {
