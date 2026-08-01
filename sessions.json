@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/01 16:46",
- "checked": "2026/08/01 16:46",
+ "updated": "2026/08/01 17:01",
+ "checked": "2026/08/01 17:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -393,7 +393,7 @@
    "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "dabdab",
