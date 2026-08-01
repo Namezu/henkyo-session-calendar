@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/02 00:16",
- "checked": "2026/08/02 00:16",
+ "updated": "2026/08/02 00:31",
+ "checked": "2026/08/02 00:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -389,18 +389,24 @@
    "source": "forum"
   },
   {
-   "scenario": "幻想ダンジョン1（ランダムダンジョン形式）",
+   "scenario": "幻想ダンジョン1（ランダムダンジョン形式） 幻想ダンジョン1",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-08-09",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "dabdab",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1532042347225944085",
    "created": "2026-07-29T15:09:19.549000+00:00",
-   "last_active": "2026-08-01",
+   "last_active": "2026-08-02",
    "source": "forum"
   },
   {
@@ -437,6 +443,48 @@
    "url": "https://discord.com/channels/1001833522723561593/1533032211475861504",
    "created": "2026-08-01T08:42:41.577000+00:00",
    "last_active": "2026-08-01",
+   "source": "forum"
+  },
+  {
+   "scenario": "幻想ダンジョン2（ランダムダンジョン形式）",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-13",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1533132722158047374",
+   "created": "2026-08-01T15:22:05.191000+00:00",
+   "last_active": "2026-08-02",
+   "source": "forum"
+  },
+  {
+   "scenario": "幻想ダンジョン3（ランダムダンジョン形式）",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-25",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1533132728248307862",
+   "created": "2026-08-01T15:22:06.643000+00:00",
+   "last_active": "2026-08-02",
    "source": "forum"
   },
   {
