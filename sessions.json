@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/03 12:01",
- "checked": "2026/08/03 12:01",
+ "updated": "2026/08/03 14:16",
+ "checked": "2026/08/03 14:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3685,37 +3685,6 @@
    "source": "forum"
   },
   {
-   "scenario": "オトギバラシ",
-   "reg": "エモクロアTRPG",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-30",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-08-02",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-08-04",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "reiran",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1513111124978044958",
-   "created": "2026-06-07T09:23:24.440000+00:00",
-   "last_active": "2026-08-03",
-   "source": "forum"
-  },
-  {
    "scenario": "煌日の姫と冴月の王子",
    "reg": "SW2.5",
    "reg_is_name": false,
@@ -3797,6 +3766,37 @@
    "url": "https://discord.com/channels/1001833522723561593/1531650575111028736",
    "created": "2026-07-28T13:12:33.798000+00:00",
    "last_active": "2026-08-01",
+   "source": "forum"
+  },
+  {
+   "scenario": "オトギバラシ",
+   "reg": "エモクロアTRPG",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-30",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-08-02",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-08-04",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1513111124978044958",
+   "created": "2026-06-07T09:23:24.440000+00:00",
+   "last_active": "2026-08-03",
    "source": "forum"
   },
   {
