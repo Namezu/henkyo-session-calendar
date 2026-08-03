@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/03 23:46",
- "checked": "2026/08/03 23:46",
+ "updated": "2026/08/04 00:01",
+ "checked": "2026/08/04 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -493,6 +493,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1533848030585815080",
    "created": "2026-08-03T14:44:28.010000+00:00",
+   "last_active": "2026-08-03",
+   "source": "forum"
+  },
+  {
+   "scenario": "ランダムダンジョン･ダブルシャドウズ",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1533848594153603072",
+   "created": "2026-08-03T14:46:42.375000+00:00",
    "last_active": "2026-08-03",
    "source": "forum"
   },
@@ -3184,27 +3199,6 @@
    "source": "forum"
   },
   {
-   "scenario": "咲かない桜（仮題）",
-   "reg": "アリアンロッド2E",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-12",
-     "start": "13:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1479264369974972430",
-   "created": "2026-03-05T23:48:29.205000+00:00",
-   "last_active": "2026-04-12",
-   "source": "forum"
-  },
-  {
    "scenario": "ランダン潜るだけ",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
@@ -4138,6 +4132,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1487997004280893601",
    "created": "2026-03-30T02:08:51.468000+00:00",
    "last_active": "2026-04-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "咲かない桜（仮題）",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-12",
+     "start": "13:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1479264369974972430",
+   "created": "2026-03-05T23:48:29.205000+00:00",
+   "last_active": "2026-04-12",
    "source": "forum"
   },
   {
