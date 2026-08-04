@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/04 23:46",
- "checked": "2026/08/04 23:46",
+ "updated": "2026/08/05 00:01",
+ "checked": "2026/08/05 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3619,27 +3619,6 @@
    "source": "forum"
   },
   {
-   "scenario": "ハニーベアは可愛くない",
-   "reg": "フツウノアリアン",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-03-22",
-     "start": "14:30",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1479809797325852744",
-   "created": "2026-03-07T11:55:49.219000+00:00",
-   "last_active": "2026-03-22",
-   "source": "forum"
-  },
-  {
    "scenario": "一夜花の月華粉",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
@@ -4132,6 +4111,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1487997004280893601",
    "created": "2026-03-30T02:08:51.468000+00:00",
    "last_active": "2026-04-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "ハニーベアは可愛くない",
+   "reg": "フツウノアリアン",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-03-22",
+     "start": "14:30",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1479809797325852744",
+   "created": "2026-03-07T11:55:49.219000+00:00",
+   "last_active": "2026-03-22",
    "source": "forum"
   },
   {
