@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/05 21:16",
- "checked": "2026/08/05 21:16",
+ "updated": "2026/08/06 00:01",
+ "checked": "2026/08/06 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3604,27 +3604,6 @@
    "source": "forum"
   },
   {
-   "scenario": "エッダの道具屋",
-   "reg": "ダンジョン・トラベラーズ",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-03-20",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "peridot",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1480186179574956216",
-   "created": "2026-03-08T12:51:25.740000+00:00",
-   "last_active": "2026-03-22",
-   "source": "forum"
-  },
-  {
    "scenario": "一夜花の月華粉",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
@@ -3733,7 +3712,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1513491906686881894",
    "created": "2026-06-08T10:36:29.874000+00:00",
-   "last_active": "2026-08-05",
+   "last_active": "2026-08-06",
    "source": "forum"
   },
   {
@@ -4117,6 +4096,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1487997004280893601",
    "created": "2026-03-30T02:08:51.468000+00:00",
    "last_active": "2026-04-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "エッダの道具屋",
+   "reg": "ダンジョン・トラベラーズ",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-03-20",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1480186179574956216",
+   "created": "2026-03-08T12:51:25.740000+00:00",
+   "last_active": "2026-03-22",
    "source": "forum"
   },
   {
