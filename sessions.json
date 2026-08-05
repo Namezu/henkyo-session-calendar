@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/05 05:31",
- "checked": "2026/08/05 08:31",
+ "updated": "2026/08/05 10:31",
+ "checked": "2026/08/05 10:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -123,7 +123,7 @@
    "reg": "氷原開拓団",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "Mizshiro",
