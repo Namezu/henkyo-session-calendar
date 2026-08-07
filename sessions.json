@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/07 21:46",
- "checked": "2026/08/07 21:46",
+ "updated": "2026/08/07 22:16",
+ "checked": "2026/08/07 22:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -153,9 +153,15 @@
    "scenario": "WS2-4 眩暈と葬送",
    "reg": "氷原開拓団",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-08-26",
+     "start": null,
+     "end": null
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "Mizshiro",
    "gm_active": true,
