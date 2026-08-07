@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/07 21:31",
- "checked": "2026/08/07 21:31",
+ "updated": "2026/08/07 21:46",
+ "checked": "2026/08/07 21:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -546,6 +546,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1533848594153603072",
    "created": "2026-08-03T14:46:42.375000+00:00",
    "last_active": "2026-08-04",
+   "source": "forum"
+  },
+  {
+   "scenario": "不思議の錬金術師2！",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1535265550685569024",
+   "created": "2026-08-07T12:37:11.138000+00:00",
+   "last_active": "2026-08-07",
    "source": "forum"
   },
   {
