@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/08 08:46",
- "checked": "2026/08/08 08:46",
+ "updated": "2026/08/08 11:32",
+ "checked": "2026/08/08 11:32",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -348,27 +348,6 @@
    "source": "forum"
   },
   {
-   "scenario": "ランダムダンジョン･ダブルシャドウズ",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-08-07",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1531299318563340590",
-   "created": "2026-07-27T13:56:47.711000+00:00",
-   "last_active": "2026-08-07",
-   "source": "forum"
-  },
-  {
    "scenario": "人を暴くモノ（初心者歓迎）",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -567,6 +546,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1535265550685569024",
    "created": "2026-08-07T12:37:11.138000+00:00",
    "last_active": "2026-08-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "ランダムダンジョン･ダブルシャドウズ",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-07",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1531299318563340590",
+   "created": "2026-07-27T13:56:47.711000+00:00",
+   "last_active": "2026-08-07",
    "source": "forum"
   },
   {
