@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/09 22:31",
- "checked": "2026/08/09 22:31",
+ "updated": "2026/08/09 23:16",
+ "checked": "2026/08/09 23:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -28388,6 +28388,12 @@
   {
    "title": "未定【アリアンロッド2E】未定",
    "url": "https://discord.com/channels/1001833522723561593/1532056216828645578",
+   "gm": "peridot",
+   "open": false
+  },
+  {
+   "title": "まだ募集してない",
+   "url": "https://discord.com/channels/1001833522723561593/1536011776439615498",
    "gm": "peridot",
    "open": false
   }
