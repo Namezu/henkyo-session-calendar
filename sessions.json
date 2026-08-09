@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/09 13:31",
- "checked": "2026/08/09 13:31",
+ "updated": "2026/08/09 15:31",
+ "checked": "2026/08/09 15:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -396,7 +396,7 @@
    "source": "forum"
   },
   {
-   "scenario": "幻想ダンジョン1（ランダムダンジョン形式） 幻想ダンジョン1",
+   "scenario": "幻想ダンジョン2（ランダムダンジョン形式） 幻想ダンジョン1",
    "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [
@@ -453,7 +453,7 @@
    "source": "forum"
   },
   {
-   "scenario": "幻想ダンジョン2（ランダムダンジョン形式）",
+   "scenario": "幻想ダンジョン1（ランダムダンジョン形式）",
    "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [
@@ -470,7 +470,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1533132722158047374",
    "created": "2026-08-01T15:22:05.191000+00:00",
-   "last_active": "2026-08-07",
+   "last_active": "2026-08-09",
    "source": "forum"
   },
   {
