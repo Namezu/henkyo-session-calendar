@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/09 23:36",
- "checked": "2026/08/09 23:36",
+ "updated": "2026/08/10 00:01",
+ "checked": "2026/08/10 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -173,7 +173,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1526554858289758330",
    "created": "2026-07-14T11:44:00.234000+00:00",
-   "last_active": "2026-08-08",
+   "last_active": "2026-08-09",
    "source": "forum"
   },
   {
@@ -3410,27 +3410,6 @@
    "source": "forum"
   },
   {
-   "scenario": "エピローグ",
-   "reg": "賽は投げられた",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-05",
-     "start": null,
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カピ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1481621263503065187",
-   "created": "2026-03-12T11:53:56.411000+00:00",
-   "last_active": "2026-03-31",
-   "source": "forum"
-  },
-  {
    "scenario": "つの遺産",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
@@ -3722,27 +3701,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1484398810091356230",
    "created": "2026-03-20T03:50:55.122000+00:00",
    "last_active": "2026-03-21",
-   "source": "forum"
-  },
-  {
-   "scenario": "トライアルマップ",
-   "reg": "賽は投げられた",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-03-19",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カピ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1481629768494612560",
-   "created": "2026-03-12T12:27:44.159000+00:00",
-   "last_active": "2026-03-19",
    "source": "forum"
   },
   {
@@ -4196,6 +4154,48 @@
    "url": "https://discord.com/channels/1001833522723561593/1487997004280893601",
    "created": "2026-03-30T02:08:51.468000+00:00",
    "last_active": "2026-04-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "エピローグ",
+   "reg": "賽は投げられた",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-05",
+     "start": null,
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カピ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1481621263503065187",
+   "created": "2026-03-12T11:53:56.411000+00:00",
+   "last_active": "2026-03-31",
+   "source": "forum"
+  },
+  {
+   "scenario": "トライアルマップ",
+   "reg": "賽は投げられた",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-03-19",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カピ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1481629768494612560",
+   "created": "2026-03-12T12:27:44.159000+00:00",
+   "last_active": "2026-03-19",
    "source": "forum"
   },
   {
