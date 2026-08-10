@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/11 02:01",
- "checked": "2026/08/11 02:01",
+ "updated": "2026/08/11 02:16",
+ "checked": "2026/08/11 02:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -589,14 +589,14 @@
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [],
-   "open": false,
+   "open": true,
    "suriawase": true,
    "ongoing": false,
    "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1536011776439615498",
    "created": "2026-08-09T14:02:25.222000+00:00",
-   "last_active": "2026-08-10",
+   "last_active": "2026-08-11",
    "source": "forum"
   },
   {
