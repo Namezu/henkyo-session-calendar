@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/10 22:45",
- "checked": "2026/08/10 22:45",
+ "updated": "2026/08/11 00:01",
+ "checked": "2026/08/11 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -42,22 +42,40 @@
     {
      "date": "2026-08-03",
      "start": "21:00",
-     "end": null
+     "end": null,
+     "held": true
     },
     {
      "date": "2026-08-06",
      "start": "21:00",
-     "end": null
+     "end": null,
+     "held": true
     },
     {
      "date": "2026-08-10",
+     "start": "21:00",
+     "end": null,
+     "held": true
+    },
+    {
+     "date": "2027-08-03",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2027-08-06",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2027-08-10",
      "start": "21:00",
      "end": null
     }
    ],
    "open": false,
    "suriawase": false,
-   "ongoing": false,
+   "ongoing": true,
    "gm": "カピだな",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1498278304875286559",
@@ -578,7 +596,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1536011776439615498",
    "created": "2026-08-09T14:02:25.222000+00:00",
-   "last_active": "2026-08-09",
+   "last_active": "2026-08-10",
    "source": "forum"
   },
   {
@@ -3641,27 +3659,6 @@
    "source": "forum"
   },
   {
-   "scenario": "修練:蜥蜴と不死鳥",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-03-27",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "Mizshiro",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1481684721472897156",
-   "created": "2026-03-12T16:06:05.970000+00:00",
-   "last_active": "2026-03-29",
-   "source": "forum"
-  },
-  {
    "scenario": "ギルマンの襲撃",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
@@ -4169,6 +4166,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1487997004280893601",
    "created": "2026-03-30T02:08:51.468000+00:00",
    "last_active": "2026-04-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "修練:蜥蜴と不死鳥",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-03-27",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "Mizshiro",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1481684721472897156",
+   "created": "2026-03-12T16:06:05.970000+00:00",
+   "last_active": "2026-03-29",
    "source": "forum"
   },
   {
