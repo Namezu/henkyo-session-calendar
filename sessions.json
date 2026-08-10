@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/11 02:16",
- "checked": "2026/08/11 02:16",
+ "updated": "2026/08/11 02:38",
+ "checked": "2026/08/11 02:38",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -585,7 +585,7 @@
    "source": "forum"
   },
   {
-   "scenario": "まだ募集してない",
+   "scenario": "歓迎卓",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [],
