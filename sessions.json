@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/12 08:01",
- "checked": "2026/08/12 08:01",
+ "updated": "2026/08/12 08:46",
+ "checked": "2026/08/12 08:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -423,6 +423,27 @@
    "source": "forum"
   },
   {
+   "scenario": "異史追憶:瓦礫の王",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-11",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "むむこ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1533032211475861504",
+   "created": "2026-08-01T08:42:41.577000+00:00",
+   "last_active": "2026-08-12",
+   "source": "forum"
+  },
+  {
    "scenario": "幻想ダンジョン1（ランダムダンジョン形式）",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -603,27 +624,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1536266491781980231",
    "created": "2026-08-10T06:54:34.092000+00:00",
    "last_active": "2026-08-12",
-   "source": "forum"
-  },
-  {
-   "scenario": "異史追憶:瓦礫の王",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-08-11",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "むむこ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1533032211475861504",
-   "created": "2026-08-01T08:42:41.577000+00:00",
-   "last_active": "2026-08-11",
    "source": "forum"
   },
   {
