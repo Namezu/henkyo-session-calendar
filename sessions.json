@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/11 10:46",
- "checked": "2026/08/11 13:46",
+ "updated": "2026/08/11 14:16",
+ "checked": "2026/08/11 14:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -582,6 +582,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1535508677983731755",
    "created": "2026-08-08T04:43:17.203000+00:00",
    "last_active": "2026-08-10",
+   "source": "forum"
+  },
+  {
+   "scenario": "獰猛な植物園",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-14",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridotite",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1536011776439615498",
+   "created": "2026-08-09T14:02:25.222000+00:00",
+   "last_active": "2026-08-11",
    "source": "forum"
   },
   {
@@ -3793,7 +3814,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1531650575111028736",
    "created": "2026-07-28T13:12:33.798000+00:00",
-   "last_active": "2026-08-07",
+   "last_active": "2026-08-11",
    "source": "forum"
   },
   {
@@ -28423,12 +28444,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1532056216828645578",
    "gm": "peridotite",
    "open": false
-  },
-  {
-   "title": "今週中 21:00~【ミスリルクレスト】獰猛な植物園",
-   "url": "https://discord.com/channels/1001833522723561593/1536011776439615498",
-   "gm": "peridotite",
-   "open": true
   }
  ]
 }
