@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/12 23:58",
- "checked": "2026/08/12 23:58",
+ "updated": "2026/08/13 00:01",
+ "checked": "2026/08/13 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3293,27 +3293,6 @@
    "source": "forum"
   },
   {
-   "scenario": "凍土の罠",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-13",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "Nn(エヌ)",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1482567499903008829",
-   "created": "2026-03-15T02:33:56.749000+00:00",
-   "last_active": "2026-04-13",
-   "source": "forum"
-  },
-  {
    "scenario": "ランダン潜るだけ",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
@@ -3500,27 +3479,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1488516616747614288",
    "created": "2026-03-31T12:33:36.734000+00:00",
    "last_active": "2026-04-04",
-   "source": "forum"
-  },
-  {
-   "scenario": "ワンダーランド・ドリームズ",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-03",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "Nn(エヌ)",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1482569457711845507",
-   "created": "2026-03-15T02:41:43.527000+00:00",
-   "last_active": "2026-04-03",
    "source": "forum"
   },
   {
@@ -3712,26 +3670,24 @@
      "date": "2026-08-04",
      "start": "21:00",
      "end": "24:00",
-     "time_source": "body"
+     "time_source": "body",
+     "held": true
     },
     {
      "date": "2026-08-05",
      "start": "21:00",
-     "end": "24:00"
+     "end": "24:00",
+     "held": true
     },
     {
      "date": "2026-08-12",
      "start": "21:00",
-     "end": "24:00"
-    },
-    {
-     "date": "2026-08-13",
-     "start": "21:00",
-     "end": "24:00"
+     "end": "24:00",
+     "held": true
     }
    ],
    "open": false,
-   "suriawase": false,
+   "suriawase": true,
    "ongoing": false,
    "gm": "ユーカ",
    "gm_active": true,
@@ -4136,6 +4092,48 @@
    "url": "https://discord.com/channels/1001833522723561593/1487997004280893601",
    "created": "2026-03-30T02:08:51.468000+00:00",
    "last_active": "2026-04-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "凍土の罠",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-13",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "Nn(エヌ)",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1482567499903008829",
+   "created": "2026-03-15T02:33:56.749000+00:00",
+   "last_active": "2026-04-13",
+   "source": "forum"
+  },
+  {
+   "scenario": "ワンダーランド・ドリームズ",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-03",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "Nn(エヌ)",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1482569457711845507",
+   "created": "2026-03-15T02:41:43.527000+00:00",
+   "last_active": "2026-04-03",
    "source": "forum"
   },
   {
