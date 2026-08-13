@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/14 05:31",
- "checked": "2026/08/14 05:31",
+ "updated": "2026/08/14 05:50",
+ "checked": "2026/08/14 05:50",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -1580,7 +1580,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": null,
+   "gm": "reiran",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1508062032354873344",
    "created": "2026-05-24T11:00:06.951000+00:00",
