@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/15 19:46",
- "checked": "2026/08/15 19:46",
+ "updated": "2026/08/15 20:00",
+ "checked": "2026/08/15 20:00",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -583,7 +583,7 @@
    "open": true,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1536011776439615498",
    "created": "2026-08-09T14:02:25.222000+00:00",
@@ -28473,7 +28473,7 @@
   {
    "title": "未定【アリアンロッド2E】未定",
    "url": "https://discord.com/channels/1001833522723561593/1532056216828645578",
-   "gm": "peridotite",
+   "gm": "peridot",
    "open": false
   }
  ]
