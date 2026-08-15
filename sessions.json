@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/15 21:01",
- "checked": "2026/08/15 21:01",
+ "updated": "2026/08/16 00:01",
+ "checked": "2026/08/16 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3648,12 +3648,18 @@
     {
      "date": "2026-08-15",
      "start": "21:00",
+     "end": null,
+     "held": true
+    },
+    {
+     "date": "2027-08-15",
+     "start": "21:00",
      "end": null
     }
    ],
    "open": false,
    "suriawase": false,
-   "ongoing": false,
+   "ongoing": true,
    "gm": "豆の塩ゆで",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1509931191262904360",
