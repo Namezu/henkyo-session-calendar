@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/16 16:16",
- "checked": "2026/08/16 16:16",
+ "updated": "2026/08/16 19:01",
+ "checked": "2026/08/16 19:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -465,27 +465,6 @@
    "source": "forum"
   },
   {
-   "scenario": "ランダムダンジョン･ダブルシャドウズ",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-08-15",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1533848594153603072",
-   "created": "2026-08-03T14:46:42.375000+00:00",
-   "last_active": "2026-08-16",
-   "source": "forum"
-  },
-  {
    "scenario": "不思議の錬金術師2！ Side:S",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -545,6 +524,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1537780071564316682",
    "created": "2026-08-14T11:08:59.633000+00:00",
+   "last_active": "2026-08-16",
+   "source": "forum"
+  },
+  {
+   "scenario": "ランダムダンジョン･ダブルシャドウズ",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-15",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1533848594153603072",
+   "created": "2026-08-03T14:46:42.375000+00:00",
    "last_active": "2026-08-16",
    "source": "forum"
   },
