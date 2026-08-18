@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/19 00:16",
- "checked": "2026/08/19 00:16",
+ "updated": "2026/08/19 00:46",
+ "checked": "2026/08/19 00:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -309,27 +309,6 @@
    "source": "forum"
   },
   {
-   "scenario": "依頼板の向こう側（初心者歓迎）",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-08-17",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1531271795942887546",
-   "created": "2026-07-27T12:07:25.807000+00:00",
-   "last_active": "2026-08-18",
-   "source": "forum"
-  },
-  {
    "scenario": "マスタリング手法公開企画/月に導かれて（初心者歓迎）",
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
@@ -482,6 +461,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1535508677983731755",
    "created": "2026-08-08T04:43:17.203000+00:00",
+   "last_active": "2026-08-18",
+   "source": "forum"
+  },
+  {
+   "scenario": "依頼板の向こう側（初心者歓迎）",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-17",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1531271795942887546",
+   "created": "2026-07-27T12:07:25.807000+00:00",
    "last_active": "2026-08-18",
    "source": "forum"
   },
