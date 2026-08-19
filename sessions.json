@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/20 00:47",
- "checked": "2026/08/20 00:47",
+ "updated": "2026/08/20 01:01",
+ "checked": "2026/08/20 01:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -463,6 +463,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1535508677983731755",
    "created": "2026-08-08T04:43:17.203000+00:00",
    "last_active": "2026-08-18",
+   "source": "forum"
+  },
+  {
+   "scenario": "至高のコーヒーを求めて:魔獣駆除編",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-30",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1539662779898925186",
+   "created": "2026-08-19T15:50:12.279000+00:00",
+   "last_active": "2026-08-20",
    "source": "forum"
   },
   {
