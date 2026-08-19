@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/20 00:31",
- "checked": "2026/08/20 00:31",
+ "updated": "2026/08/20 00:47",
+ "checked": "2026/08/20 00:47",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3708,7 +3708,7 @@
    "reg": "ダブルクロス3rd",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "一藻通",
