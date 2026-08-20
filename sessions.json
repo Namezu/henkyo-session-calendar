@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/20 14:05",
- "checked": "2026/08/20 14:05",
+ "updated": "2026/08/20 15:46",
+ "checked": "2026/08/20 15:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -477,6 +477,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1539662779898925186",
    "created": "2026-08-19T15:50:12.279000+00:00",
+   "last_active": "2026-08-20",
+   "source": "forum"
+  },
+  {
+   "scenario": "大樹の森の慟哭",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-11",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1539887651065167872",
+   "created": "2026-08-20T06:43:45.743000+00:00",
    "last_active": "2026-08-20",
    "source": "forum"
   },
