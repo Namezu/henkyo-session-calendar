@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/22 00:46",
- "checked": "2026/08/22 00:46",
+ "updated": "2026/08/22 00:51",
+ "checked": "2026/08/22 00:51",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -109,15 +109,31 @@
    "scenario": "陽だまりへ連れ出して",
    "reg": "アンコールを流星に",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-09-15",
+     "start": "21:00",
+     "end": "24:00"
+    },
+    {
+     "date": "2026-09-16",
+     "start": "21:00",
+     "end": "24:00"
+    },
+    {
+     "date": "2026-09-17",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "カテナドルグ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1509558940235727021",
    "created": "2026-05-28T14:08:17.601000+00:00",
-   "last_active": "2026-08-21",
+   "last_active": "2026-08-22",
    "source": "forum"
   },
   {
