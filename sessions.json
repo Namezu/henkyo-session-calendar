@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/21 21:46",
- "checked": "2026/08/21 21:46",
+ "updated": "2026/08/21 22:01",
+ "checked": "2026/08/21 22:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -480,7 +480,7 @@
      "end": "24:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "dabdab",
