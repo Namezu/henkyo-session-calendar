@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/21 21:01",
- "checked": "2026/08/21 21:01",
+ "updated": "2026/08/21 21:16",
+ "checked": "2026/08/21 21:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -138,27 +138,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1522916926219878410",
    "created": "2026-07-04T10:48:09.639000+00:00",
-   "last_active": "2026-08-20",
-   "source": "forum"
-  },
-  {
-   "scenario": "少女の手紙",
-   "reg": "アンコールを流星に",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-08-19",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1524034107204698202",
-   "created": "2026-07-07T12:47:26.342000+00:00",
    "last_active": "2026-08-20",
    "source": "forum"
   },
@@ -477,7 +456,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1539662779898925186",
    "created": "2026-08-19T15:50:12.279000+00:00",
-   "last_active": "2026-08-20",
+   "last_active": "2026-08-21",
    "source": "forum"
   },
   {
@@ -491,7 +470,7 @@
      "end": "24:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "よし/やっぴー",
@@ -499,6 +478,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1539887651065167872",
    "created": "2026-08-20T06:43:45.743000+00:00",
    "last_active": "2026-08-21",
+   "source": "forum"
+  },
+  {
+   "scenario": "少女の手紙",
+   "reg": "アンコールを流星に",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-19",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1524034107204698202",
+   "created": "2026-07-07T12:47:26.342000+00:00",
+   "last_active": "2026-08-20",
    "source": "forum"
   },
   {
