@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/22 00:51",
- "checked": "2026/08/22 00:51",
+ "updated": "2026/08/22 01:16",
+ "checked": "2026/08/22 01:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -554,6 +554,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540373705799237642",
    "created": "2026-08-21T14:55:10.222000+00:00",
+   "last_active": "2026-08-22",
+   "source": "forum"
+  },
+  {
+   "scenario": "エリン至高の極上グルメ十選:ディザスター\"ギガント\"クラーケン編",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1540391714978660412",
+   "created": "2026-08-21T16:06:43.945000+00:00",
    "last_active": "2026-08-22",
    "source": "forum"
   },
