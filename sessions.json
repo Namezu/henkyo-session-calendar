@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/21 11:46",
- "checked": "2026/08/21 11:46",
+ "updated": "2026/08/21 12:01",
+ "checked": "2026/08/21 12:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -374,7 +374,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "よし/やっぴー",
+   "gm": null,
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1532167123172987080",
    "created": "2026-07-29T23:25:08.453000+00:00",
@@ -935,7 +935,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "にゃぎさん",
+   "gm": null,
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1525649674223226920",
    "created": "2026-07-11T23:47:07.535000+00:00",
@@ -1124,7 +1124,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "てん",
+   "gm": null,
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1520781166649806980",
    "created": "2026-06-28T13:21:24.877000+00:00",
@@ -3391,7 +3391,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": null,
+   "gm": "にゃぎさん",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1492432510037000222",
    "created": "2026-04-11T07:53:58.448000+00:00",
@@ -3475,7 +3475,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": null,
+   "gm": "にゃぎさん",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1487711209091366972",
    "created": "2026-03-29T07:13:12.585000+00:00",
@@ -3942,7 +3942,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": null,
+   "gm": "シドラン",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1499012078524956752",
    "created": "2026-04-29T11:38:49.818000+00:00",
@@ -3957,7 +3957,8 @@
     {
      "date": "2026-06-27",
      "start": "21:00",
-     "end": null
+     "end": "22:00",
+     "time_source": "body"
     },
     {
      "date": "2026-06-29",
@@ -3968,7 +3969,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": null,
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1508426314514956428",
    "created": "2026-05-25T11:07:38.586000+00:00",
