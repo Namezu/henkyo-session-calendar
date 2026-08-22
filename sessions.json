@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/22 15:31",
- "checked": "2026/08/22 15:31",
+ "updated": "2026/08/22 18:16",
+ "checked": "2026/08/22 18:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -554,6 +554,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540391714978660412",
    "created": "2026-08-21T16:06:43.945000+00:00",
+   "last_active": "2026-08-22",
+   "source": "forum"
+  },
+  {
+   "scenario": "精霊に愛される少女",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1540650159007076373",
+   "created": "2026-08-22T09:13:41.803000+00:00",
    "last_active": "2026-08-22",
    "source": "forum"
   },
@@ -3813,7 +3828,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1531650575111028736",
    "created": "2026-07-28T13:12:33.798000+00:00",
-   "last_active": "2026-08-21",
+   "last_active": "2026-08-22",
    "source": "forum"
   },
   {
