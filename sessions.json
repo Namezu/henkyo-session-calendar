@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/22 22:16",
- "checked": "2026/08/22 22:16",
+ "updated": "2026/08/22 22:31",
+ "checked": "2026/08/22 22:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -624,6 +624,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540710910555983954",
    "created": "2026-08-22T13:15:06.101000+00:00",
+   "last_active": "2026-08-22",
+   "source": "forum"
+  },
+  {
+   "scenario": "スカイフォール",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1540714074298388570",
+   "created": "2026-08-22T13:27:40.396000+00:00",
    "last_active": "2026-08-22",
    "source": "forum"
   },
