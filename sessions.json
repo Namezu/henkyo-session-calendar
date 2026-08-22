@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/22 15:01",
- "checked": "2026/08/22 15:01",
+ "updated": "2026/08/22 15:16",
+ "checked": "2026/08/22 15:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -175,27 +175,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1526554858289758330",
    "created": "2026-07-14T11:44:00.234000+00:00",
-   "last_active": "2026-08-22",
-   "source": "forum"
-  },
-  {
-   "scenario": "魔女の館",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-08-22",
-     "start": "10:00",
-     "end": "14:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "taku",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1528444489482506420",
-   "created": "2026-07-19T16:52:43.418000+00:00",
    "last_active": "2026-08-22",
    "source": "forum"
   },
@@ -575,6 +554,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540391714978660412",
    "created": "2026-08-21T16:06:43.945000+00:00",
+   "last_active": "2026-08-22",
+   "source": "forum"
+  },
+  {
+   "scenario": "魔女の館",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-22",
+     "start": "10:00",
+     "end": "14:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1528444489482506420",
+   "created": "2026-07-19T16:52:43.418000+00:00",
    "last_active": "2026-08-22",
    "source": "forum"
   },
