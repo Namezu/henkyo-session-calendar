@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/22 23:16",
- "checked": "2026/08/22 23:16",
+ "updated": "2026/08/22 23:22",
+ "checked": "2026/08/22 23:22",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -28722,5 +28722,12 @@
    "source": "forum"
   }
  ],
- "unparsed": []
+ "unparsed": [
+  {
+   "title": "10月以降調整　【アリアンストラテジーWS】1-1.門出",
+   "url": "https://discord.com/channels/1001833522723561593/1540726956558000198",
+   "gm": "カピ",
+   "open": false
+  }
+ ]
 }
