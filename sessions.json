@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/23 18:31",
- "checked": "2026/08/23 18:31",
+ "updated": "2026/08/23 18:43",
+ "checked": "2026/08/23 18:43",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -438,14 +438,14 @@
      "end": "24:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "よし/やっぴー",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1539887651065167872",
    "created": "2026-08-20T06:43:45.743000+00:00",
-   "last_active": "2026-08-22",
+   "last_active": "2026-08-23",
    "source": "forum"
   },
   {
@@ -571,6 +571,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540714074298388570",
    "created": "2026-08-22T13:27:40.396000+00:00",
+   "last_active": "2026-08-23",
+   "source": "forum"
+  },
+  {
+   "scenario": "シナリオ未定",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-30",
+     "start": "30:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1541018619381555293",
+   "created": "2026-08-23T09:37:49.602000+00:00",
    "last_active": "2026-08-23",
    "source": "forum"
   },
