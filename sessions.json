@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/24 00:31",
- "checked": "2026/08/24 00:31",
+ "updated": "2026/08/24 00:46",
+ "checked": "2026/08/24 00:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -274,27 +274,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1531309461963149322",
    "created": "2026-07-27T14:37:06.086000+00:00",
    "last_active": "2026-08-21",
-   "source": "forum"
-  },
-  {
-   "scenario": "ランダムダンジョン NIGHTREIGN EDITION＊ベータテスト版",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-08-23",
-     "start": "20:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "むむこ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1531854594483814440",
-   "created": "2026-07-29T02:43:15.807000+00:00",
-   "last_active": "2026-08-23",
    "source": "forum"
   },
   {
@@ -592,6 +571,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1541018619381555293",
    "created": "2026-08-23T09:37:49.602000+00:00",
+   "last_active": "2026-08-24",
+   "source": "forum"
+  },
+  {
+   "scenario": "ランダムダンジョン NIGHTREIGN EDITION＊ベータテスト版",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-23",
+     "start": "20:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "むむこ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1531854594483814440",
+   "created": "2026-07-29T02:43:15.807000+00:00",
    "last_active": "2026-08-23",
    "source": "forum"
   },
