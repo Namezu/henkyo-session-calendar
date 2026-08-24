@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/24 18:24",
- "checked": "2026/08/24 18:24",
+ "updated": "2026/08/24 18:31",
+ "checked": "2026/08/24 18:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -533,9 +533,15 @@
    "scenario": "Re:ヴェンジェンス",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-08-31",
+     "start": "21:00",
+     "end": "24:30"
+    }
+   ],
    "open": true,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "カテナドルグ",
    "gm_active": true,
@@ -3951,7 +3957,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1536341101936648293",
    "created": "2026-08-10T11:51:02.539000+00:00",
-   "last_active": "2026-08-23",
+   "last_active": "2026-08-24",
    "source": "forum"
   },
   {
