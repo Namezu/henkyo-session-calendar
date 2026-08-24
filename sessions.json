@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/24 19:01",
- "checked": "2026/08/24 19:01",
+ "updated": "2026/08/24 20:01",
+ "checked": "2026/08/24 20:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -166,9 +166,15 @@
    "scenario": "冥界直通！超弩級爆走轢殺列車現る",
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-09-20",
+     "start": "13:00",
+     "end": null
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "dabdab",
    "gm_active": true,
