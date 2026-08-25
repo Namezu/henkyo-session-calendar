@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/25 15:16",
- "checked": "2026/08/25 15:16",
+ "updated": "2026/08/25 15:31",
+ "checked": "2026/08/25 15:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -536,12 +536,18 @@
    "source": "forum"
   },
   {
-   "scenario": "スカイフォール",
+   "scenario": "スカイフォール アルフィオレの戦い",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
+   "dates": [
+    {
+     "date": "2026-09-06",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
    "ongoing": false,
    "gm": "カテナドルグ",
    "gm_active": true,
@@ -589,6 +595,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1541675500789825586",
    "created": "2026-08-25T05:08:02.334000+00:00",
+   "last_active": "2026-08-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "スカイフォール フィンジアス決戦",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-29",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1541693429866569819",
+   "created": "2026-08-25T06:19:16.959000+00:00",
    "last_active": "2026-08-25",
    "source": "forum"
   },
