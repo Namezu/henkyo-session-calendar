@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/27 01:06",
- "checked": "2026/08/27 01:06",
+ "updated": "2026/08/27 01:31",
+ "checked": "2026/08/27 01:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -79,6 +79,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1540714074298388570",
    "created": "2026-08-22T13:27:40.396000+00:00",
    "last_active": "2026-08-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "神速剣客一番勝負",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-25",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "水樹です",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1542208051522699304",
+   "created": "2026-08-26T16:24:12.323000+00:00",
+   "last_active": "2026-08-27",
    "source": "forum"
   },
   {
@@ -225,7 +246,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1532167123172987080",
    "created": "2026-07-29T23:25:08.453000+00:00",
-   "last_active": "2026-08-25",
+   "last_active": "2026-08-27",
    "source": "forum"
   },
   {
@@ -284,9 +305,15 @@
    "scenario": "神速剣客一番勝負",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
-   "open": false,
-   "suriawase": true,
+   "dates": [
+    {
+     "date": "2026-09-21",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "水樹です",
    "gm_active": true,
@@ -724,7 +751,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1539887651065167872",
    "created": "2026-08-20T06:43:45.743000+00:00",
-   "last_active": "2026-08-26",
+   "last_active": "2026-08-27",
    "source": "forum"
   },
   {
