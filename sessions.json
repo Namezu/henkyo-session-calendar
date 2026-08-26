@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/26 23:16",
- "checked": "2026/08/26 23:16",
+ "updated": "2026/08/26 23:45",
+ "checked": "2026/08/26 23:45",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -330,9 +330,20 @@
    "scenario": "時計塔のある街",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-09-24",
+     "start": "21:00",
+     "end": "24:00"
+    },
+    {
+     "date": "2026-09-30",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
    "open": true,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "よし/やっぴー",
    "gm_active": true,
