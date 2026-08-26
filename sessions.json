@@ -1,11 +1,152 @@
 {
- "updated": "2026/08/26 21:31",
- "checked": "2026/08/26 21:31",
+ "updated": "2026/08/26 22:46",
+ "checked": "2026/08/26 22:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
-   "scenario": "一期一会CP",
-   "reg": "アリアンロッド2E",
+   "scenario": "黄金を喰らうもの",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-30",
+     "start": "14:00",
+     "end": "17:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1541018619381555293",
+   "created": "2026-08-23T09:37:49.602000+00:00",
+   "last_active": "2026-08-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "至高のコーヒーを求めて:魔獣駆除編",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-30",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1539662779898925186",
+   "created": "2026-08-19T15:50:12.279000+00:00",
+   "last_active": "2026-08-23",
+   "source": "forum"
+  },
+  {
+   "scenario": "異史追憶:黒のマルクト（高難易度）",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1533847306410004540",
+   "created": "2026-08-03T14:41:35.353000+00:00",
+   "last_active": "2026-08-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "スカイフォール アルフィオレの戦い",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-06",
+     "start": "13:00",
+     "end": "17:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1540714074298388570",
+   "created": "2026-08-22T13:27:40.396000+00:00",
+   "last_active": "2026-08-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "三界を統べる王の王",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-28",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1530782448336765049",
+   "created": "2026-07-26T03:42:56.246000+00:00",
+   "last_active": "2026-08-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "スカイフォール フィンジアス決戦",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-29",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1541693429866569819",
+   "created": "2026-08-25T06:19:16.959000+00:00",
+   "last_active": "2026-08-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "はじめてのぴーすめいかー",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-02",
+     "start": "21:00",
+     "end": "24:30"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1541675500789825586",
+   "created": "2026-08-25T05:08:02.334000+00:00",
+   "last_active": "2026-08-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "精霊に愛される少女 第一陣",
+   "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [
     {
@@ -14,29 +155,163 @@
      "end": "25:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
-   "ongoing": true,
-   "gm": "taku",
+   "ongoing": false,
+   "gm": "reiran",
    "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1389898698703507527",
-   "created": "2025-07-02T09:21:12.840000+00:00",
+   "url": "https://discord.com/channels/1001833522723561593/1540650159007076373",
+   "created": "2026-08-22T09:13:41.803000+00:00",
    "last_active": "2026-08-26",
    "source": "forum"
   },
   {
-   "scenario": "はるかぜのしらべ",
+   "scenario": "Re:ヴェンジェンス",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-31",
+     "start": "21:00",
+     "end": "24:30"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1540710910555983954",
+   "created": "2026-08-22T13:15:06.101000+00:00",
+   "last_active": "2026-08-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "依頼板の向こう側（初心者歓迎）",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-05",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1540373088791957504",
+   "created": "2026-08-21T14:52:43.116000+00:00",
+   "last_active": "2026-08-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "白銀に咲く命の花",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-03",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1532167123172987080",
+   "created": "2026-07-29T23:25:08.453000+00:00",
+   "last_active": "2026-08-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "未定",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-08",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-09-09",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-09-13",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1532056216828645578",
+   "created": "2026-07-29T16:04:26.320000+00:00",
+   "last_active": "2026-08-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "精霊に愛される少女 第二陣",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-16",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1541773954325282830",
+   "created": "2026-08-25T11:39:15.486000+00:00",
+   "last_active": "2026-08-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "神速剣客一番勝負",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "水樹です",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1540691795485135019",
+   "created": "2026-08-22T11:59:08.713000+00:00",
+   "last_active": "2026-08-23",
+   "source": "forum"
+  },
+  {
+   "scenario": "WS2-4 眩暈と葬送",
    "reg": "氷原開拓団",
    "reg_is_name": false,
    "dates": [
     {
-     "date": "2026-08-19",
+     "date": "2026-08-06",
      "start": null,
-     "end": null,
-     "held": true
+     "end": null
     },
     {
-     "date": "2026-08-27",
+     "date": "2026-08-26",
+     "start": null,
+     "end": null
+    },
+    {
+     "date": "2026-09-01",
      "start": null,
      "end": null
     }
@@ -46,9 +321,24 @@
    "ongoing": false,
    "gm": "Mizshiro",
    "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1457368264685387826",
-   "created": "2026-01-04T13:41:10.894000+00:00",
-   "last_active": "2026-08-22",
+   "url": "https://discord.com/channels/1001833522723561593/1526554858289758330",
+   "created": "2026-07-14T11:44:00.234000+00:00",
+   "last_active": "2026-08-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "時計塔のある街",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1541970758102949989",
+   "created": "2026-08-26T00:41:17.163000+00:00",
+   "last_active": "2026-08-26",
    "source": "forum"
   },
   {
@@ -101,6 +391,54 @@
    "source": "forum"
   },
   {
+   "scenario": "エリン至高の極上グルメ十選:ディザスター\"ギガント\"クラーケン編 第1卓",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-04",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1540391714978660412",
+   "created": "2026-08-21T16:06:43.945000+00:00",
+   "last_active": "2026-08-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "はるかぜのしらべ",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-19",
+     "start": null,
+     "end": null,
+     "held": true
+    },
+    {
+     "date": "2026-08-27",
+     "start": null,
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "Mizshiro",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1457368264685387826",
+   "created": "2026-01-04T13:41:10.894000+00:00",
+   "last_active": "2026-08-22",
+   "source": "forum"
+  },
+  {
    "scenario": "陽だまりへ連れ出して",
    "reg": "アンコールを流星に",
    "reg_is_name": false,
@@ -132,121 +470,33 @@
    "source": "forum"
   },
   {
-   "scenario": "WS2-4 眩暈と葬送",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-08-06",
-     "start": null,
-     "end": null
-    },
-    {
-     "date": "2026-08-26",
-     "start": null,
-     "end": null
-    },
-    {
-     "date": "2026-09-01",
-     "start": null,
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "Mizshiro",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1526554858289758330",
-   "created": "2026-07-14T11:44:00.234000+00:00",
-   "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "冥界直通！超弩級爆走轢殺列車現る",
+   "scenario": "一期一会CP",
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
    "dates": [
     {
-     "date": "2026-09-20",
-     "start": "13:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1530245512157069373",
-   "created": "2026-07-24T16:09:20.685000+00:00",
-   "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "魔女の館(高難易度)",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-08-29",
+     "date": "2026-09-05",
      "start": "21:00",
      "end": "25:00"
     }
    ],
-   "open": false,
+   "open": true,
    "suriawase": false,
-   "ongoing": false,
+   "ongoing": true,
    "gm": "taku",
    "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1530522110974365787",
-   "created": "2026-07-25T10:28:26.982000+00:00",
+   "url": "https://discord.com/channels/1001833522723561593/1389898698703507527",
+   "created": "2025-07-02T09:21:12.840000+00:00",
    "last_active": "2026-08-26",
    "source": "forum"
   },
   {
-   "scenario": "三界を統べる王の王",
+   "scenario": "エリン至高の極上グルメ十選:ディザスター\"ギガント\"クラーケン編 第3卓",
    "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [
     {
-     "date": "2026-08-28",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1530782448336765049",
-   "created": "2026-07-26T03:42:56.246000+00:00",
-   "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "マスタリング手法公開企画/月に導かれて（初心者歓迎）",
-   "reg": "アリアンロッド2E",
-   "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1531286994582245466",
-   "created": "2026-07-27T13:07:49.445000+00:00",
-   "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "人を暴くモノ（初心者歓迎）",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-08-27",
+     "date": "2026-09-17",
      "start": "21:00",
      "end": "25:00"
     }
@@ -254,78 +504,11 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カテナドルグ",
+   "gm": "dabdab",
    "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1531309461963149322",
-   "created": "2026-07-27T14:37:06.086000+00:00",
+   "url": "https://discord.com/channels/1001833522723561593/1542136832744099890",
+   "created": "2026-08-26T11:41:12.443000+00:00",
    "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "未定",
-   "reg": "アリアンロッド2E",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-08",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-09-09",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-09-13",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "peridot",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1532056216828645578",
-   "created": "2026-07-29T16:04:26.320000+00:00",
-   "last_active": "2026-08-24",
-   "source": "forum"
-  },
-  {
-   "scenario": "白銀に咲く命の花",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-03",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1532167123172987080",
-   "created": "2026-07-29T23:25:08.453000+00:00",
-   "last_active": "2026-08-25",
-   "source": "forum"
-  },
-  {
-   "scenario": "異史追憶:黒のマルクト（高難易度）",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1533847306410004540",
-   "created": "2026-08-03T14:41:35.353000+00:00",
-   "last_active": "2026-08-12",
    "source": "forum"
   },
   {
@@ -350,285 +533,24 @@
    "source": "forum"
   },
   {
-   "scenario": "至高のコーヒーを求めて:魔獣駆除編",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-08-30",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1539662779898925186",
-   "created": "2026-08-19T15:50:12.279000+00:00",
-   "last_active": "2026-08-23",
-   "source": "forum"
-  },
-  {
-   "scenario": "大樹の森の慟哭",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-11",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1539887651065167872",
-   "created": "2026-08-20T06:43:45.743000+00:00",
-   "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "依頼板の向こう側（初心者歓迎）",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-05",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1540373088791957504",
-   "created": "2026-08-21T14:52:43.116000+00:00",
-   "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "ランダムダンジョン･ダブルシャドウズ",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-04",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1540373705799237642",
-   "created": "2026-08-21T14:55:10.222000+00:00",
-   "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "エリン至高の極上グルメ十選:ディザスター\"ギガント\"クラーケン編 第1卓",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-04",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1540391714978660412",
-   "created": "2026-08-21T16:06:43.945000+00:00",
-   "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "精霊に愛される少女 第一陣",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-05",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "reiran",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1540650159007076373",
-   "created": "2026-08-22T09:13:41.803000+00:00",
-   "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "神速剣客一番勝負",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "水樹です",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1540691795485135019",
-   "created": "2026-08-22T11:59:08.713000+00:00",
-   "last_active": "2026-08-23",
-   "source": "forum"
-  },
-  {
-   "scenario": "エピソード:ダークCP第三陣 背教者達のルサンチマン 欺くルミナ 黒のマルクト",
+   "scenario": "冥界直通！超弩級爆走轢殺列車現る",
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1540708067702997062",
-   "created": "2026-08-22T13:03:48.312000+00:00",
-   "last_active": "2026-08-23",
-   "source": "forum"
-  },
-  {
-   "scenario": "Re:ヴェンジェンス",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
    "dates": [
     {
-     "date": "2026-08-31",
-     "start": "21:00",
-     "end": "24:30"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1540710910555983954",
-   "created": "2026-08-22T13:15:06.101000+00:00",
-   "last_active": "2026-08-25",
-   "source": "forum"
-  },
-  {
-   "scenario": "スカイフォール アルフィオレの戦い",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-06",
+     "date": "2026-09-20",
      "start": "13:00",
-     "end": "17:00"
+     "end": null
     }
    ],
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カテナドルグ",
+   "gm": "dabdab",
    "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1540714074298388570",
-   "created": "2026-08-22T13:27:40.396000+00:00",
+   "url": "https://discord.com/channels/1001833522723561593/1530245512157069373",
+   "created": "2026-07-24T16:09:20.685000+00:00",
    "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "黄金を喰らうもの",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-08-30",
-     "start": "14:00",
-     "end": "17:00"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1541018619381555293",
-   "created": "2026-08-23T09:37:49.602000+00:00",
-   "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "はじめてのぴーすめいかー",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-02",
-     "start": "21:00",
-     "end": "24:30"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1541675500789825586",
-   "created": "2026-08-25T05:08:02.334000+00:00",
-   "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "スカイフォール フィンジアス決戦",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-29",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1541693429866569819",
-   "created": "2026-08-25T06:19:16.959000+00:00",
-   "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "精霊に愛される少女 第二陣",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-16",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "reiran",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1541773954325282830",
-   "created": "2026-08-25T11:39:15.486000+00:00",
-   "last_active": "2026-08-25",
    "source": "forum"
   },
   {
@@ -649,21 +571,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1541773962269433907",
    "created": "2026-08-25T11:39:17.380000+00:00",
-   "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "時計塔のある街",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1541970758102949989",
-   "created": "2026-08-26T00:41:17.163000+00:00",
    "last_active": "2026-08-26",
    "source": "forum"
   },
@@ -689,12 +596,12 @@
    "source": "forum"
   },
   {
-   "scenario": "エリン至高の極上グルメ十選:ディザスター\"ギガント\"クラーケン編 第3卓",
-   "reg": "ピースメイカー",
+   "scenario": "人を暴くモノ（初心者歓迎）",
+   "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [
     {
-     "date": "2026-09-17",
+     "date": "2026-08-27",
      "start": "21:00",
      "end": "25:00"
     }
@@ -702,10 +609,103 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "dabdab",
+   "gm": "カテナドルグ",
    "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1542136832744099890",
-   "created": "2026-08-26T11:41:12.443000+00:00",
+   "url": "https://discord.com/channels/1001833522723561593/1531309461963149322",
+   "created": "2026-07-27T14:37:06.086000+00:00",
+   "last_active": "2026-08-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "ランダムダンジョン･ダブルシャドウズ",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-04",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1540373705799237642",
+   "created": "2026-08-21T14:55:10.222000+00:00",
+   "last_active": "2026-08-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "魔女の館(高難易度)",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-29",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1530522110974365787",
+   "created": "2026-07-25T10:28:26.982000+00:00",
+   "last_active": "2026-08-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "マスタリング手法公開企画/月に導かれて（初心者歓迎）",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1531286994582245466",
+   "created": "2026-07-27T13:07:49.445000+00:00",
+   "last_active": "2026-08-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "エピソード:ダークCP第三陣 背教者達のルサンチマン 欺くルミナ 黒のマルクト",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1540708067702997062",
+   "created": "2026-08-22T13:03:48.312000+00:00",
+   "last_active": "2026-08-23",
+   "source": "forum"
+  },
+  {
+   "scenario": "大樹の森の慟哭",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-11",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1539887651065167872",
+   "created": "2026-08-20T06:43:45.743000+00:00",
    "last_active": "2026-08-26",
    "source": "forum"
   },
@@ -2948,7 +2948,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カテナドルグ",
+   "gm": null,
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1495306598560567397",
    "created": "2026-04-19T06:14:34.550000+00:00",
@@ -28921,6 +28921,12 @@
   }
  ],
  "unparsed": [
+  {
+   "title": "調整【ピースメイカー】麗しき宮殿の氷像",
+   "url": "https://discord.com/channels/1001833522723561593/1542164526810800138",
+   "gm": "peridot",
+   "open": true
+  },
   {
    "title": "10月以降調整　【アリアンストラテジーWS】1-1.門出",
    "url": "https://discord.com/channels/1001833522723561593/1540726956558000198",
