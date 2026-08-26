@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/27 05:16",
- "checked": "2026/08/27 05:16",
+ "updated": "2026/08/27 05:31",
+ "checked": "2026/08/27 05:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3686,7 +3686,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": null,
+   "gm": "peridotite",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1495280833718648983",
    "created": "2026-04-19T04:32:11.733000+00:00",
