@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/26 23:45",
- "checked": "2026/08/26 23:45",
+ "updated": "2026/08/27 00:01",
+ "checked": "2026/08/27 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -285,14 +285,14 @@
    "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "水樹です",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540691795485135019",
    "created": "2026-08-22T11:59:08.713000+00:00",
-   "last_active": "2026-08-23",
+   "last_active": "2026-08-26",
    "source": "forum"
   },
   {
@@ -303,16 +303,23 @@
     {
      "date": "2026-08-06",
      "start": null,
-     "end": null
+     "end": null,
+     "held": true
     },
     {
      "date": "2026-08-26",
      "start": null,
-     "end": null
+     "end": null,
+     "held": true
     },
     {
      "date": "2026-09-01",
-     "start": null,
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-09-06",
+     "start": "21:00",
      "end": null
     }
    ],
@@ -435,7 +442,7 @@
     },
     {
      "date": "2026-08-27",
-     "start": null,
+     "start": "21:00",
      "end": null
     }
    ],
@@ -446,7 +453,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1457368264685387826",
    "created": "2026-01-04T13:41:10.894000+00:00",
-   "last_active": "2026-08-22",
+   "last_active": "2026-08-26",
    "source": "forum"
   },
   {
@@ -3807,27 +3814,6 @@
    "source": "forum"
   },
   {
-   "scenario": "つの遺産",
-   "reg": "フツウノアリアン",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-05",
-     "start": "20:30",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1487711209091366972",
-   "created": "2026-03-29T07:13:12.585000+00:00",
-   "last_active": "2026-04-05",
-   "source": "forum"
-  },
-  {
    "scenario": "依頼板の向こう側",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
@@ -3909,48 +3895,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1489825139871846543",
    "created": "2026-04-04T03:13:12.958000+00:00",
    "last_active": "2026-04-04",
-   "source": "forum"
-  },
-  {
-   "scenario": "宇宙からの侵略者！？",
-   "reg": "フツウノアリアン",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-01",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1487470060204326982",
-   "created": "2026-03-28T15:14:58.210000+00:00",
-   "last_active": "2026-04-02",
-   "source": "forum"
-  },
-  {
-   "scenario": "依頼板の向こう側 / エッツェンの森・廃村の腐敗調査",
-   "reg": "フツウノアリアン",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-03-29",
-     "start": "14:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1487652941400637660",
-   "created": "2026-03-29T03:21:40.485000+00:00",
-   "last_active": "2026-03-29",
    "source": "forum"
   },
   {
@@ -4413,6 +4357,69 @@
    "url": "https://discord.com/channels/1001833522723561593/1487997004280893601",
    "created": "2026-03-30T02:08:51.468000+00:00",
    "last_active": "2026-04-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "つの遺産",
+   "reg": "フツウノアリアン",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-05",
+     "start": "20:30",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1487711209091366972",
+   "created": "2026-03-29T07:13:12.585000+00:00",
+   "last_active": "2026-04-05",
+   "source": "forum"
+  },
+  {
+   "scenario": "宇宙からの侵略者！？",
+   "reg": "フツウノアリアン",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-01",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1487470060204326982",
+   "created": "2026-03-28T15:14:58.210000+00:00",
+   "last_active": "2026-04-02",
+   "source": "forum"
+  },
+  {
+   "scenario": "依頼板の向こう側 / エッツェンの森・廃村の腐敗調査",
+   "reg": "フツウノアリアン",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-03-29",
+     "start": "14:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1487652941400637660",
+   "created": "2026-03-29T03:21:40.485000+00:00",
+   "last_active": "2026-03-29",
    "source": "forum"
   },
   {
