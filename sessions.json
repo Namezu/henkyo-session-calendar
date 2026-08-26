@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/26 09:00",
- "checked": "2026/08/26 09:00",
+ "updated": "2026/08/26 09:46",
+ "checked": "2026/08/26 09:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -664,6 +664,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1541773962269433907",
    "created": "2026-08-25T11:39:17.380000+00:00",
+   "last_active": "2026-08-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "時計塔のある街",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1541970758102949989",
+   "created": "2026-08-26T00:41:17.163000+00:00",
    "last_active": "2026-08-26",
    "source": "forum"
   },
