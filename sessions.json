@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/28 23:46",
- "checked": "2026/08/28 23:46",
+ "updated": "2026/08/29 00:01",
+ "checked": "2026/08/29 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3751,27 +3751,6 @@
    "source": "forum"
   },
   {
-   "scenario": "ファーヴニルの忌子達 / アッシェングラート",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-11",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1488358192499921057",
-   "created": "2026-03-31T02:04:05.450000+00:00",
-   "last_active": "2026-04-12",
-   "source": "forum"
-  },
-  {
    "scenario": "熊退治",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
@@ -3853,27 +3832,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1490123669270167622",
    "created": "2026-04-04T22:59:27.913000+00:00",
    "last_active": "2026-04-05",
-   "source": "forum"
-  },
-  {
-   "scenario": "夢のダンジョン",
-   "reg": "フツウノアリアン",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-04",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "taku",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1488516616747614288",
-   "created": "2026-03-31T12:33:36.734000+00:00",
-   "last_active": "2026-04-04",
    "source": "forum"
   },
   {
@@ -4352,6 +4310,48 @@
    "url": "https://discord.com/channels/1001833522723561593/1490367148684611585",
    "created": "2026-04-05T15:06:57.929000+00:00",
    "last_active": "2026-05-17",
+   "source": "forum"
+  },
+  {
+   "scenario": "ファーヴニルの忌子達 / アッシェングラート",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-11",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1488358192499921057",
+   "created": "2026-03-31T02:04:05.450000+00:00",
+   "last_active": "2026-04-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "夢のダンジョン",
+   "reg": "フツウノアリアン",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-04",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1488516616747614288",
+   "created": "2026-03-31T12:33:36.734000+00:00",
+   "last_active": "2026-04-04",
    "source": "forum"
   },
   {
