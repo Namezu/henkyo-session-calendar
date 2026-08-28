@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/28 13:01",
- "checked": "2026/08/28 13:01",
+ "updated": "2026/08/28 14:46",
+ "checked": "2026/08/28 14:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -454,39 +454,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1540391714978660412",
    "created": "2026-08-21T16:06:43.945000+00:00",
    "last_active": "2026-08-27",
-   "source": "forum"
-  },
-  {
-   "scenario": "はるかぜのしらべ",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-08-19",
-     "start": null,
-     "end": null,
-     "held": true
-    },
-    {
-     "date": "2026-08-27",
-     "start": "21:00",
-     "end": null,
-     "held": true
-    },
-    {
-     "date": "2027-08-27",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": true,
-   "gm": "Mizshiro",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1457368264685387826",
-   "created": "2026-01-04T13:41:10.894000+00:00",
-   "last_active": "2026-08-28",
    "source": "forum"
   },
   {
@@ -4385,6 +4352,39 @@
    "url": "https://discord.com/channels/1001833522723561593/1490367148684611585",
    "created": "2026-04-05T15:06:57.929000+00:00",
    "last_active": "2026-05-17",
+   "source": "forum"
+  },
+  {
+   "scenario": "はるかぜのしらべ",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-19",
+     "start": null,
+     "end": null,
+     "held": true
+    },
+    {
+     "date": "2026-08-27",
+     "start": "21:00",
+     "end": null,
+     "held": true
+    },
+    {
+     "date": "2027-08-27",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": true,
+   "gm": "Mizshiro",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1457368264685387826",
+   "created": "2026-01-04T13:41:10.894000+00:00",
+   "last_active": "2026-08-28",
    "source": "forum"
   },
   {
