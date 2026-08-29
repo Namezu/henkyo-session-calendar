@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/30 03:16",
- "checked": "2026/08/30 03:16",
+ "updated": "2026/08/30 03:46",
+ "checked": "2026/08/30 03:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -644,6 +644,27 @@
    "source": "forum"
   },
   {
+   "scenario": "麗しき宮殿の氷像 Hard",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-26",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1542164526810800138",
+   "created": "2026-08-26T13:31:15.223000+00:00",
+   "last_active": "2026-08-30",
+   "source": "forum"
+  },
+  {
    "scenario": "神速剣客一番勝負",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -662,6 +683,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1542208051522699304",
    "created": "2026-08-26T16:24:12.323000+00:00",
    "last_active": "2026-08-28",
+   "source": "forum"
+  },
+  {
+   "scenario": "麗しき宮殿の氷像 Normal",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-27",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1543328483491582102",
+   "created": "2026-08-29T18:36:24.121000+00:00",
+   "last_active": "2026-08-30",
    "source": "forum"
   },
   {
@@ -28993,12 +29035,6 @@
   }
  ],
  "unparsed": [
-  {
-   "title": "調整【ピースメイカー】麗しき宮殿の氷像",
-   "url": "https://discord.com/channels/1001833522723561593/1542164526810800138",
-   "gm": "peridot",
-   "open": true
-  },
   {
    "title": "10月以降調整　【アリアンストラテジーWS】1-1.門出",
    "url": "https://discord.com/channels/1001833522723561593/1540726956558000198",
