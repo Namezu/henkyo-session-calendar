@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/29 12:01",
- "checked": "2026/08/29 12:01",
+ "updated": "2026/08/29 12:46",
+ "checked": "2026/08/29 12:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -197,27 +197,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1531286994582245466",
    "created": "2026-07-27T13:07:49.445000+00:00",
    "last_active": "2026-08-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "人を暴くモノ（初心者歓迎）",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-08-27",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1531309461963149322",
-   "created": "2026-07-27T14:37:06.086000+00:00",
-   "last_active": "2026-08-28",
    "source": "forum"
   },
   {
@@ -703,6 +682,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1542208051522699304",
    "created": "2026-08-26T16:24:12.323000+00:00",
+   "last_active": "2026-08-28",
+   "source": "forum"
+  },
+  {
+   "scenario": "人を暴くモノ（初心者歓迎）",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-27",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1531309461963149322",
+   "created": "2026-07-27T14:37:06.086000+00:00",
    "last_active": "2026-08-28",
    "source": "forum"
   },
