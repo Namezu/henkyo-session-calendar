@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/29 23:46",
- "checked": "2026/08/29 23:46",
+ "updated": "2026/08/30 00:01",
+ "checked": "2026/08/30 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3604,27 +3604,6 @@
    "source": "forum"
   },
   {
-   "scenario": "ファーヴニルの忌子達 / シュヴァルツキルム",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-21",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1488579029152829561",
-   "created": "2026-03-31T16:41:37.011000+00:00",
-   "last_active": "2026-04-22",
-   "source": "forum"
-  },
-  {
    "scenario": "エリン至高の極上グルメ十選:ジェノサイド”キング”サーモン編",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -3684,27 +3663,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1491802823694876743",
    "created": "2026-04-09T14:11:49.525000+00:00",
-   "last_active": "2026-04-15",
-   "source": "forum"
-  },
-  {
-   "scenario": "ファーヴニルの忌子達 / グルートフェルス",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-14",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1488578674520232047",
-   "created": "2026-03-31T16:40:12.460000+00:00",
    "last_active": "2026-04-15",
    "source": "forum"
   },
@@ -4310,6 +4268,48 @@
    "url": "https://discord.com/channels/1001833522723561593/1490367148684611585",
    "created": "2026-04-05T15:06:57.929000+00:00",
    "last_active": "2026-05-17",
+   "source": "forum"
+  },
+  {
+   "scenario": "ファーヴニルの忌子達 / シュヴァルツキルム",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-21",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1488579029152829561",
+   "created": "2026-03-31T16:41:37.011000+00:00",
+   "last_active": "2026-04-22",
+   "source": "forum"
+  },
+  {
+   "scenario": "ファーヴニルの忌子達 / グルートフェルス",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-14",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1488578674520232047",
+   "created": "2026-03-31T16:40:12.460000+00:00",
+   "last_active": "2026-04-15",
    "source": "forum"
   },
   {
