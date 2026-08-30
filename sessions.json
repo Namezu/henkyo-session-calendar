@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/30 23:31",
- "checked": "2026/08/30 23:31",
+ "updated": "2026/08/30 23:46",
+ "checked": "2026/08/30 23:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -66,7 +66,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1498278304875286559",
    "created": "2026-04-27T11:03:04.547000+00:00",
@@ -425,7 +425,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540708067702997062",
    "created": "2026-08-22T13:03:48.312000+00:00",
-   "last_active": "2026-08-23",
+   "last_active": "2026-08-30",
    "source": "forum"
   },
   {
@@ -2604,7 +2604,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1507376282877296670",
    "created": "2026-05-22T13:35:11.535000+00:00",
@@ -3659,7 +3659,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1495438068633702451",
    "created": "2026-04-19T14:56:59.458000+00:00",
@@ -4005,7 +4005,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1542489361747152956",
    "created": "2026-08-27T11:02:01.907000+00:00",
@@ -4031,7 +4031,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1526557321449312257",
    "created": "2026-07-14T11:53:47.497000+00:00",
@@ -4119,7 +4119,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1512833539090022460",
    "created": "2026-06-06T15:00:22.807000+00:00",
@@ -4145,7 +4145,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1514257239848779949",
    "created": "2026-06-10T13:17:39.519000+00:00",
@@ -4253,7 +4253,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1508426314514956428",
    "created": "2026-05-25T11:07:38.586000+00:00",
@@ -4300,7 +4300,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1500495087476674581",
    "created": "2026-05-03T13:51:46.705000+00:00",
@@ -4326,7 +4326,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1490367148684611585",
    "created": "2026-04-05T15:06:57.929000+00:00",
@@ -29059,13 +29059,13 @@
   {
    "title": "10月以降調整　【アリアンストラテジーWS】1-1.門出",
    "url": "https://discord.com/channels/1001833522723561593/1540726956558000198",
-   "gm": "カピだな",
+   "gm": "カピ",
    "open": false
   },
   {
    "title": "10月以降調整　【アリアンストラテジーWS】2-1.傷痕",
    "url": "https://discord.com/channels/1001833522723561593/1541474800612937819",
-   "gm": "カピだな",
+   "gm": "カピ",
    "open": false
   }
  ]
