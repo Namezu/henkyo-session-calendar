@@ -1,6 +1,6 @@
 {
- "updated": "2026/08/30 19:31",
- "checked": "2026/08/30 19:31",
+ "updated": "2026/08/30 20:46",
+ "checked": "2026/08/30 20:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -577,7 +577,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1541970758102949989",
    "created": "2026-08-26T00:41:17.163000+00:00",
-   "last_active": "2026-08-27",
+   "last_active": "2026-08-30",
    "source": "forum"
   },
   {
@@ -682,6 +682,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1543328483491582102",
    "created": "2026-08-29T18:36:24.121000+00:00",
+   "last_active": "2026-08-30",
+   "source": "forum"
+  },
+  {
+   "scenario": "暗躍する魔術師",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-05",
+     "start": "14:00",
+     "end": "17:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1543584286073036941",
+   "created": "2026-08-30T11:32:52.209000+00:00",
    "last_active": "2026-08-30",
    "source": "forum"
   },
