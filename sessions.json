@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/02 00:46",
- "checked": "2026/09/02 00:46",
+ "updated": "2026/09/02 01:16",
+ "checked": "2026/09/02 01:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -365,7 +365,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹です",
+   "gm": "水樹",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540691795485135019",
    "created": "2026-08-22T11:59:08.713000+00:00",
@@ -515,7 +515,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1541970758102949989",
    "created": "2026-08-26T00:41:17.163000+00:00",
-   "last_active": "2026-09-01",
+   "last_active": "2026-09-02",
    "source": "forum"
   },
   {
@@ -642,6 +642,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1543584286073036941",
    "created": "2026-08-30T11:32:52.209000+00:00",
    "last_active": "2026-09-01",
+   "source": "forum"
+  },
+  {
+   "scenario": "一輪の先に咲く約束",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "水樹",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1544377050432016516",
+   "created": "2026-09-01T16:03:01.961000+00:00",
+   "last_active": "2026-09-02",
    "source": "forum"
   },
   {
@@ -1225,7 +1240,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹です",
+   "gm": "水樹",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1525181090208157898",
    "created": "2026-07-10T16:45:08.400000+00:00",
@@ -1928,7 +1943,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹です",
+   "gm": "水樹",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1508062046066049075",
    "created": "2026-05-24T11:00:10.220000+00:00",
@@ -2757,7 +2772,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹です",
+   "gm": "水樹",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1499073760664354927",
    "created": "2026-04-29T15:43:55.986000+00:00",
@@ -3597,7 +3612,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹です",
+   "gm": "水樹",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1492189650750541884",
    "created": "2026-04-10T15:48:56.282000+00:00",
