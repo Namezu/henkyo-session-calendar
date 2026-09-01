@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/01 19:16",
- "checked": "2026/09/01 19:16",
+ "updated": "2026/09/01 20:46",
+ "checked": "2026/09/01 20:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -14,14 +14,14 @@
      "end": "25:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": true,
    "gm": "taku",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1389898698703507527",
    "created": "2025-07-02T09:21:12.840000+00:00",
-   "last_active": "2026-08-26",
+   "last_active": "2026-09-01",
    "source": "forum"
   },
   {
