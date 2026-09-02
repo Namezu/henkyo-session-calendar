@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/02 23:46",
- "checked": "2026/09/02 23:46",
+ "updated": "2026/09/03 00:04",
+ "checked": "2026/09/03 00:04",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -21,7 +21,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1389898698703507527",
    "created": "2025-07-02T09:21:12.840000+00:00",
-   "last_active": "2026-09-01",
+   "last_active": "2026-09-02",
    "source": "forum"
   },
   {
@@ -677,7 +677,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1544537873917673562",
    "created": "2026-09-02T02:42:05.268000+00:00",
-   "last_active": "2026-09-02",
+   "last_active": "2026-09-03",
    "source": "forum"
   },
   {
@@ -3788,27 +3788,6 @@
    "source": "forum"
   },
   {
-   "scenario": "最高に貧弱なポメロ",
-   "reg": "フツウノアリアン",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-05",
-     "start": "9:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1490123669270167622",
-   "created": "2026-04-04T22:59:27.913000+00:00",
-   "last_active": "2026-04-05",
-   "source": "forum"
-  },
-  {
    "scenario": "人を集めてGMを回すキャンペーン",
    "reg": "ライバー＆ラビリンス",
    "reg_is_name": false,
@@ -4273,6 +4252,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1490367148684611585",
    "created": "2026-04-05T15:06:57.929000+00:00",
    "last_active": "2026-05-17",
+   "source": "forum"
+  },
+  {
+   "scenario": "最高に貧弱なポメロ",
+   "reg": "フツウノアリアン",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-05",
+     "start": "9:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1490123669270167622",
+   "created": "2026-04-04T22:59:27.913000+00:00",
+   "last_active": "2026-04-05",
    "source": "forum"
   },
   {
