@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/02 09:31",
- "checked": "2026/09/02 09:31",
+ "updated": "2026/09/02 11:46",
+ "checked": "2026/09/02 11:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -656,6 +656,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1544377050432016516",
    "created": "2026-09-01T16:03:01.961000+00:00",
+   "last_active": "2026-09-02",
+   "source": "forum"
+  },
+  {
+   "scenario": "おいしい復讐者",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "むむこ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1544537873917673562",
+   "created": "2026-09-02T02:42:05.268000+00:00",
    "last_active": "2026-09-02",
    "source": "forum"
   },
