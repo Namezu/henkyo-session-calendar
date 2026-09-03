@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/03 23:46",
- "checked": "2026/09/03 23:46",
+ "updated": "2026/09/04 00:07",
+ "checked": "2026/09/04 00:07",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -684,15 +684,21 @@
    "scenario": "古戦場の目覚め",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-10-15",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "よし/やっぴー",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1544910098135253082",
    "created": "2026-09-03T03:21:10.437000+00:00",
-   "last_active": "2026-09-03",
+   "last_active": "2026-09-04",
    "source": "forum"
   },
   {
