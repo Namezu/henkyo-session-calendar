@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/04 08:16",
- "checked": "2026/09/04 08:16",
+ "updated": "2026/09/04 08:27",
+ "checked": "2026/09/04 08:27",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -327,7 +327,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540391714978660412",
    "created": "2026-08-21T16:06:43.945000+00:00",
-   "last_active": "2026-09-03",
+   "last_active": "2026-09-04",
    "source": "forum"
   },
   {
@@ -2641,7 +2641,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": null,
+   "gm": "タバーン",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1497912549532897350",
    "created": "2026-04-26T10:49:41.678000+00:00",
