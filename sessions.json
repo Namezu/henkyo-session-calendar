@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/05 00:31",
- "checked": "2026/09/05 00:31",
+ "updated": "2026/09/05 00:46",
+ "checked": "2026/09/05 00:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -310,27 +310,6 @@
    "source": "forum"
   },
   {
-   "scenario": "エリン至高の極上グルメ十選:ディザスター\"ギガント\"クラーケン編 第1卓",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-04",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1540391714978660412",
-   "created": "2026-08-21T16:06:43.945000+00:00",
-   "last_active": "2026-09-04",
-   "source": "forum"
-  },
-  {
    "scenario": "精霊に愛される少女 第一陣",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -405,7 +384,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540714074298388570",
    "created": "2026-08-22T13:27:40.396000+00:00",
-   "last_active": "2026-09-02",
+   "last_active": "2026-09-05",
    "source": "forum"
   },
   {
@@ -698,6 +677,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1544910098135253082",
    "created": "2026-09-03T03:21:10.437000+00:00",
+   "last_active": "2026-09-04",
+   "source": "forum"
+  },
+  {
+   "scenario": "エリン至高の極上グルメ十選:ディザスター\"ギガント\"クラーケン編 第1卓",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-04",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1540391714978660412",
+   "created": "2026-08-21T16:06:43.945000+00:00",
    "last_active": "2026-09-04",
    "source": "forum"
   },
