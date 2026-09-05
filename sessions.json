@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/05 09:40",
- "checked": "2026/09/05 09:40",
+ "updated": "2026/09/05 11:46",
+ "checked": "2026/09/05 11:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3881,7 +3881,7 @@
      "end": "25:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "豆の塩ゆで",
