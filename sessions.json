@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/05 22:31",
- "checked": "2026/09/05 22:31",
+ "updated": "2026/09/06 00:01",
+ "checked": "2026/09/06 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -10,6 +10,12 @@
    "dates": [
     {
      "date": "2026-09-05",
+     "start": "21:00",
+     "end": "25:00",
+     "held": true
+    },
+    {
+     "date": "2027-09-05",
      "start": "21:00",
      "end": "25:00"
     }
@@ -3746,27 +3752,6 @@
    "source": "forum"
   },
   {
-   "scenario": "熊退治",
-   "reg": "フツウノアリアン",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-10",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "ななさか ときわ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1491112549503074465",
-   "created": "2026-04-07T16:28:55.333000+00:00",
-   "last_active": "2026-04-10",
-   "source": "forum"
-  },
-  {
    "scenario": "人を集めてGMを回すキャンペーン",
    "reg": "ライバー＆ラビリンス",
    "reg_is_name": false,
@@ -4205,6 +4190,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1500495087476674581",
    "created": "2026-05-03T13:51:46.705000+00:00",
    "last_active": "2026-05-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "熊退治",
+   "reg": "フツウノアリアン",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-10",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "ななさか ときわ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1491112549503074465",
+   "created": "2026-04-07T16:28:55.333000+00:00",
+   "last_active": "2026-04-10",
    "source": "forum"
   },
   {
