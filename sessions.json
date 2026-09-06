@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/07 00:01",
- "checked": "2026/09/07 00:01",
+ "updated": "2026/09/07 00:16",
+ "checked": "2026/09/07 00:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -213,7 +213,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1532056216828645578",
    "created": "2026-07-29T16:04:26.320000+00:00",
-   "last_active": "2026-09-06",
+   "last_active": "2026-09-07",
    "source": "forum"
   },
   {
@@ -306,27 +306,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540708067702997062",
    "created": "2026-08-22T13:03:48.312000+00:00",
-   "last_active": "2026-09-06",
-   "source": "forum"
-  },
-  {
-   "scenario": "スカイフォール アルフィオレの戦い",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-06",
-     "start": "13:00",
-     "end": "17:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1540714074298388570",
-   "created": "2026-08-22T13:27:40.396000+00:00",
    "last_active": "2026-09-06",
    "source": "forum"
   },
@@ -579,6 +558,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1544910098135253082",
    "created": "2026-09-03T03:21:10.437000+00:00",
    "last_active": "2026-09-05",
+   "source": "forum"
+  },
+  {
+   "scenario": "スカイフォール アルフィオレの戦い",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-06",
+     "start": "13:00",
+     "end": "17:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1540714074298388570",
+   "created": "2026-08-22T13:27:40.396000+00:00",
+   "last_active": "2026-09-06",
    "source": "forum"
   },
   {
