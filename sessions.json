@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/06 22:46",
- "checked": "2026/09/06 22:46",
+ "updated": "2026/09/07 00:01",
+ "checked": "2026/09/07 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3689,27 +3689,6 @@
    "source": "forum"
   },
   {
-   "scenario": "殺人スライム研究所",
-   "reg": "アンコールを流星に",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-15",
-     "start": null,
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1491802823694876743",
-   "created": "2026-04-09T14:11:49.525000+00:00",
-   "last_active": "2026-04-15",
-   "source": "forum"
-  },
-  {
    "scenario": "ランダン潜るだけ",
    "reg": "フツウノアリアン",
    "reg_is_name": false,
@@ -4190,6 +4169,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1500495087476674581",
    "created": "2026-05-03T13:51:46.705000+00:00",
    "last_active": "2026-05-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "殺人スライム研究所",
+   "reg": "アンコールを流星に",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-15",
+     "start": null,
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1491802823694876743",
+   "created": "2026-04-09T14:11:49.525000+00:00",
+   "last_active": "2026-04-15",
    "source": "forum"
   },
   {
