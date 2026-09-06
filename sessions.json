@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/07 06:31",
- "checked": "2026/09/07 06:31",
+ "updated": "2026/09/07 07:31",
+ "checked": "2026/09/07 07:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -28,6 +28,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1389898698703507527",
    "created": "2025-07-02T09:21:12.840000+00:00",
    "last_active": "2026-09-05",
+   "source": "forum"
+  },
+  {
+   "scenario": "修練:氷の申し子たち",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-27",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "Nn(エヌ)",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1495052336056369265",
+   "created": "2026-04-18T13:24:13.645000+00:00",
+   "last_active": "2026-04-27",
    "source": "forum"
   },
   {
@@ -3560,27 +3581,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1495793936793473025",
    "created": "2026-04-20T14:31:05.039000+00:00",
    "last_active": "2026-04-29",
-   "source": "forum"
-  },
-  {
-   "scenario": "修練:氷の申し子たち",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-27",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "Nn(エヌ)",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1495052336056369265",
-   "created": "2026-04-18T13:24:13.645000+00:00",
-   "last_active": "2026-04-27",
    "source": "forum"
   },
   {
