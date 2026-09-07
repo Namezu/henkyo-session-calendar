@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/07 19:46",
- "checked": "2026/09/07 19:46",
+ "updated": "2026/09/07 20:16",
+ "checked": "2026/09/07 20:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3786,9 +3786,25 @@
    "scenario": "出来ればキャンペにしたいダブルクロス",
    "reg": "ダブルクロス3rd",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-09-20",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-09-23",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-09-27",
+     "start": "21:00",
+     "end": null
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "一藻通",
    "gm_active": true,
