@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/08 22:46",
- "checked": "2026/09/08 22:46",
+ "updated": "2026/09/09 00:01",
+ "checked": "2026/09/09 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3614,27 +3614,6 @@
    "source": "forum"
   },
   {
-   "scenario": "Hail to you",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-22",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "水樹です",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1492189650750541884",
-   "created": "2026-04-10T15:48:56.282000+00:00",
-   "last_active": "2026-04-23",
-   "source": "forum"
-  },
-  {
    "scenario": "妖魔の砦",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -3694,27 +3673,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1492685365985808445",
    "created": "2026-04-12T00:38:44.004000+00:00",
-   "last_active": "2026-04-12",
-   "source": "forum"
-  },
-  {
-   "scenario": "跳ねる兎亭",
-   "reg": "ダンジョン・トラベラーズ",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-12",
-     "start": "9:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1492432510037000222",
-   "created": "2026-04-11T07:53:58.448000+00:00",
    "last_active": "2026-04-12",
    "source": "forum"
   },
@@ -4173,6 +4131,48 @@
    "url": "https://discord.com/channels/1001833522723561593/1500495087476674581",
    "created": "2026-05-03T13:51:46.705000+00:00",
    "last_active": "2026-05-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "Hail to you",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-22",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "水樹です",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1492189650750541884",
+   "created": "2026-04-10T15:48:56.282000+00:00",
+   "last_active": "2026-04-23",
+   "source": "forum"
+  },
+  {
+   "scenario": "跳ねる兎亭",
+   "reg": "ダンジョン・トラベラーズ",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-12",
+     "start": "9:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1492432510037000222",
+   "created": "2026-04-11T07:53:58.448000+00:00",
+   "last_active": "2026-04-12",
    "source": "forum"
   },
   {
