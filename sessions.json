@@ -1,29 +1,8 @@
 {
- "updated": "2026/09/08 14:01",
- "checked": "2026/09/08 17:01",
+ "updated": "2026/09/08 20:01",
+ "checked": "2026/09/08 20:01",
  "guild": "辺境TRPG村",
  "sessions": [
-  {
-   "scenario": "修練:氷の申し子たち",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-27",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "Nn(エヌ)",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1495052336056369265",
-   "created": "2026-04-18T13:24:13.645000+00:00",
-   "last_active": "2026-04-27",
-   "source": "forum"
-  },
   {
    "scenario": "帝国の玉座",
    "reg": "アンコールを流星に",
@@ -528,6 +507,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1546497594740441189",
    "created": "2026-09-07T12:29:19.122000+00:00",
    "last_active": "2026-09-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "修練:氷の申し子たち",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-27",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "Nn(エヌ)",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1495052336056369265",
+   "created": "2026-04-18T13:24:13.645000+00:00",
+   "last_active": "2026-04-27",
    "source": "forum"
   },
   {
