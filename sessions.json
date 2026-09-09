@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/09 23:16",
- "checked": "2026/09/09 23:16",
+ "updated": "2026/09/10 00:01",
+ "checked": "2026/09/10 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -101,7 +101,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1530245512157069373",
    "created": "2026-07-24T16:09:20.685000+00:00",
-   "last_active": "2026-09-07",
+   "last_active": "2026-09-09",
    "source": "forum"
   },
   {
@@ -3468,27 +3468,6 @@
    "source": "forum"
   },
   {
-   "scenario": "ピースメイカー",
-   "reg": null,
-   "reg_is_name": true,
-   "dates": [
-    {
-     "date": "2026-05-03",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "taku",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1492745393203839016",
-   "created": "2026-04-12T04:37:15.608000+00:00",
-   "last_active": "2026-05-03",
-   "source": "forum"
-  },
-  {
    "scenario": "オーバールーフ",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -3654,27 +3633,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1495280833718648983",
    "created": "2026-04-19T04:32:11.733000+00:00",
    "last_active": "2026-04-19",
-   "source": "forum"
-  },
-  {
-   "scenario": "ランダン潜るだけ",
-   "reg": "フツウノアリアン",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-12",
-     "start": "10:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1492685365985808445",
-   "created": "2026-04-12T00:38:44.004000+00:00",
-   "last_active": "2026-04-12",
    "source": "forum"
   },
   {
@@ -4132,6 +4090,48 @@
    "url": "https://discord.com/channels/1001833522723561593/1500495087476674581",
    "created": "2026-05-03T13:51:46.705000+00:00",
    "last_active": "2026-05-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "ピースメイカー",
+   "reg": null,
+   "reg_is_name": true,
+   "dates": [
+    {
+     "date": "2026-05-03",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1492745393203839016",
+   "created": "2026-04-12T04:37:15.608000+00:00",
+   "last_active": "2026-05-03",
+   "source": "forum"
+  },
+  {
+   "scenario": "ランダン潜るだけ",
+   "reg": "フツウノアリアン",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-12",
+     "start": "10:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1492685365985808445",
+   "created": "2026-04-12T00:38:44.004000+00:00",
+   "last_active": "2026-04-12",
    "source": "forum"
   },
   {
