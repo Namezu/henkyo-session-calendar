@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/10 15:16",
- "checked": "2026/09/10 15:16",
+ "updated": "2026/09/10 15:31",
+ "checked": "2026/09/10 15:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -228,7 +228,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹です",
+   "gm": "水樹",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540691795485135019",
    "created": "2026-08-22T11:59:08.713000+00:00",
@@ -452,7 +452,7 @@
    "open": false,
    "suriawase": true,
    "ongoing": false,
-   "gm": "水樹です",
+   "gm": "水樹",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1544377050432016516",
    "created": "2026-09-01T16:03:01.961000+00:00",
@@ -1304,7 +1304,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹です",
+   "gm": "水樹",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1525181090208157898",
    "created": "2026-07-10T16:45:08.400000+00:00",
