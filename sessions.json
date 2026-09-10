@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/10 23:31",
- "checked": "2026/09/10 23:31",
+ "updated": "2026/09/11 00:02",
+ "checked": "2026/09/11 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3180,27 +3180,6 @@
    "source": "forum"
   },
   {
-   "scenario": "氷原ハイキング！",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-11",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "Nn(エヌ)",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1492903272217055294",
-   "created": "2026-04-12T15:04:36.898000+00:00",
-   "last_active": "2026-05-11",
-   "source": "forum"
-  },
-  {
    "scenario": "ランダムダンジョン･ダブルシャドウズ",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -3345,27 +3324,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1495268363100749834",
    "created": "2026-04-19T03:42:38.506000+00:00",
    "last_active": "2026-05-08",
-   "source": "forum"
-  },
-  {
-   "scenario": "まさか左右の手を倒さないと本体に攻撃が効かないなんて！！～Ver.Peace Maker",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-06",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "むむこ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1492905891840921661",
-   "created": "2026-04-12T15:15:01.465000+00:00",
-   "last_active": "2026-05-06",
    "source": "forum"
   },
   {
@@ -4096,6 +4054,48 @@
    "url": "https://discord.com/channels/1001833522723561593/1500495087476674581",
    "created": "2026-05-03T13:51:46.705000+00:00",
    "last_active": "2026-05-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "氷原ハイキング！",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-11",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "Nn(エヌ)",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1492903272217055294",
+   "created": "2026-04-12T15:04:36.898000+00:00",
+   "last_active": "2026-05-11",
+   "source": "forum"
+  },
+  {
+   "scenario": "まさか左右の手を倒さないと本体に攻撃が効かないなんて！！～Ver.Peace Maker",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-06",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "むむこ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1492905891840921661",
+   "created": "2026-04-12T15:15:01.465000+00:00",
+   "last_active": "2026-05-06",
    "source": "forum"
   },
   {
