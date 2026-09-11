@@ -1,57 +1,8 @@
 {
- "updated": "2026/09/11 21:57",
- "checked": "2026/09/11 21:57",
+ "updated": "2026/09/11 22:46",
+ "checked": "2026/09/11 22:46",
  "guild": "辺境TRPG村",
  "sessions": [
-  {
-   "scenario": "帝国の玉座",
-   "reg": "アンコールを流星に",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-08-03",
-     "start": "21:00",
-     "end": null,
-     "held": true
-    },
-    {
-     "date": "2026-08-06",
-     "start": "21:00",
-     "end": null,
-     "held": true
-    },
-    {
-     "date": "2026-08-10",
-     "start": "21:00",
-     "end": null,
-     "held": true
-    },
-    {
-     "date": "2026-08-21",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-09-07",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-09-11",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カピだな",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1498278304875286559",
-   "created": "2026-04-27T11:03:04.547000+00:00",
-   "last_active": "2026-09-11",
-   "source": "forum"
-  },
   {
    "scenario": "陽だまりへ連れ出して",
    "reg": "アンコールを流星に",
@@ -524,6 +475,55 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1547628438888648775",
    "created": "2026-09-10T15:22:53.377000+00:00",
+   "last_active": "2026-09-11",
+   "source": "forum"
+  },
+  {
+   "scenario": "帝国の玉座",
+   "reg": "アンコールを流星に",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-08-03",
+     "start": "21:00",
+     "end": null,
+     "held": true
+    },
+    {
+     "date": "2026-08-06",
+     "start": "21:00",
+     "end": null,
+     "held": true
+    },
+    {
+     "date": "2026-08-10",
+     "start": "21:00",
+     "end": null,
+     "held": true
+    },
+    {
+     "date": "2026-08-21",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-09-07",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-09-11",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カピだな",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1498278304875286559",
+   "created": "2026-04-27T11:03:04.547000+00:00",
    "last_active": "2026-09-11",
    "source": "forum"
   },
