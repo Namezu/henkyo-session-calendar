@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/11 22:46",
- "checked": "2026/09/11 22:46",
+ "updated": "2026/09/11 23:31",
+ "checked": "2026/09/11 23:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -475,6 +475,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1547628438888648775",
    "created": "2026-09-10T15:22:53.377000+00:00",
+   "last_active": "2026-09-11",
+   "source": "forum"
+  },
+  {
+   "scenario": "幼子の暗殺者",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1547976361115648070",
+   "created": "2026-09-11T14:25:24.500000+00:00",
    "last_active": "2026-09-11",
    "source": "forum"
   },
