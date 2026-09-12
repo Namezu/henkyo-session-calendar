@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/12 23:16",
- "checked": "2026/09/12 23:16",
+ "updated": "2026/09/12 23:31",
+ "checked": "2026/09/12 23:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -454,6 +454,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1547628438888648775",
    "created": "2026-09-10T15:22:53.377000+00:00",
+   "last_active": "2026-09-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "冒険者屋敷",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-16",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1547806003268034651",
+   "created": "2026-09-11T03:08:28.024000+00:00",
    "last_active": "2026-09-12",
    "source": "forum"
   },
@@ -29272,12 +29293,6 @@
   }
  ],
  "unparsed": [
-  {
-   "title": "歓迎卓",
-   "url": "https://discord.com/channels/1001833522723561593/1547806003268034651",
-   "gm": "dabdab",
-   "open": false
-  },
   {
    "title": "10月以降調整　【アリアンストラテジーWS】1-1.門出",
    "url": "https://discord.com/channels/1001833522723561593/1540726956558000198",
