@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/12 18:46",
- "checked": "2026/09/12 18:46",
+ "updated": "2026/09/12 19:01",
+ "checked": "2026/09/12 19:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -499,7 +499,28 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1547981192467316926",
    "created": "2026-09-11T14:44:36.384000+00:00",
-   "last_active": "2026-09-11",
+   "last_active": "2026-09-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "シナリオから選んでね",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-21",
+     "start": "13:00",
+     "end": "18:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1548268795645141083",
+   "created": "2026-09-12T09:47:26.325000+00:00",
+   "last_active": "2026-09-12",
    "source": "forum"
   },
   {
