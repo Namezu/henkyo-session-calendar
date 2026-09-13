@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/13 13:01",
- "checked": "2026/09/13 13:01",
+ "updated": "2026/09/13 13:21",
+ "checked": "2026/09/13 13:21",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -105,7 +105,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1532056216828645578",
    "created": "2026-07-29T16:04:26.320000+00:00",
-   "last_active": "2026-09-10",
+   "last_active": "2026-09-13",
    "source": "forum"
   },
   {
@@ -530,7 +530,7 @@
    "source": "forum"
   },
   {
-   "scenario": "シナリオから選んでね",
+   "scenario": "異界の戦士～鉾の英雄＆戦場のアイドル",
    "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [
@@ -3288,7 +3288,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": null,
+   "gm": "dabdab",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1497881037882134559",
    "created": "2026-04-26T08:44:28.715000+00:00",
