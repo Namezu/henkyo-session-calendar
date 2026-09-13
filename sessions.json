@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/13 12:46",
- "checked": "2026/09/13 12:46",
+ "updated": "2026/09/13 13:01",
+ "checked": "2026/09/13 13:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3288,7 +3288,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "dabdab",
+   "gm": null,
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1497881037882134559",
    "created": "2026-04-26T08:44:28.715000+00:00",
