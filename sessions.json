@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/16 02:31",
- "checked": "2026/09/16 02:31",
+ "updated": "2026/09/16 03:01",
+ "checked": "2026/09/16 03:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -680,7 +680,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "Mizshiro",
+   "gm": null,
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1526554858289758330",
    "created": "2026-07-14T11:44:00.234000+00:00",
@@ -743,7 +743,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カテナドルグ",
+   "gm": null,
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540373088791957504",
    "created": "2026-08-21T14:52:43.116000+00:00",
