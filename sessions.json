@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/16 23:46",
- "checked": "2026/09/16 23:46",
+ "updated": "2026/09/17 00:01",
+ "checked": "2026/09/17 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3186,27 +3186,6 @@
    "source": "forum"
   },
   {
-   "scenario": "剣の宣誓",
-   "reg": "アンコールを流星に",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-15",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1495306598560567397",
-   "created": "2026-04-19T06:14:34.550000+00:00",
-   "last_active": "2026-05-15",
-   "source": "forum"
-  },
-  {
    "scenario": "スタンピード",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -3267,27 +3246,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1497881037882134559",
    "created": "2026-04-26T08:44:28.715000+00:00",
    "last_active": "2026-05-13",
-   "source": "forum"
-  },
-  {
-   "scenario": "ランダムダンジョン･ダブルシャドウズ",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-10",
-     "start": "13:00",
-     "end": "17:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1495315898364592128",
-   "created": "2026-04-19T06:51:31.796000+00:00",
-   "last_active": "2026-05-10",
    "source": "forum"
   },
   {
@@ -3375,48 +3333,6 @@
    "source": "forum"
   },
   {
-   "scenario": "蠢く草原の虚像",
-   "reg": "アンコールを流星に",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-08",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "peridotite",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1495282963766575124",
-   "created": "2026-04-19T04:40:39.576000+00:00",
-   "last_active": "2026-05-08",
-   "source": "forum"
-  },
-  {
-   "scenario": "時計塔の心臓は止まらない",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-07",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "タバーン",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1495268363100749834",
-   "created": "2026-04-19T03:42:38.506000+00:00",
-   "last_active": "2026-05-08",
-   "source": "forum"
-  },
-  {
    "scenario": "至高のコーヒーを求めて:木材改め薪木編",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -3434,27 +3350,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1501069173189771406",
    "created": "2026-05-05T03:52:59.405000+00:00",
-   "last_active": "2026-05-06",
-   "source": "forum"
-  },
-  {
-   "scenario": "依頼板の向こう側",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-05",
-     "start": "22:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1495283093492469830",
-   "created": "2026-04-19T04:41:10.505000+00:00",
    "last_active": "2026-05-06",
    "source": "forum"
   },
@@ -3561,69 +3456,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1495793936793473025",
    "created": "2026-04-20T14:31:05.039000+00:00",
    "last_active": "2026-04-29",
-   "source": "forum"
-  },
-  {
-   "scenario": "ミルク業者の護衛",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-24",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1495274631236423781",
-   "created": "2026-04-19T04:07:32.946000+00:00",
-   "last_active": "2026-04-24",
-   "source": "forum"
-  },
-  {
-   "scenario": "妖魔の砦",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-26",
-     "start": "13:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カピ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1495438068633702451",
-   "created": "2026-04-19T14:56:59.458000+00:00",
-   "last_active": "2026-04-22",
-   "source": "forum"
-  },
-  {
-   "scenario": "猛る草原の巨象",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-19",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "peridotite",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1495280833718648983",
-   "created": "2026-04-19T04:32:11.733000+00:00",
-   "last_active": "2026-04-19",
    "source": "forum"
   },
   {
@@ -4107,6 +3939,174 @@
    "url": "https://discord.com/channels/1001833522723561593/1500495087476674581",
    "created": "2026-05-03T13:51:46.705000+00:00",
    "last_active": "2026-05-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "剣の宣誓",
+   "reg": "アンコールを流星に",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-15",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1495306598560567397",
+   "created": "2026-04-19T06:14:34.550000+00:00",
+   "last_active": "2026-05-15",
+   "source": "forum"
+  },
+  {
+   "scenario": "ランダムダンジョン･ダブルシャドウズ",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-10",
+     "start": "13:00",
+     "end": "17:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1495315898364592128",
+   "created": "2026-04-19T06:51:31.796000+00:00",
+   "last_active": "2026-05-10",
+   "source": "forum"
+  },
+  {
+   "scenario": "蠢く草原の虚像",
+   "reg": "アンコールを流星に",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-08",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridotite",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1495282963766575124",
+   "created": "2026-04-19T04:40:39.576000+00:00",
+   "last_active": "2026-05-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "時計塔の心臓は止まらない",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-07",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "タバーン",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1495268363100749834",
+   "created": "2026-04-19T03:42:38.506000+00:00",
+   "last_active": "2026-05-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "依頼板の向こう側",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-05",
+     "start": "22:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1495283093492469830",
+   "created": "2026-04-19T04:41:10.505000+00:00",
+   "last_active": "2026-05-06",
+   "source": "forum"
+  },
+  {
+   "scenario": "ミルク業者の護衛",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-24",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1495274631236423781",
+   "created": "2026-04-19T04:07:32.946000+00:00",
+   "last_active": "2026-04-24",
+   "source": "forum"
+  },
+  {
+   "scenario": "妖魔の砦",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-26",
+     "start": "13:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カピ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1495438068633702451",
+   "created": "2026-04-19T14:56:59.458000+00:00",
+   "last_active": "2026-04-22",
+   "source": "forum"
+  },
+  {
+   "scenario": "猛る草原の巨象",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-19",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridotite",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1495280833718648983",
+   "created": "2026-04-19T04:32:11.733000+00:00",
+   "last_active": "2026-04-19",
    "source": "forum"
   },
   {
