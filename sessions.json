@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/17 20:09",
- "checked": "2026/09/17 20:09",
+ "updated": "2026/09/17 20:16",
+ "checked": "2026/09/17 20:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -205,27 +205,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1541693429866569819",
    "created": "2026-08-25T06:19:16.959000+00:00",
    "last_active": "2026-09-14",
-   "source": "forum"
-  },
-  {
-   "scenario": "精霊に愛される少女 第二陣",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-16",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "reiran",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1541773954325282830",
-   "created": "2026-08-25T11:39:15.486000+00:00",
-   "last_active": "2026-09-16",
    "source": "forum"
   },
   {
@@ -522,6 +501,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1548268795645141083",
    "created": "2026-09-12T09:47:26.325000+00:00",
    "last_active": "2026-09-13",
+   "source": "forum"
+  },
+  {
+   "scenario": "精霊に愛される少女 第二陣",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-16",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1541773954325282830",
+   "created": "2026-08-25T11:39:15.486000+00:00",
+   "last_active": "2026-09-16",
    "source": "forum"
   },
   {
