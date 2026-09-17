@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/17 09:01",
- "checked": "2026/09/17 09:01",
+ "updated": "2026/09/17 09:16",
+ "checked": "2026/09/17 09:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -293,7 +293,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1542136832744099890",
    "created": "2026-08-26T11:41:12.443000+00:00",
-   "last_active": "2026-09-15",
+   "last_active": "2026-09-17",
    "source": "forum"
   },
   {
@@ -453,27 +453,6 @@
    "source": "forum"
   },
   {
-   "scenario": "冒険者屋敷",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-16",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1547806003268034651",
-   "created": "2026-09-11T03:08:28.024000+00:00",
-   "last_active": "2026-09-17",
-   "source": "forum"
-  },
-  {
    "scenario": "幼子の暗殺者",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -543,6 +522,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1548268795645141083",
    "created": "2026-09-12T09:47:26.325000+00:00",
    "last_active": "2026-09-13",
+   "source": "forum"
+  },
+  {
+   "scenario": "冒険者屋敷",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-16",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1547806003268034651",
+   "created": "2026-09-11T03:08:28.024000+00:00",
+   "last_active": "2026-09-17",
    "source": "forum"
   },
   {
