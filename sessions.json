@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/18 09:46",
- "checked": "2026/09/18 12:46",
+ "updated": "2026/09/18 13:31",
+ "checked": "2026/09/18 13:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -450,6 +450,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1548268795645141083",
    "created": "2026-09-12T09:47:26.325000+00:00",
    "last_active": "2026-09-13",
+   "source": "forum"
+  },
+  {
+   "scenario": "沈黙は金、雄弁は…",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-21",
+     "start": "14:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridotite",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1550179816072806560",
+   "created": "2026-09-17T16:21:09.100000+00:00",
+   "last_active": "2026-09-18",
    "source": "forum"
   },
   {
@@ -29300,12 +29321,6 @@
   }
  ],
  "unparsed": [
-  {
-   "title": "シルバーウィークのどっか 【ミスリルクレスト】沈黙は金、雄弁は…",
-   "url": "https://discord.com/channels/1001833522723561593/1550179816072806560",
-   "gm": "peridotite",
-   "open": true
-  },
   {
    "title": "10月以降調整　【アリアンストラテジーWS】1-1.門出",
    "url": "https://discord.com/channels/1001833522723561593/1540726956558000198",
