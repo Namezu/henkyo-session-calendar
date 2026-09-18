@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/19 00:16",
- "checked": "2026/09/19 00:16",
+ "updated": "2026/09/19 00:46",
+ "checked": "2026/09/19 00:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -37,45 +37,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1531286994582245466",
    "created": "2026-07-27T13:07:49.445000+00:00",
    "last_active": "2026-09-13",
-   "source": "forum"
-  },
-  {
-   "scenario": "四種混合TRPG",
-   "reg": "アリアンロッド2E",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-08",
-     "start": "21:00",
-     "end": null,
-     "held": true
-    },
-    {
-     "date": "2026-09-09",
-     "start": "21:00",
-     "end": null,
-     "held": true
-    },
-    {
-     "date": "2026-09-13",
-     "start": "21:00",
-     "end": null,
-     "held": true
-    },
-    {
-     "date": "2026-09-18",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "peridot",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1532056216828645578",
-   "created": "2026-07-29T16:04:26.320000+00:00",
-   "last_active": "2026-09-19",
    "source": "forum"
   },
   {
@@ -471,6 +432,45 @@
    "url": "https://discord.com/channels/1001833522723561593/1550179816072806560",
    "created": "2026-09-17T16:21:09.100000+00:00",
    "last_active": "2026-09-18",
+   "source": "forum"
+  },
+  {
+   "scenario": "四種混合TRPG",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-08",
+     "start": "21:00",
+     "end": null,
+     "held": true
+    },
+    {
+     "date": "2026-09-09",
+     "start": "21:00",
+     "end": null,
+     "held": true
+    },
+    {
+     "date": "2026-09-13",
+     "start": "21:00",
+     "end": null,
+     "held": true
+    },
+    {
+     "date": "2026-09-18",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1532056216828645578",
+   "created": "2026-07-29T16:04:26.320000+00:00",
+   "last_active": "2026-09-19",
    "source": "forum"
   },
   {
@@ -1542,7 +1542,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通",
+   "gm": "一藻通(いつもどおり)",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1524054784431095838",
    "created": "2026-07-07T14:09:36.177000+00:00",
@@ -1647,7 +1647,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通",
+   "gm": "一藻通(いつもどおり)",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1524064295493697647",
    "created": "2026-07-07T14:47:23.791000+00:00",
@@ -2628,7 +2628,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通",
+   "gm": "一藻通(いつもどおり)",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1508062503538790520",
    "created": "2026-05-24T11:01:59.290000+00:00",
@@ -3347,7 +3347,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通",
+   "gm": "一藻通(いつもどおり)",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1498712559694647468",
    "created": "2026-04-28T15:48:38.964000+00:00",
@@ -3588,11 +3588,11 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通",
+   "gm": "一藻通(いつもどおり)",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1536341101936648293",
    "created": "2026-08-10T11:51:02.539000+00:00",
-   "last_active": "2026-09-18",
+   "last_active": "2026-09-19",
    "source": "forum"
   },
   {
