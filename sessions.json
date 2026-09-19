@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/19 23:01",
- "checked": "2026/09/19 23:01",
+ "updated": "2026/09/19 23:16",
+ "checked": "2026/09/19 23:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -285,27 +285,6 @@
    "source": "forum"
   },
   {
-   "scenario": "暗躍する魔術師",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-05",
-     "start": "14:00",
-     "end": "17:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1543584286073036941",
-   "created": "2026-08-30T11:32:52.209000+00:00",
-   "last_active": "2026-09-05",
-   "source": "forum"
-  },
-  {
    "scenario": "一輪の先に咲く約束",
    "reg": "氷原開拓団",
    "reg_is_name": false,
@@ -546,6 +525,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1550862634696319027",
    "created": "2026-09-19T13:34:25.746000+00:00",
    "last_active": "2026-09-19",
+   "source": "forum"
+  },
+  {
+   "scenario": "暗躍する魔術師",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-05",
+     "start": "14:00",
+     "end": "17:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1543584286073036941",
+   "created": "2026-08-30T11:32:52.209000+00:00",
+   "last_active": "2026-09-05",
    "source": "forum"
   },
   {
