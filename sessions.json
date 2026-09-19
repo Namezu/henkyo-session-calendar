@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/20 01:46",
- "checked": "2026/09/20 01:46",
+ "updated": "2026/09/20 03:01",
+ "checked": "2026/09/20 03:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -525,6 +525,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1550862634696319027",
    "created": "2026-09-19T13:34:25.746000+00:00",
    "last_active": "2026-09-19",
+   "source": "forum"
+  },
+  {
+   "scenario": "女王様Hardテストプレイ",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-20",
+     "start": "20:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1550928996508770314",
+   "created": "2026-09-19T17:58:07.635000+00:00",
+   "last_active": "2026-09-20",
    "source": "forum"
   },
   {
