@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/19 21:01",
- "checked": "2026/09/19 21:01",
+ "updated": "2026/09/19 22:26",
+ "checked": "2026/09/19 22:26",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -78,7 +78,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1532167123172987080",
    "created": "2026-07-29T23:25:08.453000+00:00",
-   "last_active": "2026-09-12",
+   "last_active": "2026-09-19",
    "source": "forum"
   },
   {
@@ -452,6 +452,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1550179816072806560",
    "created": "2026-09-17T16:21:09.100000+00:00",
+   "last_active": "2026-09-19",
+   "source": "forum"
+  },
+  {
+   "scenario": "宇宙からの侵略者！？",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-20",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1550859526574706810",
+   "created": "2026-09-19T13:22:04.712000+00:00",
    "last_active": "2026-09-19",
    "source": "forum"
   },
