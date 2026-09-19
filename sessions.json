@@ -1,8 +1,29 @@
 {
- "updated": "2026/09/19 13:01",
- "checked": "2026/09/19 13:01",
+ "updated": "2026/09/19 13:46",
+ "checked": "2026/09/19 13:46",
  "guild": "辺境TRPG村",
  "sessions": [
+  {
+   "scenario": "一期一会CP",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-27",
+     "start": "13:00",
+     "end": "17:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": true,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1389898698703507527",
+   "created": "2025-07-02T09:21:12.840000+00:00",
+   "last_active": "2026-09-19",
+   "source": "forum"
+  },
   {
    "scenario": "冥界直通！超弩級爆走轢殺列車現る",
    "reg": "アリアンロッド2E",
