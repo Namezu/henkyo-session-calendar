@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/21 02:01",
- "checked": "2026/09/21 02:01",
+ "updated": "2026/09/21 02:16",
+ "checked": "2026/09/21 02:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -539,6 +539,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551248244988837948",
    "created": "2026-09-20T15:06:42.404000+00:00",
+   "last_active": "2026-09-21",
+   "source": "forum"
+  },
+  {
+   "scenario": "鐘を鳴らして",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1551278369952501761",
+   "created": "2026-09-20T17:06:24.755000+00:00",
    "last_active": "2026-09-21",
    "source": "forum"
   },
