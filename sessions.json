@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/20 23:46",
- "checked": "2026/09/20 23:46",
+ "updated": "2026/09/21 00:01",
+ "checked": "2026/09/21 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -21,7 +21,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1389898698703507527",
    "created": "2025-07-02T09:21:12.840000+00:00",
-   "last_active": "2026-09-19",
+   "last_active": "2026-09-20",
    "source": "forum"
   },
   {
@@ -36,7 +36,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1531286994582245466",
    "created": "2026-07-27T13:07:49.445000+00:00",
-   "last_active": "2026-09-13",
+   "last_active": "2026-09-20",
    "source": "forum"
   },
   {
@@ -450,27 +450,6 @@
    "source": "forum"
   },
   {
-   "scenario": "宇宙からの侵略者！？",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-20",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1550859526574706810",
-   "created": "2026-09-19T13:22:04.712000+00:00",
-   "last_active": "2026-09-20",
-   "source": "forum"
-  },
-  {
    "scenario": "幻の空中庭園（難易度選択制）",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -518,6 +497,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551203926634791113",
    "created": "2026-09-20T12:10:36.085000+00:00",
+   "last_active": "2026-09-20",
+   "source": "forum"
+  },
+  {
+   "scenario": "宇宙からの侵略者！？",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-20",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1550859526574706810",
+   "created": "2026-09-19T13:22:04.712000+00:00",
    "last_active": "2026-09-20",
    "source": "forum"
   },
