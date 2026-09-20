@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/20 19:46",
- "checked": "2026/09/20 19:46",
+ "updated": "2026/09/20 21:16",
+ "checked": "2026/09/20 21:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -545,6 +545,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1550928996508770314",
    "created": "2026-09-19T17:58:07.635000+00:00",
+   "last_active": "2026-09-20",
+   "source": "forum"
+  },
+  {
+   "scenario": "シナリオ名未定",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1551203926634791113",
+   "created": "2026-09-20T12:10:36.085000+00:00",
    "last_active": "2026-09-20",
    "source": "forum"
   },
