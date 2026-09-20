@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/20 22:31",
- "checked": "2026/09/20 22:31",
+ "updated": "2026/09/20 23:31",
+ "checked": "2026/09/20 23:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -429,27 +429,6 @@
    "source": "forum"
   },
   {
-   "scenario": "異界の戦士～鉾の英雄＆戦場のアイドル",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-21",
-     "start": "13:00",
-     "end": "18:00"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "taku",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1548268795645141083",
-   "created": "2026-09-12T09:47:26.325000+00:00",
-   "last_active": "2026-09-20",
-   "source": "forum"
-  },
-  {
    "scenario": "沈黙は金、雄弁は…",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -539,6 +518,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551203926634791113",
    "created": "2026-09-20T12:10:36.085000+00:00",
+   "last_active": "2026-09-20",
+   "source": "forum"
+  },
+  {
+   "scenario": "異界の戦士～鉾の英雄＆戦場のアイドル",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-21",
+     "start": "13:00",
+     "end": "18:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1548268795645141083",
+   "created": "2026-09-12T09:47:26.325000+00:00",
    "last_active": "2026-09-20",
    "source": "forum"
   },
