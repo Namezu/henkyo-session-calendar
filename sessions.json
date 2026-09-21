@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/22 03:31",
- "checked": "2026/09/22 03:31",
+ "updated": "2026/09/22 03:43",
+ "checked": "2026/09/22 03:43",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3560,7 +3560,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "タバーン",
+   "gm": null,
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1498305912497242213",
    "created": "2026-04-27T12:52:46.717000+00:00",
