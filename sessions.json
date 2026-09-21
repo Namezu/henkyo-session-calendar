@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/22 00:31",
- "checked": "2026/09/22 00:31",
+ "updated": "2026/09/22 00:46",
+ "checked": "2026/09/22 00:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -21,7 +21,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1389898698703507527",
    "created": "2025-07-02T09:21:12.840000+00:00",
-   "last_active": "2026-09-20",
+   "last_active": "2026-09-22",
    "source": "forum"
   },
   {
@@ -73,27 +73,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1533847306410004540",
    "created": "2026-08-03T14:41:35.353000+00:00",
    "last_active": "2026-09-20",
-   "source": "forum"
-  },
-  {
-   "scenario": "神速剣客一番勝負",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-21",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "水樹です",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1540691795485135019",
-   "created": "2026-08-22T11:59:08.713000+00:00",
-   "last_active": "2026-09-21",
    "source": "forum"
   },
   {
@@ -404,7 +383,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1547981192467316926",
    "created": "2026-09-11T14:44:36.384000+00:00",
-   "last_active": "2026-09-21",
+   "last_active": "2026-09-22",
    "source": "forum"
   },
   {
@@ -476,7 +455,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551248244988837948",
    "created": "2026-09-20T15:06:42.404000+00:00",
-   "last_active": "2026-09-21",
+   "last_active": "2026-09-22",
    "source": "forum"
   },
   {
@@ -491,6 +470,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551278369952501761",
    "created": "2026-09-20T17:06:24.755000+00:00",
+   "last_active": "2026-09-21",
+   "source": "forum"
+  },
+  {
+   "scenario": "神速剣客一番勝負",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-21",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "水樹です",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1540691795485135019",
+   "created": "2026-08-22T11:59:08.713000+00:00",
    "last_active": "2026-09-21",
    "source": "forum"
   },
@@ -3737,7 +3737,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1536341101936648293",
    "created": "2026-08-10T11:51:02.539000+00:00",
-   "last_active": "2026-09-21",
+   "last_active": "2026-09-22",
    "source": "forum"
   },
   {
