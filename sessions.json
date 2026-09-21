@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/21 09:16",
- "checked": "2026/09/21 09:16",
+ "updated": "2026/09/21 09:31",
+ "checked": "2026/09/21 09:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -29,14 +29,14 @@
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "カテナドルグ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1531286994582245466",
    "created": "2026-07-27T13:07:49.445000+00:00",
-   "last_active": "2026-09-20",
+   "last_active": "2026-09-21",
    "source": "forum"
   },
   {
