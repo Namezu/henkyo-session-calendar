@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/21 22:46",
- "checked": "2026/09/21 22:46",
+ "updated": "2026/09/22 00:01",
+ "checked": "2026/09/22 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3337,27 +3337,6 @@
    "source": "forum"
   },
   {
-   "scenario": "シャークに障る癪な鮫",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-19",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1496890571812507738",
-   "created": "2026-04-23T15:08:43.202000+00:00",
-   "last_active": "2026-05-19",
-   "source": "forum"
-  },
-  {
    "scenario": "城壁に潜む魔獣",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -3460,27 +3439,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1497881037882134559",
    "created": "2026-04-26T08:44:28.715000+00:00",
    "last_active": "2026-05-13",
-   "source": "forum"
-  },
-  {
-   "scenario": "シャークに障る癪な鮫",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-09",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1496889465099128944",
-   "created": "2026-04-23T15:04:19.341000+00:00",
-   "last_active": "2026-05-09",
    "source": "forum"
   },
   {
@@ -4127,6 +4085,48 @@
    "url": "https://discord.com/channels/1001833522723561593/1500495087476674581",
    "created": "2026-05-03T13:51:46.705000+00:00",
    "last_active": "2026-05-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "シャークに障る癪な鮫",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-19",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1496890571812507738",
+   "created": "2026-04-23T15:08:43.202000+00:00",
+   "last_active": "2026-05-19",
+   "source": "forum"
+  },
+  {
+   "scenario": "シャークに障る癪な鮫",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-09",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1496889465099128944",
+   "created": "2026-04-23T15:04:19.341000+00:00",
+   "last_active": "2026-05-09",
    "source": "forum"
   },
   {
