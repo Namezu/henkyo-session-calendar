@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/22 20:31",
- "checked": "2026/09/22 20:31",
+ "updated": "2026/09/22 21:31",
+ "checked": "2026/09/22 21:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -506,6 +506,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551891970295599144",
    "created": "2026-09-22T09:44:38.477000+00:00",
+   "last_active": "2026-09-22",
+   "source": "forum"
+  },
+  {
+   "scenario": "グランフェルデンの大冒険、ちょっとフシギな夢幻迷宮",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-22",
+     "start": "22:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1551931115734835330",
+   "created": "2026-09-22T12:20:11.477000+00:00",
    "last_active": "2026-09-22",
    "source": "forum"
   },
