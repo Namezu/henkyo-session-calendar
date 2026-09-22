@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/22 23:16",
- "checked": "2026/09/22 23:16",
+ "updated": "2026/09/23 00:01",
+ "checked": "2026/09/23 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -1707,7 +1707,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹",
+   "gm": null,
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1525181090208157898",
    "created": "2026-07-10T16:45:08.400000+00:00",
@@ -3667,27 +3667,6 @@
    "source": "forum"
   },
   {
-   "scenario": "酒場の地下のなにか",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-04-30",
-     "start": null,
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "タバーン",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1497277236540215477",
-   "created": "2026-04-24T16:45:11.257000+00:00",
-   "last_active": "2026-05-01",
-   "source": "forum"
-  },
-  {
    "scenario": "人を集めてGMを回すキャンペーン",
    "reg": "ライバー＆ラビリンス",
    "reg_is_name": false,
@@ -4172,6 +4151,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1500495087476674581",
    "created": "2026-05-03T13:51:46.705000+00:00",
    "last_active": "2026-05-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "酒場の地下のなにか",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-04-30",
+     "start": null,
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "タバーン",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1497277236540215477",
+   "created": "2026-04-24T16:45:11.257000+00:00",
+   "last_active": "2026-05-01",
    "source": "forum"
   },
   {
