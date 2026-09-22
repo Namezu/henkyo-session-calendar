@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/22 14:16",
- "checked": "2026/09/22 14:16",
+ "updated": "2026/09/22 15:46",
+ "checked": "2026/09/22 15:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -471,6 +471,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1551278369952501761",
    "created": "2026-09-20T17:06:24.755000+00:00",
    "last_active": "2026-09-21",
+   "source": "forum"
+  },
+  {
+   "scenario": "はじめてのぴーすめいかー2",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": false,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1551845658867011595",
+   "created": "2026-09-22T06:40:36.972000+00:00",
+   "last_active": "2026-09-22",
    "source": "forum"
   },
   {
