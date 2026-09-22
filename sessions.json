@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/22 17:46",
- "checked": "2026/09/22 17:46",
+ "updated": "2026/09/22 18:01",
+ "checked": "2026/09/22 18:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -438,27 +438,6 @@
    "source": "forum"
   },
   {
-   "scenario": "世紀末砂漠",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-22",
-     "start": "14:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1551248244988837948",
-   "created": "2026-09-20T15:06:42.404000+00:00",
-   "last_active": "2026-09-22",
-   "source": "forum"
-  },
-  {
    "scenario": "鐘を鳴らして",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -485,6 +464,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551845658867011595",
    "created": "2026-09-22T06:40:36.972000+00:00",
+   "last_active": "2026-09-22",
+   "source": "forum"
+  },
+  {
+   "scenario": "世紀末砂漠",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-22",
+     "start": "14:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1551248244988837948",
+   "created": "2026-09-20T15:06:42.404000+00:00",
    "last_active": "2026-09-22",
    "source": "forum"
   },
