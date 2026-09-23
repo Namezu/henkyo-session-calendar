@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/23 17:31",
- "checked": "2026/09/23 17:31",
+ "updated": "2026/09/23 18:31",
+ "checked": "2026/09/23 18:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -130,27 +130,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1541693429866569819",
    "created": "2026-08-25T06:19:16.959000+00:00",
    "last_active": "2026-09-21",
-   "source": "forum"
-  },
-  {
-   "scenario": "精霊に愛される少女 第三陣",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-22",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "reiran",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1541773962269433907",
-   "created": "2026-08-25T11:39:17.380000+00:00",
-   "last_active": "2026-09-22",
    "source": "forum"
   },
   {
@@ -417,27 +396,6 @@
    "source": "forum"
   },
   {
-   "scenario": "死せるポメロ生ける村人を震わす",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-23",
-     "start": "14:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1551247534771404880",
-   "created": "2026-09-20T15:03:53.075000+00:00",
-   "last_active": "2026-09-23",
-   "source": "forum"
-  },
-  {
    "scenario": "鐘を鳴らして",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -527,6 +485,48 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1552139442238525451",
    "created": "2026-09-23T02:08:00.386000+00:00",
+   "last_active": "2026-09-23",
+   "source": "forum"
+  },
+  {
+   "scenario": "精霊に愛される少女 第三陣",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-22",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1541773962269433907",
+   "created": "2026-08-25T11:39:17.380000+00:00",
+   "last_active": "2026-09-22",
+   "source": "forum"
+  },
+  {
+   "scenario": "死せるポメロ生ける村人を震わす",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-23",
+     "start": "14:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1551247534771404880",
+   "created": "2026-09-20T15:03:53.075000+00:00",
    "last_active": "2026-09-23",
    "source": "forum"
   },
