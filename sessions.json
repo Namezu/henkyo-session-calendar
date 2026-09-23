@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/23 23:31",
- "checked": "2026/09/23 23:31",
+ "updated": "2026/09/24 00:01",
+ "checked": "2026/09/24 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3074,27 +3074,6 @@
    "source": "forum"
   },
   {
-   "scenario": "邪竜が羽ばたくその前に",
-   "reg": "アンコールを流星に",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-05",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "タバーン",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1497912549532897350",
-   "created": "2026-04-26T10:49:41.678000+00:00",
-   "last_active": "2026-06-05",
-   "source": "forum"
-  },
-  {
    "scenario": "変な砦",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -3394,27 +3373,6 @@
    "source": "forum"
   },
   {
-   "scenario": "依頼板の向こう側",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-16",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1497895706852200478",
-   "created": "2026-04-26T09:42:46.070000+00:00",
-   "last_active": "2026-05-17",
-   "source": "forum"
-  },
-  {
    "scenario": "不思議の錬金術師",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -3517,27 +3475,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1499772847214821556",
    "created": "2026-05-01T14:01:51.208000+00:00",
    "last_active": "2026-05-14",
-   "source": "forum"
-  },
-  {
-   "scenario": "至高のコーヒーを求めて:湧き水編",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-12",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1497881037882134559",
-   "created": "2026-04-26T08:44:28.715000+00:00",
-   "last_active": "2026-05-13",
    "source": "forum"
   },
   {
@@ -4172,6 +4109,69 @@
    "url": "https://discord.com/channels/1001833522723561593/1500495087476674581",
    "created": "2026-05-03T13:51:46.705000+00:00",
    "last_active": "2026-05-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "邪竜が羽ばたくその前に",
+   "reg": "アンコールを流星に",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-05",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "タバーン",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1497912549532897350",
+   "created": "2026-04-26T10:49:41.678000+00:00",
+   "last_active": "2026-06-05",
+   "source": "forum"
+  },
+  {
+   "scenario": "依頼板の向こう側",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-16",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1497895706852200478",
+   "created": "2026-04-26T09:42:46.070000+00:00",
+   "last_active": "2026-05-17",
+   "source": "forum"
+  },
+  {
+   "scenario": "至高のコーヒーを求めて:湧き水編",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-12",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1497881037882134559",
+   "created": "2026-04-26T08:44:28.715000+00:00",
+   "last_active": "2026-05-13",
    "source": "forum"
   },
   {
