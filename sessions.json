@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/23 11:01",
- "checked": "2026/09/23 11:01",
+ "updated": "2026/09/23 11:16",
+ "checked": "2026/09/23 11:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -507,6 +507,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1551891970295599144",
    "created": "2026-09-22T09:44:38.477000+00:00",
    "last_active": "2026-09-22",
+   "source": "forum"
+  },
+  {
+   "scenario": "黄金竜の逆襲",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-23",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1552139442238525451",
+   "created": "2026-09-23T02:08:00.386000+00:00",
+   "last_active": "2026-09-23",
    "source": "forum"
   },
   {
