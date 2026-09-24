@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/24 20:31",
- "checked": "2026/09/24 20:31",
+ "updated": "2026/09/24 20:46",
+ "checked": "2026/09/24 20:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -422,7 +422,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551887717674127390",
    "created": "2026-09-22T09:27:44.573000+00:00",
-   "last_active": "2026-09-23",
+   "last_active": "2026-09-24",
    "source": "forum"
   },
   {
@@ -443,6 +443,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551891970295599144",
    "created": "2026-09-22T09:44:38.477000+00:00",
+   "last_active": "2026-09-24",
+   "source": "forum"
+  },
+  {
+   "scenario": "遺跡探索",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-29",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1552643941936013363",
+   "created": "2026-09-24T11:32:42.487000+00:00",
    "last_active": "2026-09-24",
    "source": "forum"
   },
