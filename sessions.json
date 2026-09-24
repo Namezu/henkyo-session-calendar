@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/25 00:01",
- "checked": "2026/09/25 00:01",
+ "updated": "2026/09/25 00:16",
+ "checked": "2026/09/25 00:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -87,7 +87,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540708067702997062",
    "created": "2026-08-22T13:03:48.312000+00:00",
-   "last_active": "2026-09-24",
+   "last_active": "2026-09-25",
    "source": "forum"
   },
   {
@@ -290,7 +290,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1547628438888648775",
    "created": "2026-09-10T15:22:53.377000+00:00",
-   "last_active": "2026-09-24",
+   "last_active": "2026-09-25",
    "source": "forum"
   },
   {
@@ -394,14 +394,14 @@
    "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "よし/やっぴー",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551845658867011595",
    "created": "2026-09-22T06:40:36.972000+00:00",
-   "last_active": "2026-09-24",
+   "last_active": "2026-09-25",
    "source": "forum"
   },
   {
