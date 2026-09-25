@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/25 21:16",
- "checked": "2026/09/25 21:16",
+ "updated": "2026/09/25 22:01",
+ "checked": "2026/09/25 22:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -345,12 +345,18 @@
    "source": "forum"
   },
   {
-   "scenario": "幻の空中庭園（難易度選択制）",
+   "scenario": "幻の空中庭園 （通常難易度）",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-10-09",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "dabdab",
    "gm_active": true,
@@ -491,6 +497,48 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1552844952386670612",
    "created": "2026-09-25T00:51:27.113000+00:00",
+   "last_active": "2026-09-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "幻の空中庭園 （高難易度1）",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-04",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1553027840465702972",
+   "created": "2026-09-25T12:58:11.029000+00:00",
+   "last_active": "2026-09-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "幻の空中庭園 （高難易度2）",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-13",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1553027849253036135",
+   "created": "2026-09-25T12:58:13.124000+00:00",
    "last_active": "2026-09-25",
    "source": "forum"
   },
