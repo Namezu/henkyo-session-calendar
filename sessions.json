@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/25 22:01",
- "checked": "2026/09/25 22:01",
+ "updated": "2026/09/26 00:01",
+ "checked": "2026/09/26 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3276,27 +3276,6 @@
    "source": "forum"
   },
   {
-   "scenario": "月は誰の夢を見る",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-25",
-     "start": "21:00",
-     "end": "24:30"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1498642914450866266",
-   "created": "2026-04-28T11:11:54.244000+00:00",
-   "last_active": "2026-05-26",
-   "source": "forum"
-  },
-  {
    "scenario": "迷惑な庭",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -3780,22 +3759,40 @@
     {
      "date": "2026-09-02",
      "start": "21:00",
-     "end": "25:00"
+     "end": "25:00",
+     "held": true
     },
     {
      "date": "2026-09-04",
      "start": "21:00",
-     "end": "25:00"
+     "end": "25:00",
+     "held": true
     },
     {
      "date": "2026-09-14",
+     "start": "21:00",
+     "end": "25:00",
+     "held": true
+    },
+    {
+     "date": "2027-09-02",
+     "start": "21:00",
+     "end": "25:00"
+    },
+    {
+     "date": "2027-09-04",
+     "start": "21:00",
+     "end": "25:00"
+    },
+    {
+     "date": "2027-09-14",
      "start": "21:00",
      "end": "25:00"
     }
    ],
    "open": false,
    "suriawase": false,
-   "ongoing": false,
+   "ongoing": true,
    "gm": "豆の塩ゆで",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1531650575111028736",
@@ -4117,6 +4114,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1500495087476674581",
    "created": "2026-05-03T13:51:46.705000+00:00",
    "last_active": "2026-05-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "月は誰の夢を見る",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-25",
+     "start": "21:00",
+     "end": "24:30"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1498642914450866266",
+   "created": "2026-04-28T11:11:54.244000+00:00",
+   "last_active": "2026-05-26",
    "source": "forum"
   },
   {
