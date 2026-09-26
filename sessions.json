@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/26 21:16",
- "checked": "2026/09/26 21:16",
+ "updated": "2026/09/26 21:46",
+ "checked": "2026/09/26 21:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -497,6 +497,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1553027849253036135",
    "created": "2026-09-25T12:58:13.124000+00:00",
+   "last_active": "2026-09-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "なにかする",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-26",
+     "start": "22:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1553383292370165830",
+   "created": "2026-09-26T12:30:37.367000+00:00",
    "last_active": "2026-09-26",
    "source": "forum"
   },
