@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/27 22:46",
- "checked": "2026/09/27 22:46",
+ "updated": "2026/09/28 00:01",
+ "checked": "2026/09/28 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3380,32 +3380,6 @@
    "source": "forum"
   },
   {
-   "scenario": "生涜機関アルカ＝ヴィータ",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-26",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-05-27",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "水樹です",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1499073760664354927",
-   "created": "2026-04-29T15:43:55.986000+00:00",
-   "last_active": "2026-05-27",
-   "source": "forum"
-  },
-  {
    "scenario": "迷惑な庭",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -4215,6 +4189,32 @@
    "url": "https://discord.com/channels/1001833522723561593/1500495087476674581",
    "created": "2026-05-03T13:51:46.705000+00:00",
    "last_active": "2026-05-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "生涜機関アルカ＝ヴィータ",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-26",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-05-27",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "水樹です",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1499073760664354927",
+   "created": "2026-04-29T15:43:55.986000+00:00",
+   "last_active": "2026-05-27",
    "source": "forum"
   },
   {
