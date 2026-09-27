@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/27 15:31",
- "checked": "2026/09/27 15:31",
+ "updated": "2026/09/27 15:46",
+ "checked": "2026/09/27 15:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -248,7 +248,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1547628438888648775",
    "created": "2026-09-10T15:22:53.377000+00:00",
-   "last_active": "2026-09-25",
+   "last_active": "2026-09-27",
    "source": "forum"
   },
   {
@@ -371,27 +371,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551845658867011595",
    "created": "2026-09-22T06:40:36.972000+00:00",
-   "last_active": "2026-09-26",
-   "source": "forum"
-  },
-  {
-   "scenario": "彼の地にて斯く戦えり",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-27",
-     "start": "13:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1551891970295599144",
-   "created": "2026-09-22T09:44:38.477000+00:00",
    "last_active": "2026-09-27",
    "source": "forum"
   },
@@ -516,6 +495,48 @@
    "source": "forum"
   },
   {
+   "scenario": "なにかする",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-26",
+     "start": "22:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1553383292370165830",
+   "created": "2026-09-26T12:30:37.367000+00:00",
+   "last_active": "2026-09-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "彼の地にて斯く戦えり",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-27",
+     "start": "13:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1551891970295599144",
+   "created": "2026-09-22T09:44:38.477000+00:00",
+   "last_active": "2026-09-27",
+   "source": "forum"
+  },
+  {
    "scenario": "麗しき宮殿の氷像 Hard",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -534,27 +555,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1542164526810800138",
    "created": "2026-08-26T13:31:15.223000+00:00",
    "last_active": "2026-09-27",
-   "source": "forum"
-  },
-  {
-   "scenario": "なにかする",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-26",
-     "start": "22:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1553383292370165830",
-   "created": "2026-09-26T12:30:37.367000+00:00",
-   "last_active": "2026-09-26",
    "source": "forum"
   },
   {
