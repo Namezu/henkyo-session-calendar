@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/27 09:16",
- "checked": "2026/09/27 09:16",
+ "updated": "2026/09/27 11:01",
+ "checked": "2026/09/27 11:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -477,6 +477,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1553027849253036135",
    "created": "2026-09-25T12:58:13.124000+00:00",
    "last_active": "2026-09-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "第2回ランダムダンジョンRTA",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-27",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "イオタ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1553586228102963261",
+   "created": "2026-09-27T01:57:01.016000+00:00",
+   "last_active": "2026-09-27",
    "source": "forum"
   },
   {
