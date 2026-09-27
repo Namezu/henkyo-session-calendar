@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/27 11:01",
- "checked": "2026/09/27 11:01",
+ "updated": "2026/09/27 12:31",
+ "checked": "2026/09/27 12:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -497,6 +497,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1553586228102963261",
    "created": "2026-09-27T01:57:01.016000+00:00",
+   "last_active": "2026-09-27",
+   "source": "forum"
+  },
+  {
+   "scenario": "真食虫",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "まひろ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1553609542531678279",
+   "created": "2026-09-27T03:29:39.609000+00:00",
    "last_active": "2026-09-27",
    "source": "forum"
   },
