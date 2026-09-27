@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/28 02:01",
- "checked": "2026/09/28 02:01",
+ "updated": "2026/09/28 02:16",
+ "checked": "2026/09/28 02:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -169,27 +169,6 @@
    "source": "forum"
   },
   {
-   "scenario": "麗しき宮殿の氷像 Normal",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-27",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "peridot",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1543328483491582102",
-   "created": "2026-08-29T18:36:24.121000+00:00",
-   "last_active": "2026-09-27",
-   "source": "forum"
-  },
-  {
    "scenario": "一輪の先に咲く約束",
    "reg": "氷原開拓団",
    "reg_is_name": false,
@@ -330,7 +309,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1550862634696319027",
    "created": "2026-09-19T13:34:25.746000+00:00",
-   "last_active": "2026-09-27",
+   "last_active": "2026-09-28",
    "source": "forum"
   },
   {
@@ -543,6 +522,42 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1553762623260987472",
    "created": "2026-09-27T13:37:56.899000+00:00",
+   "last_active": "2026-09-27",
+   "source": "forum"
+  },
+  {
+   "scenario": "虚ろの人形姫",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "くらり",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1553815313726971904",
+   "created": "2026-09-27T17:07:19.285000+00:00",
+   "last_active": "2026-09-28",
+   "source": "forum"
+  },
+  {
+   "scenario": "麗しき宮殿の氷像 Normal",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-27",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1543328483491582102",
+   "created": "2026-08-29T18:36:24.121000+00:00",
    "last_active": "2026-09-27",
    "source": "forum"
   },
