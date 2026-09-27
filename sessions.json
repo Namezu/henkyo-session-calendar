@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/27 12:46",
- "checked": "2026/09/27 12:46",
+ "updated": "2026/09/27 13:01",
+ "checked": "2026/09/27 13:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3805,6 +3805,37 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1536341101936648293",
    "created": "2026-08-10T11:51:02.539000+00:00",
+   "last_active": "2026-09-27",
+   "source": "forum"
+  },
+  {
+   "scenario": "門出",
+   "reg": "アリアンストラテジー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-25",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-10-28",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-10-29",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カピ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1540726956558000198",
+   "created": "2026-08-22T14:18:51.766000+00:00",
    "last_active": "2026-09-27",
    "source": "forum"
   },
@@ -29808,12 +29839,6 @@
   }
  ],
  "unparsed": [
-  {
-   "title": "10月以降調整　【アリアンストラテジーWS】1-1.門出",
-   "url": "https://discord.com/channels/1001833522723561593/1540726956558000198",
-   "gm": "カピ",
-   "open": false
-  },
   {
    "title": "11月上旬狙い　【アリアンストラテジーWS】2-1.傷痕",
    "url": "https://discord.com/channels/1001833522723561593/1541474800612937819",
