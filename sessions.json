@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/28 23:46",
- "checked": "2026/09/28 23:46",
+ "updated": "2026/09/29 00:01",
+ "checked": "2026/09/29 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3584,27 +3584,6 @@
    "source": "forum"
   },
   {
-   "scenario": "至高のコーヒーを求めて:土作り編",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-14",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1499772847214821556",
-   "created": "2026-05-01T14:01:51.208000+00:00",
-   "last_active": "2026-05-14",
-   "source": "forum"
-  },
-  {
    "scenario": "ロストロード（ランダムダンジョン）",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -3665,27 +3644,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1501069173189771406",
    "created": "2026-05-05T03:52:59.405000+00:00",
    "last_active": "2026-05-06",
-   "source": "forum"
-  },
-  {
-   "scenario": "つの遺産",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-05",
-     "start": "13:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "シドラン",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1499436401312268349",
-   "created": "2026-04-30T15:44:56.254000+00:00",
-   "last_active": "2026-05-05",
    "source": "forum"
   },
   {
@@ -4222,6 +4180,48 @@
    "url": "https://discord.com/channels/1001833522723561593/1500495087476674581",
    "created": "2026-05-03T13:51:46.705000+00:00",
    "last_active": "2026-05-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "至高のコーヒーを求めて:土作り編",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-14",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1499772847214821556",
+   "created": "2026-05-01T14:01:51.208000+00:00",
+   "last_active": "2026-05-14",
+   "source": "forum"
+  },
+  {
+   "scenario": "つの遺産",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-05",
+     "start": "13:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "シドラン",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1499436401312268349",
+   "created": "2026-04-30T15:44:56.254000+00:00",
+   "last_active": "2026-05-05",
    "source": "forum"
   },
   {
