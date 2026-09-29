@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/29 15:31",
- "checked": "2026/09/29 15:31",
+ "updated": "2026/09/29 16:16",
+ "checked": "2026/09/29 16:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -226,12 +226,18 @@
    "source": "forum"
   },
   {
-   "scenario": "はじめてのぴーすめいかー",
+   "scenario": "はじめてのぴーすめいかー（第二陣）",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "よし/やっぴー",
    "gm_active": true,
