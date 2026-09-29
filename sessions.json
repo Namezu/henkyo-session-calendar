@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/30 01:01",
- "checked": "2026/09/30 01:01",
+ "updated": "2026/09/30 01:31",
+ "checked": "2026/09/30 01:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -31,7 +31,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1389898698703507527",
    "created": "2025-07-02T09:21:12.840000+00:00",
-   "last_active": "2026-09-29",
+   "last_active": "2026-09-30",
    "source": "forum"
   },
   {
@@ -370,27 +370,6 @@
    "source": "forum"
   },
   {
-   "scenario": "遺跡探索",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-29",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "taku",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1552643941936013363",
-   "created": "2026-09-24T11:32:42.487000+00:00",
-   "last_active": "2026-09-30",
-   "source": "forum"
-  },
-  {
    "scenario": "はじめてのぴーすめいかー2 第二陣",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -514,9 +493,15 @@
    "scenario": "虚ろの人形姫",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-10-12",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
    "open": true,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "くらり",
    "gm_active": true,
@@ -586,6 +571,69 @@
    "url": "https://discord.com/channels/1001833522723561593/1554483584482418720",
    "created": "2026-09-29T13:22:47.449000+00:00",
    "last_active": "2026-09-29",
+   "source": "forum"
+  },
+  {
+   "scenario": "虚ろの人形姫",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-18",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "くらり",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1554529052080209989",
+   "created": "2026-09-29T16:23:27.769000+00:00",
+   "last_active": "2026-09-30",
+   "source": "forum"
+  },
+  {
+   "scenario": "虚ろの人形姫",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-15",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "くらり",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1554529058337980417",
+   "created": "2026-09-29T16:23:29.261000+00:00",
+   "last_active": "2026-09-30",
+   "source": "forum"
+  },
+  {
+   "scenario": "遺跡探索",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-29",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1552643941936013363",
+   "created": "2026-09-24T11:32:42.487000+00:00",
+   "last_active": "2026-09-30",
    "source": "forum"
   },
   {
