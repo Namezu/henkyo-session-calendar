@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/30 01:31",
- "checked": "2026/09/30 01:31",
+ "updated": "2026/09/30 02:01",
+ "checked": "2026/09/30 02:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -122,27 +122,6 @@
    "source": "forum"
   },
   {
-   "scenario": "スカイフォール フィンジアス決戦",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-29",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1541693429866569819",
-   "created": "2026-08-25T06:19:16.959000+00:00",
-   "last_active": "2026-09-30",
-   "source": "forum"
-  },
-  {
    "scenario": "時計塔のある街",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -182,7 +161,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹です",
+   "gm": "水樹",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1544377050432016516",
    "created": "2026-09-01T16:03:01.961000+00:00",
@@ -616,6 +595,27 @@
    "source": "forum"
   },
   {
+   "scenario": "スカイフォール フィンジアス決戦",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-29",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1541693429866569819",
+   "created": "2026-08-25T06:19:16.959000+00:00",
+   "last_active": "2026-09-30",
+   "source": "forum"
+  },
+  {
    "scenario": "遺跡探索",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -944,7 +944,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹です",
+   "gm": "水樹",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540691795485135019",
    "created": "2026-08-22T11:59:08.713000+00:00",
@@ -2019,7 +2019,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹です",
+   "gm": "水樹",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1525181090208157898",
    "created": "2026-07-10T16:45:08.400000+00:00",
@@ -2124,7 +2124,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
+   "gm": "一藻通",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1524054784431095838",
    "created": "2026-07-07T14:09:36.177000+00:00",
@@ -2229,7 +2229,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
+   "gm": "一藻通",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1524064295493697647",
    "created": "2026-07-07T14:47:23.791000+00:00",
@@ -2722,7 +2722,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹です",
+   "gm": "水樹",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1508062046066049075",
    "created": "2026-05-24T11:00:10.220000+00:00",
@@ -3210,7 +3210,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
+   "gm": "一藻通",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1508062503538790520",
    "created": "2026-05-24T11:01:59.290000+00:00",
@@ -3935,7 +3935,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
+   "gm": "一藻通",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1536341101936648293",
    "created": "2026-08-10T11:51:02.539000+00:00",
