@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/01 00:31",
- "checked": "2026/10/01 00:31",
+ "updated": "2026/10/01 00:46",
+ "checked": "2026/10/01 00:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -445,7 +445,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1553661981263921233",
    "created": "2026-09-27T06:58:01.977000+00:00",
-   "last_active": "2026-09-30",
+   "last_active": "2026-10-01",
    "source": "forum"
   },
   {
@@ -533,27 +533,6 @@
    "source": "forum"
   },
   {
-   "scenario": "彼氏が分かれた",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-09-30",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1554483584482418720",
-   "created": "2026-09-29T13:22:47.449000+00:00",
-   "last_active": "2026-09-30",
-   "source": "forum"
-  },
-  {
    "scenario": "虚ろの人形姫",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -613,6 +592,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1554801878183837726",
    "created": "2026-09-30T10:27:34.581000+00:00",
+   "last_active": "2026-09-30",
+   "source": "forum"
+  },
+  {
+   "scenario": "彼氏が分かれた",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-09-30",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1554483584482418720",
+   "created": "2026-09-29T13:22:47.449000+00:00",
    "last_active": "2026-09-30",
    "source": "forum"
   },
