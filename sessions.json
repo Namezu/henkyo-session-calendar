@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/30 18:46",
- "checked": "2026/09/30 18:46",
+ "updated": "2026/09/30 19:31",
+ "checked": "2026/09/30 19:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -439,12 +439,18 @@
    "source": "forum"
   },
   {
-   "scenario": "真食虫",
+   "scenario": "真食虫 21～ 真食虫",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-10-05",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "まひろ",
    "gm_active": true,
@@ -555,7 +561,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1554453107612717086",
    "created": "2026-09-29T11:21:41.197000+00:00",
-   "last_active": "2026-09-29",
+   "last_active": "2026-09-30",
    "source": "forum"
   },
   {
@@ -618,6 +624,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1554529058337980417",
    "created": "2026-09-29T16:23:29.261000+00:00",
+   "last_active": "2026-09-30",
+   "source": "forum"
+  },
+  {
+   "scenario": "真食虫 21～ 真食虫",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-06",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "まひろ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1554801878183837726",
+   "created": "2026-09-30T10:27:34.581000+00:00",
    "last_active": "2026-09-30",
    "source": "forum"
   },
