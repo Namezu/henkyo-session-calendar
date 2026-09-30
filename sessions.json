@@ -1,6 +1,6 @@
 {
- "updated": "2026/09/30 23:46",
- "checked": "2026/09/30 23:46",
+ "updated": "2026/10/01 00:02",
+ "checked": "2026/10/01 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3791,27 +3791,6 @@
    "source": "forum"
   },
   {
-   "scenario": "オーバールーフ",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-03",
-     "start": "13:30",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "てん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1500318011121205338",
-   "created": "2026-05-03T02:08:08.412000+00:00",
-   "last_active": "2026-05-03",
-   "source": "forum"
-  },
-  {
    "scenario": "人を集めてGMを回すキャンペーン",
    "reg": "ライバー＆ラビリンス",
    "reg_is_name": false,
@@ -4298,6 +4277,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1502857859161915522",
    "created": "2026-05-10T02:20:35.373000+00:00",
    "last_active": "2026-06-04",
+   "source": "forum"
+  },
+  {
+   "scenario": "オーバールーフ",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-03",
+     "start": "13:30",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "てん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1500318011121205338",
+   "created": "2026-05-03T02:08:08.412000+00:00",
+   "last_active": "2026-05-03",
    "source": "forum"
   },
   {
