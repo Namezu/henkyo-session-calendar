@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/01 23:01",
- "checked": "2026/10/01 23:01",
+ "updated": "2026/10/02 00:01",
+ "checked": "2026/10/02 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -259,7 +259,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1547981192467316926",
    "created": "2026-09-11T14:44:36.384000+00:00",
-   "last_active": "2026-09-23",
+   "last_active": "2026-10-01",
    "source": "forum"
   },
   {
@@ -2723,27 +2723,6 @@
    "source": "forum"
   },
   {
-   "scenario": "VS 邪教十三使徒モリーアティ枢機卿",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-28",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "ななさか ときわ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1500540788051017890",
-   "created": "2026-05-03T16:53:22.571000+00:00",
-   "last_active": "2026-06-29",
-   "source": "forum"
-  },
-  {
    "scenario": "WS2-3 蝕日の戦列・Eclipse Æthergate",
    "reg": "氷原開拓団",
    "reg_is_name": false,
@@ -3023,27 +3002,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1514612781884903514",
    "created": "2026-06-11T12:50:27.346000+00:00",
-   "last_active": "2026-06-19",
-   "source": "forum"
-  },
-  {
-   "scenario": "異世界からの挑戦状",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-18",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "taku",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1500541818377338950",
-   "created": "2026-05-03T16:57:28.220000+00:00",
    "last_active": "2026-06-19",
    "source": "forum"
   },
@@ -3704,27 +3662,6 @@
    "source": "forum"
   },
   {
-   "scenario": "不思議の錬金術師",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-21",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "reiran",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1500541814774698166",
-   "created": "2026-05-03T16:57:27.361000+00:00",
-   "last_active": "2026-05-21",
-   "source": "forum"
-  },
-  {
    "scenario": "城壁に潜む魔獣",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -4352,6 +4289,69 @@
    "url": "https://discord.com/channels/1001833522723561593/1502857859161915522",
    "created": "2026-05-10T02:20:35.373000+00:00",
    "last_active": "2026-06-04",
+   "source": "forum"
+  },
+  {
+   "scenario": "VS 邪教十三使徒モリーアティ枢機卿",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-28",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "ななさか ときわ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1500540788051017890",
+   "created": "2026-05-03T16:53:22.571000+00:00",
+   "last_active": "2026-06-29",
+   "source": "forum"
+  },
+  {
+   "scenario": "異世界からの挑戦状",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-18",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1500541818377338950",
+   "created": "2026-05-03T16:57:28.220000+00:00",
+   "last_active": "2026-06-19",
+   "source": "forum"
+  },
+  {
+   "scenario": "不思議の錬金術師",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-21",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1500541814774698166",
+   "created": "2026-05-03T16:57:27.361000+00:00",
+   "last_active": "2026-05-21",
    "source": "forum"
   },
   {
