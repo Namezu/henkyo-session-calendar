@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/03 00:01",
- "checked": "2026/10/03 00:01",
+ "updated": "2026/10/03 00:16",
+ "checked": "2026/10/03 00:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -467,7 +467,7 @@
      "end": null
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "にゃぎさん",
@@ -646,6 +646,21 @@
    "source": "forum"
   },
   {
+   "scenario": "シナリオ未定",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1555596575471046797",
+   "created": "2026-10-02T15:05:25.179000+00:00",
+   "last_active": "2026-10-03",
+   "source": "forum"
+  },
+  {
    "scenario": "邪神教団",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -656,7 +671,7 @@
      "end": null
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "にゃぎさん",
