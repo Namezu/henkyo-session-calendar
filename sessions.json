@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/02 23:46",
- "checked": "2026/10/02 23:46",
+ "updated": "2026/10/03 00:01",
+ "checked": "2026/10/03 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3337,27 +3337,6 @@
    "source": "forum"
   },
   {
-   "scenario": "月に導かれて",
-   "reg": "アンコールを流星に",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-08",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1501143351397974066",
-   "created": "2026-05-05T08:47:44.868000+00:00",
-   "last_active": "2026-06-08",
-   "source": "forum"
-  },
-  {
    "scenario": "依頼板の向こう側",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -3589,27 +3568,6 @@
    "source": "forum"
   },
   {
-   "scenario": "(歓迎卓)潮騒の墓標と眠れぬ船幽霊",
-   "reg": "アンコールを流星に",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-28",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "タバーン",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1500891157390037144",
-   "created": "2026-05-04T16:05:37.131000+00:00",
-   "last_active": "2026-05-29",
-   "source": "forum"
-  },
-  {
    "scenario": "迷惑な庭",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -3817,27 +3775,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1502504045297008711",
    "created": "2026-05-09T02:54:39.574000+00:00",
    "last_active": "2026-05-09",
-   "source": "forum"
-  },
-  {
-   "scenario": "至高のコーヒーを求めて:木材改め薪木編",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-06",
-     "start": "14:00",
-     "end": "18:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1501069173189771406",
-   "created": "2026-05-05T03:52:59.405000+00:00",
-   "last_active": "2026-05-06",
    "source": "forum"
   },
   {
@@ -4052,40 +3989,22 @@
     {
      "date": "2026-09-02",
      "start": "21:00",
-     "end": "25:00",
-     "held": true
+     "end": "25:00"
     },
     {
      "date": "2026-09-04",
      "start": "21:00",
-     "end": "25:00",
-     "held": true
+     "end": "25:00"
     },
     {
      "date": "2026-09-14",
-     "start": "21:00",
-     "end": "25:00",
-     "held": true
-    },
-    {
-     "date": "2027-09-02",
-     "start": "21:00",
-     "end": "25:00"
-    },
-    {
-     "date": "2027-09-04",
-     "start": "21:00",
-     "end": "25:00"
-    },
-    {
-     "date": "2027-09-14",
      "start": "21:00",
      "end": "25:00"
     }
    ],
    "open": false,
    "suriawase": false,
-   "ongoing": true,
+   "ongoing": false,
    "gm": "豆の塩ゆで",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1531650575111028736",
@@ -4342,6 +4261,69 @@
    "url": "https://discord.com/channels/1001833522723561593/1502857859161915522",
    "created": "2026-05-10T02:20:35.373000+00:00",
    "last_active": "2026-06-04",
+   "source": "forum"
+  },
+  {
+   "scenario": "月に導かれて",
+   "reg": "アンコールを流星に",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-08",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1501143351397974066",
+   "created": "2026-05-05T08:47:44.868000+00:00",
+   "last_active": "2026-06-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "(歓迎卓)潮騒の墓標と眠れぬ船幽霊",
+   "reg": "アンコールを流星に",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-28",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "タバーン",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1500891157390037144",
+   "created": "2026-05-04T16:05:37.131000+00:00",
+   "last_active": "2026-05-29",
+   "source": "forum"
+  },
+  {
+   "scenario": "至高のコーヒーを求めて:木材改め薪木編",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-06",
+     "start": "14:00",
+     "end": "18:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1501069173189771406",
+   "created": "2026-05-05T03:52:59.405000+00:00",
+   "last_active": "2026-05-06",
    "source": "forum"
   },
   {
