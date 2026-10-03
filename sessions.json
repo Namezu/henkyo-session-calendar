@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/03 23:01",
- "checked": "2026/10/03 23:01",
+ "updated": "2026/10/04 00:01",
+ "checked": "2026/10/04 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -11,7 +11,8 @@
     {
      "date": "2026-10-03",
      "start": "21:00",
-     "end": "25:00"
+     "end": "25:00",
+     "held": true
     },
     {
      "date": "2026-10-11",
@@ -20,6 +21,11 @@
     },
     {
      "date": "2026-10-17",
+     "start": "21:00",
+     "end": "25:00"
+    },
+    {
+     "date": "2027-10-03",
      "start": "21:00",
      "end": "25:00"
     }
@@ -552,7 +558,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1555542040652292196",
    "created": "2026-10-02T11:28:43.065000+00:00",
-   "last_active": "2026-10-03",
+   "last_active": "2026-10-04",
    "source": "forum"
   },
   {
@@ -592,27 +598,6 @@
    "source": "forum"
   },
   {
-   "scenario": "封印された鼓動",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-03",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1555770155793907722",
-   "created": "2026-10-03T02:35:09.953000+00:00",
-   "last_active": "2026-10-03",
-   "source": "forum"
-  },
-  {
    "scenario": "重量級の女帝",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -630,6 +615,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1555847777488085063",
    "created": "2026-10-03T07:43:36.407000+00:00",
+   "last_active": "2026-10-03",
+   "source": "forum"
+  },
+  {
+   "scenario": "封印された鼓動",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-03",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1555770155793907722",
+   "created": "2026-10-03T02:35:09.953000+00:00",
    "last_active": "2026-10-03",
    "source": "forum"
   },
@@ -3604,27 +3610,6 @@
    "source": "forum"
   },
   {
-   "scenario": "その卵、命がけにつき",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-29",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "シドラン",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1501433752360849488",
-   "created": "2026-05-06T04:01:41.853000+00:00",
-   "last_active": "2026-05-29",
-   "source": "forum"
-  },
-  {
    "scenario": "迷惑な庭",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -3769,27 +3754,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1505059120502280252",
    "created": "2026-05-16T04:07:36.974000+00:00",
    "last_active": "2026-05-16",
-   "source": "forum"
-  },
-  {
-   "scenario": "スタンピード",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-15",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "ななさか ときわ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1501268737465127065",
-   "created": "2026-05-05T17:05:59.236000+00:00",
-   "last_active": "2026-05-15",
    "source": "forum"
   },
   {
@@ -4318,6 +4282,48 @@
    "url": "https://discord.com/channels/1001833522723561593/1502857859161915522",
    "created": "2026-05-10T02:20:35.373000+00:00",
    "last_active": "2026-06-04",
+   "source": "forum"
+  },
+  {
+   "scenario": "その卵、命がけにつき",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-29",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "シドラン",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1501433752360849488",
+   "created": "2026-05-06T04:01:41.853000+00:00",
+   "last_active": "2026-05-29",
+   "source": "forum"
+  },
+  {
+   "scenario": "スタンピード",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-15",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "ななさか ときわ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1501268737465127065",
+   "created": "2026-05-05T17:05:59.236000+00:00",
+   "last_active": "2026-05-15",
    "source": "forum"
   },
   {
