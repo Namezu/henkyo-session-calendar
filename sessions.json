@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/04 17:01",
- "checked": "2026/10/04 17:01",
+ "updated": "2026/10/04 17:31",
+ "checked": "2026/10/04 17:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -595,6 +595,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1555847777488085063",
    "created": "2026-10-03T07:43:36.407000+00:00",
    "last_active": "2026-10-03",
+   "source": "forum"
+  },
+  {
+   "scenario": "英雄の武器屋",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-18",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1556219720607469598",
+   "created": "2026-10-04T08:21:34.557000+00:00",
+   "last_active": "2026-10-04",
    "source": "forum"
   },
   {
