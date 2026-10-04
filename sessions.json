@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/04 21:01",
- "checked": "2026/10/04 21:01",
+ "updated": "2026/10/04 21:46",
+ "checked": "2026/10/04 21:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -615,6 +615,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1556219720607469598",
    "created": "2026-10-04T08:21:34.557000+00:00",
+   "last_active": "2026-10-04",
+   "source": "forum"
+  },
+  {
+   "scenario": "𝐒𝐭𝐞𝐥𝐥𝐚. 𝟐",
+   "reg": "さちあれ",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "てん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1556285243907112990",
+   "created": "2026-10-04T12:41:56.529000+00:00",
    "last_active": "2026-10-04",
    "source": "forum"
   },
