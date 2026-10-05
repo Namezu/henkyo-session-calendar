@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/06 00:16",
- "checked": "2026/10/06 00:16",
+ "updated": "2026/10/06 01:31",
+ "checked": "2026/10/06 01:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -535,27 +535,6 @@
    "source": "forum"
   },
   {
-   "scenario": "森林を統べる者",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-05",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "peridot",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1555599210790002828",
-   "created": "2026-10-02T15:15:53.488000+00:00",
-   "last_active": "2026-10-05",
-   "source": "forum"
-  },
-  {
    "scenario": "重量級の女帝",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -625,6 +604,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1556289608147406868",
    "created": "2026-10-04T12:59:17.045000+00:00",
    "last_active": "2026-10-04",
+   "source": "forum"
+  },
+  {
+   "scenario": "森林を統べる者",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-05",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1555599210790002828",
+   "created": "2026-10-02T15:15:53.488000+00:00",
+   "last_active": "2026-10-05",
    "source": "forum"
   },
   {
