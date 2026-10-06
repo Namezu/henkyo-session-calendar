@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/06 17:16",
- "checked": "2026/10/06 20:16",
+ "updated": "2026/10/06 20:46",
+ "checked": "2026/10/06 20:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -499,27 +499,6 @@
    "source": "forum"
   },
   {
-   "scenario": "ゴブリンの砲撃",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-04",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1555542040652292196",
-   "created": "2026-10-02T11:28:43.065000+00:00",
-   "last_active": "2026-10-06",
-   "source": "forum"
-  },
-  {
    "scenario": "シナリオ未定",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -603,6 +582,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1556289608147406868",
    "created": "2026-10-04T12:59:17.045000+00:00",
+   "last_active": "2026-10-06",
+   "source": "forum"
+  },
+  {
+   "scenario": "ゴブリンの砲撃",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-04",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1555542040652292196",
+   "created": "2026-10-02T11:28:43.065000+00:00",
    "last_active": "2026-10-06",
    "source": "forum"
   },
