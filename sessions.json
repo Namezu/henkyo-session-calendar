@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/07 01:32",
- "checked": "2026/10/07 01:32",
+ "updated": "2026/10/07 01:46",
+ "checked": "2026/10/07 01:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -1973,7 +1973,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": null,
+   "gm": "むむこ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1531854594483814440",
    "created": "2026-07-29T02:43:15.807000+00:00",
