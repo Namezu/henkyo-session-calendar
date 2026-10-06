@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/07 00:46",
- "checked": "2026/10/07 00:46",
+ "updated": "2026/10/07 01:01",
+ "checked": "2026/10/07 01:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -562,6 +562,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1556289608147406868",
    "created": "2026-10-04T12:59:17.045000+00:00",
    "last_active": "2026-10-06",
+   "source": "forum"
+  },
+  {
+   "scenario": "銀盤のベアリーナ",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "水樹です",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1557058936870543422",
+   "created": "2026-10-06T15:56:19.306000+00:00",
+   "last_active": "2026-10-07",
    "source": "forum"
   },
   {
