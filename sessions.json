@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/08 00:31",
- "checked": "2026/10/08 00:31",
+ "updated": "2026/10/08 00:46",
+ "checked": "2026/10/08 00:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -461,7 +461,7 @@
      "end": null
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "dabdab",
@@ -571,9 +571,15 @@
    "scenario": "幽霊屋敷の怪",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-11-02",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
    "open": true,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "くらり",
    "gm_active": true,
