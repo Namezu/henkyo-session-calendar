@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/07 22:01",
- "checked": "2026/10/07 22:01",
+ "updated": "2026/10/07 22:25",
+ "checked": "2026/10/07 22:25",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -570,6 +570,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1557073298679005194",
    "created": "2026-10-06T16:53:23.428000+00:00",
+   "last_active": "2026-10-07",
+   "source": "forum"
+  },
+  {
+   "scenario": "銀の街、紅き月",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "てん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1557381829986885692",
+   "created": "2026-10-07T13:19:23.024000+00:00",
    "last_active": "2026-10-07",
    "source": "forum"
   },
