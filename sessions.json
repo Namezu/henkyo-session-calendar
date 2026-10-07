@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/08 08:16",
- "checked": "2026/10/08 08:16",
+ "updated": "2026/10/08 08:31",
+ "checked": "2026/10/08 08:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -585,6 +585,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1557410517360836618",
    "created": "2026-10-07T15:13:22.627000+00:00",
+   "last_active": "2026-10-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "忘れられた村",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-11",
+     "start": "10:00",
+     "end": "13:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1557533235414700082",
+   "created": "2026-10-07T23:21:00.891000+00:00",
    "last_active": "2026-10-08",
    "source": "forum"
   },
