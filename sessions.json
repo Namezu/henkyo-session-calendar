@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/08 23:46",
- "checked": "2026/10/08 23:46",
+ "updated": "2026/10/09 00:02",
+ "checked": "2026/10/09 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3762,7 +3762,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1507376282877296670",
    "created": "2026-05-22T13:35:11.535000+00:00",
@@ -3872,27 +3872,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1507532717342982194",
    "created": "2026-05-22T23:56:48.418000+00:00",
    "last_active": "2026-05-23",
-   "source": "forum"
-  },
-  {
-   "scenario": "森の洋館",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-22",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "ななさか ときわ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1503068443186958447",
-   "created": "2026-05-10T16:17:22.517000+00:00",
-   "last_active": "2026-05-22",
    "source": "forum"
   },
   {
@@ -4140,7 +4119,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540726956558000198",
    "created": "2026-08-22T14:18:51.766000+00:00",
@@ -4207,7 +4186,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1542489361747152956",
    "created": "2026-08-27T11:02:01.907000+00:00",
@@ -4233,7 +4212,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1526557321449312257",
    "created": "2026-07-14T11:53:47.497000+00:00",
@@ -4321,7 +4300,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1512833539090022460",
    "created": "2026-06-06T15:00:22.807000+00:00",
@@ -4347,7 +4326,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1514257239848779949",
    "created": "2026-06-10T13:17:39.519000+00:00",
@@ -4416,11 +4395,32 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1508426314514956428",
    "created": "2026-05-25T11:07:38.586000+00:00",
    "last_active": "2026-06-27",
+   "source": "forum"
+  },
+  {
+   "scenario": "森の洋館",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-22",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "ななさか ときわ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1503068443186958447",
+   "created": "2026-05-10T16:17:22.517000+00:00",
+   "last_active": "2026-05-22",
    "source": "forum"
   },
   {
@@ -30482,7 +30482,7 @@
   {
    "title": "11月上旬狙い　【アリアンストラテジーWS】2-1.傷痕",
    "url": "https://discord.com/channels/1001833522723561593/1541474800612937819",
-   "gm": "カピだな",
+   "gm": "カピ",
    "open": false
   }
  ]
