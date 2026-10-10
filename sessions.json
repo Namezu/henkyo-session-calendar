@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/11 00:46",
- "checked": "2026/10/11 00:46",
+ "updated": "2026/10/11 01:01",
+ "checked": "2026/10/11 01:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -25,7 +25,7 @@
      "end": "25:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": true,
    "gm": "taku",
@@ -2634,7 +2634,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
+   "gm": "一藻通",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1524054784431095838",
    "created": "2026-07-07T14:09:36.177000+00:00",
@@ -2739,7 +2739,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
+   "gm": "一藻通",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1524064295493697647",
    "created": "2026-07-07T14:47:23.791000+00:00",
@@ -3678,7 +3678,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
+   "gm": "一藻通",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1508062503538790520",
    "created": "2026-05-24T11:01:59.290000+00:00",
@@ -4142,7 +4142,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
+   "gm": "一藻通",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1536341101936648293",
    "created": "2026-08-10T11:51:02.539000+00:00",
@@ -4230,7 +4230,7 @@
    "open": true,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
+   "gm": "一藻通",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1558285360646062140",
    "created": "2026-10-10T01:09:41.520000+00:00",
