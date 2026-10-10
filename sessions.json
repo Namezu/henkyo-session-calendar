@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/10 17:31",
- "checked": "2026/10/10 17:31",
+ "updated": "2026/10/10 18:16",
+ "checked": "2026/10/10 18:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -506,27 +506,6 @@
    "source": "forum"
   },
   {
-   "scenario": "銀の街、紅き月",
-   "reg": "アリアンロッド2E",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-10",
-     "start": "13:00",
-     "end": "17:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "てん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1557381829986885692",
-   "created": "2026-10-07T13:19:23.024000+00:00",
-   "last_active": "2026-10-10",
-   "source": "forum"
-  },
-  {
    "scenario": "幽霊屋敷の怪",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -586,6 +565,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1557723779864469639",
    "created": "2026-10-08T11:58:10.228000+00:00",
+   "last_active": "2026-10-10",
+   "source": "forum"
+  },
+  {
+   "scenario": "銀の街、紅き月",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-10",
+     "start": "13:00",
+     "end": "17:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "てん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1557381829986885692",
+   "created": "2026-10-07T13:19:23.024000+00:00",
    "last_active": "2026-10-10",
    "source": "forum"
   },
