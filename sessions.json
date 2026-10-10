@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/10 09:46",
- "checked": "2026/10/10 09:46",
+ "updated": "2026/10/10 10:16",
+ "checked": "2026/10/10 10:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -4193,6 +4193,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1558082209070588005",
    "created": "2026-10-09T11:42:26.410000+00:00",
    "last_active": "2026-10-09",
+   "source": "forum"
+  },
+  {
+   "scenario": "をする",
+   "reg": "ガラクティア",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-10",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "一藻通",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1558285360646062140",
+   "created": "2026-10-10T01:09:41.520000+00:00",
+   "last_active": "2026-10-10",
    "source": "forum"
   },
   {
