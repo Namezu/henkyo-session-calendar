@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/10 21:16",
- "checked": "2026/10/10 21:16",
+ "updated": "2026/10/10 22:16",
+ "checked": "2026/10/10 22:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -450,7 +450,7 @@
    "reg": "さちあれ",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "てん",
