@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/10 16:01",
- "checked": "2026/10/10 16:01",
+ "updated": "2026/10/10 17:01",
+ "checked": "2026/10/10 17:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -569,27 +569,6 @@
    "source": "forum"
   },
   {
-   "scenario": "魚釣り大会",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-10",
-     "start": "14:00",
-     "end": "18:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1557538177999446087",
-   "created": "2026-10-07T23:40:39.295000+00:00",
-   "last_active": "2026-10-10",
-   "source": "forum"
-  },
-  {
    "scenario": "第3回ランダムダンジョンRTA",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -607,6 +586,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1557723779864469639",
    "created": "2026-10-08T11:58:10.228000+00:00",
+   "last_active": "2026-10-10",
+   "source": "forum"
+  },
+  {
+   "scenario": "魚釣り大会",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-10",
+     "start": "14:00",
+     "end": "18:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1557538177999446087",
+   "created": "2026-10-07T23:40:39.295000+00:00",
    "last_active": "2026-10-10",
    "source": "forum"
   },
@@ -4177,7 +4177,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1554884118561685585",
    "created": "2026-09-30T15:54:22.215000+00:00",
-   "last_active": "2026-10-09",
+   "last_active": "2026-10-10",
    "source": "forum"
   },
   {
