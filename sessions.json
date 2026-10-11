@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/11 08:46",
- "checked": "2026/10/11 08:46",
+ "updated": "2026/10/11 09:46",
+ "checked": "2026/10/11 09:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -176,7 +176,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1547979960449241332",
    "created": "2026-09-11T14:39:42.648000+00:00",
-   "last_active": "2026-10-09",
+   "last_active": "2026-10-11",
    "source": "forum"
   },
   {
@@ -548,7 +548,7 @@
    "source": "forum"
   },
   {
-   "scenario": "今から考える",
+   "scenario": "死者に送る鎮魂歌",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [
@@ -565,7 +565,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1558452334860828733",
    "created": "2026-10-10T12:13:11.275000+00:00",
-   "last_active": "2026-10-10",
+   "last_active": "2026-10-11",
    "source": "forum"
   },
   {
