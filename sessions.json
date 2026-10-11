@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/11 13:46",
- "checked": "2026/10/11 13:46",
+ "updated": "2026/10/11 14:01",
+ "checked": "2026/10/11 14:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -449,9 +449,15 @@
    "scenario": "𝐒𝐭𝐞𝐥𝐥𝐚. 𝟐",
    "reg": "さちあれ",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-10-23",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "てん",
    "gm_active": true,
@@ -558,7 +564,7 @@
      "end": "19:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "にゃぎさん",
@@ -708,7 +714,7 @@
    "open": true,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridot",
+   "gm": "peridotite",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1558079734104195102",
    "created": "2026-10-09T11:32:36.332000+00:00",
@@ -876,7 +882,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridot",
+   "gm": "peridotite",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1555599210790002828",
    "created": "2026-10-02T15:15:53.488000+00:00",
@@ -1286,7 +1292,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridot",
+   "gm": "peridotite",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1542164526810800138",
    "created": "2026-08-26T13:31:15.223000+00:00",
@@ -1517,7 +1523,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridot",
+   "gm": "peridotite",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1550179816072806560",
    "created": "2026-09-17T16:21:09.100000+00:00",
@@ -1559,7 +1565,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridot",
+   "gm": "peridotite",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1550928996508770314",
    "created": "2026-09-19T17:58:07.635000+00:00",
@@ -1745,7 +1751,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridot",
+   "gm": "peridotite",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1532056216828645578",
    "created": "2026-07-29T16:04:26.320000+00:00",
@@ -2319,7 +2325,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridot",
+   "gm": "peridotite",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1536011776439615498",
    "created": "2026-08-09T14:02:25.222000+00:00",
@@ -3012,7 +3018,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridot",
+   "gm": "peridotite",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1522273532661338375",
    "created": "2026-07-02T16:11:32.661000+00:00",
@@ -3138,7 +3144,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridot",
+   "gm": "peridotite",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1519369263335346367",
    "created": "2026-06-24T15:51:00.895000+00:00",
@@ -3505,7 +3511,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridot",
+   "gm": "peridotite",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1514869456864809033",
    "created": "2026-06-12T05:50:23.430000+00:00",
@@ -3678,7 +3684,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridot",
+   "gm": "peridotite",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1514614975342317668",
    "created": "2026-06-11T12:59:10.307000+00:00",
@@ -3972,7 +3978,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridot",
+   "gm": "peridotite",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1507532717342982194",
    "created": "2026-05-22T23:56:48.418000+00:00",
@@ -4109,31 +4115,12 @@
     {
      "date": "2026-10-08",
      "start": "24:00",
-     "end": "17:00"
-    },
-    {
-     "date": "2026-10-12",
-     "start": "24:00",
-     "end": "17:00"
-    },
-    {
-     "date": "2026-10-14",
-     "start": "24:00",
-     "end": "17:00"
-    },
-    {
-     "date": "2026-10-20",
-     "start": "24:00",
-     "end": "17:00"
-    },
-    {
-     "date": "2026-10-21",
-     "start": "24:00",
-     "end": "17:00"
+     "end": "17:00",
+     "held": true
     }
    ],
    "open": false,
-   "suriawase": false,
+   "suriawase": true,
    "ongoing": false,
    "gm": "ユーカ",
    "gm_active": true,
