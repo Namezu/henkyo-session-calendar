@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/11 13:16",
- "checked": "2026/10/11 13:16",
+ "updated": "2026/10/11 13:31",
+ "checked": "2026/10/11 13:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -148,7 +148,7 @@
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "dabdab",
@@ -357,7 +357,7 @@
      "end": "25:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "くらり",
@@ -548,6 +548,48 @@
    "source": "forum"
   },
   {
+   "scenario": "タイトル未定",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-11",
+     "start": "15:00",
+     "end": "19:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1558697638054994072",
+   "created": "2026-10-11T04:27:56.114000+00:00",
+   "last_active": "2026-10-11",
+   "source": "forum"
+  },
+  {
+   "scenario": "第3回ランダムダンジョンRTA",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-10",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "イオタ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1557723779864469639",
+   "created": "2026-10-08T11:58:10.228000+00:00",
+   "last_active": "2026-10-10",
+   "source": "forum"
+  },
+  {
    "scenario": "忘れられた村",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -587,27 +629,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1558452334860828733",
    "created": "2026-10-10T12:13:11.275000+00:00",
    "last_active": "2026-10-11",
-   "source": "forum"
-  },
-  {
-   "scenario": "第3回ランダムダンジョンRTA",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-10",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "イオタ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1557723779864469639",
-   "created": "2026-10-08T11:58:10.228000+00:00",
-   "last_active": "2026-10-10",
    "source": "forum"
   },
   {
