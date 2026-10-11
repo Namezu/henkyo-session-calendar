@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/11 13:31",
- "checked": "2026/10/11 13:31",
+ "updated": "2026/10/11 13:46",
+ "checked": "2026/10/11 13:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -548,7 +548,7 @@
    "source": "forum"
   },
   {
-   "scenario": "タイトル未定",
+   "scenario": "緑の悪魔",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [
@@ -558,7 +558,7 @@
      "end": "19:00"
     }
    ],
-   "open": false,
+   "open": true,
    "suriawase": false,
    "ongoing": false,
    "gm": "にゃぎさん",
