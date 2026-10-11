@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/11 15:16",
- "checked": "2026/10/11 15:16",
+ "updated": "2026/10/11 15:31",
+ "checked": "2026/10/11 15:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -571,6 +571,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1558697638054994072",
    "created": "2026-10-11T04:27:56.114000+00:00",
+   "last_active": "2026-10-11",
+   "source": "forum"
+  },
+  {
+   "scenario": "いつか、祈りが途絶える日まで",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-12",
+     "start": "14:00",
+     "end": "17:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1558728203487682633",
+   "created": "2026-10-11T06:29:23.481000+00:00",
    "last_active": "2026-10-11",
    "source": "forum"
   },
