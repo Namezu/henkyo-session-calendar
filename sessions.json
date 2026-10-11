@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/11 21:31",
- "checked": "2026/10/11 21:31",
+ "updated": "2026/10/11 21:46",
+ "checked": "2026/10/11 21:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -104,7 +104,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1544910098135253082",
    "created": "2026-09-03T03:21:10.437000+00:00",
-   "last_active": "2026-10-10",
+   "last_active": "2026-10-11",
    "source": "forum"
   },
   {
@@ -217,7 +217,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551278369952501761",
    "created": "2026-09-20T17:06:24.755000+00:00",
-   "last_active": "2026-10-04",
+   "last_active": "2026-10-11",
    "source": "forum"
   },
   {
@@ -575,7 +575,7 @@
    "source": "forum"
   },
   {
-   "scenario": "なにかする",
+   "scenario": "絶対零度",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [
