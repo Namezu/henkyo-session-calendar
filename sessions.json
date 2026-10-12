@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/12 23:31",
- "checked": "2026/10/12 23:31",
+ "updated": "2026/10/12 23:46",
+ "checked": "2026/10/12 23:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -72,7 +72,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1544910098135253082",
    "created": "2026-09-03T03:21:10.437000+00:00",
-   "last_active": "2026-10-11",
+   "last_active": "2026-10-12",
    "source": "forum"
   },
   {
@@ -517,27 +517,6 @@
    "source": "forum"
   },
   {
-   "scenario": "星の降る丘で",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-12",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1558685312534970398",
-   "created": "2026-10-11T03:38:57.481000+00:00",
-   "last_active": "2026-10-12",
-   "source": "forum"
-  },
-  {
    "scenario": "至高のコーヒーを求めて:白金のレプラコーン編",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -612,6 +591,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559210538821615616",
    "created": "2026-10-12T14:26:01.186000+00:00",
+   "last_active": "2026-10-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "星の降る丘で",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-12",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1558685312534970398",
+   "created": "2026-10-11T03:38:57.481000+00:00",
    "last_active": "2026-10-12",
    "source": "forum"
   },
