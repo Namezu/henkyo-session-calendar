@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/12 16:46",
- "checked": "2026/10/12 16:46",
+ "updated": "2026/10/12 17:01",
+ "checked": "2026/10/12 17:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -511,7 +511,7 @@
      "end": "25:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "にゃぎさん",
@@ -543,27 +543,6 @@
    "source": "forum"
   },
   {
-   "scenario": "甲鱗のワーム",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-12",
-     "start": "14:00",
-     "end": "18:00"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1559013688910946385",
-   "created": "2026-10-12T01:23:48.510000+00:00",
-   "last_active": "2026-10-12",
-   "source": "forum"
-  },
-  {
    "scenario": "至高のコーヒーを求めて:白金のレプラコーン編",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -581,6 +560,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559108296994979862",
    "created": "2026-10-12T07:39:44.835000+00:00",
+   "last_active": "2026-10-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "甲鱗のワーム",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-12",
+     "start": "14:00",
+     "end": "18:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1559013688910946385",
+   "created": "2026-10-12T01:23:48.510000+00:00",
    "last_active": "2026-10-12",
    "source": "forum"
   },
