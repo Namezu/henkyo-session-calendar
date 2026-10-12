@@ -1,41 +1,26 @@
 {
- "updated": "2026/10/13 00:16",
- "checked": "2026/10/13 00:16",
+ "updated": "2026/10/13 00:46",
+ "checked": "2026/10/13 00:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
-   "scenario": "幽霊屋敷の怪",
-   "reg": "ミスリルクレスト",
+   "scenario": "マスタリング手法公開企画/月に導かれて（初心者歓迎）",
+   "reg": "アリアンロッド2E",
    "reg_is_name": false,
    "dates": [
     {
-     "date": "2026-11-02",
+     "date": "2026-10-13",
      "start": "21:00",
      "end": "24:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "くらり",
+   "gm": "カテナドルグ",
    "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1557410517360836618",
-   "created": "2026-10-07T15:13:22.627000+00:00",
-   "last_active": "2026-10-08",
-   "source": "forum"
-  },
-  {
-   "scenario": "銀盤のベアリーナ",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [],
-   "open": false,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "水樹",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1557058936870543422",
-   "created": "2026-10-06T15:56:19.306000+00:00",
+   "url": "https://discord.com/channels/1001833522723561593/1531286994582245466",
+   "created": "2026-07-27T13:07:49.445000+00:00",
    "last_active": "2026-10-12",
    "source": "forum"
   },
@@ -55,74 +40,38 @@
    "source": "forum"
   },
   {
-   "scenario": "迷子の流星",
-   "reg": "ミスリルクレスト",
+   "scenario": "エピソード:ダークCP第三陣 背教者達のルサンチマン 欺くルミナ 黒のマルクト",
+   "reg": "アリアンロッド2E",
    "reg_is_name": false,
    "dates": [],
-   "open": false,
+   "open": true,
    "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1540708067702997062",
+   "created": "2026-08-22T13:03:48.312000+00:00",
+   "last_active": "2026-10-02",
+   "source": "forum"
+  },
+  {
+   "scenario": "古戦場の目覚め",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-15",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
    "ongoing": false,
    "gm": "よし/やっぴー",
    "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1559134820720975932",
-   "created": "2026-10-12T09:25:08.584000+00:00",
-   "last_active": "2026-10-12",
-   "source": "forum"
-  },
-  {
-   "scenario": "手入れのあと",
-   "reg": "アンコールを流星に",
-   "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "水樹",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1557073298679005194",
-   "created": "2026-10-06T16:53:23.428000+00:00",
-   "last_active": "2026-10-12",
-   "source": "forum"
-  },
-  {
-   "scenario": "キャットタワー ～喫茶と猫と、時々、マグロ",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-30",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "水樹",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1559210538821615616",
-   "created": "2026-10-12T14:26:01.186000+00:00",
-   "last_active": "2026-10-13",
-   "source": "forum"
-  },
-  {
-   "scenario": "𝐒𝐭𝐞𝐥𝐥𝐚. 𝟐",
-   "reg": "さちあれ",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-23",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "てん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1556285243907112990",
-   "created": "2026-10-04T12:41:56.529000+00:00",
+   "url": "https://discord.com/channels/1001833522723561593/1544910098135253082",
+   "created": "2026-09-03T03:21:10.437000+00:00",
    "last_active": "2026-10-12",
    "source": "forum"
   },
@@ -139,48 +88,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1546497594740441189",
    "created": "2026-09-07T12:29:19.122000+00:00",
    "last_active": "2026-09-25",
-   "source": "forum"
-  },
-  {
-   "scenario": "未定",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-22",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1559222787757973585",
-   "created": "2026-10-12T15:14:41.560000+00:00",
-   "last_active": "2026-10-13",
-   "source": "forum"
-  },
-  {
-   "scenario": "虚ろの人形姫",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-15",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "くらり",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1554529058337980417",
-   "created": "2026-09-29T16:23:29.261000+00:00",
-   "last_active": "2026-10-08",
    "source": "forum"
   },
   {
@@ -201,6 +108,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1547628438888648775",
    "created": "2026-09-10T15:22:53.377000+00:00",
+   "last_active": "2026-10-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "幼子の暗殺者",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": false,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1547976361115648070",
+   "created": "2026-09-11T14:25:24.500000+00:00",
    "last_active": "2026-10-12",
    "source": "forum"
   },
@@ -226,33 +148,22 @@
    "source": "forum"
   },
   {
-   "scenario": "真食虫 21",
-   "reg": "ピースメイカー",
+   "scenario": "悪夢の主",
+   "reg": "アリアンロッド2E",
    "reg_is_name": false,
    "dates": [
     {
-     "date": "2026-10-23",
+     "date": "2026-11-28",
      "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "まひろ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1553609542531678279",
-   "created": "2026-09-27T03:29:39.609000+00:00",
-   "last_active": "2026-10-06",
-   "source": "forum"
-  },
-  {
-   "scenario": "虚ろの人形姫",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
+     "end": "25:00"
+    },
     {
-     "date": "2026-10-18",
+     "date": "2026-11-29",
+     "start": "21:00",
+     "end": "25:00"
+    },
+    {
+     "date": "2026-11-30",
      "start": "21:00",
      "end": "25:00"
     }
@@ -260,11 +171,11 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "くらり",
+   "gm": "taku",
    "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1554529052080209989",
-   "created": "2026-09-29T16:23:27.769000+00:00",
-   "last_active": "2026-10-11",
+   "url": "https://discord.com/channels/1001833522723561593/1551203926634791113",
+   "created": "2026-09-20T12:10:36.085000+00:00",
+   "last_active": "2026-10-12",
    "source": "forum"
   },
   {
@@ -315,6 +226,27 @@
    "source": "forum"
   },
   {
+   "scenario": "はじめてのぴーすめいかー2 第二陣",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-29",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1552844952386670612",
+   "created": "2026-09-25T00:51:27.113000+00:00",
+   "last_active": "2026-10-09",
+   "source": "forum"
+  },
+  {
    "scenario": "幻の空中庭園 （高難易度2）",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -336,18 +268,24 @@
    "source": "forum"
   },
   {
-   "scenario": "幼子の暗殺者",
-   "reg": "ミスリルクレスト",
+   "scenario": "真食虫 21",
+   "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-10-23",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
-   "gm": "dabdab",
+   "gm": "まひろ",
    "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1547976361115648070",
-   "created": "2026-09-11T14:25:24.500000+00:00",
-   "last_active": "2026-10-12",
+   "url": "https://discord.com/channels/1001833522723561593/1553609542531678279",
+   "created": "2026-09-27T03:29:39.609000+00:00",
+   "last_active": "2026-10-06",
    "source": "forum"
   },
   {
@@ -372,43 +310,12 @@
    "source": "forum"
   },
   {
-   "scenario": "悪夢の主",
-   "reg": "アリアンロッド2E",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-28",
-     "start": "21:00",
-     "end": "25:00"
-    },
-    {
-     "date": "2026-11-29",
-     "start": "21:00",
-     "end": "25:00"
-    },
-    {
-     "date": "2026-11-30",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "taku",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1551203926634791113",
-   "created": "2026-09-20T12:10:36.085000+00:00",
-   "last_active": "2026-10-12",
-   "source": "forum"
-  },
-  {
    "scenario": "虚ろの人形姫",
    "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [
     {
-     "date": "2026-10-12",
+     "date": "2026-10-18",
      "start": "21:00",
      "end": "25:00"
     }
@@ -418,60 +325,30 @@
    "ongoing": false,
    "gm": "くらり",
    "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1553815313726971904",
-   "created": "2026-09-27T17:07:19.285000+00:00",
-   "last_active": "2026-10-13",
+   "url": "https://discord.com/channels/1001833522723561593/1554529052080209989",
+   "created": "2026-09-29T16:23:27.769000+00:00",
+   "last_active": "2026-10-11",
    "source": "forum"
   },
   {
-   "scenario": "雪の街サポローと親子の絆",
-   "reg": "ミスリルクレスト",
+   "scenario": "虚ろの人形姫",
+   "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [
     {
-     "date": "2026-10-16",
+     "date": "2026-11-15",
      "start": "21:00",
      "end": "25:00"
     }
    ],
-   "open": false,
+   "open": true,
    "suriawase": false,
    "ongoing": false,
-   "gm": "まひろ",
+   "gm": "くらり",
    "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1559136976689565706",
-   "created": "2026-10-12T09:33:42.607000+00:00",
-   "last_active": "2026-10-13",
-   "source": "forum"
-  },
-  {
-   "scenario": "シナリオ未定",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [],
-   "open": false,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "taku",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1555596575471046797",
-   "created": "2026-10-02T15:05:25.179000+00:00",
+   "url": "https://discord.com/channels/1001833522723561593/1554529058337980417",
+   "created": "2026-09-29T16:23:29.261000+00:00",
    "last_active": "2026-10-08",
-   "source": "forum"
-  },
-  {
-   "scenario": "高難度:「権限せし破壊の化身」",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [],
-   "open": false,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "むむこ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1556289608147406868",
-   "created": "2026-10-04T12:59:17.045000+00:00",
-   "last_active": "2026-10-12",
    "source": "forum"
   },
   {
@@ -496,6 +373,21 @@
    "source": "forum"
   },
   {
+   "scenario": "シナリオ未定",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": false,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1555596575471046797",
+   "created": "2026-10-02T15:05:25.179000+00:00",
+   "last_active": "2026-10-08",
+   "source": "forum"
+  },
+  {
    "scenario": "英雄の武器屋",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -517,69 +409,12 @@
    "source": "forum"
   },
   {
-   "scenario": "未定",
-   "reg": "ミスリルクレスト",
+   "scenario": "𝐒𝐭𝐞𝐥𝐥𝐚. 𝟐",
+   "reg": "さちあれ",
    "reg_is_name": false,
    "dates": [
     {
-     "date": "2026-10-21",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1559220790409560205",
-   "created": "2026-10-12T15:06:45.355000+00:00",
-   "last_active": "2026-10-13",
-   "source": "forum"
-  },
-  {
-   "scenario": "マスタリング手法公開企画/月に導かれて（初心者歓迎）",
-   "reg": "アリアンロッド2E",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-13",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1531286994582245466",
-   "created": "2026-07-27T13:07:49.445000+00:00",
-   "last_active": "2026-10-12",
-   "source": "forum"
-  },
-  {
-   "scenario": "エピソード:ダークCP第三陣 背教者達のルサンチマン 欺くルミナ 黒のマルクト",
-   "reg": "アリアンロッド2E",
-   "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1540708067702997062",
-   "created": "2026-08-22T13:03:48.312000+00:00",
-   "last_active": "2026-10-02",
-   "source": "forum"
-  },
-  {
-   "scenario": "はじめてのぴーすめいかー2 第二陣",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-29",
+     "date": "2026-10-23",
      "start": "21:00",
      "end": "25:00"
     }
@@ -587,11 +422,77 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "よし/やっぴー",
+   "gm": "てん",
    "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1552844952386670612",
-   "created": "2026-09-25T00:51:27.113000+00:00",
-   "last_active": "2026-10-09",
+   "url": "https://discord.com/channels/1001833522723561593/1556285243907112990",
+   "created": "2026-10-04T12:41:56.529000+00:00",
+   "last_active": "2026-10-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "高難度:「権限せし破壊の化身」",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": false,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "むむこ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1556289608147406868",
+   "created": "2026-10-04T12:59:17.045000+00:00",
+   "last_active": "2026-10-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "銀盤のベアリーナ",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [],
+   "open": false,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "水樹",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1557058936870543422",
+   "created": "2026-10-06T15:56:19.306000+00:00",
+   "last_active": "2026-10-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "手入れのあと",
+   "reg": "アンコールを流星に",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "水樹",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1557073298679005194",
+   "created": "2026-10-06T16:53:23.428000+00:00",
+   "last_active": "2026-10-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "幽霊屋敷の怪",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-02",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "くらり",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1557410517360836618",
+   "created": "2026-10-07T15:13:22.627000+00:00",
+   "last_active": "2026-10-08",
    "source": "forum"
   },
   {
@@ -616,12 +517,69 @@
    "source": "forum"
   },
   {
-   "scenario": "古戦場の目覚め",
+   "scenario": "迷子の流星",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": false,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1559134820720975932",
+   "created": "2026-10-12T09:25:08.584000+00:00",
+   "last_active": "2026-10-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "雪の街サポローと親子の絆",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [
     {
-     "date": "2026-10-15",
+     "date": "2026-10-16",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "まひろ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1559136976689565706",
+   "created": "2026-10-12T09:33:42.607000+00:00",
+   "last_active": "2026-10-13",
+   "source": "forum"
+  },
+  {
+   "scenario": "キャットタワー ～喫茶と猫と、時々、マグロ",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-30",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "水樹",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1559210538821615616",
+   "created": "2026-10-12T14:26:01.186000+00:00",
+   "last_active": "2026-10-13",
+   "source": "forum"
+  },
+  {
+   "scenario": "未定",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-21",
      "start": "21:00",
      "end": "24:00"
     }
@@ -631,9 +589,51 @@
    "ongoing": false,
    "gm": "よし/やっぴー",
    "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1544910098135253082",
-   "created": "2026-09-03T03:21:10.437000+00:00",
-   "last_active": "2026-10-12",
+   "url": "https://discord.com/channels/1001833522723561593/1559220790409560205",
+   "created": "2026-10-12T15:06:45.355000+00:00",
+   "last_active": "2026-10-13",
+   "source": "forum"
+  },
+  {
+   "scenario": "未定",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-22",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1559222787757973585",
+   "created": "2026-10-12T15:14:41.560000+00:00",
+   "last_active": "2026-10-13",
+   "source": "forum"
+  },
+  {
+   "scenario": "虚ろの人形姫",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-12",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "くらり",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1553815313726971904",
+   "created": "2026-09-27T17:07:19.285000+00:00",
+   "last_active": "2026-10-13",
    "source": "forum"
   },
   {
@@ -4409,7 +4409,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1558082209070588005",
    "created": "2026-10-09T11:42:26.410000+00:00",
-   "last_active": "2026-10-09",
+   "last_active": "2026-10-13",
    "source": "forum"
   },
   {
