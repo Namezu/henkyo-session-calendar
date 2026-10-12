@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/12 12:16",
- "checked": "2026/10/12 15:16",
+ "updated": "2026/10/12 16:46",
+ "checked": "2026/10/12 16:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -560,6 +560,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559013688910946385",
    "created": "2026-10-12T01:23:48.510000+00:00",
+   "last_active": "2026-10-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "至高のコーヒーを求めて:白金のレプラコーン編",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-19",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1559108296994979862",
+   "created": "2026-10-12T07:39:44.835000+00:00",
    "last_active": "2026-10-12",
    "source": "forum"
   },
