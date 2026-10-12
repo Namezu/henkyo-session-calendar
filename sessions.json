@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/12 18:46",
- "checked": "2026/10/12 18:46",
+ "updated": "2026/10/12 19:16",
+ "checked": "2026/10/12 19:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -454,14 +454,14 @@
    "reg": "氷原開拓団",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "水樹",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1557058936870543422",
    "created": "2026-10-06T15:56:19.306000+00:00",
-   "last_active": "2026-10-08",
+   "last_active": "2026-10-12",
    "source": "forum"
   },
   {
