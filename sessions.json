@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/12 18:01",
- "checked": "2026/10/12 18:01",
+ "updated": "2026/10/12 18:16",
+ "checked": "2026/10/12 18:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -108,7 +108,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1547628438888648775",
    "created": "2026-09-10T15:22:53.377000+00:00",
-   "last_active": "2026-10-11",
+   "last_active": "2026-10-12",
    "source": "forum"
   },
   {
@@ -522,27 +522,6 @@
    "source": "forum"
   },
   {
-   "scenario": "いつか、祈りが途絶える日まで",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-12",
-     "start": "14:00",
-     "end": "17:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1558728203487682633",
-   "created": "2026-10-11T06:29:23.481000+00:00",
-   "last_active": "2026-10-12",
-   "source": "forum"
-  },
-  {
    "scenario": "至高のコーヒーを求めて:白金のレプラコーン編",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -560,6 +539,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559108296994979862",
    "created": "2026-10-12T07:39:44.835000+00:00",
+   "last_active": "2026-10-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "いつか、祈りが途絶える日まで",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-12",
+     "start": "14:00",
+     "end": "17:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1558728203487682633",
+   "created": "2026-10-11T06:29:23.481000+00:00",
    "last_active": "2026-10-12",
    "source": "forum"
   },
@@ -3563,7 +3563,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1514869456864809033",
    "created": "2026-06-12T05:50:23.430000+00:00",
@@ -3736,7 +3736,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1514614975342317668",
    "created": "2026-06-11T12:59:10.307000+00:00",
@@ -4030,7 +4030,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1507532717342982194",
    "created": "2026-05-22T23:56:48.418000+00:00",
