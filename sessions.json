@@ -1,29 +1,8 @@
 {
- "updated": "2026/10/14 00:31",
- "checked": "2026/10/14 00:31",
+ "updated": "2026/10/14 01:16",
+ "checked": "2026/10/14 01:16",
  "guild": "辺境TRPG村",
  "sessions": [
-  {
-   "scenario": "マスタリング手法公開企画/月に導かれて（初心者歓迎）",
-   "reg": "アリアンロッド2E",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-13",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1531286994582245466",
-   "created": "2026-07-27T13:07:49.445000+00:00",
-   "last_active": "2026-10-13",
-   "source": "forum"
-  },
   {
    "scenario": "異史追憶:黒のマルクト（高難易度）",
    "reg": "ピースメイカー",
@@ -613,6 +592,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1559587303565951067",
    "created": "2026-10-13T15:23:08.901000+00:00",
    "last_active": "2026-10-14",
+   "source": "forum"
+  },
+  {
+   "scenario": "マスタリング手法公開企画/月に導かれて（初心者歓迎）",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-13",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1531286994582245466",
+   "created": "2026-07-27T13:07:49.445000+00:00",
+   "last_active": "2026-10-13",
    "source": "forum"
   },
   {
