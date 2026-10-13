@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/14 00:01",
- "checked": "2026/10/14 00:01",
+ "updated": "2026/10/14 00:16",
+ "checked": "2026/10/14 00:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -306,7 +306,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1554429782647767121",
    "created": "2026-09-29T09:49:00.092000+00:00",
-   "last_active": "2026-10-13",
+   "last_active": "2026-10-14",
    "source": "forum"
   },
   {
@@ -373,7 +373,7 @@
    "source": "forum"
   },
   {
-   "scenario": "シナリオ未定",
+   "scenario": "異界の戦士～鉾の英雄＆戦場のアイドル",
    "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [],
@@ -384,7 +384,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1555596575471046797",
    "created": "2026-10-02T15:05:25.179000+00:00",
-   "last_active": "2026-10-13",
+   "last_active": "2026-10-14",
    "source": "forum"
   },
   {
