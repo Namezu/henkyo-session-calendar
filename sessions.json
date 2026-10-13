@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/13 10:31",
- "checked": "2026/10/13 10:31",
+ "updated": "2026/10/13 11:31",
+ "checked": "2026/10/13 11:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -144,7 +144,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1547979960449241332",
    "created": "2026-09-11T14:39:42.648000+00:00",
-   "last_active": "2026-10-12",
+   "last_active": "2026-10-13",
    "source": "forum"
   },
   {
@@ -580,7 +580,7 @@
    "source": "forum"
   },
   {
-   "scenario": "未定",
+   "scenario": "妖精樹に捧ぐ",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [
@@ -590,7 +590,7 @@
      "end": "24:00"
     }
    ],
-   "open": false,
+   "open": true,
    "suriawase": false,
    "ongoing": false,
    "gm": "よし/やっぴー",
@@ -611,7 +611,7 @@
      "end": "24:00"
     }
    ],
-   "open": false,
+   "open": true,
    "suriawase": false,
    "ongoing": false,
    "gm": "よし/やっぴー",
