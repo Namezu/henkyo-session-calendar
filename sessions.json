@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/14 23:37",
- "checked": "2026/10/14 23:37",
+ "updated": "2026/10/15 00:02",
+ "checked": "2026/10/15 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -73,27 +73,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1533847306410004540",
    "created": "2026-08-03T14:41:35.353000+00:00",
    "last_active": "2026-09-20",
-   "source": "forum"
-  },
-  {
-   "scenario": "キミたちは2匹のゴブリンを見つけた",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-14",
-     "start": "22:30",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1559909791986352209",
-   "created": "2026-10-14T12:44:36.132000+00:00",
-   "last_active": "2026-10-14",
    "source": "forum"
   },
   {
@@ -487,27 +466,6 @@
    "source": "forum"
   },
   {
-   "scenario": "地下から聞こえる歌声",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-14",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1559775020505628712",
-   "created": "2026-10-14T03:49:04.107000+00:00",
-   "last_active": "2026-10-14",
-   "source": "forum"
-  },
-  {
    "scenario": "高難度:「権限せし破壊の化身」",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -690,6 +648,48 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1544910098135253082",
    "created": "2026-09-03T03:21:10.437000+00:00",
+   "last_active": "2026-10-14",
+   "source": "forum"
+  },
+  {
+   "scenario": "キミたちは2匹のゴブリンを見つけた",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "start": "22:30",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1559909791986352209",
+   "created": "2026-10-14T12:44:36.132000+00:00",
+   "last_active": "2026-10-14",
+   "source": "forum"
+  },
+  {
+   "scenario": "地下から聞こえる歌声",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1559775020505628712",
+   "created": "2026-10-14T03:49:04.107000+00:00",
    "last_active": "2026-10-14",
    "source": "forum"
   },
