@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/16 23:46",
- "checked": "2026/10/16 23:46",
+ "updated": "2026/10/17 00:16",
+ "checked": "2026/10/17 00:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -42,7 +42,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1557058936870543422",
    "created": "2026-10-06T15:56:19.306000+00:00",
-   "last_active": "2026-10-16",
+   "last_active": "2026-10-17",
    "source": "forum"
   },
   {
@@ -57,7 +57,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559930065221976105",
    "created": "2026-10-14T14:05:09.648000+00:00",
-   "last_active": "2026-10-16",
+   "last_active": "2026-10-17",
    "source": "forum"
   },
   {
@@ -244,27 +244,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1554529058337980417",
    "created": "2026-09-29T16:23:29.261000+00:00",
    "last_active": "2026-10-08",
-   "source": "forum"
-  },
-  {
-   "scenario": "はじめてのぴーすめいかー（第二陣）",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-16",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1547628438888648775",
-   "created": "2026-09-10T15:22:53.377000+00:00",
-   "last_active": "2026-10-16",
    "source": "forum"
   },
   {
@@ -696,6 +675,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559108296994979862",
    "created": "2026-10-12T07:39:44.835000+00:00",
+   "last_active": "2026-10-16",
+   "source": "forum"
+  },
+  {
+   "scenario": "はじめてのぴーすめいかー（第二陣）",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1547628438888648775",
+   "created": "2026-09-10T15:22:53.377000+00:00",
    "last_active": "2026-10-16",
    "source": "forum"
   },
@@ -4562,7 +4562,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1554884118561685585",
    "created": "2026-09-30T15:54:22.215000+00:00",
-   "last_active": "2026-10-16",
+   "last_active": "2026-10-17",
    "source": "forum"
   },
   {
