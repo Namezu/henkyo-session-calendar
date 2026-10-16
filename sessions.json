@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/17 00:46",
- "checked": "2026/10/17 00:46",
+ "updated": "2026/10/17 01:02",
+ "checked": "2026/10/17 01:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -49,9 +49,30 @@
    "scenario": "アルストロの氷原訪問",
    "reg": "氷原開拓団",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-11-18",
+     "start": "21:00",
+     "end": "25:00"
+    },
+    {
+     "date": "2026-11-19",
+     "start": "21:00",
+     "end": "25:00"
+    },
+    {
+     "date": "2026-11-20",
+     "start": "21:00",
+     "end": "25:00"
+    },
+    {
+     "date": "2026-11-23",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
    "open": true,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "reiran",
    "gm_active": true,
