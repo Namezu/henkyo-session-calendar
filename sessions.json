@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/16 17:31",
- "checked": "2026/10/16 17:31",
+ "updated": "2026/10/16 18:31",
+ "checked": "2026/10/16 18:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -469,9 +469,15 @@
    "scenario": "高難度:「権限せし破壊の化身」",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-11-08",
+     "start": null,
+     "end": null
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "むむこ",
    "gm_active": true,
