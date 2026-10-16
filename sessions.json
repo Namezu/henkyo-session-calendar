@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/17 01:16",
- "checked": "2026/10/17 01:16",
+ "updated": "2026/10/17 01:31",
+ "checked": "2026/10/17 01:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -460,27 +460,6 @@
    "source": "forum"
   },
   {
-   "scenario": "雪の街サポローと親子の絆",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-16",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "まひろ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1559136976689565706",
-   "created": "2026-10-12T09:33:42.607000+00:00",
-   "last_active": "2026-10-16",
-   "source": "forum"
-  },
-  {
    "scenario": "異界の戦士～鉾の英雄＆戦場のアイドル",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -690,6 +669,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559108296994979862",
    "created": "2026-10-12T07:39:44.835000+00:00",
+   "last_active": "2026-10-16",
+   "source": "forum"
+  },
+  {
+   "scenario": "雪の街サポローと親子の絆",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "まひろ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1559136976689565706",
+   "created": "2026-10-12T09:33:42.607000+00:00",
    "last_active": "2026-10-16",
    "source": "forum"
   },
