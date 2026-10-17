@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/17 22:16",
- "checked": "2026/10/17 22:16",
+ "updated": "2026/10/17 22:31",
+ "checked": "2026/10/17 22:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -223,6 +223,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1546497594740441189",
    "created": "2026-09-07T12:29:19.122000+00:00",
    "last_active": "2026-10-16",
+   "source": "forum"
+  },
+  {
+   "scenario": "人見て考える",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-18",
+     "start": "8:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561005453675339828",
+   "created": "2026-10-17T13:18:22.235000+00:00",
+   "last_active": "2026-10-17",
    "source": "forum"
   },
   {
