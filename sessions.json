@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/17 10:01",
- "checked": "2026/10/17 10:01",
+ "updated": "2026/10/17 11:01",
+ "checked": "2026/10/17 11:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -94,6 +94,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1533847306410004540",
    "created": "2026-08-03T14:41:35.353000+00:00",
    "last_active": "2026-09-20",
+   "source": "forum"
+  },
+  {
+   "scenario": "ロストロード（ランダムダンジョン）",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-17",
+     "start": "11:30",
+     "end": "13:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1560833541229510757",
+   "created": "2026-10-17T01:55:15.114000+00:00",
+   "last_active": "2026-10-17",
    "source": "forum"
   },
   {
