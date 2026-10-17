@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/17 21:01",
- "checked": "2026/10/17 21:01",
+ "updated": "2026/10/17 21:46",
+ "checked": "2026/10/17 21:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -21,6 +21,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1557410517360836618",
    "created": "2026-10-07T15:13:22.627000+00:00",
+   "last_active": "2026-10-17",
+   "source": "forum"
+  },
+  {
+   "scenario": "弾幕遊戯～ダイワの風祝",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-17",
+     "start": "22:30",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1560994974294605844",
+   "created": "2026-10-17T12:36:43.756000+00:00",
    "last_active": "2026-10-17",
    "source": "forum"
   },
@@ -222,7 +243,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559222787757973585",
    "created": "2026-10-12T15:14:41.560000+00:00",
-   "last_active": "2026-10-16",
+   "last_active": "2026-10-17",
    "source": "forum"
   },
   {
