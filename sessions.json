@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/18 01:16",
- "checked": "2026/10/18 01:16",
+ "updated": "2026/10/18 01:31",
+ "checked": "2026/10/18 01:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -22,6 +22,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1557410517360836618",
    "created": "2026-10-07T15:13:22.627000+00:00",
    "last_active": "2026-10-17",
+   "source": "forum"
+  },
+  {
+   "scenario": "終わらぬ戯曲に終止符を",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "くらり",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561051474782330880",
+   "created": "2026-10-17T16:21:14.522000+00:00",
+   "last_active": "2026-10-18",
    "source": "forum"
   },
   {
@@ -115,27 +130,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1533847306410004540",
    "created": "2026-08-03T14:41:35.353000+00:00",
    "last_active": "2026-09-20",
-   "source": "forum"
-  },
-  {
-   "scenario": "邪神官ギャルネリア・ギャルネス",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-17",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1560914708435959808",
-   "created": "2026-10-17T07:17:46.884000+00:00",
-   "last_active": "2026-10-17",
    "source": "forum"
   },
   {
@@ -712,6 +706,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1559108296994979862",
    "created": "2026-10-12T07:39:44.835000+00:00",
    "last_active": "2026-10-16",
+   "source": "forum"
+  },
+  {
+   "scenario": "邪神官ギャルネリア・ギャルネス",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-17",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1560914708435959808",
+   "created": "2026-10-17T07:17:46.884000+00:00",
+   "last_active": "2026-10-17",
    "source": "forum"
   },
   {
