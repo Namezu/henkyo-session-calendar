@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/18 07:01",
- "checked": "2026/10/18 07:01",
+ "updated": "2026/10/18 07:16",
+ "checked": "2026/10/18 07:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -37,27 +37,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1561051474782330880",
    "created": "2026-10-17T16:21:14.522000+00:00",
    "last_active": "2026-10-18",
-   "source": "forum"
-  },
-  {
-   "scenario": "弾幕遊戯～ダイワの風祝",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-17",
-     "start": "22:30",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1560994974294605844",
-   "created": "2026-10-17T12:36:43.756000+00:00",
-   "last_active": "2026-10-17",
    "source": "forum"
   },
   {
@@ -233,7 +212,7 @@
    "open": true,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561005453675339828",
    "created": "2026-10-17T13:18:22.235000+00:00",
@@ -730,6 +709,27 @@
    "source": "forum"
   },
   {
+   "scenario": "弾幕遊戯～ダイワの風祝",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-17",
+     "start": "22:30",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1560994974294605844",
+   "created": "2026-10-17T12:36:43.756000+00:00",
+   "last_active": "2026-10-17",
+   "source": "forum"
+  },
+  {
    "scenario": "邪神官ギャルネリア・ギャルネス",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -953,7 +953,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1558079734104195102",
    "created": "2026-10-09T11:32:36.332000+00:00",
