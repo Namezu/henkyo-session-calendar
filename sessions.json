@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/18 13:01",
- "checked": "2026/10/18 13:01",
+ "updated": "2026/10/18 13:31",
+ "checked": "2026/10/18 13:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -256,7 +256,7 @@
    "source": "forum"
   },
   {
-   "scenario": "ぬまへようこそ",
+   "scenario": "あの花畑をもう一度",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [
@@ -273,7 +273,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1560438691321880697",
    "created": "2026-10-15T23:46:15.560000+00:00",
-   "last_active": "2026-10-17",
+   "last_active": "2026-10-18",
    "source": "forum"
   },
   {
