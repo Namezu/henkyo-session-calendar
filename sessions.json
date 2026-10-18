@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/18 23:16",
- "checked": "2026/10/18 23:16",
+ "updated": "2026/10/19 00:01",
+ "checked": "2026/10/19 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -4091,27 +4091,6 @@
    "source": "forum"
   },
   {
-   "scenario": "かりそめの魔女",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-20",
-     "start": "13:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1506986063728611478",
-   "created": "2026-05-21T11:44:36.040000+00:00",
-   "last_active": "2026-06-20",
-   "source": "forum"
-  },
-  {
    "scenario": "WS2-3 触日の戦列　HUNDRED LINE",
    "reg": "氷原開拓団",
    "reg_is_name": false,
@@ -5175,6 +5154,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1508426314514956428",
    "created": "2026-05-25T11:07:38.586000+00:00",
    "last_active": "2026-06-27",
+   "source": "forum"
+  },
+  {
+   "scenario": "かりそめの魔女",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-20",
+     "start": "13:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1506986063728611478",
+   "created": "2026-05-21T11:44:36.040000+00:00",
+   "last_active": "2026-06-20",
    "source": "forum"
   },
   {
