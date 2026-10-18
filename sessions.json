@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/18 19:31",
- "checked": "2026/10/18 19:31",
+ "updated": "2026/10/18 20:01",
+ "checked": "2026/10/18 20:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -127,6 +127,21 @@
    "source": "forum"
   },
   {
+   "scenario": "炎の中へ",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561330577624272946",
+   "created": "2026-10-18T10:50:17.825000+00:00",
+   "last_active": "2026-10-18",
+   "source": "forum"
+  },
+  {
    "scenario": "手入れのあと",
    "reg": "アンコールを流星に",
    "reg_is_name": false,
@@ -216,6 +231,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559222787757973585",
    "created": "2026-10-12T15:14:41.560000+00:00",
+   "last_active": "2026-10-18",
+   "source": "forum"
+  },
+  {
+   "scenario": "依頼板の向こう側（初心者歓迎）",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-25",
+     "start": "13:30",
+     "end": "16:30"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561332186051903549",
+   "created": "2026-10-18T10:56:41.304000+00:00",
    "last_active": "2026-10-18",
    "source": "forum"
   },
@@ -700,6 +736,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1559108296994979862",
    "created": "2026-10-12T07:39:44.835000+00:00",
    "last_active": "2026-10-16",
+   "source": "forum"
+  },
+  {
+   "scenario": "影の支配者",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-20",
+     "start": null,
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561332014081114216",
+   "created": "2026-10-18T10:56:00.303000+00:00",
+   "last_active": "2026-10-18",
    "source": "forum"
   },
   {
@@ -4770,6 +4827,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1558082209070588005",
    "created": "2026-10-09T11:42:26.410000+00:00",
    "last_active": "2026-10-13",
+   "source": "forum"
+  },
+  {
+   "scenario": "力試し",
+   "reg": "アリアンストラテジー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "豆の塩ゆで",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561330939454296135",
+   "created": "2026-10-18T10:51:44.092000+00:00",
+   "last_active": "2026-10-18",
    "source": "forum"
   },
   {
