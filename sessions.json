@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/18 16:31",
- "checked": "2026/10/18 16:31",
+ "updated": "2026/10/18 17:16",
+ "checked": "2026/10/18 17:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -667,27 +667,6 @@
    "source": "forum"
   },
   {
-   "scenario": "集まってから考える",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-18",
-     "start": "14:30",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1561238640422682724",
-   "created": "2026-10-18T04:44:58.288000+00:00",
-   "last_active": "2026-10-18",
-   "source": "forum"
-  },
-  {
    "scenario": "至高のコーヒーを求めて:白金のレプラコーン編",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -706,6 +685,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1559108296994979862",
    "created": "2026-10-12T07:39:44.835000+00:00",
    "last_active": "2026-10-16",
+   "source": "forum"
+  },
+  {
+   "scenario": "集まってから考える",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-18",
+     "start": "14:30",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561238640422682724",
+   "created": "2026-10-18T04:44:58.288000+00:00",
+   "last_active": "2026-10-18",
    "source": "forum"
   },
   {
