@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/18 17:16",
- "checked": "2026/10/18 17:16",
+ "updated": "2026/10/18 18:31",
+ "checked": "2026/10/18 18:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -643,6 +643,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1540708067702997062",
    "created": "2026-08-22T13:03:48.312000+00:00",
    "last_active": "2026-10-02",
+   "source": "forum"
+  },
+  {
+   "scenario": "凍廊のサンクトゥムCP / 深く、長い闇",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561308884097040474",
+   "created": "2026-10-18T09:24:05.685000+00:00",
+   "last_active": "2026-10-18",
    "source": "forum"
   },
   {
