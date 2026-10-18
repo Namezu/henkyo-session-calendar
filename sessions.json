@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/18 20:01",
- "checked": "2026/10/18 20:01",
+ "updated": "2026/10/18 20:16",
+ "checked": "2026/10/18 20:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -36,6 +36,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561051474782330880",
    "created": "2026-10-17T16:21:14.522000+00:00",
+   "last_active": "2026-10-18",
+   "source": "forum"
+  },
+  {
+   "scenario": "ランダムダンジョン･ダブルシャドウズ",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561333326571114596",
+   "created": "2026-10-18T11:01:13.225000+00:00",
    "last_active": "2026-10-18",
    "source": "forum"
   },
@@ -323,7 +338,7 @@
      "end": "25:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "ミキサ",
@@ -455,7 +470,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1547976361115648070",
    "created": "2026-09-11T14:25:24.500000+00:00",
-   "last_active": "2026-10-12",
+   "last_active": "2026-10-18",
    "source": "forum"
   },
   {
@@ -528,6 +543,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1555596575471046797",
    "created": "2026-10-02T15:05:25.179000+00:00",
+   "last_active": "2026-10-18",
+   "source": "forum"
+  },
+  {
+   "scenario": "マスタリング手法公開企画/月に導かれて（初心者歓迎）",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561334271342542948",
+   "created": "2026-10-18T11:04:58.476000+00:00",
    "last_active": "2026-10-18",
    "source": "forum"
   },
