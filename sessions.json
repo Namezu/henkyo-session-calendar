@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/18 22:46",
- "checked": "2026/10/18 22:46",
+ "updated": "2026/10/18 23:16",
+ "checked": "2026/10/18 23:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -124,6 +124,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1533847306410004540",
    "created": "2026-08-03T14:41:35.353000+00:00",
    "last_active": "2026-09-20",
+   "source": "forum"
+  },
+  {
+   "scenario": "幸運の女神が微笑んだ！(ランダムダンジョン)",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-25",
+     "start": "20:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "DIOS",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561379046745706577",
+   "created": "2026-10-18T14:02:53.764000+00:00",
+   "last_active": "2026-10-18",
    "source": "forum"
   },
   {
@@ -765,7 +786,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559108296994979862",
    "created": "2026-10-12T07:39:44.835000+00:00",
-   "last_active": "2026-10-16",
+   "last_active": "2026-10-18",
    "source": "forum"
   },
   {
