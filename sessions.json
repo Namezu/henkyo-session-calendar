@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/19 09:16",
- "checked": "2026/10/19 09:16",
+ "updated": "2026/10/19 09:31",
+ "checked": "2026/10/19 09:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -676,27 +676,6 @@
    "source": "forum"
   },
   {
-   "scenario": "英雄の武器屋",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-18",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1556219720607469598",
-   "created": "2026-10-04T08:21:34.557000+00:00",
-   "last_active": "2026-10-19",
-   "source": "forum"
-  },
-  {
    "scenario": "妖精樹に捧ぐ",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -807,6 +786,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561332014081114216",
    "created": "2026-10-18T10:56:00.303000+00:00",
+   "last_active": "2026-10-19",
+   "source": "forum"
+  },
+  {
+   "scenario": "英雄の武器屋",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-18",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1556219720607469598",
+   "created": "2026-10-04T08:21:34.557000+00:00",
    "last_active": "2026-10-19",
    "source": "forum"
   },
