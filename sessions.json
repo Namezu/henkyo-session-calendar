@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/20 00:16",
- "checked": "2026/10/20 00:16",
+ "updated": "2026/10/20 00:31",
+ "checked": "2026/10/20 00:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -137,7 +137,7 @@
      "end": "24:00"
     }
    ],
-   "open": false,
+   "open": true,
    "suriawase": false,
    "ongoing": false,
    "gm": "DIOS",
@@ -345,7 +345,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1560438691321880697",
    "created": "2026-10-15T23:46:15.560000+00:00",
-   "last_active": "2026-10-19",
+   "last_active": "2026-10-20",
    "source": "forum"
   },
   {
@@ -787,6 +787,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561332014081114216",
    "created": "2026-10-18T10:56:00.303000+00:00",
    "last_active": "2026-10-19",
+   "source": "forum"
+  },
+  {
+   "scenario": "高難度:破壊衝動の赴くままに",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-26",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "Mizshiro",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
+   "created": "2026-10-19T11:35:56.563000+00:00",
+   "last_active": "2026-10-20",
    "source": "forum"
   },
   {
@@ -31299,12 +31320,6 @@
   }
  ],
  "unparsed": [
-  {
-   "title": "【ピースメイカー】高難度:破壊衝動の赴くままに",
-   "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
-   "gm": "Mizshiro",
-   "open": true
-  },
   {
    "title": "11月上旬狙い　【アリアンストラテジーWS】2-1.傷痕",
    "url": "https://discord.com/channels/1001833522723561593/1541474800612937819",
