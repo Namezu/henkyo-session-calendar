@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/20 02:16",
- "checked": "2026/10/20 05:16",
+ "updated": "2026/10/20 07:02",
+ "checked": "2026/10/20 07:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -109,21 +109,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1559930065221976105",
    "created": "2026-10-14T14:05:09.648000+00:00",
    "last_active": "2026-10-17",
-   "source": "forum"
-  },
-  {
-   "scenario": "異史追憶:黒のマルクト（高難易度）",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1533847306410004540",
-   "created": "2026-08-03T14:41:35.353000+00:00",
-   "last_active": "2026-09-20",
    "source": "forum"
   },
   {
@@ -787,6 +772,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-10-20",
+   "source": "forum"
+  },
+  {
+   "scenario": "異史追憶:黒のマルクト（高難易度）",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1533847306410004540",
+   "created": "2026-08-03T14:41:35.353000+00:00",
+   "last_active": "2026-09-20",
    "source": "forum"
   },
   {
