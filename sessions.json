@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/20 21:01",
- "checked": "2026/10/20 21:01",
+ "updated": "2026/10/20 21:16",
+ "checked": "2026/10/20 21:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -757,15 +757,9 @@
    "scenario": "高難度:破壊衝動の赴くままに",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-26",
-     "start": "21:00",
-     "end": null
-    }
-   ],
+   "dates": [],
    "open": false,
-   "suriawase": false,
+   "suriawase": true,
    "ongoing": false,
    "gm": "Mizshiro",
    "gm_active": true,
