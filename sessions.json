@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/21 00:31",
- "checked": "2026/10/21 00:31",
+ "updated": "2026/10/21 00:46",
+ "checked": "2026/10/21 00:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -28,15 +28,21 @@
    "scenario": "終わらぬ戯曲に終止符を",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-11-01",
+     "start": null,
+     "end": null
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "くらり",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561051474782330880",
    "created": "2026-10-17T16:21:14.522000+00:00",
-   "last_active": "2026-10-19",
+   "last_active": "2026-10-21",
    "source": "forum"
   },
   {
@@ -606,7 +612,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1554947023919386644",
    "created": "2026-09-30T20:04:20.021000+00:00",
-   "last_active": "2026-10-19",
+   "last_active": "2026-10-21",
    "source": "forum"
   },
   {
