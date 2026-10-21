@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/21 23:31",
- "checked": "2026/10/21 23:31",
+ "updated": "2026/10/22 00:02",
+ "checked": "2026/10/22 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -3945,32 +3945,6 @@
    "source": "forum"
   },
   {
-   "scenario": "WS2-3 蝕日の戦列・Eclipse Æthergate",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-25",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-06-27",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "Mizshiro",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1508077343489658951",
-   "created": "2026-05-24T12:00:57.410000+00:00",
-   "last_active": "2026-06-27",
-   "source": "forum"
-  },
-  {
    "scenario": "ポーションファイトゴーレム",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -3989,32 +3963,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1516104451222536345",
    "created": "2026-06-15T15:37:49.030000+00:00",
    "last_active": "2026-06-25",
-   "source": "forum"
-  },
-  {
-   "scenario": "WS2-3 蝕日の戦列・Burden of Grace",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-21",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-06-24",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "水樹です",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1508062046066049075",
-   "created": "2026-05-24T11:00:10.220000+00:00",
-   "last_active": "2026-06-24",
    "source": "forum"
   },
   {
@@ -4165,27 +4113,6 @@
    "source": "forum"
   },
   {
-   "scenario": "WS2-3 触日の戦列　HUNDRED LINE",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-19",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "reiran",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1508062032354873344",
-   "created": "2026-05-24T11:00:06.951000+00:00",
-   "last_active": "2026-06-19",
-   "source": "forum"
-  },
-  {
    "scenario": "彼氏が分かれた",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -4312,27 +4239,6 @@
    "source": "forum"
   },
   {
-   "scenario": "世紀末砂漠",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-30",
-     "start": "14:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1507922931303317564",
-   "created": "2026-05-24T01:47:22.676000+00:00",
-   "last_active": "2026-05-30",
-   "source": "forum"
-  },
-  {
    "scenario": "ランダムダンジョン･ダブルシャドウズ",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -4371,32 +4277,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1511340948569718814",
    "created": "2026-06-02T12:09:21.496000+00:00",
-   "last_active": "2026-06-13",
-   "source": "forum"
-  },
-  {
-   "scenario": "WS2-3 蝕日の戦列・Obsidian Horizon",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-11",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-06-13",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "Nn(エヌ)",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1508062019025375373",
-   "created": "2026-05-24T11:00:03.773000+00:00",
    "last_active": "2026-06-13",
    "source": "forum"
   },
@@ -4440,48 +4320,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1512080148676218951",
    "created": "2026-06-04T13:06:40.535000+00:00",
    "last_active": "2026-06-12",
-   "source": "forum"
-  },
-  {
-   "scenario": "WS2-3 蝕日の戦列・Corner Rat",
-   "reg": "氷原開拓団",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-10",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "一藻通",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1508062503538790520",
-   "created": "2026-05-24T11:01:59.290000+00:00",
-   "last_active": "2026-06-11",
-   "source": "forum"
-  },
-  {
-   "scenario": "夢の闘技場",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-08",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "taku",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1508112541883306065",
-   "created": "2026-05-24T14:20:49.361000+00:00",
-   "last_active": "2026-06-08",
    "source": "forum"
   },
   {
@@ -4629,48 +4467,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1511338877078601809",
    "created": "2026-06-02T12:01:07.614000+00:00",
    "last_active": "2026-06-02",
-   "source": "forum"
-  },
-  {
-   "scenario": "吹き荒れる狂風",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-30",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "DIOS",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1508039033450795111",
-   "created": "2026-05-24T09:28:43.585000+00:00",
-   "last_active": "2026-05-30",
-   "source": "forum"
-  },
-  {
-   "scenario": "迷惑な庭",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-05-24",
-     "start": "13:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1507874626376695819",
-   "created": "2026-05-23T22:35:25.884000+00:00",
-   "last_active": "2026-05-24",
    "source": "forum"
   },
   {
@@ -5186,6 +4982,210 @@
    "url": "https://discord.com/channels/1001833522723561593/1508426314514956428",
    "created": "2026-05-25T11:07:38.586000+00:00",
    "last_active": "2026-06-27",
+   "source": "forum"
+  },
+  {
+   "scenario": "WS2-3 蝕日の戦列・Eclipse Æthergate",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-25",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-06-27",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "Mizshiro",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1508077343489658951",
+   "created": "2026-05-24T12:00:57.410000+00:00",
+   "last_active": "2026-06-27",
+   "source": "forum"
+  },
+  {
+   "scenario": "WS2-3 蝕日の戦列・Burden of Grace",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-21",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-06-24",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "水樹です",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1508062046066049075",
+   "created": "2026-05-24T11:00:10.220000+00:00",
+   "last_active": "2026-06-24",
+   "source": "forum"
+  },
+  {
+   "scenario": "WS2-3 触日の戦列　HUNDRED LINE",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-19",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1508062032354873344",
+   "created": "2026-05-24T11:00:06.951000+00:00",
+   "last_active": "2026-06-19",
+   "source": "forum"
+  },
+  {
+   "scenario": "世紀末砂漠",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-30",
+     "start": "14:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1507922931303317564",
+   "created": "2026-05-24T01:47:22.676000+00:00",
+   "last_active": "2026-05-30",
+   "source": "forum"
+  },
+  {
+   "scenario": "WS2-3 蝕日の戦列・Obsidian Horizon",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-11",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-06-13",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "Nn(エヌ)",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1508062019025375373",
+   "created": "2026-05-24T11:00:03.773000+00:00",
+   "last_active": "2026-06-13",
+   "source": "forum"
+  },
+  {
+   "scenario": "WS2-3 蝕日の戦列・Corner Rat",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-10",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "一藻通",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1508062503538790520",
+   "created": "2026-05-24T11:01:59.290000+00:00",
+   "last_active": "2026-06-11",
+   "source": "forum"
+  },
+  {
+   "scenario": "夢の闘技場",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-08",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1508112541883306065",
+   "created": "2026-05-24T14:20:49.361000+00:00",
+   "last_active": "2026-06-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "吹き荒れる狂風",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-30",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "DIOS",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1508039033450795111",
+   "created": "2026-05-24T09:28:43.585000+00:00",
+   "last_active": "2026-05-30",
+   "source": "forum"
+  },
+  {
+   "scenario": "迷惑な庭",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-05-24",
+     "start": "13:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1507874626376695819",
+   "created": "2026-05-23T22:35:25.884000+00:00",
+   "last_active": "2026-05-24",
    "source": "forum"
   },
   {
