@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/22 01:02",
- "checked": "2026/10/22 01:02",
+ "updated": "2026/10/22 01:16",
+ "checked": "2026/10/22 01:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -4652,27 +4652,6 @@
    "source": "forum"
   },
   {
-   "scenario": "猿山潰し！ 第1卓",
-   "reg": "アリアンストラテジー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-21",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "水樹",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1554884118561685585",
-   "created": "2026-09-30T15:54:22.215000+00:00",
-   "last_active": "2026-10-21",
-   "source": "forum"
-  },
-  {
    "scenario": "猿山潰し！ 第2卓",
    "reg": "アリアンストラテジー",
    "reg_is_name": false,
@@ -4700,6 +4679,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561330939454296135",
    "created": "2026-10-18T10:51:44.092000+00:00",
    "last_active": "2026-10-19",
+   "source": "forum"
+  },
+  {
+   "scenario": "猿山潰し！ 第1卓",
+   "reg": "アリアンストラテジー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-21",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "水樹",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1554884118561685585",
+   "created": "2026-09-30T15:54:22.215000+00:00",
+   "last_active": "2026-10-21",
    "source": "forum"
   },
   {
