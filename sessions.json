@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/24 07:46",
- "checked": "2026/10/24 07:46",
+ "updated": "2026/10/24 08:01",
+ "checked": "2026/10/24 08:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -67,7 +67,7 @@
    "source": "forum"
   },
   {
-   "scenario": "なにかする",
+   "scenario": "闘技場の覇者",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [
@@ -477,7 +477,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561886511815991307",
    "created": "2026-10-19T23:39:22.865000+00:00",
-   "last_active": "2026-10-23",
+   "last_active": "2026-10-24",
    "source": "forum"
   },
   {
