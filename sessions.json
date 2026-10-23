@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/23 20:31",
- "checked": "2026/10/23 20:31",
+ "updated": "2026/10/23 20:46",
+ "checked": "2026/10/23 20:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -151,6 +151,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1559134820720975932",
    "created": "2026-10-12T09:25:08.584000+00:00",
    "last_active": "2026-10-19",
+   "source": "forum"
+  },
+  {
+   "scenario": "幻想ダンジョン（ランダムダンジョン形式） Lunatic2",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-11",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1563153442560806952",
+   "created": "2026-10-23T11:33:42.693000+00:00",
+   "last_active": "2026-10-23",
    "source": "forum"
   },
   {
@@ -397,6 +418,27 @@
    "source": "forum"
   },
   {
+   "scenario": "幻想ダンジョン（ランダムダンジョン形式） Lunatic1",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-03",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1563153435652792431",
+   "created": "2026-10-23T11:33:41.046000+00:00",
+   "last_active": "2026-10-23",
+   "source": "forum"
+  },
+  {
    "scenario": "ボスラッシュ！〜闇からの刺客編",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -616,7 +658,7 @@
    "source": "forum"
   },
   {
-   "scenario": "人見て決める",
+   "scenario": "盗まれた悪魔の瞳",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [
@@ -715,12 +757,18 @@
    "source": "forum"
   },
   {
-   "scenario": "幻想ダンジョン（ランダムダンジョン形式）",
+   "scenario": "幻想ダンジョン（ランダムダンジョン形式） Normal",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-11-04",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "dabdab",
    "gm_active": true,
