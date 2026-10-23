@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/23 20:16",
- "checked": "2026/10/23 20:16",
+ "updated": "2026/10/23 20:31",
+ "checked": "2026/10/23 20:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -538,6 +538,27 @@
    "source": "forum"
   },
   {
+   "scenario": "収穫されし魂の行列",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-24",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1563151613621837845",
+   "created": "2026-10-23T11:26:26.640000+00:00",
+   "last_active": "2026-10-23",
+   "source": "forum"
+  },
+  {
    "scenario": "異界の戦士～鉾の英雄＆戦場のアイドル",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -592,6 +613,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561334271342542948",
    "created": "2026-10-18T11:04:58.476000+00:00",
    "last_active": "2026-10-18",
+   "source": "forum"
+  },
+  {
+   "scenario": "人見て決める",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-23",
+     "start": "22:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1563150512533282888",
+   "created": "2026-10-23T11:22:04.120000+00:00",
+   "last_active": "2026-10-23",
    "source": "forum"
   },
   {
