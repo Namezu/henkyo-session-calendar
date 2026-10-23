@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/23 15:46",
- "checked": "2026/10/23 15:46",
+ "updated": "2026/10/23 17:31",
+ "checked": "2026/10/23 17:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -103,6 +103,21 @@
    "source": "forum"
   },
   {
+   "scenario": "依頼板の向こう側（初心者歓迎）",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1563107142687526932",
+   "created": "2026-10-23T08:29:43.943000+00:00",
+   "last_active": "2026-10-23",
+   "source": "forum"
+  },
+  {
    "scenario": "幸運の女神が微笑んだ！(ランダムダンジョン)",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -186,6 +201,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559210538821615616",
    "created": "2026-10-12T14:26:01.186000+00:00",
+   "last_active": "2026-10-23",
+   "source": "forum"
+  },
+  {
+   "scenario": "北のまほろば（初心者歓迎）",
+   "reg": "アンコールを流星に",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1563105883267928216",
+   "created": "2026-10-23T08:24:43.674000+00:00",
    "last_active": "2026-10-23",
    "source": "forum"
   },
