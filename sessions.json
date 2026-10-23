@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/23 07:46",
- "checked": "2026/10/23 07:46",
+ "updated": "2026/10/23 09:16",
+ "checked": "2026/10/23 09:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -214,36 +214,21 @@
    "scenario": "激闘！！ピースメイカーVSピースブレイカー！！",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-11-22",
+     "start": null,
+     "end": null
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "むむこ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1546497594740441189",
    "created": "2026-09-07T12:29:19.122000+00:00",
    "last_active": "2026-10-23",
-   "source": "forum"
-  },
-  {
-   "scenario": "優しい檻",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-22",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1559222787757973585",
-   "created": "2026-10-12T15:14:41.560000+00:00",
-   "last_active": "2026-10-22",
    "source": "forum"
   },
   {
@@ -357,7 +342,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1553609542531678279",
    "created": "2026-09-27T03:29:39.609000+00:00",
-   "last_active": "2026-10-22",
+   "last_active": "2026-10-23",
    "source": "forum"
   },
   {
@@ -719,6 +704,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
+   "last_active": "2026-10-22",
+   "source": "forum"
+  },
+  {
+   "scenario": "優しい檻",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-22",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1559222787757973585",
+   "created": "2026-10-12T15:14:41.560000+00:00",
    "last_active": "2026-10-22",
    "source": "forum"
   },
