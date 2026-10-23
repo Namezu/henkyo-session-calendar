@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/24 08:01",
- "checked": "2026/10/24 08:01",
+ "updated": "2026/10/24 08:12",
+ "checked": "2026/10/24 08:12",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -418,27 +418,6 @@
    "source": "forum"
   },
   {
-   "scenario": "真食虫 21",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-23",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "まひろ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1553609542531678279",
-   "created": "2026-09-27T03:29:39.609000+00:00",
-   "last_active": "2026-10-23",
-   "source": "forum"
-  },
-  {
    "scenario": "幻想ダンジョン（ランダムダンジョン形式） Lunatic1",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -841,6 +820,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-10-22",
+   "source": "forum"
+  },
+  {
+   "scenario": "真食虫 21",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-23",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "まひろ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1553609542531678279",
+   "created": "2026-09-27T03:29:39.609000+00:00",
+   "last_active": "2026-10-23",
    "source": "forum"
   },
   {
