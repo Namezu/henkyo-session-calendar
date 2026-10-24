@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/24 23:46",
- "checked": "2026/10/24 23:46",
+ "updated": "2026/10/25 00:02",
+ "checked": "2026/10/25 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -4182,27 +4182,6 @@
    "source": "forum"
   },
   {
-   "scenario": "かりそめの魔女",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-21",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1508851544219586701",
-   "created": "2026-05-26T15:17:21.248000+00:00",
-   "last_active": "2026-06-21",
-   "source": "forum"
-  },
-  {
    "scenario": "グランフェルデン・フェスティバル",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -4284,27 +4263,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1512062787717955656",
    "created": "2026-06-04T11:57:41.360000+00:00",
    "last_active": "2026-06-16",
-   "source": "forum"
-  },
-  {
-   "scenario": "かりそめの魔女",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-20",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1508851137892192277",
-   "created": "2026-05-26T15:15:44.372000+00:00",
-   "last_active": "2026-06-20",
    "source": "forum"
   },
   {
@@ -5150,6 +5108,48 @@
    "url": "https://discord.com/channels/1001833522723561593/1518055929566859284",
    "created": "2026-06-21T00:52:17.724000+00:00",
    "last_active": "2026-07-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "かりそめの魔女",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-21",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1508851544219586701",
+   "created": "2026-05-26T15:17:21.248000+00:00",
+   "last_active": "2026-06-21",
+   "source": "forum"
+  },
+  {
+   "scenario": "かりそめの魔女",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-20",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1508851137892192277",
+   "created": "2026-05-26T15:15:44.372000+00:00",
+   "last_active": "2026-06-20",
    "source": "forum"
   },
   {
