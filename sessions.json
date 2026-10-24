@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/24 17:46",
- "checked": "2026/10/24 17:46",
+ "updated": "2026/10/24 18:16",
+ "checked": "2026/10/24 18:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -591,27 +591,6 @@
    "source": "forum"
   },
   {
-   "scenario": "ロストロード（ランダムダンジョン）",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-24",
-     "start": "14:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1563403568256516226",
-   "created": "2026-10-24T04:07:37.306000+00:00",
-   "last_active": "2026-10-24",
-   "source": "forum"
-  },
-  {
    "scenario": "猩々緋色薔薇の女王",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -810,6 +789,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-10-22",
+   "source": "forum"
+  },
+  {
+   "scenario": "ロストロード（ランダムダンジョン）",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-24",
+     "start": "14:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1563403568256516226",
+   "created": "2026-10-24T04:07:37.306000+00:00",
+   "last_active": "2026-10-24",
    "source": "forum"
   },
   {
