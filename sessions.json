@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/24 15:30",
- "checked": "2026/10/24 15:30",
+ "updated": "2026/10/24 17:16",
+ "checked": "2026/10/24 17:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -429,27 +429,6 @@
    "source": "forum"
   },
   {
-   "scenario": "ボスラッシュ！〜闇からの刺客編",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-24",
-     "start": "14:00",
-     "end": "18:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1561886511815991307",
-   "created": "2026-10-19T23:39:22.865000+00:00",
-   "last_active": "2026-10-24",
-   "source": "forum"
-  },
-  {
    "scenario": "鐘を鳴らして",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -472,7 +451,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551278369952501761",
    "created": "2026-09-20T17:06:24.755000+00:00",
-   "last_active": "2026-10-23",
+   "last_active": "2026-10-24",
    "source": "forum"
   },
   {
@@ -650,7 +629,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1562355770375540798",
    "created": "2026-10-21T06:44:02.824000+00:00",
-   "last_active": "2026-10-23",
+   "last_active": "2026-10-24",
    "source": "forum"
   },
   {
@@ -831,6 +810,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-10-22",
+   "source": "forum"
+  },
+  {
+   "scenario": "ボスラッシュ！〜闇からの刺客編",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-24",
+     "start": "14:00",
+     "end": "18:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561886511815991307",
+   "created": "2026-10-19T23:39:22.865000+00:00",
+   "last_active": "2026-10-24",
    "source": "forum"
   },
   {
