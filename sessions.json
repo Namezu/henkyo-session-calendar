@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/27 07:31",
- "checked": "2026/10/27 07:31",
+ "updated": "2026/10/27 08:31",
+ "checked": "2026/10/27 08:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -367,18 +367,24 @@
    "source": "forum"
   },
   {
-   "scenario": "検討中",
-   "reg": "アリアンロッド2E",
+   "scenario": "豊穣は誰がために",
+   "reg": "ミスリルクレスト",
    "reg_is_name": false,
-   "dates": [],
-   "open": false,
-   "suriawase": true,
+   "dates": [
+    {
+     "date": "2026-11-28",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "にゃぎさん",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1562019096927666226",
    "created": "2026-10-20T08:26:13.619000+00:00",
-   "last_active": "2026-10-26",
+   "last_active": "2026-10-27",
    "source": "forum"
   },
   {
@@ -745,7 +751,7 @@
      "end": "18:00"
     }
    ],
-   "open": false,
+   "open": true,
    "suriawase": false,
    "ongoing": false,
    "gm": "にゃぎさん",
