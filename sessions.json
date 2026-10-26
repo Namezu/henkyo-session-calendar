@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/27 03:31",
- "checked": "2026/10/27 06:31",
+ "updated": "2026/10/27 07:01",
+ "checked": "2026/10/27 07:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -328,9 +328,15 @@
    "scenario": "謎の少女登場！？氷原フィールドワーク",
    "reg": "氷原開拓団",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-11-12",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "reiran",
    "gm_active": true,
