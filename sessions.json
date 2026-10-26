@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/26 09:31",
- "checked": "2026/10/26 09:31",
+ "updated": "2026/10/26 10:01",
+ "checked": "2026/10/26 10:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -99,7 +99,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559930065221976105",
    "created": "2026-10-14T14:05:09.648000+00:00",
-   "last_active": "2026-10-25",
+   "last_active": "2026-10-26",
    "source": "forum"
   },
   {
@@ -631,14 +631,14 @@
    "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "dabdab",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559899639547691049",
    "created": "2026-10-14T12:04:15.602000+00:00",
-   "last_active": "2026-10-23",
+   "last_active": "2026-10-26",
    "source": "forum"
   },
   {
@@ -730,7 +730,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561308884097040474",
    "created": "2026-10-18T09:24:05.685000+00:00",
-   "last_active": "2026-10-23",
+   "last_active": "2026-10-26",
    "source": "forum"
   },
   {
@@ -4683,18 +4683,13 @@
      "held": true
     },
     {
-     "date": "2026-11-21",
-     "start": null,
-     "end": null
-    },
-    {
      "date": "2026-11-22",
-     "start": null,
+     "start": "21:00",
      "end": null
     },
     {
      "date": "2026-11-24",
-     "start": null,
+     "start": "21:00",
      "end": null
     }
    ],
@@ -4705,7 +4700,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1509931191262904360",
    "created": "2026-05-29T14:47:29.162000+00:00",
-   "last_active": "2026-10-25",
+   "last_active": "2026-10-26",
    "source": "forum"
   },
   {
