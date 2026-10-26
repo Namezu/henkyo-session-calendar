@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/26 17:31",
- "checked": "2026/10/26 17:31",
+ "updated": "2026/10/26 19:01",
+ "checked": "2026/10/26 19:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -729,12 +729,18 @@
    "source": "forum"
   },
   {
-   "scenario": "検討中",
-   "reg": "アリアンロッド2E",
+   "scenario": "狼王の砦",
+   "reg": "ミスリルクレスト",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-11-08",
+     "start": "13:00",
+     "end": "18:00"
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "にゃぎさん",
    "gm_active": true,
