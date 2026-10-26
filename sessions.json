@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/27 00:16",
- "checked": "2026/10/27 00:16",
+ "updated": "2026/10/27 00:31",
+ "checked": "2026/10/27 00:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -4880,6 +4880,32 @@
    "url": "https://discord.com/channels/1001833522723561593/1540726956558000198",
    "created": "2026-08-22T14:18:51.766000+00:00",
    "last_active": "2026-10-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "傷痕",
+   "reg": "アリアンストラテジー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-09",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-11-10",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カピ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1541474800612937819",
+   "created": "2026-08-24T15:50:31.683000+00:00",
+   "last_active": "2026-10-27",
    "source": "forum"
   },
   {
@@ -31739,12 +31765,5 @@
    "source": "forum"
   }
  ],
- "unparsed": [
-  {
-   "title": "11月上旬狙い　【アリアンストラテジーWS】2-1.傷痕",
-   "url": "https://discord.com/channels/1001833522723561593/1541474800612937819",
-   "gm": "カピ",
-   "open": false
-  }
- ]
+ "unparsed": []
 }
