@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/27 08:31",
- "checked": "2026/10/27 08:31",
+ "updated": "2026/10/27 09:46",
+ "checked": "2026/10/27 09:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -550,27 +550,6 @@
    "source": "forum"
   },
   {
-   "scenario": "猩々緋色薔薇の女王",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-26",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "むむこ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1562355770375540798",
-   "created": "2026-10-21T06:44:02.824000+00:00",
-   "last_active": "2026-10-26",
-   "source": "forum"
-  },
-  {
    "scenario": "マスタリング手法公開企画/月に導かれて（初心者歓迎）",
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
@@ -810,6 +789,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-10-22",
+   "source": "forum"
+  },
+  {
+   "scenario": "猩々緋色薔薇の女王",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-26",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "むむこ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1562355770375540798",
+   "created": "2026-10-21T06:44:02.824000+00:00",
+   "last_active": "2026-10-26",
    "source": "forum"
   },
   {
