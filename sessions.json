@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/27 19:16",
- "checked": "2026/10/27 19:16",
+ "updated": "2026/10/27 19:31",
+ "checked": "2026/10/27 19:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -95,6 +95,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1559930065221976105",
    "created": "2026-10-14T14:05:09.648000+00:00",
    "last_active": "2026-10-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "刻限の魔導砲 case3",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-24",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1564586112205197394",
+   "created": "2026-10-27T10:26:37.754000+00:00",
+   "last_active": "2026-10-27",
    "source": "forum"
   },
   {
@@ -289,7 +310,7 @@
    "source": "forum"
   },
   {
-   "scenario": "刻限の魔導砲",
+   "scenario": "刻限の魔導砲 case1",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [
@@ -511,6 +532,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1551203926634791113",
    "created": "2026-09-20T12:10:36.085000+00:00",
    "last_active": "2026-10-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "刻限の魔導砲 case2",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-21",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1564585031676989513",
+   "created": "2026-10-27T10:22:20.136000+00:00",
+   "last_active": "2026-10-27",
    "source": "forum"
   },
   {
