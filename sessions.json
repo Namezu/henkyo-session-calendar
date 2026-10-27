@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/27 20:02",
- "checked": "2026/10/27 20:02",
+ "updated": "2026/10/27 20:16",
+ "checked": "2026/10/27 20:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -220,9 +220,20 @@
    "scenario": "手入れのあと",
    "reg": "アンコールを流星に",
    "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
+   "dates": [
+    {
+     "date": "2026-11-05",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-11-06",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
    "ongoing": false,
    "gm": "水樹",
    "gm_active": true,
@@ -2685,7 +2696,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹",
+   "gm": "水樹です",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540691795485135019",
    "created": "2026-08-22T11:59:08.713000+00:00",
@@ -3729,7 +3740,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹",
+   "gm": "水樹です",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1525181090208157898",
    "created": "2026-07-10T16:45:08.400000+00:00",
@@ -4939,7 +4950,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540726956558000198",
    "created": "2026-08-22T14:18:51.766000+00:00",
-   "last_active": "2026-10-25",
+   "last_active": "2026-10-27",
    "source": "forum"
   },
   {
@@ -5012,7 +5023,7 @@
    "open": true,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹",
+   "gm": "水樹です",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1554884118561685585",
    "created": "2026-09-30T15:54:22.215000+00:00",
