@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/28 23:02",
- "checked": "2026/10/28 23:02",
+ "updated": "2026/10/29 00:02",
+ "checked": "2026/10/29 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -4981,16 +4981,18 @@
     {
      "date": "2026-10-25",
      "start": "21:00",
-     "end": null
+     "end": null,
+     "held": true
     },
     {
      "date": "2026-10-28",
      "start": "21:00",
-     "end": null
+     "end": null,
+     "held": true
     },
     {
      "date": "2026-10-29",
-     "start": "21:00",
+     "start": "21:30",
      "end": null
     }
    ],
