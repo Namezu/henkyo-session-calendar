@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/29 21:31",
- "checked": "2026/10/29 21:31",
+ "updated": "2026/10/29 23:31",
+ "checked": "2026/10/29 23:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -31915,5 +31915,12 @@
    "source": "forum"
   }
  ],
- "unparsed": []
+ "unparsed": [
+  {
+   "title": "11月以降　【アリアンストラテジーWS】1-2「新しい日常」",
+   "url": "https://discord.com/channels/1001833522723561593/1565369176246198332",
+   "gm": "カピだな",
+   "open": true
+  }
+ ]
 }
