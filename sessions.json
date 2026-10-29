@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/29 23:46",
- "checked": "2026/10/29 23:46",
+ "updated": "2026/10/30 00:02",
+ "checked": "2026/10/30 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -4768,48 +4768,6 @@
    "source": "forum"
   },
   {
-   "scenario": "冒険者になりませんか？",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-06",
-     "start": "14:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1510970881130889256",
-   "created": "2026-06-01T11:38:50.543000+00:00",
-   "last_active": "2026-06-06",
-   "source": "forum"
-  },
-  {
-   "scenario": "浅き夢見し、故も無く",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-03",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1510934167150661653",
-   "created": "2026-06-01T09:12:57.248000+00:00",
-   "last_active": "2026-06-04",
-   "source": "forum"
-  },
-  {
    "scenario": "ロストロード（ランダムダンジョン）",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -5018,11 +4976,11 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1541474800612937819",
    "created": "2026-08-24T15:50:31.683000+00:00",
-   "last_active": "2026-10-27",
+   "last_active": "2026-10-29",
    "source": "forum"
   },
   {
@@ -5081,7 +5039,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540726956558000198",
    "created": "2026-08-22T14:18:51.766000+00:00",
@@ -5175,7 +5133,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1542489361747152956",
    "created": "2026-08-27T11:02:01.907000+00:00",
@@ -5201,7 +5159,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1526557321449312257",
    "created": "2026-07-14T11:53:47.497000+00:00",
@@ -5289,7 +5247,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1512833539090022460",
    "created": "2026-06-06T15:00:22.807000+00:00",
@@ -5315,7 +5273,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピだな",
+   "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1514257239848779949",
    "created": "2026-06-10T13:17:39.519000+00:00",
@@ -5362,6 +5320,48 @@
    "url": "https://discord.com/channels/1001833522723561593/1518055929566859284",
    "created": "2026-06-21T00:52:17.724000+00:00",
    "last_active": "2026-07-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "冒険者になりませんか？",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-06",
+     "start": "14:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1510970881130889256",
+   "created": "2026-06-01T11:38:50.543000+00:00",
+   "last_active": "2026-06-06",
+   "source": "forum"
+  },
+  {
+   "scenario": "浅き夢見し、故も無く",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-03",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1510934167150661653",
+   "created": "2026-06-01T09:12:57.248000+00:00",
+   "last_active": "2026-06-04",
    "source": "forum"
   },
   {
@@ -31919,7 +31919,7 @@
   {
    "title": "11月以降　【アリアンストラテジーWS】1-2「新しい日常」",
    "url": "https://discord.com/channels/1001833522723561593/1565369176246198332",
-   "gm": "カピだな",
+   "gm": "カピ",
    "open": true
   }
  ]
