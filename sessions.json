@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/30 00:02",
- "checked": "2026/10/30 00:02",
+ "updated": "2026/10/30 00:16",
+ "checked": "2026/10/30 00:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -827,6 +827,21 @@
    "source": "forum"
   },
   {
+   "scenario": "高難度:破壊衝動の赴くままに",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": false,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "Mizshiro",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
+   "created": "2026-10-19T11:35:56.563000+00:00",
+   "last_active": "2026-10-30",
+   "source": "forum"
+  },
+  {
    "scenario": "はじめてのぴーすめいかー2 第二陣",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -845,21 +860,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1552844952386670612",
    "created": "2026-09-25T00:51:27.113000+00:00",
    "last_active": "2026-10-29",
-   "source": "forum"
-  },
-  {
-   "scenario": "高難度:破壊衝動の赴くままに",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [],
-   "open": false,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "Mizshiro",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
-   "created": "2026-10-19T11:35:56.563000+00:00",
-   "last_active": "2026-10-22",
    "source": "forum"
   },
   {
