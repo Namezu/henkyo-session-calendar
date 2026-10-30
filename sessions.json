@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/30 22:46",
- "checked": "2026/10/30 22:46",
+ "updated": "2026/10/31 00:01",
+ "checked": "2026/10/31 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -4621,48 +4621,6 @@
    "source": "forum"
   },
   {
-   "scenario": "勇者の首を晒せ",
-   "reg": null,
-   "reg_is_name": true,
-   "dates": [
-    {
-     "date": "2026-06-14",
-     "start": "13:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1511328968106577930",
-   "created": "2026-06-02T11:21:45.131000+00:00",
-   "last_active": "2026-06-14",
-   "source": "forum"
-  },
-  {
-   "scenario": "あの空に虹を",
-   "reg": "アンコールを流星に",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-13",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1511340948569718814",
-   "created": "2026-06-02T12:09:21.496000+00:00",
-   "last_active": "2026-06-13",
-   "source": "forum"
-  },
-  {
    "scenario": "尽きぬ欲望の黄金主義",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -4744,48 +4702,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1512979311068713091",
    "created": "2026-06-07T00:39:37.555000+00:00",
    "last_active": "2026-06-07",
-   "source": "forum"
-  },
-  {
-   "scenario": "Sunny Side Up!",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-07",
-     "start": "9:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "てん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1511365226702967096",
-   "created": "2026-06-02T13:45:49.854000+00:00",
-   "last_active": "2026-06-07",
-   "source": "forum"
-  },
-  {
-   "scenario": "ロストロード（ランダムダンジョン）",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-02",
-     "start": "21:30",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1511338877078601809",
-   "created": "2026-06-02T12:01:07.614000+00:00",
-   "last_active": "2026-06-02",
    "source": "forum"
   },
   {
@@ -5320,6 +5236,90 @@
    "url": "https://discord.com/channels/1001833522723561593/1518055929566859284",
    "created": "2026-06-21T00:52:17.724000+00:00",
    "last_active": "2026-07-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "勇者の首を晒せ",
+   "reg": null,
+   "reg_is_name": true,
+   "dates": [
+    {
+     "date": "2026-06-14",
+     "start": "13:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1511328968106577930",
+   "created": "2026-06-02T11:21:45.131000+00:00",
+   "last_active": "2026-06-14",
+   "source": "forum"
+  },
+  {
+   "scenario": "あの空に虹を",
+   "reg": "アンコールを流星に",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-13",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1511340948569718814",
+   "created": "2026-06-02T12:09:21.496000+00:00",
+   "last_active": "2026-06-13",
+   "source": "forum"
+  },
+  {
+   "scenario": "Sunny Side Up!",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-07",
+     "start": "9:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "てん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1511365226702967096",
+   "created": "2026-06-02T13:45:49.854000+00:00",
+   "last_active": "2026-06-07",
+   "source": "forum"
+  },
+  {
+   "scenario": "ロストロード（ランダムダンジョン）",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-02",
+     "start": "21:30",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1511338877078601809",
+   "created": "2026-06-02T12:01:07.614000+00:00",
+   "last_active": "2026-06-02",
    "source": "forum"
   },
   {
