@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/30 20:16",
- "checked": "2026/10/30 20:16",
+ "updated": "2026/10/30 20:31",
+ "checked": "2026/10/30 20:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -726,6 +726,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1559587303565951067",
    "created": "2026-10-13T15:23:08.901000+00:00",
    "last_active": "2026-10-29",
+   "source": "forum"
+  },
+  {
+   "scenario": "ダンジョンに咲く虹",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-30",
+     "start": "21:30",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1565688337078161508",
+   "created": "2026-10-30T11:26:28.642000+00:00",
+   "last_active": "2026-10-30",
    "source": "forum"
   },
   {
