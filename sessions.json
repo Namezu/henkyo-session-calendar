@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/31 14:01",
- "checked": "2026/10/31 14:01",
+ "updated": "2026/10/31 14:16",
+ "checked": "2026/10/31 14:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -800,6 +800,48 @@
    "source": "forum"
   },
   {
+   "scenario": "幸運の女神が微笑んだ！(ランダムダンジョン)",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-25",
+     "start": "20:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "DIOS",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561379046745706577",
+   "created": "2026-10-18T14:02:53.764000+00:00",
+   "last_active": "2026-10-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "キャットタワー ～喫茶と猫と、時々、マグロ",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-30",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "水樹",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1559210538821615616",
+   "created": "2026-10-12T14:26:01.186000+00:00",
+   "last_active": "2026-10-30",
+   "source": "forum"
+  },
+  {
    "scenario": "真食虫 21",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -817,27 +859,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1554947023919386644",
    "created": "2026-09-30T20:04:20.021000+00:00",
-   "last_active": "2026-10-30",
-   "source": "forum"
-  },
-  {
-   "scenario": "キャットタワー ～喫茶と猫と、時々、マグロ",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-30",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "水樹",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1559210538821615616",
-   "created": "2026-10-12T14:26:01.186000+00:00",
    "last_active": "2026-10-30",
    "source": "forum"
   },
@@ -943,27 +964,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551845658867011595",
    "created": "2026-09-22T06:40:36.972000+00:00",
-   "last_active": "2026-10-25",
-   "source": "forum"
-  },
-  {
-   "scenario": "幸運の女神が微笑んだ！(ランダムダンジョン)",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-25",
-     "start": "20:00",
-     "end": "24:00"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "DIOS",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1561379046745706577",
-   "created": "2026-10-18T14:02:53.764000+00:00",
    "last_active": "2026-10-25",
    "source": "forum"
   },
