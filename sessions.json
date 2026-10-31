@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/31 21:46",
- "checked": "2026/10/31 21:46",
+ "updated": "2026/10/31 22:16",
+ "checked": "2026/10/31 22:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -4960,9 +4960,25 @@
    "scenario": "力試し",
    "reg": "アリアンストラテジー",
    "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
+   "dates": [
+    {
+     "date": "2026-12-07",
+     "start": null,
+     "end": null
+    },
+    {
+     "date": "2026-12-13",
+     "start": null,
+     "end": null
+    },
+    {
+     "date": "2026-12-14",
+     "start": null,
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
    "ongoing": false,
    "gm": "豆の塩ゆで",
    "gm_active": true,
