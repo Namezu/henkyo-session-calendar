@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/01 01:16",
- "checked": "2026/11/01 01:16",
+ "updated": "2026/11/01 01:32",
+ "checked": "2026/11/01 01:32",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -426,27 +426,6 @@
    "source": "forum"
   },
   {
-   "scenario": "真夜中のパンプキング～トリックオアトリートを添えて",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-10-31",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "ミキサ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1561067420867625030",
-   "created": "2026-10-17T17:24:36.365000+00:00",
-   "last_active": "2026-10-31",
-   "source": "forum"
-  },
-  {
    "scenario": "豊穣は誰がために",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -839,6 +818,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-10-30",
+   "source": "forum"
+  },
+  {
+   "scenario": "真夜中のパンプキング～トリックオアトリートを添えて",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-10-31",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "ミキサ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1561067420867625030",
+   "created": "2026-10-17T17:24:36.365000+00:00",
+   "last_active": "2026-10-31",
    "source": "forum"
   },
   {
