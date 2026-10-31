@@ -1,6 +1,6 @@
 {
- "updated": "2026/10/31 15:46",
- "checked": "2026/10/31 15:46",
+ "updated": "2026/10/31 18:16",
+ "checked": "2026/10/31 18:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -116,6 +116,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1559930065221976105",
    "created": "2026-10-14T14:05:09.648000+00:00",
    "last_active": "2026-10-26",
+   "source": "forum"
+  },
+  {
+   "scenario": "かつての親父の背中",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-09",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "まひろ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1566016675894001734",
+   "created": "2026-10-31T09:11:10.716000+00:00",
+   "last_active": "2026-10-31",
    "source": "forum"
   },
   {
