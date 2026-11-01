@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/01 13:31",
- "checked": "2026/11/01 13:31",
+ "updated": "2026/11/01 13:46",
+ "checked": "2026/11/01 13:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -178,7 +178,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1566053165982548069",
    "created": "2026-10-31T11:36:10.631000+00:00",
-   "last_active": "2026-10-31",
+   "last_active": "2026-11-01",
    "source": "forum"
   },
   {
@@ -229,7 +229,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1564184046668357712",
    "created": "2026-10-26T07:48:57.860000+00:00",
-   "last_active": "2026-10-31",
+   "last_active": "2026-11-01",
    "source": "forum"
   },
   {
@@ -825,6 +825,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561308884097040474",
    "created": "2026-10-18T09:24:05.685000+00:00",
    "last_active": "2026-10-31",
+   "source": "forum"
+  },
+  {
+   "scenario": "シメジの番人",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-07",
+     "start": "14:00",
+     "end": "18:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1566309111052771479",
+   "created": "2026-11-01T04:33:12.691000+00:00",
+   "last_active": "2026-11-01",
    "source": "forum"
   },
   {
