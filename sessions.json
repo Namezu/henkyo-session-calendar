@@ -1,29 +1,8 @@
 {
- "updated": "2026/11/03 01:31",
- "checked": "2026/11/03 01:31",
+ "updated": "2026/11/03 01:47",
+ "checked": "2026/11/03 01:47",
  "guild": "辺境TRPG村",
  "sessions": [
-  {
-   "scenario": "幽霊屋敷の怪",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-02",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "くらり",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1557410517360836618",
-   "created": "2026-10-07T15:13:22.627000+00:00",
-   "last_active": "2026-11-02",
-   "source": "forum"
-  },
   {
    "scenario": "センター争奪戦 2陣",
    "reg": "ピースメイカー",
@@ -819,6 +798,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-10-30",
+   "source": "forum"
+  },
+  {
+   "scenario": "幽霊屋敷の怪",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-02",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "くらり",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1557410517360836618",
+   "created": "2026-10-07T15:13:22.627000+00:00",
+   "last_active": "2026-11-02",
    "source": "forum"
   },
   {
