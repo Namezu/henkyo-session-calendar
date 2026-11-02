@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/03 02:02",
- "checked": "2026/11/03 02:02",
+ "updated": "2026/11/03 02:22",
+ "checked": "2026/11/03 02:22",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -261,27 +261,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1557073298679005194",
    "created": "2026-10-06T16:53:23.428000+00:00",
    "last_active": "2026-10-31",
-   "source": "forum"
-  },
-  {
-   "scenario": "おぞましい罠",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-02",
-     "start": null,
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "peridot",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1563147455497769046",
-   "created": "2026-10-23T11:09:55.266000+00:00",
-   "last_active": "2026-11-02",
    "source": "forum"
   },
   {
@@ -798,6 +777,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-10-30",
+   "source": "forum"
+  },
+  {
+   "scenario": "おぞましい罠",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-02",
+     "start": null,
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1563147455497769046",
+   "created": "2026-10-23T11:09:55.266000+00:00",
+   "last_active": "2026-11-02",
    "source": "forum"
   },
   {
