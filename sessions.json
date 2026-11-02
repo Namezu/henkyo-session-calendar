@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/02 19:16",
- "checked": "2026/11/02 19:16",
+ "updated": "2026/11/02 19:31",
+ "checked": "2026/11/02 19:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -740,7 +740,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540708067702997062",
    "created": "2026-08-22T13:03:48.312000+00:00",
-   "last_active": "2026-10-31",
+   "last_active": "2026-11-02",
    "source": "forum"
   },
   {
@@ -32063,7 +32063,7 @@
    "title": "12月のどっか 21:00~ 泥土の毒竜",
    "url": "https://discord.com/channels/1001833522723561593/1566757535321563186",
    "gm": "peridot",
-   "open": true
+   "open": false
   },
   {
    "title": "11月以降　【アリアンストラテジーWS】1-2「新しい日常」",
