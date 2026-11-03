@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/03 10:16",
- "checked": "2026/11/03 10:16",
+ "updated": "2026/11/03 11:01",
+ "checked": "2026/11/03 11:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -443,7 +443,28 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1563153435652792431",
    "created": "2026-10-23T11:33:41.046000+00:00",
-   "last_active": "2026-11-02",
+   "last_active": "2026-11-03",
+   "source": "forum"
+  },
+  {
+   "scenario": "死者の王に夜を捧ぐ",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-03",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1566993883345457224",
+   "created": "2026-11-03T01:54:15.128000+00:00",
+   "last_active": "2026-11-03",
    "source": "forum"
   },
   {
