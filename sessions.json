@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/03 23:17",
- "checked": "2026/11/03 23:17",
+ "updated": "2026/11/04 00:02",
+ "checked": "2026/11/04 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -4322,27 +4322,6 @@
    "source": "forum"
   },
   {
-   "scenario": "フェイス:ゴールド",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-10",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1512817383650103296",
-   "created": "2026-06-06T13:56:11.050000+00:00",
-   "last_active": "2026-07-11",
-   "source": "forum"
-  },
-  {
    "scenario": "轟崩磊落（その2）",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -4760,27 +4739,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1515190104271098038",
    "created": "2026-06-13T03:04:31.729000+00:00",
    "last_active": "2026-06-13",
-   "source": "forum"
-  },
-  {
-   "scenario": "今は遠きベルスーズ",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-14",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1512783277394624603",
-   "created": "2026-06-06T11:40:39.485000+00:00",
-   "last_active": "2026-06-15",
    "source": "forum"
   },
   {
@@ -5272,37 +5230,6 @@
    "source": "forum"
   },
   {
-   "scenario": "星の吸血鬼にさよならを",
-   "reg": "クトゥルフ神話TRPG7版",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-18",
-     "start": null,
-     "end": null
-    },
-    {
-     "date": "2026-07-19",
-     "start": null,
-     "end": null
-    },
-    {
-     "date": "2026-07-25",
-     "start": null,
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "reiran",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1512783660179525672",
-   "created": "2026-06-06T11:42:10.748000+00:00",
-   "last_active": "2026-07-26",
-   "source": "forum"
-  },
-  {
    "scenario": "火種",
    "reg": "アリアンストラテジー",
    "reg_is_name": false,
@@ -5394,6 +5321,79 @@
    "url": "https://discord.com/channels/1001833522723561593/1518055929566859284",
    "created": "2026-06-21T00:52:17.724000+00:00",
    "last_active": "2026-07-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "フェイス:ゴールド",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-10",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1512817383650103296",
+   "created": "2026-06-06T13:56:11.050000+00:00",
+   "last_active": "2026-07-11",
+   "source": "forum"
+  },
+  {
+   "scenario": "今は遠きベルスーズ",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-14",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1512783277394624603",
+   "created": "2026-06-06T11:40:39.485000+00:00",
+   "last_active": "2026-06-15",
+   "source": "forum"
+  },
+  {
+   "scenario": "星の吸血鬼にさよならを",
+   "reg": "クトゥルフ神話TRPG7版",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-18",
+     "start": null,
+     "end": null
+    },
+    {
+     "date": "2026-07-19",
+     "start": null,
+     "end": null
+    },
+    {
+     "date": "2026-07-25",
+     "start": null,
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1512783660179525672",
+   "created": "2026-06-06T11:42:10.748000+00:00",
+   "last_active": "2026-07-26",
    "source": "forum"
   },
   {
