@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/03 17:31",
- "checked": "2026/11/03 17:31",
+ "updated": "2026/11/03 17:46",
+ "checked": "2026/11/03 17:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -42,27 +42,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561333326571114596",
    "created": "2026-10-18T11:01:13.225000+00:00",
-   "last_active": "2026-11-02",
-   "source": "forum"
-  },
-  {
-   "scenario": "異次元ランダムダンジョン",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-03",
-     "start": "14:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "peridot",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1567022300891447458",
-   "created": "2026-11-03T03:47:10.399000+00:00",
    "last_active": "2026-11-03",
    "source": "forum"
   },
@@ -876,6 +855,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-10-30",
+   "source": "forum"
+  },
+  {
+   "scenario": "異次元ランダムダンジョン",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-03",
+     "start": "14:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1567022300891447458",
+   "created": "2026-11-03T03:47:10.399000+00:00",
+   "last_active": "2026-11-03",
    "source": "forum"
   },
   {
