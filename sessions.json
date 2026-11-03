@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/03 13:16",
- "checked": "2026/11/03 13:16",
+ "updated": "2026/11/03 13:31",
+ "checked": "2026/11/03 13:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -342,7 +342,7 @@
    "source": "forum"
   },
   {
-   "scenario": "何かやる",
+   "scenario": "この世に不要なものとは",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [
@@ -352,7 +352,7 @@
      "end": null
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "dabdab",
