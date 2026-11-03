@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/04 00:46",
- "checked": "2026/11/04 00:46",
+ "updated": "2026/11/04 01:02",
+ "checked": "2026/11/04 01:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -422,7 +422,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1566973281700159488",
    "created": "2026-11-03T00:32:23.313000+00:00",
-   "last_active": "2026-11-03",
+   "last_active": "2026-11-04",
    "source": "forum"
   },
   {
@@ -5003,15 +5003,31 @@
    "scenario": "猿山潰し！ 第2卓",
    "reg": "アリアンストラテジー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-12-03",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-12-05",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-12-06",
+     "start": "21:00",
+     "end": null
+    }
+   ],
    "open": true,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "水樹です",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1558082209070588005",
    "created": "2026-10-09T11:42:26.410000+00:00",
-   "last_active": "2026-11-03",
+   "last_active": "2026-11-04",
    "source": "forum"
   },
   {
