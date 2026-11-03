@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/03 20:31",
- "checked": "2026/11/03 20:31",
+ "updated": "2026/11/03 23:17",
+ "checked": "2026/11/03 23:17",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -551,7 +551,7 @@
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "イオタ",
