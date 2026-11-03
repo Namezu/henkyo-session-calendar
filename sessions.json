@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/03 13:01",
- "checked": "2026/11/03 13:01",
+ "updated": "2026/11/03 13:16",
+ "checked": "2026/11/03 13:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -499,7 +499,7 @@
      "end": "24:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "よし/やっぴー",
