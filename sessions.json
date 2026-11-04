@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/05 01:01",
- "checked": "2026/11/05 01:01",
+ "updated": "2026/11/05 01:16",
+ "checked": "2026/11/05 01:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -239,7 +239,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1557073298679005194",
    "created": "2026-10-06T16:53:23.428000+00:00",
-   "last_active": "2026-11-04",
+   "last_active": "2026-11-05",
    "source": "forum"
   },
   {
@@ -619,27 +619,6 @@
    "source": "forum"
   },
   {
-   "scenario": "幻想ダンジョン（ランダムダンジョン形式） Normal",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-04",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1559587303565951067",
-   "created": "2026-10-13T15:23:08.901000+00:00",
-   "last_active": "2026-11-04",
-   "source": "forum"
-  },
-  {
    "scenario": "エピソード:ダークCP第三陣 背教者達のルサンチマン",
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
@@ -771,6 +750,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-10-30",
+   "source": "forum"
+  },
+  {
+   "scenario": "幻想ダンジョン（ランダムダンジョン形式） Normal",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-04",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1559587303565951067",
+   "created": "2026-10-13T15:23:08.901000+00:00",
+   "last_active": "2026-11-04",
    "source": "forum"
   },
   {
