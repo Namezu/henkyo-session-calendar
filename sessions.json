@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/04 23:01",
- "checked": "2026/11/04 23:01",
+ "updated": "2026/11/05 00:02",
+ "checked": "2026/11/05 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -4763,48 +4763,6 @@
    "source": "forum"
   },
   {
-   "scenario": "ロストロード（ランダムダンジョン）",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-07",
-     "start": "21:45",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1513155188335054919",
-   "created": "2026-06-07T12:18:29.963000+00:00",
-   "last_active": "2026-06-07",
-   "source": "forum"
-  },
-  {
-   "scenario": "崩れゆく遺跡迷宮",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-07",
-     "start": "14:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1512979311068713091",
-   "created": "2026-06-07T00:39:37.555000+00:00",
-   "last_active": "2026-06-07",
-   "source": "forum"
-  },
-  {
    "scenario": "人を集めてGMを回すキャンペーン",
    "reg": "ライバー＆ラビリンス",
    "reg_is_name": false,
@@ -5215,63 +5173,6 @@
    "source": "forum"
   },
   {
-   "scenario": "オトギバラシ",
-   "reg": "エモクロアTRPG",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-30",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-08-02",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-08-04",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "reiran",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1513111124978044958",
-   "created": "2026-06-07T09:23:24.440000+00:00",
-   "last_active": "2026-08-03",
-   "source": "forum"
-  },
-  {
-   "scenario": "火種",
-   "reg": "アリアンストラテジー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-23",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-07-24",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カピ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1512833539090022460",
-   "created": "2026-06-06T15:00:22.807000+00:00",
-   "last_active": "2026-07-24",
-   "source": "forum"
-  },
-  {
    "scenario": "狂い火",
    "reg": "アリアンストラテジー",
    "reg_is_name": false,
@@ -5337,6 +5238,105 @@
    "url": "https://discord.com/channels/1001833522723561593/1518055929566859284",
    "created": "2026-06-21T00:52:17.724000+00:00",
    "last_active": "2026-07-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "ロストロード（ランダムダンジョン）",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-07",
+     "start": "21:45",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1513155188335054919",
+   "created": "2026-06-07T12:18:29.963000+00:00",
+   "last_active": "2026-06-07",
+   "source": "forum"
+  },
+  {
+   "scenario": "崩れゆく遺跡迷宮",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-07",
+     "start": "14:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1512979311068713091",
+   "created": "2026-06-07T00:39:37.555000+00:00",
+   "last_active": "2026-06-07",
+   "source": "forum"
+  },
+  {
+   "scenario": "オトギバラシ",
+   "reg": "エモクロアTRPG",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-30",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-08-02",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-08-04",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1513111124978044958",
+   "created": "2026-06-07T09:23:24.440000+00:00",
+   "last_active": "2026-08-03",
+   "source": "forum"
+  },
+  {
+   "scenario": "火種",
+   "reg": "アリアンストラテジー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-23",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-07-24",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カピ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1512833539090022460",
+   "created": "2026-06-06T15:00:22.807000+00:00",
+   "last_active": "2026-07-24",
    "source": "forum"
   },
   {
