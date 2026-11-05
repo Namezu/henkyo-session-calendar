@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/05 21:31",
- "checked": "2026/11/05 21:31",
+ "updated": "2026/11/06 00:02",
+ "checked": "2026/11/06 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -4301,27 +4301,6 @@
    "source": "forum"
   },
   {
-   "scenario": "霧の洞窟",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-12",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1513505247773986967",
-   "created": "2026-06-08T11:29:30.637000+00:00",
-   "last_active": "2026-07-12",
-   "source": "forum"
-  },
-  {
    "scenario": "轟崩磊落（その2）",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -4424,27 +4403,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1522273532661338375",
    "created": "2026-07-02T16:11:32.661000+00:00",
    "last_active": "2026-07-05",
-   "source": "forum"
-  },
-  {
-   "scenario": "勇者の首を晒せ",
-   "reg": null,
-   "reg_is_name": true,
-   "dates": [
-    {
-     "date": "2026-07-04",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1513505603564077166",
-   "created": "2026-06-08T11:30:55.464000+00:00",
-   "last_active": "2026-07-04",
    "source": "forum"
   },
   {
@@ -5238,6 +5196,48 @@
    "url": "https://discord.com/channels/1001833522723561593/1518055929566859284",
    "created": "2026-06-21T00:52:17.724000+00:00",
    "last_active": "2026-07-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "霧の洞窟",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-12",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1513505247773986967",
+   "created": "2026-06-08T11:29:30.637000+00:00",
+   "last_active": "2026-07-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "勇者の首を晒せ",
+   "reg": null,
+   "reg_is_name": true,
+   "dates": [
+    {
+     "date": "2026-07-04",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1513505603564077166",
+   "created": "2026-06-08T11:30:55.464000+00:00",
+   "last_active": "2026-07-04",
    "source": "forum"
   },
   {
