@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/06 19:46",
- "checked": "2026/11/06 19:46",
+ "updated": "2026/11/06 20:46",
+ "checked": "2026/11/06 20:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -4908,7 +4908,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピ",
+   "gm": "カピだな",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1541474800612937819",
    "created": "2026-08-24T15:50:31.683000+00:00",
@@ -5003,7 +5003,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピ",
+   "gm": "カピだな",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540726956558000198",
    "created": "2026-08-22T14:18:51.766000+00:00",
@@ -5097,7 +5097,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピ",
+   "gm": "カピだな",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1542489361747152956",
    "created": "2026-08-27T11:02:01.907000+00:00",
@@ -5123,7 +5123,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピ",
+   "gm": "カピだな",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1526557321449312257",
    "created": "2026-07-14T11:53:47.497000+00:00",
@@ -5149,7 +5149,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "カピ",
+   "gm": "カピだな",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1514257239848779949",
    "created": "2026-06-10T13:17:39.519000+00:00",
@@ -32183,7 +32183,7 @@
   {
    "title": "11月以降　【アリアンストラテジーWS】1-2「新しい日常」",
    "url": "https://discord.com/channels/1001833522723561593/1565369176246198332",
-   "gm": "カピ",
+   "gm": "カピだな",
    "open": true
   }
  ]
