@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/07 00:31",
- "checked": "2026/11/07 00:31",
+ "updated": "2026/11/07 00:46",
+ "checked": "2026/11/07 00:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -384,33 +384,6 @@
    "source": "forum"
   },
   {
-   "scenario": "鐘を鳴らして",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-05",
-     "start": "21:00",
-     "end": "24:00",
-     "time_source": "body"
-    },
-    {
-     "date": "2026-11-06",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1551278369952501761",
-   "created": "2026-09-20T17:06:24.755000+00:00",
-   "last_active": "2026-11-06",
-   "source": "forum"
-  },
-  {
    "scenario": "幼子の暗殺者",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -747,6 +720,33 @@
    "source": "forum"
   },
   {
+   "scenario": "鐘を鳴らして",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-05",
+     "start": "21:00",
+     "end": "24:00",
+     "time_source": "body"
+    },
+    {
+     "date": "2026-11-06",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1551278369952501761",
+   "created": "2026-09-20T17:06:24.755000+00:00",
+   "last_active": "2026-11-06",
+   "source": "forum"
+  },
+  {
    "scenario": "毒牙は水底に届く",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -886,7 +886,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1567022300891447458",
    "created": "2026-11-03T03:47:10.399000+00:00",
@@ -907,7 +907,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1563147455497769046",
    "created": "2026-10-23T11:09:55.266000+00:00",
@@ -1678,7 +1678,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561005453675339828",
    "created": "2026-10-17T13:18:22.235000+00:00",
@@ -1909,7 +1909,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1558079734104195102",
    "created": "2026-10-09T11:32:36.332000+00:00",
@@ -2371,7 +2371,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1555599210790002828",
    "created": "2026-10-02T15:15:53.488000+00:00",
@@ -2781,7 +2781,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1542164526810800138",
    "created": "2026-08-26T13:31:15.223000+00:00",
@@ -3012,7 +3012,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1550179816072806560",
    "created": "2026-09-17T16:21:09.100000+00:00",
@@ -3054,7 +3054,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1550928996508770314",
    "created": "2026-09-19T17:58:07.635000+00:00",
@@ -3240,7 +3240,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1532056216828645578",
    "created": "2026-07-29T16:04:26.320000+00:00",
@@ -3783,7 +3783,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1536011776439615498",
    "created": "2026-08-09T14:02:25.222000+00:00",
@@ -4140,7 +4140,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通",
+   "gm": "一藻通(いつもどおり)",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1524054784431095838",
    "created": "2026-07-07T14:09:36.177000+00:00",
@@ -4245,7 +4245,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通",
+   "gm": "一藻通(いつもどおり)",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1524064295493697647",
    "created": "2026-07-07T14:47:23.791000+00:00",
@@ -4413,7 +4413,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1522273532661338375",
    "created": "2026-07-02T16:11:32.661000+00:00",
@@ -4518,7 +4518,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1519369263335346367",
    "created": "2026-06-24T15:51:00.895000+00:00",
@@ -4686,7 +4686,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1514869456864809033",
    "created": "2026-06-12T05:50:23.430000+00:00",
@@ -4728,7 +4728,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "peridotite",
+   "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1514614975342317668",
    "created": "2026-06-11T12:59:10.307000+00:00",
@@ -4897,11 +4897,11 @@
    "open": false,
    "suriawase": true,
    "ongoing": false,
-   "gm": "一藻通",
+   "gm": "一藻通(いつもどおり)",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1536341101936648293",
    "created": "2026-08-10T11:51:02.539000+00:00",
-   "last_active": "2026-11-04",
+   "last_active": "2026-11-07",
    "source": "forum"
   },
   {
@@ -5060,7 +5060,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通",
+   "gm": "一藻通(いつもどおり)",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1558285360646062140",
    "created": "2026-10-10T01:09:41.520000+00:00",
@@ -32192,7 +32192,7 @@
   {
    "title": "12月のどっか 21:00~ 泥土の毒竜",
    "url": "https://discord.com/channels/1001833522723561593/1566757535321563186",
-   "gm": "peridotite",
+   "gm": "peridot",
    "open": false
   },
   {
