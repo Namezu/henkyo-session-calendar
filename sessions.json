@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/07 00:16",
- "checked": "2026/11/07 00:16",
+ "updated": "2026/11/07 00:31",
+ "checked": "2026/11/07 00:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -187,7 +187,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1563153442560806952",
    "created": "2026-10-23T11:33:42.693000+00:00",
-   "last_active": "2026-11-05",
+   "last_active": "2026-11-07",
    "source": "forum"
   },
   {
@@ -459,7 +459,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551203926634791113",
    "created": "2026-09-20T12:10:36.085000+00:00",
-   "last_active": "2026-10-31",
+   "last_active": "2026-11-07",
    "source": "forum"
   },
   {
@@ -538,6 +538,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1555596575471046797",
    "created": "2026-10-02T15:05:25.179000+00:00",
    "last_active": "2026-11-06",
+   "source": "forum"
+  },
+  {
+   "scenario": "甘い夢にさよならを",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1568286439706198108",
+   "created": "2026-11-06T15:30:24.579000+00:00",
+   "last_active": "2026-11-07",
    "source": "forum"
   },
   {
