@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/08 00:02",
- "checked": "2026/11/08 00:02",
+ "updated": "2026/11/08 00:16",
+ "checked": "2026/11/08 00:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -227,6 +227,32 @@
    "source": "forum"
   },
   {
+   "scenario": "絵に描いた龍 霜月の部",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-16",
+     "start": "21:00",
+     "end": "25:00"
+    },
+    {
+     "date": "2026-11-28",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1568603867267211425",
+   "created": "2026-11-07T12:31:45.207000+00:00",
+   "last_active": "2026-11-08",
+   "source": "forum"
+  },
+  {
    "scenario": "炎の中へ",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -249,7 +275,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561330577624272946",
    "created": "2026-10-18T10:50:17.825000+00:00",
-   "last_active": "2026-11-07",
+   "last_active": "2026-11-08",
    "source": "forum"
   },
   {
@@ -378,7 +404,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1568616797635219626",
    "created": "2026-11-07T13:23:08.047000+00:00",
-   "last_active": "2026-11-07",
+   "last_active": "2026-11-08",
    "source": "forum"
   },
   {
@@ -620,6 +646,32 @@
    "source": "forum"
   },
   {
+   "scenario": "絵に描いた龍 師走の部",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-12-05",
+     "start": "21:00",
+     "end": "25:00"
+    },
+    {
+     "date": "2026-12-06",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1568643178171473991",
+   "created": "2026-11-07T15:07:57.657000+00:00",
+   "last_active": "2026-11-08",
+   "source": "forum"
+  },
+  {
    "scenario": "マスタリング手法公開企画/月に導かれて（初心者歓迎）",
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
@@ -765,7 +817,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540708067702997062",
    "created": "2026-08-22T13:03:48.312000+00:00",
-   "last_active": "2026-11-07",
+   "last_active": "2026-11-08",
    "source": "forum"
   },
   {
@@ -32383,12 +32435,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1566757535321563186",
    "gm": "peridot",
    "open": false
-  },
-  {
-   "title": "12月上旬までのどっか 【ミスリルクレスト】絵に描いた龍",
-   "url": "https://discord.com/channels/1001833522723561593/1568603867267211425",
-   "gm": "peridot",
-   "open": true
   },
   {
    "title": "11月以降　【アリアンストラテジーWS】1-2「新しい日常」",
