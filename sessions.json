@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/07 13:46",
- "checked": "2026/11/07 13:46",
+ "updated": "2026/11/07 14:01",
+ "checked": "2026/11/07 14:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -143,9 +143,15 @@
    "scenario": "依頼板の向こう側（初心者歓迎）",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-11-29",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
    "open": true,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "カテナドルグ",
    "gm_active": true,
@@ -415,7 +421,7 @@
    "source": "forum"
   },
   {
-   "scenario": "まだ決めてない",
+   "scenario": "ロストロード（ランダムダンジョン？）",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [
@@ -732,7 +738,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561308884097040474",
    "created": "2026-10-18T09:24:05.685000+00:00",
-   "last_active": "2026-11-06",
+   "last_active": "2026-11-07",
    "source": "forum"
   },
   {
