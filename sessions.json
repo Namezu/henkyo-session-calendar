@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/07 22:02",
- "checked": "2026/11/07 22:02",
+ "updated": "2026/11/07 22:16",
+ "checked": "2026/11/07 22:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -533,21 +533,6 @@
    "source": "forum"
   },
   {
-   "scenario": "夢のダンジョン",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "taku",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1568607935330918453",
-   "created": "2026-11-07T12:47:55.109000+00:00",
-   "last_active": "2026-11-07",
-   "source": "forum"
-  },
-  {
    "scenario": "センター争奪戦 3陣",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -822,6 +807,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
+   "last_active": "2026-11-07",
+   "source": "forum"
+  },
+  {
+   "scenario": "夢のダンジョン",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1568607935330918453",
+   "created": "2026-11-07T12:47:55.109000+00:00",
    "last_active": "2026-11-07",
    "source": "forum"
   },
