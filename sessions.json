@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/07 21:16",
- "checked": "2026/11/07 21:16",
+ "updated": "2026/11/07 21:31",
+ "checked": "2026/11/07 21:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -409,6 +409,21 @@
    "source": "forum"
   },
   {
+   "scenario": "夢のダンジョン",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1568603378186068039",
+   "created": "2026-11-07T12:29:48.601000+00:00",
+   "last_active": "2026-11-07",
+   "source": "forum"
+  },
+  {
    "scenario": "一期一会CP",
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
@@ -536,6 +551,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1564874622430617620",
    "created": "2026-10-28T05:33:03.952000+00:00",
    "last_active": "2026-11-06",
+   "source": "forum"
+  },
+  {
+   "scenario": "高難易度:終末時計の観測者",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "くらり",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1568601116135129199",
+   "created": "2026-11-07T12:20:49.286000+00:00",
+   "last_active": "2026-11-07",
    "source": "forum"
   },
   {
