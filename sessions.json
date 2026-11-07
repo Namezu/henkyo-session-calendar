@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/07 23:47",
- "checked": "2026/11/07 23:47",
+ "updated": "2026/11/08 00:02",
+ "checked": "2026/11/08 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -321,7 +321,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1564186496766976100",
    "created": "2026-10-26T07:58:42.009000+00:00",
-   "last_active": "2026-11-05",
+   "last_active": "2026-11-07",
    "source": "forum"
   },
   {
@@ -5335,32 +5335,6 @@
    "source": "forum"
   },
   {
-   "scenario": "狂い火",
-   "reg": "アリアンストラテジー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-14",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-07-15",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カピ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1514257239848779949",
-   "created": "2026-06-10T13:17:39.519000+00:00",
-   "last_active": "2026-07-15",
-   "source": "forum"
-  },
-  {
    "scenario": "三つ首の獣",
    "reg": "ELDEN RING NIGHTREIGN TRPG",
    "reg_is_name": false,
@@ -5400,6 +5374,32 @@
    "url": "https://discord.com/channels/1001833522723561593/1518055929566859284",
    "created": "2026-06-21T00:52:17.724000+00:00",
    "last_active": "2026-07-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "狂い火",
+   "reg": "アリアンストラテジー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-14",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-07-15",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カピ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1514257239848779949",
+   "created": "2026-06-10T13:17:39.519000+00:00",
+   "last_active": "2026-07-15",
    "source": "forum"
   },
   {
