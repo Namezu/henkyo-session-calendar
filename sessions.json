@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/07 21:02",
- "checked": "2026/11/07 21:02",
+ "updated": "2026/11/07 21:16",
+ "checked": "2026/11/07 21:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -32302,6 +32302,12 @@
    "url": "https://discord.com/channels/1001833522723561593/1566757535321563186",
    "gm": "peridot",
    "open": false
+  },
+  {
+   "title": "11月3週目 【ミスリルクレスト】夥しきパレード",
+   "url": "https://discord.com/channels/1001833522723561593/1568597072855175298",
+   "gm": "peridot",
+   "open": true
   },
   {
    "title": "11月以降　【アリアンストラテジーWS】1-2「新しい日常」",
