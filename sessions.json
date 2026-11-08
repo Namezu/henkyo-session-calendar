@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/08 16:16",
- "checked": "2026/11/08 16:16",
+ "updated": "2026/11/08 17:01",
+ "checked": "2026/11/08 17:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -285,12 +285,18 @@
    "source": "forum"
   },
   {
-   "scenario": "混沌の遺跡",
+   "scenario": "混沌の遺跡 第1卓",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-12-03",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "dabdab",
    "gm_active": true,
@@ -877,6 +883,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561308884097040474",
    "created": "2026-10-18T09:24:05.685000+00:00",
+   "last_active": "2026-11-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "混沌の遺跡 第2卓",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-12-18",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1568896377810067528",
+   "created": "2026-11-08T07:54:05.155000+00:00",
    "last_active": "2026-11-08",
    "source": "forum"
   },
