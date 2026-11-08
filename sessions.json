@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/09 01:46",
- "checked": "2026/11/09 01:46",
+ "updated": "2026/11/09 02:02",
+ "checked": "2026/11/09 02:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -539,7 +539,7 @@
    "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "くらり",
@@ -660,27 +660,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1568507977789612043",
    "created": "2026-11-07T06:10:43.374000+00:00",
    "last_active": "2026-11-08",
-   "source": "forum"
-  },
-  {
-   "scenario": "高難度:「権限せし破壊の化身」",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-08",
-     "start": null,
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "むむこ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1556289608147406868",
-   "created": "2026-10-04T12:59:17.045000+00:00",
-   "last_active": "2026-11-09",
    "source": "forum"
   },
   {
@@ -857,6 +836,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-11-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "高難度:「権限せし破壊の化身」",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-08",
+     "start": null,
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "むむこ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1556289608147406868",
+   "created": "2026-10-04T12:59:17.045000+00:00",
+   "last_active": "2026-11-09",
    "source": "forum"
   },
   {
