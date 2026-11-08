@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/08 22:02",
- "checked": "2026/11/08 22:02",
+ "updated": "2026/11/08 22:46",
+ "checked": "2026/11/08 22:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -458,7 +458,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1568603378186068039",
    "created": "2026-11-07T12:29:48.601000+00:00",
-   "last_active": "2026-11-07",
+   "last_active": "2026-11-08",
    "source": "forum"
   },
   {
@@ -866,7 +866,7 @@
    "source": "forum"
   },
   {
-   "scenario": "異次元ランダムダンジョン",
+   "scenario": "ハイスピード異次元ダンジョン",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [
