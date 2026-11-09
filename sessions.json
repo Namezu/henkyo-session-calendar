@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/09 16:31",
- "checked": "2026/11/09 16:31",
+ "updated": "2026/11/09 17:16",
+ "checked": "2026/11/09 17:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -8,7 +8,7 @@
    "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "よし/やっぴー",
