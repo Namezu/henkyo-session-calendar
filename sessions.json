@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/09 15:30",
- "checked": "2026/11/09 15:30",
+ "updated": "2026/11/09 16:16",
+ "checked": "2026/11/09 16:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -339,6 +339,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1546497594740441189",
    "created": "2026-09-07T12:29:19.122000+00:00",
    "last_active": "2026-11-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "飲酒ンロッド2E",
+   "reg": "単発",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "むむこ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1569248220645818408",
+   "created": "2026-11-09T07:12:11.024000+00:00",
+   "last_active": "2026-11-09",
    "source": "forum"
   },
   {
