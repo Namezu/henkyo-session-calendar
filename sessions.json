@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/10 13:01",
- "checked": "2026/11/10 13:01",
+ "updated": "2026/11/10 14:31",
+ "checked": "2026/11/10 14:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -83,27 +83,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1568549442246676510",
    "created": "2026-11-07T08:55:29.271000+00:00",
    "last_active": "2026-11-10",
-   "source": "forum"
-  },
-  {
-   "scenario": "かつての親父の背中",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-09",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "まひろ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1566016675894001734",
-   "created": "2026-10-31T09:11:10.716000+00:00",
-   "last_active": "2026-11-09",
    "source": "forum"
   },
   {
@@ -701,7 +680,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559899639547691049",
    "created": "2026-10-14T12:04:15.602000+00:00",
-   "last_active": "2026-11-03",
+   "last_active": "2026-11-10",
    "source": "forum"
   },
   {
@@ -836,6 +815,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-11-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "かつての親父の背中",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-09",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "まひろ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1566016675894001734",
+   "created": "2026-10-31T09:11:10.716000+00:00",
+   "last_active": "2026-11-09",
    "source": "forum"
   },
   {
