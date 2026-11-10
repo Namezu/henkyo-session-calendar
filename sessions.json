@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/10 20:31",
- "checked": "2026/11/10 20:31",
+ "updated": "2026/11/10 20:46",
+ "checked": "2026/11/10 20:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -71,12 +71,18 @@
    "source": "forum"
   },
   {
-   "scenario": "ランダムダンジョン･ダブルシャドウズ2",
+   "scenario": "ランダムダンジョン･ダブルシャドウズ 先遣隊",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-11-27",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
    "open": true,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "カテナドルグ",
    "gm_active": true,
@@ -146,6 +152,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1563107142687526932",
    "created": "2026-10-23T08:29:43.943000+00:00",
    "last_active": "2026-11-07",
+   "source": "forum"
+  },
+  {
+   "scenario": "ランダムダンジョン･ダブルシャドウズ 二次調査隊",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-12-01",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1569677754520043581",
+   "created": "2026-11-10T11:38:59.880000+00:00",
+   "last_active": "2026-11-10",
    "source": "forum"
   },
   {
@@ -778,7 +805,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561308884097040474",
    "created": "2026-10-18T09:24:05.685000+00:00",
-   "last_active": "2026-11-09",
+   "last_active": "2026-11-10",
    "source": "forum"
   },
   {
