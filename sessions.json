@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/10 23:02",
- "checked": "2026/11/10 23:02",
+ "updated": "2026/11/11 00:01",
+ "checked": "2026/11/11 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -4950,27 +4950,6 @@
    "source": "forum"
   },
   {
-   "scenario": "森のキノコにご用心",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-13",
-     "start": "14:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1515190104271098038",
-   "created": "2026-06-13T03:04:31.729000+00:00",
-   "last_active": "2026-06-13",
-   "source": "forum"
-  },
-  {
    "scenario": "人を集めてGMを回すキャンペーン",
    "reg": "ライバー＆ラビリンス",
    "reg_is_name": false,
@@ -5150,32 +5129,6 @@
    "source": "forum"
   },
   {
-   "scenario": "傷痕",
-   "reg": "アリアンストラテジー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-09",
-     "start": "21:00",
-     "end": null
-    },
-    {
-     "date": "2026-11-10",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カピだな",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1541474800612937819",
-   "created": "2026-08-24T15:50:31.683000+00:00",
-   "last_active": "2026-11-09",
-   "source": "forum"
-  },
-  {
    "scenario": "猿山潰し！ 第2卓",
    "reg": "アリアンストラテジー",
    "reg_is_name": false,
@@ -5235,6 +5188,47 @@
    "url": "https://discord.com/channels/1001833522723561593/1561330939454296135",
    "created": "2026-10-18T10:51:44.092000+00:00",
    "last_active": "2026-11-10",
+   "source": "forum"
+  },
+  {
+   "scenario": "埋もれた灯",
+   "reg": "アリアンストラテジー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カピだな",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1569726073267027979",
+   "created": "2026-11-10T14:50:59.967000+00:00",
+   "last_active": "2026-11-10",
+   "source": "forum"
+  },
+  {
+   "scenario": "傷痕",
+   "reg": "アリアンストラテジー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-09",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2026-11-10",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カピだな",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1541474800612937819",
+   "created": "2026-08-24T15:50:31.683000+00:00",
+   "last_active": "2026-11-09",
    "source": "forum"
   },
   {
@@ -5430,6 +5424,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1518055929566859284",
    "created": "2026-06-21T00:52:17.724000+00:00",
    "last_active": "2026-07-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "森のキノコにご用心",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-13",
+     "start": "14:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1515190104271098038",
+   "created": "2026-06-13T03:04:31.729000+00:00",
+   "last_active": "2026-06-13",
    "source": "forum"
   },
   {
