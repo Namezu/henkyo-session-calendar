@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/11 14:01",
- "checked": "2026/11/11 17:01",
+ "updated": "2026/11/11 17:46",
+ "checked": "2026/11/11 17:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -130,6 +130,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1566053165982548069",
    "created": "2026-10-31T11:36:10.631000+00:00",
+   "last_active": "2026-11-11",
+   "source": "forum"
+  },
+  {
+   "scenario": "泥土の毒竜",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-12-07",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridotite",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1566757535321563186",
+   "created": "2026-11-02T10:15:05.368000+00:00",
    "last_active": "2026-11-11",
    "source": "forum"
   },
@@ -32560,12 +32581,6 @@
   }
  ],
  "unparsed": [
-  {
-   "title": "12月のどっか 21:00~ 【ピースメイカー】 泥土の毒竜",
-   "url": "https://discord.com/channels/1001833522723561593/1566757535321563186",
-   "gm": "peridotite",
-   "open": false
-  },
   {
    "title": "11月以降　【アリアンストラテジーWS】1-2「新しい日常」",
    "url": "https://discord.com/channels/1001833522723561593/1565369176246198332",
