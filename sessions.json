@@ -1,15 +1,21 @@
 {
- "updated": "2026/11/12 00:16",
- "checked": "2026/11/12 00:16",
+ "updated": "2026/11/12 00:31",
+ "checked": "2026/11/12 00:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
-   "scenario": "千貌の魔女(高難易度)",
+   "scenario": "千貌の魔女(高難易度) 第一陣",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-12-04",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "よし/やっぴー",
    "gm_active": true,
@@ -37,6 +43,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1564874613035376753",
    "created": "2026-10-28T05:33:01.712000+00:00",
    "last_active": "2026-11-11",
+   "source": "forum"
+  },
+  {
+   "scenario": "千貌の魔女(高難易度) 第二陣",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-12-14",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1570096849174528110",
+   "created": "2026-11-11T15:24:19.832000+00:00",
+   "last_active": "2026-11-12",
    "source": "forum"
   },
   {
