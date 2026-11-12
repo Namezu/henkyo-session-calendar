@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/12 23:16",
- "checked": "2026/11/12 23:16",
+ "updated": "2026/11/12 23:46",
+ "checked": "2026/11/12 23:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -136,7 +136,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1564586112205197394",
    "created": "2026-10-27T10:26:37.754000+00:00",
-   "last_active": "2026-11-08",
+   "last_active": "2026-11-12",
    "source": "forum"
   },
   {
@@ -178,7 +178,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1566757535321563186",
    "created": "2026-11-02T10:15:05.368000+00:00",
-   "last_active": "2026-11-11",
+   "last_active": "2026-11-12",
    "source": "forum"
   },
   {
@@ -780,27 +780,6 @@
    "source": "forum"
   },
   {
-   "scenario": "戯曲",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-12",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "カピだな",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1568648527335129258",
-   "created": "2026-11-07T15:29:12.997000+00:00",
-   "last_active": "2026-11-12",
-   "source": "forum"
-  },
-  {
    "scenario": "エピソード:ダークCP第三陣 背教者達のルサンチマン",
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
@@ -911,6 +890,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-11-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "戯曲",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-12",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "カピだな",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1568648527335129258",
+   "created": "2026-11-07T15:29:12.997000+00:00",
+   "last_active": "2026-11-12",
    "source": "forum"
   },
   {
