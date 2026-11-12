@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/12 23:46",
- "checked": "2026/11/12 23:46",
+ "updated": "2026/11/13 00:02",
+ "checked": "2026/11/13 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -329,7 +329,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561330577624272946",
    "created": "2026-10-18T10:50:17.825000+00:00",
-   "last_active": "2026-11-10",
+   "last_active": "2026-11-12",
    "source": "forum"
   },
   {
@@ -449,27 +449,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1560676614248071308",
    "created": "2026-10-16T15:31:40.806000+00:00",
-   "last_active": "2026-11-12",
-   "source": "forum"
-  },
-  {
-   "scenario": "スタンピード",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-12",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "ななさか ときわ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1568616797635219626",
-   "created": "2026-11-07T13:23:08.047000+00:00",
    "last_active": "2026-11-12",
    "source": "forum"
   },
@@ -890,6 +869,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-11-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "スタンピード",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-12",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "ななさか ときわ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1568616797635219626",
+   "created": "2026-11-07T13:23:08.047000+00:00",
+   "last_active": "2026-11-12",
    "source": "forum"
   },
   {
