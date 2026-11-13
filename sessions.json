@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/13 22:02",
- "checked": "2026/11/13 22:02",
+ "updated": "2026/11/13 22:16",
+ "checked": "2026/11/13 22:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -157,7 +157,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1566053165982548069",
    "created": "2026-10-31T11:36:10.631000+00:00",
-   "last_active": "2026-11-11",
+   "last_active": "2026-11-13",
    "source": "forum"
   },
   {
@@ -5306,9 +5306,25 @@
    "scenario": "「新しい日常」",
    "reg": "アリアンストラテジー",
    "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
+   "dates": [
+    {
+     "date": "2026-12-04",
+     "start": null,
+     "end": null
+    },
+    {
+     "date": "2026-12-10",
+     "start": null,
+     "end": null
+    },
+    {
+     "date": "2026-12-12",
+     "start": null,
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
    "ongoing": false,
    "gm": "カピ",
    "gm_active": true,
