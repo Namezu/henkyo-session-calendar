@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/14 01:32",
- "checked": "2026/11/14 01:32",
+ "updated": "2026/11/14 01:46",
+ "checked": "2026/11/14 01:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -854,6 +854,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1568896377810067528",
    "created": "2026-11-08T07:54:05.155000+00:00",
    "last_active": "2026-11-10",
+   "source": "forum"
+  },
+  {
+   "scenario": "脅威のデスキャリバードラゴン（高難易度）",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1570839564648579134",
+   "created": "2026-11-13T16:35:37+00:00",
+   "last_active": "2026-11-14",
    "source": "forum"
   },
   {
