@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/14 00:16",
- "checked": "2026/11/14 00:16",
+ "updated": "2026/11/14 00:47",
+ "checked": "2026/11/14 00:47",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -453,27 +453,6 @@
    "source": "forum"
   },
   {
-   "scenario": "常雨の海域",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-13",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "peridot",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1570747200869498930",
-   "created": "2026-11-13T10:28:35.759000+00:00",
-   "last_active": "2026-11-13",
-   "source": "forum"
-  },
-  {
    "scenario": "豊穣は誰がために",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -890,6 +869,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-11-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "常雨の海域",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-13",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1570747200869498930",
+   "created": "2026-11-13T10:28:35.759000+00:00",
+   "last_active": "2026-11-13",
    "source": "forum"
   },
   {
