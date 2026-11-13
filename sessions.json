@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/13 21:32",
- "checked": "2026/11/13 21:32",
+ "updated": "2026/11/13 22:02",
+ "checked": "2026/11/13 22:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -5299,6 +5299,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561330939454296135",
    "created": "2026-10-18T10:51:44.092000+00:00",
+   "last_active": "2026-11-13",
+   "source": "forum"
+  },
+  {
+   "scenario": "「新しい日常」",
+   "reg": "アリアンストラテジー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カピ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1565369176246198332",
+   "created": "2026-10-29T14:18:14.770000+00:00",
    "last_active": "2026-11-13",
    "source": "forum"
   },
@@ -32650,12 +32665,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1570245222640648262",
    "gm": "よし/やっぴー",
    "open": false
-  },
-  {
-   "title": "11月以降　【アリアンストラテジーWS】1-2「新しい日常」",
-   "url": "https://discord.com/channels/1001833522723561593/1565369176246198332",
-   "gm": "カピ",
-   "open": true
   }
  ]
 }
