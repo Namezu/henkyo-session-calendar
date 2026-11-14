@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/15 01:01",
- "checked": "2026/11/15 01:01",
+ "updated": "2026/11/15 01:16",
+ "checked": "2026/11/15 01:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -137,6 +137,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1568549442246676510",
    "created": "2026-11-07T08:55:29.271000+00:00",
    "last_active": "2026-11-14",
+   "source": "forum"
+  },
+  {
+   "scenario": "ウッカ=リー博士の依頼",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "ななさか ときわ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1571193216688984115",
+   "created": "2026-11-14T16:00:54.217000+00:00",
+   "last_active": "2026-11-15",
    "source": "forum"
   },
   {
@@ -432,7 +447,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1571094712943648769",
    "created": "2026-11-14T09:29:29.094000+00:00",
-   "last_active": "2026-11-14",
+   "last_active": "2026-11-15",
    "source": "forum"
   },
   {
@@ -701,27 +716,6 @@
    "source": "forum"
   },
   {
-   "scenario": "異界の戦士～鉾の英雄＆戦場のアイドル",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-14",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "taku",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1555596575471046797",
-   "created": "2026-10-02T15:05:25.179000+00:00",
-   "last_active": "2026-11-15",
-   "source": "forum"
-  },
-  {
    "scenario": "甘い夢にさよならを",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -960,6 +954,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-11-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "異界の戦士～鉾の英雄＆戦場のアイドル",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-14",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1555596575471046797",
+   "created": "2026-10-02T15:05:25.179000+00:00",
+   "last_active": "2026-11-15",
    "source": "forum"
   },
   {
