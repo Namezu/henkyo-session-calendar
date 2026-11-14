@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/14 17:01",
- "checked": "2026/11/14 17:01",
+ "updated": "2026/11/14 17:16",
+ "checked": "2026/11/14 17:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -857,27 +857,6 @@
    "source": "forum"
   },
   {
-   "scenario": "天魔の野望、嘘つきの少女",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-14",
-     "start": "14:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "まひろ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1571010262771830824",
-   "created": "2026-11-14T03:53:54.604000+00:00",
-   "last_active": "2026-11-14",
-   "source": "forum"
-  },
-  {
    "scenario": "脅威のデスキャリバードラゴン（高難易度）",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -905,6 +884,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-11-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "天魔の野望、嘘つきの少女",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-14",
+     "start": "14:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "まひろ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1571010262771830824",
+   "created": "2026-11-14T03:53:54.604000+00:00",
+   "last_active": "2026-11-14",
    "source": "forum"
   },
   {
