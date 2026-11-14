@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/14 23:16",
- "checked": "2026/11/14 23:16",
+ "updated": "2026/11/15 00:02",
+ "checked": "2026/11/15 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -1301,7 +1301,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹",
+   "gm": "水樹です",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1557073298679005194",
    "created": "2026-10-06T16:53:23.428000+00:00",
@@ -1664,7 +1664,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹",
+   "gm": "水樹です",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559210538821615616",
    "created": "2026-10-12T14:26:01.186000+00:00",
@@ -2105,7 +2105,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹",
+   "gm": "水樹です",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1557058936870543422",
    "created": "2026-10-06T15:56:19.306000+00:00",
@@ -2918,7 +2918,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹",
+   "gm": "水樹です",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1544377050432016516",
    "created": "2026-09-01T16:03:01.961000+00:00",
@@ -3580,7 +3580,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹",
+   "gm": "水樹です",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1540691795485135019",
    "created": "2026-08-22T11:59:08.713000+00:00",
@@ -4624,7 +4624,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹",
+   "gm": "水樹です",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1525181090208157898",
    "created": "2026-07-10T16:45:08.400000+00:00",
@@ -5094,27 +5094,6 @@
    "source": "forum"
   },
   {
-   "scenario": "グランフェルデン・フェスティバル",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-21",
-     "start": "13:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1516761508028092447",
-   "created": "2026-06-17T11:08:43.580000+00:00",
-   "last_active": "2026-06-21",
-   "source": "forum"
-  },
-  {
    "scenario": "破壊と滅亡の申し子",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -5517,7 +5496,7 @@
    "open": true,
    "suriawase": false,
    "ongoing": false,
-   "gm": "水樹",
+   "gm": "水樹です",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1554884118561685585",
    "created": "2026-09-30T15:54:22.215000+00:00",
@@ -5663,6 +5642,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1518055929566859284",
    "created": "2026-06-21T00:52:17.724000+00:00",
    "last_active": "2026-07-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "グランフェルデン・フェスティバル",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-21",
+     "start": "13:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1516761508028092447",
+   "created": "2026-06-17T11:08:43.580000+00:00",
+   "last_active": "2026-06-21",
    "source": "forum"
   },
   {
