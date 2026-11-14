@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/14 21:31",
- "checked": "2026/11/14 21:31",
+ "updated": "2026/11/14 23:16",
+ "checked": "2026/11/14 23:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -236,6 +236,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1563107142687526932",
    "created": "2026-10-23T08:29:43.943000+00:00",
    "last_active": "2026-11-13",
+   "source": "forum"
+  },
+  {
+   "scenario": "アイスメイトでも水着が着たい！～裁縫編",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "一藻通(いつもどおり)",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1571163697638936637",
+   "created": "2026-11-14T14:03:36.327000+00:00",
+   "last_active": "2026-11-14",
    "source": "forum"
   },
   {
