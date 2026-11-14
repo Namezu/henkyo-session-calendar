@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/14 12:16",
- "checked": "2026/11/14 12:16",
+ "updated": "2026/11/14 13:02",
+ "checked": "2026/11/14 13:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -854,6 +854,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1568896377810067528",
    "created": "2026-11-08T07:54:05.155000+00:00",
    "last_active": "2026-11-10",
+   "source": "forum"
+  },
+  {
+   "scenario": "天魔の野望、嘘つきの少女",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-14",
+     "start": "14:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "まひろ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1571010262771830824",
+   "created": "2026-11-14T03:53:54.604000+00:00",
+   "last_active": "2026-11-14",
    "source": "forum"
   },
   {
