@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/14 18:02",
- "checked": "2026/11/14 18:02",
+ "updated": "2026/11/14 18:17",
+ "checked": "2026/11/14 18:17",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -164,21 +164,15 @@
    "scenario": "物質界追放",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-19",
-     "start": "21:00",
-     "end": null
-    }
-   ],
+   "dates": [],
    "open": true,
-   "suriawase": false,
+   "suriawase": true,
    "ongoing": false,
    "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1570807628714483743",
    "created": "2026-11-13T14:28:42.880000+00:00",
-   "last_active": "2026-11-13",
+   "last_active": "2026-11-14",
    "source": "forum"
   },
   {
