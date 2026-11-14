@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/14 17:31",
- "checked": "2026/11/14 17:31",
+ "updated": "2026/11/14 17:43",
+ "checked": "2026/11/14 17:43",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -428,6 +428,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1546497594740441189",
    "created": "2026-09-07T12:29:19.122000+00:00",
+   "last_active": "2026-11-14",
+   "source": "forum"
+  },
+  {
+   "scenario": "夢のダンジョン",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1571082678130708601",
+   "created": "2026-11-14T08:41:39.771000+00:00",
    "last_active": "2026-11-14",
    "source": "forum"
   },
