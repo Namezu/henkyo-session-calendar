@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/15 16:01",
- "checked": "2026/11/15 16:01",
+ "updated": "2026/11/15 16:16",
+ "checked": "2026/11/15 16:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -888,6 +888,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1540708067702997062",
    "created": "2026-08-22T13:03:48.312000+00:00",
    "last_active": "2026-11-14",
+   "source": "forum"
+  },
+  {
+   "scenario": "運命嗤う狂い道化",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1571421665319985222",
+   "created": "2026-11-15T07:08:40.615000+00:00",
+   "last_active": "2026-11-15",
    "source": "forum"
   },
   {
