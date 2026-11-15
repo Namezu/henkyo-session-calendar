@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/15 09:31",
- "checked": "2026/11/15 09:31",
+ "updated": "2026/11/15 11:16",
+ "checked": "2026/11/15 11:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -287,6 +287,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1570039095269265498",
    "created": "2026-11-11T11:34:50.228000+00:00",
    "last_active": "2026-11-14",
+   "source": "forum"
+  },
+  {
+   "scenario": "災厄を運ぶ黒竜",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-12-10",
+     "start": null,
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1571345071280754689",
+   "created": "2026-11-15T02:04:19.173000+00:00",
+   "last_active": "2026-11-15",
    "source": "forum"
   },
   {
