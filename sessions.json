@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/15 20:31",
- "checked": "2026/11/15 20:31",
+ "updated": "2026/11/15 21:02",
+ "checked": "2026/11/15 21:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -278,15 +278,21 @@
    "scenario": "廃工房の忘れ物",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-11-22",
+     "start": "14:00",
+     "end": null
+    }
+   ],
    "open": true,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "dabdab",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1570039095269265498",
    "created": "2026-11-11T11:34:50.228000+00:00",
-   "last_active": "2026-11-14",
+   "last_active": "2026-11-15",
    "source": "forum"
   },
   {
@@ -789,7 +795,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1568507977789612043",
    "created": "2026-11-07T06:10:43.374000+00:00",
-   "last_active": "2026-11-08",
+   "last_active": "2026-11-15",
    "source": "forum"
   },
   {
