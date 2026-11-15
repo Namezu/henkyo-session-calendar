@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/15 21:02",
- "checked": "2026/11/15 21:02",
+ "updated": "2026/11/15 21:31",
+ "checked": "2026/11/15 21:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -207,14 +207,14 @@
    "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [],
-   "open": true,
+   "open": false,
    "suriawase": true,
    "ongoing": false,
    "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1570807628714483743",
    "created": "2026-11-13T14:28:42.880000+00:00",
-   "last_active": "2026-11-14",
+   "last_active": "2026-11-15",
    "source": "forum"
   },
   {
