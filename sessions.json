@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/16 14:16",
- "checked": "2026/11/16 14:16",
+ "updated": "2026/11/16 15:16",
+ "checked": "2026/11/16 15:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -179,27 +179,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1564586112205197394",
    "created": "2026-10-27T10:26:37.754000+00:00",
    "last_active": "2026-11-12",
-   "source": "forum"
-  },
-  {
-   "scenario": "救いの御堂、災いの揺籠",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-14",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1566053165982548069",
-   "created": "2026-10-31T11:36:10.631000+00:00",
-   "last_active": "2026-11-14",
    "source": "forum"
   },
   {
@@ -971,6 +950,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-11-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "救いの御堂、災いの揺籠",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-14",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1566053165982548069",
+   "created": "2026-10-31T11:36:10.631000+00:00",
+   "last_active": "2026-11-14",
    "source": "forum"
   },
   {
