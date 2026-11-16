@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/16 17:02",
- "checked": "2026/11/16 17:02",
+ "updated": "2026/11/16 17:16",
+ "checked": "2026/11/16 17:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -478,27 +478,6 @@
    "source": "forum"
   },
   {
-   "scenario": "虚ろの人形姫 三回目",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-15",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "くらり",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1554529058337980417",
-   "created": "2026-09-29T16:23:29.261000+00:00",
-   "last_active": "2026-11-15",
-   "source": "forum"
-  },
-  {
    "scenario": "豊穣は誰がために",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -950,6 +929,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-11-08",
+   "source": "forum"
+  },
+  {
+   "scenario": "虚ろの人形姫 三回目",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-15",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "くらり",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1554529058337980417",
+   "created": "2026-09-29T16:23:29.261000+00:00",
+   "last_active": "2026-11-15",
    "source": "forum"
   },
   {
