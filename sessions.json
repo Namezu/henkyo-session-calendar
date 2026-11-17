@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/17 14:02",
- "checked": "2026/11/17 14:02",
+ "updated": "2026/11/17 14:46",
+ "checked": "2026/11/17 14:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -906,6 +906,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1568896377810067528",
    "created": "2026-11-08T07:54:05.155000+00:00",
    "last_active": "2026-11-16",
+   "source": "forum"
+  },
+  {
+   "scenario": "蠢く森",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1572124906886529084",
+   "created": "2026-11-17T05:43:06.470000+00:00",
+   "last_active": "2026-11-17",
    "source": "forum"
   },
   {
