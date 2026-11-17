@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/18 01:46",
- "checked": "2026/11/18 01:46",
+ "updated": "2026/11/18 02:02",
+ "checked": "2026/11/18 02:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -527,27 +527,6 @@
    "source": "forum"
   },
   {
-   "scenario": "夢のダンジョン",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-17",
-     "start": "21:00",
-     "end": "24:30"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "taku",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1568603378186068039",
-   "created": "2026-11-07T12:29:48.601000+00:00",
-   "last_active": "2026-11-18",
-   "source": "forum"
-  },
-  {
    "scenario": "一期一会CP",
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
@@ -565,7 +544,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1389898698703507527",
    "created": "2025-07-02T09:21:12.840000+00:00",
-   "last_active": "2026-11-11",
+   "last_active": "2026-11-18",
    "source": "forum"
   },
   {
@@ -923,6 +902,48 @@
    "source": "forum"
   },
   {
+   "scenario": "夢のダンジョン",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-17",
+     "start": "21:00",
+     "end": "24:30"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "taku",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1568603378186068039",
+   "created": "2026-11-07T12:29:48.601000+00:00",
+   "last_active": "2026-11-18",
+   "source": "forum"
+  },
+  {
+   "scenario": "虚ろの人形姫 三回目",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-15",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "くらり",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1554529058337980417",
+   "created": "2026-09-29T16:23:29.261000+00:00",
+   "last_active": "2026-11-15",
+   "source": "forum"
+  },
+  {
    "scenario": "センター争奪戦 1陣",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -956,27 +977,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1561334271342542948",
    "created": "2026-10-18T11:04:58.476000+00:00",
    "last_active": "2026-10-18",
-   "source": "forum"
-  },
-  {
-   "scenario": "虚ろの人形姫 三回目",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-15",
-     "start": "21:00",
-     "end": "25:00"
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "くらり",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1554529058337980417",
-   "created": "2026-09-29T16:23:29.261000+00:00",
-   "last_active": "2026-11-15",
    "source": "forum"
   },
   {
