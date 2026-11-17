@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/17 23:31",
- "checked": "2026/11/17 23:31",
+ "updated": "2026/11/18 00:02",
+ "checked": "2026/11/18 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -5153,27 +5153,6 @@
    "source": "forum"
   },
   {
-   "scenario": "忍び寄る気配",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-20",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1517750668331454504",
-   "created": "2026-06-20T04:39:17.774000+00:00",
-   "last_active": "2026-06-20",
-   "source": "forum"
-  },
-  {
    "scenario": "人を集めてGMを回すキャンペーン",
    "reg": "ライバー＆ラビリンス",
    "reg_is_name": false,
@@ -5680,6 +5659,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1518055929566859284",
    "created": "2026-06-21T00:52:17.724000+00:00",
    "last_active": "2026-07-12",
+   "source": "forum"
+  },
+  {
+   "scenario": "忍び寄る気配",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-20",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1517750668331454504",
+   "created": "2026-06-20T04:39:17.774000+00:00",
+   "last_active": "2026-06-20",
    "source": "forum"
   },
   {
