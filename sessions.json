@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/18 10:01",
- "checked": "2026/11/18 10:01",
+ "updated": "2026/11/18 11:46",
+ "checked": "2026/11/18 11:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -260,6 +260,27 @@
    "source": "forum"
   },
   {
+   "scenario": "春を知らない精霊",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-12-12",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1572440437577351228",
+   "created": "2026-11-18T02:36:54.849000+00:00",
+   "last_active": "2026-11-18",
+   "source": "forum"
+  },
+  {
    "scenario": "廃工房の忘れ物",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -298,7 +319,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1571345071280754689",
    "created": "2026-11-15T02:04:19.173000+00:00",
-   "last_active": "2026-11-15",
+   "last_active": "2026-11-18",
    "source": "forum"
   },
   {
