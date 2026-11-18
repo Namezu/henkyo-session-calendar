@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/18 20:02",
- "checked": "2026/11/18 20:02",
+ "updated": "2026/11/18 20:16",
+ "checked": "2026/11/18 20:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -799,9 +799,15 @@
    "scenario": "グラボが壊れた",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
+   "dates": [
+    {
+     "date": "2026-12-19",
+     "start": "13:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
    "ongoing": false,
    "gm": "ななさか ときわ",
    "gm_active": true,
