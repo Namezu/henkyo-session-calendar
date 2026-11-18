@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/18 20:16",
- "checked": "2026/11/18 20:16",
+ "updated": "2026/11/18 20:31",
+ "checked": "2026/11/18 20:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -150,7 +150,7 @@
      "end": null
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "dabdab",
@@ -234,7 +234,7 @@
      "end": null
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "dabdab",
