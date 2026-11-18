@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/19 00:02",
- "checked": "2026/11/19 00:02",
+ "updated": "2026/11/19 00:16",
+ "checked": "2026/11/19 00:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -64,27 +64,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1570096849174528110",
    "created": "2026-11-11T15:24:19.832000+00:00",
    "last_active": "2026-11-17",
-   "source": "forum"
-  },
-  {
-   "scenario": "Blade Waltz",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-18",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "くらり",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1571128262678290452",
-   "created": "2026-11-14T11:42:47.974000+00:00",
-   "last_active": "2026-11-18",
    "source": "forum"
   },
   {
@@ -792,7 +771,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1568507977789612043",
    "created": "2026-11-07T06:10:43.374000+00:00",
-   "last_active": "2026-11-18",
+   "last_active": "2026-11-19",
    "source": "forum"
   },
   {
@@ -997,6 +976,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
+   "last_active": "2026-11-18",
+   "source": "forum"
+  },
+  {
+   "scenario": "Blade Waltz",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-18",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "くらり",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1571128262678290452",
+   "created": "2026-11-14T11:42:47.974000+00:00",
    "last_active": "2026-11-18",
    "source": "forum"
   },
