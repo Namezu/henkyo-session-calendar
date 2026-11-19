@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/19 23:17",
- "checked": "2026/11/19 23:17",
+ "updated": "2026/11/20 00:02",
+ "checked": "2026/11/20 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -136,7 +136,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1572557938244063343",
    "created": "2026-11-18T10:23:49.191000+00:00",
-   "last_active": "2026-11-18",
+   "last_active": "2026-11-19",
    "source": "forum"
   },
   {
@@ -199,27 +199,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1570807628714483743",
    "created": "2026-11-13T14:28:42.880000+00:00",
-   "last_active": "2026-11-19",
-   "source": "forum"
-  },
-  {
-   "scenario": "熾火の大地",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-19",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1572449969670193172",
-   "created": "2026-11-18T03:14:47.477000+00:00",
    "last_active": "2026-11-19",
    "source": "forum"
   },
@@ -977,6 +956,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-11-18",
+   "source": "forum"
+  },
+  {
+   "scenario": "熾火の大地",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-19",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1572449969670193172",
+   "created": "2026-11-18T03:14:47.477000+00:00",
+   "last_active": "2026-11-19",
    "source": "forum"
   },
   {
@@ -4985,27 +4985,6 @@
    "source": "forum"
   },
   {
-   "scenario": "エリン至高の極上グルメ十選:ヴェノム\"マスター\"スコーピオン編",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-18",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1518276601169707209",
-   "created": "2026-06-21T15:29:09.934000+00:00",
-   "last_active": "2026-07-18",
-   "source": "forum"
-  },
-  {
    "scenario": "土竜の髭亭",
    "reg": "ダンジョン・トラベラーズ",
    "reg_is_name": false,
@@ -5718,6 +5697,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1520062856366919931",
    "created": "2026-06-26T13:47:06.360000+00:00",
    "last_active": "2026-07-14",
+   "source": "forum"
+  },
+  {
+   "scenario": "エリン至高の極上グルメ十選:ヴェノム\"マスター\"スコーピオン編",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-18",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1518276601169707209",
+   "created": "2026-06-21T15:29:09.934000+00:00",
+   "last_active": "2026-07-18",
    "source": "forum"
   },
   {
