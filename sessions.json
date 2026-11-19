@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/20 00:02",
- "checked": "2026/11/20 00:02",
+ "updated": "2026/11/20 00:16",
+ "checked": "2026/11/20 00:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -94,7 +94,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1559930065221976105",
    "created": "2026-10-14T14:05:09.648000+00:00",
-   "last_active": "2026-11-19",
+   "last_active": "2026-11-20",
    "source": "forum"
   },
   {
@@ -491,6 +491,21 @@
    "source": "forum"
   },
   {
+   "scenario": "彷徨者セッティング",
+   "reg": "アビスウォーカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カピらしい",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1572992678826737674",
+   "created": "2026-11-19T15:11:19.423000+00:00",
+   "last_active": "2026-11-20",
+   "source": "forum"
+  },
+  {
    "scenario": "夢のダンジョン",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -503,6 +518,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1571082678130708601",
    "created": "2026-11-14T08:41:39.771000+00:00",
    "last_active": "2026-11-19",
+   "source": "forum"
+  },
+  {
+   "scenario": "追放者セッティング",
+   "reg": "アビスウォーカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": false,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カピらしい",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1572993038723317760",
+   "created": "2026-11-19T15:12:45.229000+00:00",
+   "last_active": "2026-11-20",
    "source": "forum"
   },
   {
@@ -700,7 +730,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1564585031676989513",
    "created": "2026-10-27T10:22:20.136000+00:00",
-   "last_active": "2026-11-19",
+   "last_active": "2026-11-20",
    "source": "forum"
   },
   {
