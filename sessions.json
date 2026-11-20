@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/20 23:46",
- "checked": "2026/11/20 23:46",
+ "updated": "2026/11/21 00:01",
+ "checked": "2026/11/21 00:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -5196,27 +5196,6 @@
    "source": "forum"
   },
   {
-   "scenario": "逆襲のポメロ",
-   "reg": "アリアンロッド2E",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-04",
-     "start": "13:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1518934729338916884",
-   "created": "2026-06-23T11:04:19.917000+00:00",
-   "last_active": "2026-07-04",
-   "source": "forum"
-  },
-  {
    "scenario": "野鳥、ときどき怪鳥",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -5746,6 +5725,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1520062856366919931",
    "created": "2026-06-26T13:47:06.360000+00:00",
    "last_active": "2026-07-14",
+   "source": "forum"
+  },
+  {
+   "scenario": "逆襲のポメロ",
+   "reg": "アリアンロッド2E",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-04",
+     "start": "13:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1518934729338916884",
+   "created": "2026-06-23T11:04:19.917000+00:00",
+   "last_active": "2026-07-04",
    "source": "forum"
   },
   {
