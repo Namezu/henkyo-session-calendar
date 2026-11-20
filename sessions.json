@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/20 23:01",
- "checked": "2026/11/20 23:01",
+ "updated": "2026/11/20 23:46",
+ "checked": "2026/11/20 23:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -5481,11 +5481,6 @@
    "reg": "アリアンストラテジー",
    "reg_is_name": false,
    "dates": [
-    {
-     "date": "2026-12-07",
-     "start": null,
-     "end": null
-    },
     {
      "date": "2026-12-13",
      "start": null,
