@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/21 00:16",
- "checked": "2026/11/21 00:16",
+ "updated": "2026/11/21 00:31",
+ "checked": "2026/11/21 00:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -67,34 +67,24 @@
    "source": "forum"
   },
   {
-   "scenario": "アルストロの氷原訪問",
-   "reg": "氷原開拓団",
+   "scenario": "Blade Waltz",
+   "reg": "ピースメイカー",
    "reg_is_name": false,
    "dates": [
     {
      "date": "2026-11-18",
      "start": "21:00",
-     "end": "25:00"
-    },
-    {
-     "date": "2026-11-19",
-     "start": "21:00",
-     "end": "25:00"
-    },
-    {
-     "date": "2026-11-20",
-     "start": "21:00",
-     "end": "25:00"
+     "end": null
     }
    ],
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "reiran",
+   "gm": "くらり",
    "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1559930065221976105",
-   "created": "2026-10-14T14:05:09.648000+00:00",
-   "last_active": "2026-11-20",
+   "url": "https://discord.com/channels/1001833522723561593/1571128262678290452",
+   "created": "2026-11-14T11:42:47.974000+00:00",
+   "last_active": "2026-11-18",
    "source": "forum"
   },
   {
@@ -832,6 +822,27 @@
    "source": "forum"
   },
   {
+   "scenario": "夥しきパレード",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-18",
+     "start": "20:30",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1568597072855175298",
+   "created": "2026-11-07T12:04:45.293000+00:00",
+   "last_active": "2026-11-19",
+   "source": "forum"
+  },
+  {
    "scenario": "エピソード:ダークCP第三陣 背教者達のルサンチマン",
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
@@ -1002,6 +1013,37 @@
    "source": "forum"
   },
   {
+   "scenario": "アルストロの氷原訪問",
+   "reg": "氷原開拓団",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-18",
+     "start": "21:00",
+     "end": "25:00"
+    },
+    {
+     "date": "2026-11-19",
+     "start": "21:00",
+     "end": "25:00"
+    },
+    {
+     "date": "2026-11-20",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "reiran",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1559930065221976105",
+   "created": "2026-10-14T14:05:09.648000+00:00",
+   "last_active": "2026-11-20",
+   "source": "forum"
+  },
+  {
    "scenario": "物質界追放",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -1041,48 +1083,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1572449969670193172",
    "created": "2026-11-18T03:14:47.477000+00:00",
    "last_active": "2026-11-19",
-   "source": "forum"
-  },
-  {
-   "scenario": "夥しきパレード",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-18",
-     "start": "20:30",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "peridot",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1568597072855175298",
-   "created": "2026-11-07T12:04:45.293000+00:00",
-   "last_active": "2026-11-19",
-   "source": "forum"
-  },
-  {
-   "scenario": "Blade Waltz",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-18",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "くらり",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1571128262678290452",
-   "created": "2026-11-14T11:42:47.974000+00:00",
-   "last_active": "2026-11-18",
    "source": "forum"
   },
   {
