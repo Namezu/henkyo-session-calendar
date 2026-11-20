@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/21 00:31",
- "checked": "2026/11/21 00:31",
+ "updated": "2026/11/21 00:46",
+ "checked": "2026/11/21 00:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -106,27 +106,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1568549442246676510",
    "created": "2026-11-07T08:55:29.271000+00:00",
    "last_active": "2026-11-14",
-   "source": "forum"
-  },
-  {
-   "scenario": "さざめく森のハニーベア",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-20",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1572557938244063343",
-   "created": "2026-11-18T10:23:49.191000+00:00",
-   "last_active": "2026-11-20",
    "source": "forum"
   },
   {
@@ -273,7 +252,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1570039095269265498",
    "created": "2026-11-11T11:34:50.228000+00:00",
-   "last_active": "2026-11-20",
+   "last_active": "2026-11-21",
    "source": "forum"
   },
   {
@@ -780,7 +759,7 @@
    "source": "forum"
   },
   {
-   "scenario": "さざめく森のハニーベア",
+   "scenario": "ざわめく森のハニーベア",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
    "dates": [
@@ -797,7 +776,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1572996927497314474",
    "created": "2026-11-19T15:28:12.385000+00:00",
-   "last_active": "2026-11-20",
+   "last_active": "2026-11-21",
    "source": "forum"
   },
   {
@@ -1009,6 +988,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
+   "last_active": "2026-11-20",
+   "source": "forum"
+  },
+  {
+   "scenario": "さざめく森のハニーベア",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-20",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1572557938244063343",
+   "created": "2026-11-18T10:23:49.191000+00:00",
    "last_active": "2026-11-20",
    "source": "forum"
   },
