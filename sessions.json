@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/20 18:31",
- "checked": "2026/11/20 18:31",
+ "updated": "2026/11/20 19:16",
+ "checked": "2026/11/20 19:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -886,9 +886,15 @@
    "scenario": "運命嗤う狂い道化",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-12-08",
+     "start": "21:00",
+     "end": null
+    }
+   ],
    "open": true,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "reiran",
    "gm_active": true,
