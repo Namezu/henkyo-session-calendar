@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/21 15:16",
- "checked": "2026/11/21 15:16",
+ "updated": "2026/11/21 15:31",
+ "checked": "2026/11/21 15:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -798,6 +798,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1572563962015260772",
    "created": "2026-11-18T10:47:45.370000+00:00",
    "last_active": "2026-11-19",
+   "source": "forum"
+  },
+  {
+   "scenario": "万魔の迷宮",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-23",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1573582735241379941",
+   "created": "2026-11-21T06:15:59.835000+00:00",
+   "last_active": "2026-11-21",
    "source": "forum"
   },
   {
