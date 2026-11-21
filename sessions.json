@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/21 17:16",
- "checked": "2026/11/21 17:16",
+ "updated": "2026/11/21 17:32",
+ "checked": "2026/11/21 17:32",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -358,6 +358,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1568862117463986257",
    "created": "2026-11-08T05:37:56.852000+00:00",
    "last_active": "2026-11-17",
+   "source": "forum"
+  },
+  {
+   "scenario": "低難易度:最後の審判",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1573614945692811304",
+   "created": "2026-11-21T08:23:59.405000+00:00",
+   "last_active": "2026-11-21",
    "source": "forum"
   },
   {
