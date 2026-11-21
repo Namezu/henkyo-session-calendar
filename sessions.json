@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/21 14:46",
- "checked": "2026/11/21 14:46",
+ "updated": "2026/11/21 15:02",
+ "checked": "2026/11/21 15:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -801,27 +801,6 @@
    "source": "forum"
   },
   {
-   "scenario": "夥しきパレード",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-18",
-     "start": "20:30",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "peridot",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1568597072855175298",
-   "created": "2026-11-07T12:04:45.293000+00:00",
-   "last_active": "2026-11-19",
-   "source": "forum"
-  },
-  {
    "scenario": "エピソード:ダークCP第三陣 背教者達のルサンチマン",
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
@@ -989,6 +968,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-11-20",
+   "source": "forum"
+  },
+  {
+   "scenario": "夥しきパレード",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-18",
+     "start": "20:30",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1568597072855175298",
+   "created": "2026-11-07T12:04:45.293000+00:00",
+   "last_active": "2026-11-19",
    "source": "forum"
   },
   {
