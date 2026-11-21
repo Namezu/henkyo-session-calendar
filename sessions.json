@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/21 18:32",
- "checked": "2026/11/21 18:32",
+ "updated": "2026/11/21 19:31",
+ "checked": "2026/11/21 19:31",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -486,7 +486,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1546497594740441189",
    "created": "2026-09-07T12:29:19.122000+00:00",
-   "last_active": "2026-11-20",
+   "last_active": "2026-11-21",
    "source": "forum"
   },
   {
@@ -651,27 +651,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1551203926634791113",
    "created": "2026-09-20T12:10:36.085000+00:00",
-   "last_active": "2026-11-21",
-   "source": "forum"
-  },
-  {
-   "scenario": "勇者の忘れ物",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-21",
-     "start": "14:00",
-     "end": "17:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1572636865842909294",
-   "created": "2026-11-18T15:37:26.997000+00:00",
    "last_active": "2026-11-21",
    "source": "forum"
   },
@@ -1048,6 +1027,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
+   "last_active": "2026-11-21",
+   "source": "forum"
+  },
+  {
+   "scenario": "勇者の忘れ物",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-21",
+     "start": "14:00",
+     "end": "17:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1572636865842909294",
+   "created": "2026-11-18T15:37:26.997000+00:00",
    "last_active": "2026-11-21",
    "source": "forum"
   },
