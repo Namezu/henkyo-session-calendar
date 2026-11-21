@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/22 02:46",
- "checked": "2026/11/22 05:46",
+ "updated": "2026/11/22 06:01",
+ "checked": "2026/11/22 06:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -85,6 +85,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1568549442246676510",
    "created": "2026-11-07T08:55:29.271000+00:00",
    "last_active": "2026-11-14",
+   "source": "forum"
+  },
+  {
+   "scenario": "異次元ランダムダンジョン",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-22",
+     "start": "6:30",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1573804336977285140",
+   "created": "2026-11-21T20:56:33.806000+00:00",
+   "last_active": "2026-11-22",
    "source": "forum"
   },
   {
