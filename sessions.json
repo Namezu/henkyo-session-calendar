@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/22 00:16",
- "checked": "2026/11/22 00:16",
+ "updated": "2026/11/22 00:32",
+ "checked": "2026/11/22 00:32",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -225,7 +225,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1572440437577351228",
    "created": "2026-11-18T02:36:54.849000+00:00",
-   "last_active": "2026-11-21",
+   "last_active": "2026-11-22",
    "source": "forum"
   },
   {
@@ -343,15 +343,21 @@
    "scenario": "低難易度:最後の審判",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-12-24",
+     "start": null,
+     "end": null
+    }
+   ],
    "open": true,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "peridot",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1573614945692811304",
    "created": "2026-11-21T08:23:59.405000+00:00",
-   "last_active": "2026-11-21",
+   "last_active": "2026-11-22",
    "source": "forum"
   },
   {
@@ -652,27 +658,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1568601116135129199",
    "created": "2026-11-07T12:20:49.286000+00:00",
    "last_active": "2026-11-22",
-   "source": "forum"
-  },
-  {
-   "scenario": "刻限の魔導砲 case2",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-21",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "にゃぎさん",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1564585031676989513",
-   "created": "2026-10-27T10:22:20.136000+00:00",
-   "last_active": "2026-11-21",
    "source": "forum"
   },
   {
@@ -997,6 +982,27 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
+   "last_active": "2026-11-21",
+   "source": "forum"
+  },
+  {
+   "scenario": "刻限の魔導砲 case2",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-21",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "にゃぎさん",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1564585031676989513",
+   "created": "2026-10-27T10:22:20.136000+00:00",
    "last_active": "2026-11-21",
    "source": "forum"
   },
