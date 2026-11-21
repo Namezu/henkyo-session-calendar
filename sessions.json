@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/21 16:31",
- "checked": "2026/11/21 16:31",
+ "updated": "2026/11/21 16:46",
+ "checked": "2026/11/21 16:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -439,6 +439,21 @@
    "source": "forum"
   },
   {
+   "scenario": "なんかやる",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1573601838274711592",
+   "created": "2026-11-21T07:31:54.353000+00:00",
+   "last_active": "2026-11-21",
+   "source": "forum"
+  },
+  {
    "scenario": "激闘！！ピースメイカーVSピースブレイカー！！",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -744,6 +759,21 @@
    "source": "forum"
   },
   {
+   "scenario": "至高のコーヒーを求めて:ジェノサイド”キング”サーモン編",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1573601979610042449",
+   "created": "2026-11-21T07:32:28.050000+00:00",
+   "last_active": "2026-11-21",
+   "source": "forum"
+  },
+  {
    "scenario": "マスタリング手法公開企画/月に導かれて（初心者歓迎）",
    "reg": "アリアンロッド2E",
    "reg_is_name": false,
@@ -770,7 +800,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1568507977789612043",
    "created": "2026-11-07T06:10:43.374000+00:00",
-   "last_active": "2026-11-19",
+   "last_active": "2026-11-21",
    "source": "forum"
   },
   {
