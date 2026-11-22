@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/22 18:02",
- "checked": "2026/11/22 18:02",
+ "updated": "2026/11/22 18:16",
+ "checked": "2026/11/22 18:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -225,27 +225,6 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1572440437577351228",
    "created": "2026-11-18T02:36:54.849000+00:00",
-   "last_active": "2026-11-22",
-   "source": "forum"
-  },
-  {
-   "scenario": "廃工房の忘れ物",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-22",
-     "start": "14:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1570039095269265498",
-   "created": "2026-11-11T11:34:50.228000+00:00",
    "last_active": "2026-11-22",
    "source": "forum"
   },
@@ -983,6 +962,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-11-21",
+   "source": "forum"
+  },
+  {
+   "scenario": "廃工房の忘れ物",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-22",
+     "start": "14:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1570039095269265498",
+   "created": "2026-11-11T11:34:50.228000+00:00",
+   "last_active": "2026-11-22",
    "source": "forum"
   },
   {
