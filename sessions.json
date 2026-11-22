@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/23 00:46",
- "checked": "2026/11/23 00:46",
+ "updated": "2026/11/23 01:16",
+ "checked": "2026/11/23 01:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -204,7 +204,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1571163697638936637",
    "created": "2026-11-14T14:03:36.327000+00:00",
-   "last_active": "2026-11-21",
+   "last_active": "2026-11-23",
    "source": "forum"
   },
   {
@@ -876,14 +876,14 @@
      "end": null
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "reiran",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1572124906886529084",
    "created": "2026-11-17T05:43:06.470000+00:00",
-   "last_active": "2026-11-21",
+   "last_active": "2026-11-23",
    "source": "forum"
   },
   {
@@ -5524,7 +5524,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1558082209070588005",
    "created": "2026-10-09T11:42:26.410000+00:00",
-   "last_active": "2026-11-20",
+   "last_active": "2026-11-23",
    "source": "forum"
   },
   {
@@ -5581,7 +5581,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1565369176246198332",
    "created": "2026-10-29T14:18:14.770000+00:00",
-   "last_active": "2026-11-21",
+   "last_active": "2026-11-23",
    "source": "forum"
   },
   {
