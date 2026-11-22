@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/22 21:31",
- "checked": "2026/11/22 21:31",
+ "updated": "2026/11/22 22:32",
+ "checked": "2026/11/22 22:32",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -379,21 +379,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1568484936162213998",
    "created": "2026-11-07T04:39:09.822000+00:00",
    "last_active": "2026-11-20",
-   "source": "forum"
-  },
-  {
-   "scenario": "北のまほろば（初心者歓迎）",
-   "reg": "アンコールを流星に",
-   "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1563105883267928216",
-   "created": "2026-10-23T08:24:43.674000+00:00",
-   "last_active": "2026-10-23",
    "source": "forum"
   },
   {
@@ -983,6 +968,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-11-21",
+   "source": "forum"
+  },
+  {
+   "scenario": "北のまほろば（初心者歓迎）",
+   "reg": "アンコールを流星に",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1563105883267928216",
+   "created": "2026-10-23T08:24:43.674000+00:00",
+   "last_active": "2026-10-23",
    "source": "forum"
   },
   {
