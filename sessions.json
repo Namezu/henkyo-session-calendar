@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/23 23:46",
- "checked": "2026/11/23 23:46",
+ "updated": "2026/11/24 01:01",
+ "checked": "2026/11/24 01:01",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -42,7 +42,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1564874613035376753",
    "created": "2026-10-28T05:33:01.712000+00:00",
-   "last_active": "2026-11-21",
+   "last_active": "2026-11-24",
    "source": "forum"
   },
   {
@@ -497,7 +497,8 @@
     {
      "date": "2026-11-23",
      "start": "21:00",
-     "end": null
+     "end": null,
+     "held": true
     },
     {
      "date": "2026-11-26",
@@ -517,7 +518,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1547976361115648070",
    "created": "2026-09-11T14:25:24.500000+00:00",
-   "last_active": "2026-11-23",
+   "last_active": "2026-11-24",
    "source": "forum"
   },
   {
