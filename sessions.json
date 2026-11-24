@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/24 21:46",
- "checked": "2026/11/24 21:46",
+ "updated": "2026/11/25 00:02",
+ "checked": "2026/11/25 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -5312,27 +5312,6 @@
    "source": "forum"
   },
   {
-   "scenario": "野鳥、ときどき怪鳥",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-06-30",
-     "start": null,
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1520375245716983868",
-   "created": "2026-06-27T10:28:25.785000+00:00",
-   "last_active": "2026-07-01",
-   "source": "forum"
-  },
-  {
    "scenario": "宇宙からの侵略者！？",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -5385,17 +5364,29 @@
     {
      "date": "2026-11-22",
      "start": "21:00",
-     "end": null
+     "end": null,
+     "held": true
     },
     {
      "date": "2026-11-24",
+     "start": "21:00",
+     "end": null,
+     "held": true
+    },
+    {
+     "date": "2027-11-22",
+     "start": "21:00",
+     "end": null
+    },
+    {
+     "date": "2027-11-24",
      "start": "21:00",
      "end": null
     }
    ],
    "open": false,
    "suriawase": false,
-   "ongoing": false,
+   "ongoing": true,
    "gm": "豆の塩ゆで",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1509931191262904360",
@@ -5799,6 +5790,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1526557321449312257",
    "created": "2026-07-14T11:53:47.497000+00:00",
    "last_active": "2026-08-24",
+   "source": "forum"
+  },
+  {
+   "scenario": "野鳥、ときどき怪鳥",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-06-30",
+     "start": null,
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1520375245716983868",
+   "created": "2026-06-27T10:28:25.785000+00:00",
+   "last_active": "2026-07-01",
    "source": "forum"
   },
   {
