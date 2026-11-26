@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/26 20:25",
- "checked": "2026/11/26 20:25",
+ "updated": "2026/11/26 20:46",
+ "checked": "2026/11/26 20:46",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -43,6 +43,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1570096849174528110",
    "created": "2026-11-11T15:24:19.832000+00:00",
    "last_active": "2026-11-24",
+   "source": "forum"
+  },
+  {
+   "scenario": "異史追憶:黒のマルクト（高難易度）",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1533847306410004540",
+   "created": "2026-08-03T14:41:35.353000+00:00",
+   "last_active": "2026-11-26",
    "source": "forum"
   },
   {
@@ -315,7 +330,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1573614945692811304",
    "created": "2026-11-21T08:23:59.405000+00:00",
-   "last_active": "2026-11-22",
+   "last_active": "2026-11-26",
    "source": "forum"
   },
   {
@@ -358,6 +373,21 @@
    "url": "https://discord.com/channels/1001833522723561593/1568484936162213998",
    "created": "2026-11-07T04:39:09.822000+00:00",
    "last_active": "2026-11-20",
+   "source": "forum"
+  },
+  {
+   "scenario": "北のまほろば（初心者歓迎）",
+   "reg": "アンコールを流星に",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "カテナドルグ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1563105883267928216",
+   "created": "2026-10-23T08:24:43.674000+00:00",
+   "last_active": "2026-11-26",
    "source": "forum"
   },
   {
@@ -651,7 +681,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1561334271342542948",
    "created": "2026-10-18T11:04:58.476000+00:00",
-   "last_active": "2026-11-20",
+   "last_active": "2026-11-26",
    "source": "forum"
   },
   {
@@ -709,6 +739,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1572563962015260772",
    "created": "2026-11-18T10:47:45.370000+00:00",
    "last_active": "2026-11-25",
+   "source": "forum"
+  },
+  {
+   "scenario": "万魔の迷宮",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-23",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": true,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "peridot",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1573582735241379941",
+   "created": "2026-11-21T06:15:59.835000+00:00",
+   "last_active": "2026-11-26",
    "source": "forum"
   },
   {
@@ -817,7 +868,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1568896377810067528",
    "created": "2026-11-08T07:54:05.155000+00:00",
-   "last_active": "2026-11-22",
+   "last_active": "2026-11-26",
    "source": "forum"
   },
   {
@@ -878,6 +929,27 @@
    "source": "forum"
   },
   {
+   "scenario": "至高のコーヒーを求めて:白金のレプラコーン編",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-23",
+     "start": "13:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "dabdab",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1574255675318476911",
+   "created": "2026-11-23T02:50:01.252000+00:00",
+   "last_active": "2026-11-26",
+   "source": "forum"
+  },
+  {
    "scenario": "凍廊のサンクトゥムCP / 深く、長い闇",
    "reg": "氷原開拓団",
    "reg_is_name": false,
@@ -925,48 +997,6 @@
    "source": "forum"
   },
   {
-   "scenario": "万魔の迷宮",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-23",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "peridot",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1573582735241379941",
-   "created": "2026-11-21T06:15:59.835000+00:00",
-   "last_active": "2026-11-24",
-   "source": "forum"
-  },
-  {
-   "scenario": "至高のコーヒーを求めて:白金のレプラコーン編",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-23",
-     "start": "13:00",
-     "end": null
-    }
-   ],
-   "open": true,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "dabdab",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1574255675318476911",
-   "created": "2026-11-23T02:50:01.252000+00:00",
-   "last_active": "2026-11-23",
-   "source": "forum"
-  },
-  {
    "scenario": "激闘！！ピースメイカーVSピースブレイカー！！",
    "reg": "ピースメイカー",
    "reg_is_name": false,
@@ -985,21 +1015,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1546497594740441189",
    "created": "2026-09-07T12:29:19.122000+00:00",
    "last_active": "2026-11-22",
-   "source": "forum"
-  },
-  {
-   "scenario": "北のまほろば（初心者歓迎）",
-   "reg": "アンコールを流星に",
-   "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1563105883267928216",
-   "created": "2026-10-23T08:24:43.674000+00:00",
-   "last_active": "2026-10-23",
    "source": "forum"
   },
   {
@@ -2601,21 +2616,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1560914708435959808",
    "created": "2026-10-17T07:17:46.884000+00:00",
    "last_active": "2026-10-20",
-   "source": "forum"
-  },
-  {
-   "scenario": "異史追憶:黒のマルクト（高難易度）",
-   "reg": "ピースメイカー",
-   "reg_is_name": false,
-   "dates": [],
-   "open": true,
-   "suriawase": true,
-   "ongoing": false,
-   "gm": "カテナドルグ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1533847306410004540",
-   "created": "2026-08-03T14:41:35.353000+00:00",
-   "last_active": "2026-09-20",
    "source": "forum"
   },
   {
