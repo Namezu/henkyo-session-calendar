@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/26 23:31",
- "checked": "2026/11/26 23:31",
+ "updated": "2026/11/27 00:16",
+ "checked": "2026/11/27 00:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -488,14 +488,14 @@
      "end": null
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "カピ",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1572993038723317760",
    "created": "2026-11-19T15:12:45.229000+00:00",
-   "last_active": "2026-11-26",
+   "last_active": "2026-11-27",
    "source": "forum"
   },
   {
@@ -552,7 +552,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1575490930624954440",
    "created": "2026-11-26T12:38:29.067000+00:00",
-   "last_active": "2026-11-26",
+   "last_active": "2026-11-27",
    "source": "forum"
   },
   {
@@ -5548,7 +5548,8 @@
     {
      "date": "2026-11-26",
      "start": "21:00",
-     "end": null
+     "end": null,
+     "held": true
     },
     {
      "date": "2026-12-01",
@@ -5568,7 +5569,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1536341101936648293",
    "created": "2026-08-10T11:51:02.539000+00:00",
-   "last_active": "2026-11-26",
+   "last_active": "2026-11-27",
    "source": "forum"
   },
   {
