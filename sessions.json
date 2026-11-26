@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/26 11:02",
- "checked": "2026/11/26 11:02",
+ "updated": "2026/11/26 11:29",
+ "checked": "2026/11/26 11:29",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -5581,9 +5581,25 @@
    "scenario": "埋もれた灯",
    "reg": "アリアンストラテジー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-12-25",
+     "start": null,
+     "end": null
+    },
+    {
+     "date": "2026-12-26",
+     "start": null,
+     "end": null
+    },
+    {
+     "date": "2026-12-28",
+     "start": null,
+     "end": null
+    }
+   ],
    "open": true,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "カピ",
    "gm_active": true,
