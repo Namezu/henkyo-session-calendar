@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/28 01:46",
- "checked": "2026/11/28 01:46",
+ "updated": "2026/11/28 02:17",
+ "checked": "2026/11/28 02:17",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -79,27 +79,6 @@
    "url": "https://discord.com/channels/1001833522723561593/1568549442246676510",
    "created": "2026-11-07T08:55:29.271000+00:00",
    "last_active": "2026-11-28",
-   "source": "forum"
-  },
-  {
-   "scenario": "ウッカ=リー博士の依頼",
-   "reg": "ミスリルクレスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-11-26",
-     "start": "21:00",
-     "end": null
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "ななさか ときわ",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1571193216688984115",
-   "created": "2026-11-14T16:00:54.217000+00:00",
-   "last_active": "2026-11-27",
    "source": "forum"
   },
   {
@@ -995,6 +974,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1561704452589621288",
    "created": "2026-10-19T11:35:56.563000+00:00",
    "last_active": "2026-11-21",
+   "source": "forum"
+  },
+  {
+   "scenario": "ウッカ=リー博士の依頼",
+   "reg": "ミスリルクレスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-11-26",
+     "start": "21:00",
+     "end": null
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "ななさか ときわ",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1571193216688984115",
+   "created": "2026-11-14T16:00:54.217000+00:00",
+   "last_active": "2026-11-27",
    "source": "forum"
   },
   {
