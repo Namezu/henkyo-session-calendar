@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/27 17:32",
- "checked": "2026/11/27 17:32",
+ "updated": "2026/11/27 19:32",
+ "checked": "2026/11/27 19:32",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -583,6 +583,27 @@
    "source": "forum"
   },
   {
+   "scenario": "高難易度:終末時計の観測者",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-12-29",
+     "start": "21:00",
+     "end": "25:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "くらり",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1575818610985672835",
+   "created": "2026-11-27T10:20:34.153000+00:00",
+   "last_active": "2026-11-27",
+   "source": "forum"
+  },
+  {
    "scenario": "幼子の暗殺者",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -665,9 +686,15 @@
    "scenario": "高難易度:終末時計の観測者",
    "reg": "ピースメイカー",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-12-06",
+     "start": "10:00",
+     "end": "14:00"
+    }
+   ],
    "open": false,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "くらり",
    "gm_active": true,
