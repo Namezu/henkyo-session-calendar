@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/27 21:02",
- "checked": "2026/11/27 21:02",
+ "updated": "2026/11/27 23:16",
+ "checked": "2026/11/27 23:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -473,7 +473,7 @@
      "end": "24:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "カテナドルグ",
