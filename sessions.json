@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/27 23:16",
- "checked": "2026/11/27 23:16",
+ "updated": "2026/11/28 00:16",
+ "checked": "2026/11/28 00:16",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -515,7 +515,7 @@
      "end": "25:00"
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "にゃぎさん",
@@ -857,7 +857,7 @@
      "end": null
     }
    ],
-   "open": true,
+   "open": false,
    "suriawase": false,
    "ongoing": false,
    "gm": "peridot",
