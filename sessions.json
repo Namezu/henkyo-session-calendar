@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/28 22:47",
- "checked": "2026/11/28 22:47",
+ "updated": "2026/11/28 23:02",
+ "checked": "2026/11/28 23:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -93,7 +93,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1573600996599267428",
    "created": "2026-11-21T07:28:33.682000+00:00",
-   "last_active": "2026-11-26",
+   "last_active": "2026-11-28",
    "source": "forum"
   },
   {
@@ -219,6 +219,21 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1569677754520043581",
    "created": "2026-11-10T11:38:59.880000+00:00",
+   "last_active": "2026-11-28",
+   "source": "forum"
+  },
+  {
+   "scenario": "死霊の王の逆襲 第二陣",
+   "reg": "ピースメイカー",
+   "reg_is_name": false,
+   "dates": [],
+   "open": true,
+   "suriawase": true,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1576233853897416865",
+   "created": "2026-11-28T13:50:35.778000+00:00",
    "last_active": "2026-11-28",
    "source": "forum"
   },
