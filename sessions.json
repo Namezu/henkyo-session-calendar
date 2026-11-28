@@ -1,6 +1,6 @@
 {
- "updated": "2026/11/28 23:46",
- "checked": "2026/11/28 23:46",
+ "updated": "2026/11/29 00:02",
+ "checked": "2026/11/29 00:02",
  "guild": "辺境TRPG村",
  "sessions": [
   {
@@ -85,9 +85,15 @@
    "scenario": "なんかやる",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
-   "dates": [],
+   "dates": [
+    {
+     "date": "2026-12-23",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
    "open": true,
-   "suriawase": true,
+   "suriawase": false,
    "ongoing": false,
    "gm": "よし/やっぴー",
    "gm_active": true,
@@ -152,7 +158,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
+   "gm": "一藻通",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1571163697638936637",
    "created": "2026-11-14T14:03:36.327000+00:00",
@@ -742,7 +748,7 @@
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1568643178171473991",
    "created": "2026-11-07T15:07:57.657000+00:00",
-   "last_active": "2026-11-28",
+   "last_active": "2026-11-29",
    "source": "forum"
   },
   {
@@ -5283,27 +5289,6 @@
    "source": "forum"
   },
   {
-   "scenario": "沈みゆく湖畔の村",
-   "reg": "ミスリルクエスト",
-   "reg_is_name": false,
-   "dates": [
-    {
-     "date": "2026-07-23",
-     "start": "21:00",
-     "end": "24:00"
-    }
-   ],
-   "open": false,
-   "suriawase": false,
-   "ongoing": false,
-   "gm": "よし/やっぴー",
-   "gm_active": true,
-   "url": "https://discord.com/channels/1001833522723561593/1521759725388042250",
-   "created": "2026-07-01T06:09:51.461000+00:00",
-   "last_active": "2026-07-23",
-   "source": "forum"
-  },
-  {
    "scenario": "兎の足のトラバサミ",
    "reg": "ミスリルクレスト",
    "reg_is_name": false,
@@ -5317,7 +5302,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
+   "gm": "一藻通",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1524054784431095838",
    "created": "2026-07-07T14:09:36.177000+00:00",
@@ -5380,7 +5365,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
+   "gm": "一藻通",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1524064295493697647",
    "created": "2026-07-07T14:47:23.791000+00:00",
@@ -5612,7 +5597,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
+   "gm": "一藻通",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1536341101936648293",
    "created": "2026-08-10T11:51:02.539000+00:00",
@@ -5822,7 +5807,7 @@
    "open": false,
    "suriawase": false,
    "ongoing": false,
-   "gm": "一藻通(いつもどおり)",
+   "gm": "一藻通",
    "gm_active": true,
    "url": "https://discord.com/channels/1001833522723561593/1558285360646062140",
    "created": "2026-10-10T01:09:41.520000+00:00",
@@ -5905,6 +5890,27 @@
    "url": "https://discord.com/channels/1001833522723561593/1526557321449312257",
    "created": "2026-07-14T11:53:47.497000+00:00",
    "last_active": "2026-08-24",
+   "source": "forum"
+  },
+  {
+   "scenario": "沈みゆく湖畔の村",
+   "reg": "ミスリルクエスト",
+   "reg_is_name": false,
+   "dates": [
+    {
+     "date": "2026-07-23",
+     "start": "21:00",
+     "end": "24:00"
+    }
+   ],
+   "open": false,
+   "suriawase": false,
+   "ongoing": false,
+   "gm": "よし/やっぴー",
+   "gm_active": true,
+   "url": "https://discord.com/channels/1001833522723561593/1521759725388042250",
+   "created": "2026-07-01T06:09:51.461000+00:00",
+   "last_active": "2026-07-23",
    "source": "forum"
   },
   {
